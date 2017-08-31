@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  isp-serverfarm\sevdesk\php-client
+ * @package  ispserverfarm\sevdesk\php-client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,18 +26,18 @@
  * Do not edit the class manually.
  */
 
-namespace isp-serverfarm\sevdesk\php-client\sevdesk-api;
+namespace ispserverfarm\sevdesk\php-client\sevdesk-api;
 
-use \isp-serverfarm\sevdesk\php-client\ApiClient;
-use \isp-serverfarm\sevdesk\php-client\ApiException;
-use \isp-serverfarm\sevdesk\php-client\Configuration;
-use \isp-serverfarm\sevdesk\php-client\ObjectSerializer;
+use \ispserverfarm\sevdesk\php-client\ApiClient;
+use \ispserverfarm\sevdesk\php-client\ApiException;
+use \ispserverfarm\sevdesk\php-client\Configuration;
+use \ispserverfarm\sevdesk\php-client\ObjectSerializer;
 
 /**
  * ExportApi Class Doc Comment
  *
  * @category Class
- * @package  isp-serverfarm\sevdesk\php-client
+ * @package  ispserverfarm\sevdesk\php-client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -46,16 +46,16 @@ class ExportApi
     /**
      * API Client
      *
-     * @var \isp-serverfarm\sevdesk\php-client\ApiClient instance of the ApiClient
+     * @var \ispserverfarm\sevdesk\php-client\ApiClient instance of the ApiClient
      */
     protected $apiClient;
 
     /**
      * Constructor
      *
-     * @param \isp-serverfarm\sevdesk\php-client\ApiClient|null $apiClient The api client to use
+     * @param \ispserverfarm\sevdesk\php-client\ApiClient|null $apiClient The api client to use
      */
-    public function __construct(\isp-serverfarm\sevdesk\php-client\ApiClient $apiClient = null)
+    public function __construct(\ispserverfarm\sevdesk\php-client\ApiClient $apiClient = null)
     {
         if ($apiClient === null) {
             $apiClient = new ApiClient();
@@ -67,7 +67,7 @@ class ExportApi
     /**
      * Get API client
      *
-     * @return \isp-serverfarm\sevdesk\php-client\ApiClient get the API client
+     * @return \ispserverfarm\sevdesk\php-client\ApiClient get the API client
      */
     public function getApiClient()
     {
@@ -77,11 +77,11 @@ class ExportApi
     /**
      * Set the API client
      *
-     * @param \isp-serverfarm\sevdesk\php-client\ApiClient $apiClient set the API client
+     * @param \ispserverfarm\sevdesk\php-client\ApiClient $apiClient set the API client
      *
      * @return ExportApi
      */
-    public function setApiClient(\isp-serverfarm\sevdesk\php-client\ApiClient $apiClient)
+    public function setApiClient(\ispserverfarm\sevdesk\php-client\ApiClient $apiClient)
     {
         $this->apiClient = $apiClient;
         return $this;
@@ -95,7 +95,7 @@ class ExportApi
      * @param int $contact_id Id of the contact you want to export (required)
      * @param string $contact_object_name Model name which is exported (required)
      * @param bool $download Specifies if the document is downloaded (optional, default to true)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return \SplFileObject
      */
     public function exportContactCsv($contact_id, $contact_object_name, $download = 'true')
@@ -112,7 +112,7 @@ class ExportApi
      * @param int $contact_id Id of the contact you want to export (required)
      * @param string $contact_object_name Model name which is exported (required)
      * @param bool $download Specifies if the document is downloaded (optional, default to true)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return array of \SplFileObject, HTTP status code, HTTP response headers (array of strings)
      */
     public function exportContactCsvWithHttpInfo($contact_id, $contact_object_name, $download = 'true')
@@ -196,7 +196,7 @@ class ExportApi
      * @param bool $download Specifies if the document is downloaded (optional, default to true)
      * @param int $sev_query_limit Limit exported contacts (optional, default to 99999)
      * @param bool $sev_query_filter_depth Specify if companies and persons (true) or only persons (false) should be exported (optional, default to true)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return \SplFileObject
      */
     public function exportContactListCsv($sev_query_model_name, $sev_query_object_name, $download = 'true', $sev_query_limit = '99999', $sev_query_filter_depth = 'true')
@@ -215,7 +215,7 @@ class ExportApi
      * @param bool $download Specifies if the document is downloaded (optional, default to true)
      * @param int $sev_query_limit Limit exported contacts (optional, default to 99999)
      * @param bool $sev_query_filter_depth Specify if companies and persons (true) or only persons (false) should be exported (optional, default to true)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return array of \SplFileObject, HTTP status code, HTTP response headers (array of strings)
      */
     public function exportContactListCsvWithHttpInfo($sev_query_model_name, $sev_query_object_name, $download = 'true', $sev_query_limit = '99999', $sev_query_filter_depth = 'true')
@@ -308,7 +308,7 @@ class ExportApi
      * @param bool $with_enshrined Specify if you want to include enshrined models (required)
      * @param bool $enshrine Specify if you want to enshrine all models which were included in the export (required)
      * @param bool $download Specifies if the document is downloaded (optional, default to true)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return \SplFileObject
      */
     public function exportDatev($scope, $start, $end, $with_enshrined, $enshrine, $download = 'true')
@@ -328,7 +328,7 @@ class ExportApi
      * @param bool $with_enshrined Specify if you want to include enshrined models (required)
      * @param bool $enshrine Specify if you want to enshrine all models which were included in the export (required)
      * @param bool $download Specifies if the document is downloaded (optional, default to true)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return array of \SplFileObject, HTTP status code, HTTP response headers (array of strings)
      */
     public function exportDatevWithHttpInfo($scope, $start, $end, $with_enshrined, $enshrine, $download = 'true')
@@ -436,7 +436,7 @@ class ExportApi
      * @param string $end Specify the end date for the zip export (required)
      * @param bool $with_enshrined Specify if you want to include enshrined models (required)
      * @param bool $download Specifies if the document is downloaded (optional, default to true)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return \SplFileObject
      */
     public function exportDatevZip($scope, $start, $end, $with_enshrined, $download = 'true')
@@ -455,7 +455,7 @@ class ExportApi
      * @param string $end Specify the end date for the zip export (required)
      * @param bool $with_enshrined Specify if you want to include enshrined models (required)
      * @param bool $download Specifies if the document is downloaded (optional, default to true)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return array of \SplFileObject, HTTP status code, HTTP response headers (array of strings)
      */
     public function exportDatevZipWithHttpInfo($scope, $start, $end, $with_enshrined, $download = 'true')
@@ -556,7 +556,7 @@ class ExportApi
      * @param int $sev_query_limit Limit exported part log (optional, default to 99999)
      * @param int $sev_query_filter_part_id Id of the part for which you want to export the part log (optional)
      * @param string $sev_query_filter_part_object_name Object name of part (optional, default to Part)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return \SplFileObject
      */
     public function exportInventoryPartLogList($sev_query_model_name, $sev_query_object_name, $download = 'true', $sev_query_limit = '99999', $sev_query_filter_part_id = null, $sev_query_filter_part_object_name = 'Part')
@@ -576,7 +576,7 @@ class ExportApi
      * @param int $sev_query_limit Limit exported part log (optional, default to 99999)
      * @param int $sev_query_filter_part_id Id of the part for which you want to export the part log (optional)
      * @param string $sev_query_filter_part_object_name Object name of part (optional, default to Part)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return array of \SplFileObject, HTTP status code, HTTP response headers (array of strings)
      */
     public function exportInventoryPartLogListWithHttpInfo($sev_query_model_name, $sev_query_object_name, $download = 'true', $sev_query_limit = '99999', $sev_query_filter_part_id = null, $sev_query_filter_part_object_name = 'Part')
@@ -671,7 +671,7 @@ class ExportApi
      * @param string $sev_query_object_name SevQuery object name (required)
      * @param bool $download Specifies if the document is downloaded (optional, default to true)
      * @param int $sev_query_limit Limit exported invoices (optional, default to 99999)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return \SplFileObject
      */
     public function exportInvoiceCsv($sev_query_model_name, $sev_query_object_name, $download = 'true', $sev_query_limit = '99999')
@@ -689,7 +689,7 @@ class ExportApi
      * @param string $sev_query_object_name SevQuery object name (required)
      * @param bool $download Specifies if the document is downloaded (optional, default to true)
      * @param int $sev_query_limit Limit exported invoices (optional, default to 99999)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return array of \SplFileObject, HTTP status code, HTTP response headers (array of strings)
      */
     public function exportInvoiceCsvWithHttpInfo($sev_query_model_name, $sev_query_object_name, $download = 'true', $sev_query_limit = '99999')
@@ -776,7 +776,7 @@ class ExportApi
      * @param string $sev_query_object_name SevQuery object name (required)
      * @param bool $download Specifies if the document is downloaded (optional, default to true)
      * @param int $sev_query_limit Limit exported invoices (optional, default to 50)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return \SplFileObject
      */
     public function exportInvoiceZip($sev_query_model_name, $sev_query_object_name, $download = 'true', $sev_query_limit = '50')
@@ -794,7 +794,7 @@ class ExportApi
      * @param string $sev_query_object_name SevQuery object name (required)
      * @param bool $download Specifies if the document is downloaded (optional, default to true)
      * @param int $sev_query_limit Limit exported invoices (optional, default to 50)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return array of \SplFileObject, HTTP status code, HTTP response headers (array of strings)
      */
     public function exportInvoiceZipWithHttpInfo($sev_query_model_name, $sev_query_object_name, $download = 'true', $sev_query_limit = '50')
@@ -881,7 +881,7 @@ class ExportApi
      * @param string $sev_query_object_name SevQuery object name (required)
      * @param bool $download Specifies if the document is downloaded (optional, default to true)
      * @param int $sev_query_limit Limit exported part (optional, default to 99999)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return \SplFileObject
      */
     public function exportPartCsv($sev_query_model_name, $sev_query_object_name, $download = 'true', $sev_query_limit = '99999')
@@ -899,7 +899,7 @@ class ExportApi
      * @param string $sev_query_object_name SevQuery object name (required)
      * @param bool $download Specifies if the document is downloaded (optional, default to true)
      * @param int $sev_query_limit Limit exported part (optional, default to 99999)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return array of \SplFileObject, HTTP status code, HTTP response headers (array of strings)
      */
     public function exportPartCsvWithHttpInfo($sev_query_model_name, $sev_query_object_name, $download = 'true', $sev_query_limit = '99999')
@@ -988,7 +988,7 @@ class ExportApi
      * @param bool $with_enshrined Specify if you want to include enshrined models (required)
      * @param bool $enshrine Specify if you want to enshrine all models which were included in the export (required)
      * @param bool $download Specifies if the document is downloaded (optional, default to true)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return \SplFileObject
      */
     public function exportPebe($scope, $start, $end, $with_enshrined, $enshrine, $download = 'true')
@@ -1008,7 +1008,7 @@ class ExportApi
      * @param bool $with_enshrined Specify if you want to include enshrined models (required)
      * @param bool $enshrine Specify if you want to enshrine all models which were included in the export (required)
      * @param bool $download Specifies if the document is downloaded (optional, default to true)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return array of \SplFileObject, HTTP status code, HTTP response headers (array of strings)
      */
     public function exportPebeWithHttpInfo($scope, $start, $end, $with_enshrined, $enshrine, $download = 'true')
@@ -1119,7 +1119,7 @@ class ExportApi
      * @param int $check_account_id Specify check account for which you want the transactions. Otherwise all transactions will be used (optional)
      * @param string $check_account_object_name Check account model name (optional, default to CheckAccount)
      * @param int $sev_query_limit Limit exported transactions (optional, default to 99999)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return \SplFileObject
      */
     public function exportTransactionsCsv($sev_query_filter_register, $sev_query_model_name, $sev_query_object_name, $sev_query_order_entry_date, $download = 'true', $check_account_id = null, $check_account_object_name = 'CheckAccount', $sev_query_limit = '99999')
@@ -1141,7 +1141,7 @@ class ExportApi
      * @param int $check_account_id Specify check account for which you want the transactions. Otherwise all transactions will be used (optional)
      * @param string $check_account_object_name Check account model name (optional, default to CheckAccount)
      * @param int $sev_query_limit Limit exported transactions (optional, default to 99999)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return array of \SplFileObject, HTTP status code, HTTP response headers (array of strings)
      */
     public function exportTransactionsCsvWithHttpInfo($sev_query_filter_register, $sev_query_model_name, $sev_query_object_name, $sev_query_order_entry_date, $download = 'true', $check_account_id = null, $check_account_object_name = 'CheckAccount', $sev_query_limit = '99999')
@@ -1254,7 +1254,7 @@ class ExportApi
      * @param int $sev_query_limit Limit exported vouchers (optional, default to 99999)
      * @param string $sev_query_filter_start_date Start date of the voucher list (optional, default to )
      * @param string $sev_query_filter_voucher_type Type of vouchers you want to export (optional, default to VOU)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return \SplFileObject
      */
     public function exportVoucherListCsv($sev_query_model_name, $sev_query_object_name, $download = 'true', $sev_query_limit = '99999', $sev_query_filter_start_date = '', $sev_query_filter_voucher_type = 'VOU')
@@ -1274,7 +1274,7 @@ class ExportApi
      * @param int $sev_query_limit Limit exported vouchers (optional, default to 99999)
      * @param string $sev_query_filter_start_date Start date of the voucher list (optional, default to )
      * @param string $sev_query_filter_voucher_type Type of vouchers you want to export (optional, default to VOU)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return array of \SplFileObject, HTTP status code, HTTP response headers (array of strings)
      */
     public function exportVoucherListCsvWithHttpInfo($sev_query_model_name, $sev_query_object_name, $download = 'true', $sev_query_limit = '99999', $sev_query_filter_start_date = '', $sev_query_filter_voucher_type = 'VOU')
@@ -1371,7 +1371,7 @@ class ExportApi
      * @param int $sev_query_limit Limit exported vouchers (optional, default to 99999)
      * @param string $sev_query_filter_start_date Start date of the voucher list (optional, default to )
      * @param string $sev_query_filter_voucher_type Type of vouchers you want to export (optional, default to VOU)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return \SplFileObject
      */
     public function exportVoucherZip($sev_query_model_name, $sev_query_object_name, $download = 'true', $sev_query_limit = '99999', $sev_query_filter_start_date = '', $sev_query_filter_voucher_type = 'VOU')
@@ -1391,7 +1391,7 @@ class ExportApi
      * @param int $sev_query_limit Limit exported vouchers (optional, default to 99999)
      * @param string $sev_query_filter_start_date Start date of the voucher list (optional, default to )
      * @param string $sev_query_filter_voucher_type Type of vouchers you want to export (optional, default to VOU)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return array of \SplFileObject, HTTP status code, HTTP response headers (array of strings)
      */
     public function exportVoucherZipWithHttpInfo($sev_query_model_name, $sev_query_object_name, $download = 'true', $sev_query_limit = '99999', $sev_query_filter_start_date = '', $sev_query_filter_voucher_type = 'VOU')

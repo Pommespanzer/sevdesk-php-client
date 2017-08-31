@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  isp-serverfarm\sevdesk\php-client
+ * @package  ispserverfarm\sevdesk\php-client
  * @author   Swaagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace isp-serverfarm\sevdesk\php-client\sevdesk-model;
+namespace ispserverfarm\sevdesk\php-client\sevdesk-model;
 
 use \ArrayAccess;
 
@@ -35,7 +35,7 @@ use \ArrayAccess;
  * ModelCategory Class Doc Comment
  *
  * @category    Class
- * @package     isp-serverfarm\sevdesk\php-client
+ * @package     ispserverfarm\sevdesk\php-client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class ModelCategory implements ArrayAccess
     protected static $swaggerTypes = [
         '_create' => '\DateTime',
         '_update' => '\DateTime',
-        '_parent' => '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelCategory',
+        '_parent' => '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelCategory',
         '_name' => 'string',
         '_object_type' => 'string',
         '_priority' => 'int',
@@ -66,7 +66,7 @@ class ModelCategory implements ArrayAccess
         '_posting_account' => 'string',
         '_type' => 'string',
         '_translation_code' => 'string',
-        '_entry_type' => '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelEntryType'
+        '_entry_type' => '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelEntryType'
     ];
 
     /**
@@ -276,7 +276,7 @@ class ModelCategory implements ArrayAccess
 
     /**
      * Gets _parent
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelCategory
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelCategory
      */
     public function getParent()
     {
@@ -285,7 +285,7 @@ class ModelCategory implements ArrayAccess
 
     /**
      * Sets _parent
-     * @param \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelCategory $_parent 
+     * @param \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelCategory $_parent 
      * @return $this
      */
     public function setParent($_parent)
@@ -486,7 +486,7 @@ class ModelCategory implements ArrayAccess
 
     /**
      * Gets _entry_type
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelEntryType
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelEntryType
      */
     public function getEntryType()
     {
@@ -495,7 +495,7 @@ class ModelCategory implements ArrayAccess
 
     /**
      * Sets _entry_type
-     * @param \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelEntryType $_entry_type 
+     * @param \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelEntryType $_entry_type 
      * @return $this
      */
     public function setEntryType($_entry_type)
@@ -556,10 +556,10 @@ class ModelCategory implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\isp-serverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\ispserverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\isp-serverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\ispserverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

@@ -1,4 +1,4 @@
-# isp-serverfarm\sevdesk\php-client\EntryTypeApi
+# ispserverfarm\sevdesk\php-client\EntryTypeApi
 
 All URIs are relative to *https://my.sevdesk.de/api/v1*
 
@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 
 # **addEntryType**
-> \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelEntryType addEntryType($body)
+> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelEntryType addEntryType($body)
 
 Create a new entry type
 
@@ -24,11 +24,11 @@ Calls EntryType.php to create an entry type
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\EntryTypeApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\EntryTypeApi();
 $body = "name="; // string | To create an entry type, simply enter desired values after parameter= and remove the quotation marks.
 
 try {
@@ -48,7 +48,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelEntryType**](../Model/ModelEntryType.md)
+[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelEntryType**](../Model/ModelEntryType.md)
 
 ### Authorization
 
@@ -74,11 +74,11 @@ Calls EntryType.php to delete an entry type
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\EntryTypeApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\EntryTypeApi();
 $id = 56; // int | id of entry type you want to delete
 
 try {
@@ -123,11 +123,11 @@ Tries to delete all objects bound to the specified entry type if they are not in
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\EntryTypeApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\EntryTypeApi();
 $id = 56; // int | Id of entry type you want to use
 
 try {
@@ -160,7 +160,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getEntryTypes**
-> \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelEntryType getEntryTypes($limit, $offset)
+> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelEntryType getEntryTypes($limit, $offset)
 
 Get an overview of all entry types
 
@@ -172,11 +172,11 @@ Calls EntryType.php to get necessary variables.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\EntryTypeApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\EntryTypeApi();
 $limit = 100; // int | Limits the number of entries returned. Default is 100
 $offset = 0; // int | Set the index where the returned entry types start. Default is 0
 
@@ -198,7 +198,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelEntryType**](../Model/ModelEntryType.md)
+[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelEntryType**](../Model/ModelEntryType.md)
 
 ### Authorization
 
@@ -212,7 +212,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateEntryType**
-> \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelEntryType updateEntryType($id, $body)
+> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelEntryType updateEntryType($id, $body)
 
 Update an existing entry type
 
@@ -224,11 +224,11 @@ Calls EntryType.php to update an entry type
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\EntryTypeApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\EntryTypeApi();
 $id = 56; // int | id of entry type you want to update
 $body = "body_example"; // string | Parameters which need to be updated. Please refer to the description from create entry type.    Enter the parameters according to the syntax: parameter1=&parameter2=
 
@@ -250,7 +250,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelEntryType**](../Model/ModelEntryType.md)
+[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelEntryType**](../Model/ModelEntryType.md)
 
 ### Authorization
 

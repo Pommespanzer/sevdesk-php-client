@@ -1,4 +1,4 @@
-# isp-serverfarm\sevdesk\php-client\ObjectUsedApi
+# ispserverfarm\sevdesk\php-client\ObjectUsedApi
 
 All URIs are relative to *https://my.sevdesk.de/api/v1*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **getObjectUsed**
-> \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelObjectUsed getObjectUsed($limit, $offset)
+> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelObjectUsed getObjectUsed($limit, $offset)
 
 Get an overview of all objects used
 
@@ -20,11 +20,11 @@ Calls ObjectUsed.php to get necessary variables
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\ObjectUsedApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\ObjectUsedApi();
 $limit = 100; // int | Limits the number of entries returned. Default is 100
 $offset = 0; // int | Set the index where the returned objects used start. Default is 0
 
@@ -46,7 +46,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelObjectUsed**](../Model/ModelObjectUsed.md)
+[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelObjectUsed**](../Model/ModelObjectUsed.md)
 
 ### Authorization
 

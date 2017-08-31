@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  isp-serverfarm\sevdesk\php-client
+ * @package  ispserverfarm\sevdesk\php-client
  * @author   Swaagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace isp-serverfarm\sevdesk\php-client\sevdesk-model;
+namespace ispserverfarm\sevdesk\php-client\sevdesk-model;
 
 use \ArrayAccess;
 
@@ -35,7 +35,7 @@ use \ArrayAccess;
  * ModelContact Class Doc Comment
  *
  * @category    Class
- * @package     isp-serverfarm\sevdesk\php-client
+ * @package     ispserverfarm\sevdesk\php-client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -54,17 +54,17 @@ class ModelContact implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        '_address' => '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelContactAddress',
+        '_address' => '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelContactAddress',
         '_create' => '\DateTime',
         '_update' => '\DateTime',
         '_name' => 'string',
         '_status' => 'int',
         '_customer_number' => 'int',
-        '_parent' => '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelContact',
+        '_parent' => '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelContact',
         '_surename' => 'string',
         '_familyname' => 'string',
         '_titel' => 'string',
-        '_category' => '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelCategory',
+        '_category' => '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelCategory',
         '_description' => 'string',
         '_academic_title' => 'string',
         '_gender' => 'string',
@@ -74,8 +74,8 @@ class ModelContact implements ArrayAccess
         '_vat_number' => 'string',
         '_bank_account' => 'string',
         '_bank_number' => 'string',
-        '_payment_method' => '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelPaymentMethod',
-        '_entry_type' => '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelEntryType',
+        '_payment_method' => '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelPaymentMethod',
+        '_entry_type' => '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelEntryType',
         '_default_cashback_time' => 'int',
         '_default_cashback_percent' => 'int',
         '_default_time_to_pay' => 'int',
@@ -318,7 +318,7 @@ class ModelContact implements ArrayAccess
 
     /**
      * Gets _address
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelContactAddress
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelContactAddress
      */
     public function getAddress()
     {
@@ -327,7 +327,7 @@ class ModelContact implements ArrayAccess
 
     /**
      * Sets _address
-     * @param \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelContactAddress $_address the contact address
+     * @param \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelContactAddress $_address the contact address
      * @return $this
      */
     public function setAddress($_address)
@@ -444,7 +444,7 @@ class ModelContact implements ArrayAccess
 
     /**
      * Gets _parent
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelContact
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelContact
      */
     public function getParent()
     {
@@ -453,7 +453,7 @@ class ModelContact implements ArrayAccess
 
     /**
      * Sets _parent
-     * @param \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelContact $_parent 
+     * @param \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelContact $_parent 
      * @return $this
      */
     public function setParent($_parent)
@@ -528,7 +528,7 @@ class ModelContact implements ArrayAccess
 
     /**
      * Gets _category
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelCategory
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelCategory
      */
     public function getCategory()
     {
@@ -537,7 +537,7 @@ class ModelContact implements ArrayAccess
 
     /**
      * Sets _category
-     * @param \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelCategory $_category category of the contact
+     * @param \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelCategory $_category category of the contact
      * @return $this
      */
     public function setCategory($_category)
@@ -738,7 +738,7 @@ class ModelContact implements ArrayAccess
 
     /**
      * Gets _payment_method
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelPaymentMethod
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelPaymentMethod
      */
     public function getPaymentMethod()
     {
@@ -747,7 +747,7 @@ class ModelContact implements ArrayAccess
 
     /**
      * Sets _payment_method
-     * @param \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelPaymentMethod $_payment_method desired payment method of the customer
+     * @param \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelPaymentMethod $_payment_method desired payment method of the customer
      * @return $this
      */
     public function setPaymentMethod($_payment_method)
@@ -759,7 +759,7 @@ class ModelContact implements ArrayAccess
 
     /**
      * Gets _entry_type
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelEntryType
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelEntryType
      */
     public function getEntryType()
     {
@@ -768,7 +768,7 @@ class ModelContact implements ArrayAccess
 
     /**
      * Sets _entry_type
-     * @param \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelEntryType $_entry_type 
+     * @param \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelEntryType $_entry_type 
      * @return $this
      */
     public function setEntryType($_entry_type)
@@ -934,10 +934,10 @@ class ModelContact implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\isp-serverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\ispserverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\isp-serverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\ispserverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

@@ -1,4 +1,4 @@
-# isp-serverfarm\sevdesk\php-client\ContactApi
+# ispserverfarm\sevdesk\php-client\ContactApi
 
 All URIs are relative to *https://my.sevdesk.de/api/v1*
 
@@ -30,7 +30,7 @@ Method | HTTP request | Description
 
 
 # **addAddress**
-> \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelContactAddress addAddress($id, $body)
+> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelContactAddress addAddress($id, $body)
 
 Add an address
 
@@ -42,11 +42,11 @@ Adds an address to the contact by calling addAddress() in Contact.php. Address i
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\ContactApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\ContactApi();
 $id = 56; // int | Id of contact you want to add an address to
 $body = "street=&city=&zip=&country=&category="; // string | Change the desired values and remove the quotation marks to add an address.
 
@@ -68,7 +68,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelContactAddress**](../Model/ModelContactAddress.md)
+[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelContactAddress**](../Model/ModelContactAddress.md)
 
 ### Authorization
 
@@ -82,7 +82,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **addContact**
-> \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelContact addContact($body)
+> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelContact addContact($body)
 
 Create a new contact of type person or company
 
@@ -94,11 +94,11 @@ Creating a new contact of type person/company calls a shared path with the same 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\ContactApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\ContactApi();
 $body = "category[id]=3&category[objectName]=Category"; // string | Concatenate the following attributes with '&' to the example and put **familyname=yourFamilyName&** at the beginning to define the **person** you want to add and remove the quotation marks:  * customerNumber  * gender (m,w, empty)  * academicTitle, titel  * surename, name2  * bankNumber, bankAccount, vatNumber  * defaultCashbackTime, defaultCashbackPercent, defaultTimeToPay  * description    Concatenate the following attributes with '&' to the example and put **name=yourCompanyName&** at the beginning  to define the **company** you want to add and remove the quotation marks:  * name2  * bankNumber, bankAccount, vatNumber  * defaultCashbackTime, defaultCashbackPercent, defaultTimeToPay  * description
 
 try {
@@ -118,7 +118,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelContact**](../Model/ModelContact.md)
+[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelContact**](../Model/ModelContact.md)
 
 ### Authorization
 
@@ -132,7 +132,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **addContactCommunicationWay**
-> \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelCommunicationWay addContactCommunicationWay($id, $value, $key, $type)
+> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelCommunicationWay addContactCommunicationWay($id, $value, $key, $type)
 
 Create a new communication way for a contact
 
@@ -144,11 +144,11 @@ Calls addCommunicationWay() in Contact.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\ContactApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\ContactApi();
 $id = 56; // int | Id of contact you want to add a communication way to
 $value = ""; // string | Value of the communication way you want to add
 $key = 2; // int | Key of the communication way you want to add
@@ -174,7 +174,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelCommunicationWay**](../Model/ModelCommunicationWay.md)
+[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelCommunicationWay**](../Model/ModelCommunicationWay.md)
 
 ### Authorization
 
@@ -200,11 +200,11 @@ Calls addMobile in Contact.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\ContactApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\ContactApi();
 $id = 56; // int | Id of contact you want to update
 $body = "key=1&value=1337"; // string | Change the desired values and remove the quotation marks to add a mobile number.    The key represents what type of website it is (1: Private, 2: Work, 3. Fax, 4. Mobil, 5. empty, 6. Autobox, 7. Newsletter, 8. Invoice address)
 
@@ -251,11 +251,11 @@ Calls addPhone() in Contact.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\ContactApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\ContactApi();
 $id = 56; // int | Id of contact you want to update
 $body = "key=1&value=1337"; // string | Change the desired values and remove the quotation marks to add a phone number.    The key represents what type of website it is (1: Private, 2: Work, 3. Fax, 4. Mobil, 5. empty, 6. Autobox, 7. Newsletter, 8. Invoice address)
 
@@ -302,11 +302,11 @@ Calls addWeb() in Contact.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\ContactApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\ContactApi();
 $id = 56; // int | Id of contact you want to update
 $body = "key=1&value=www.sevdesk.de"; // string | Change the desired values and remove the quotation marks to add a website.    The key represents what type of website it is (1: Private, 2: Work, 3. Fax, 4. Mobil, 5. empty, 6. Autobox, 7. Newsletter, 8. Invoice address)
 
@@ -353,11 +353,11 @@ Calls addEmail() in Contact.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\ContactApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\ContactApi();
 $id = 56; // int | Id of contact you want to update
 $body = "key=1&value=example@example.com"; // string | Change the desired values and remove the quotation marks to add an email.    The key represents what type of website it is (1: Private, 2: Work, 3. Fax, 4. Mobil, 5. empty, 6. Autobox, 7. Newsletter, 8. Invoice address)
 
@@ -392,7 +392,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **contactFactoryCreateContact**
-> \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelContact contactFactoryCreateContact($body)
+> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelContact contactFactoryCreateContact($body)
 
 Create a new contact of type person or company
 
@@ -404,11 +404,11 @@ With the new version of sevdesk some models are not created by calling the model
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\ContactApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\ContactApi();
 $body = "data[category][id]=3&data[category][objectName]=Category"; // string | Concatenate the following attributes with '&' to the example and put **data[familyname]=yourFamilyName&** at the beginning to define the **person** you want to add and remove the quotation marks:  * &data[customerNumber]=  * &data[gender]= (m,w, empty)  * &data[academicTitle]=, &data[titel]=  * &data[surename]=, &data[name2]=  * &data[bankNumber]=, &data[bankAccount]=, &data[vatNumber]=  * &data[defaultCashbackTime]=, &data[defaultCashbackPercent]=, &data[defaultTimeToPay]=  * &data[description]=    Concatenate the following attributes with '&' to the example and put **data[name]=yourCompanyName&** at the beginning  to define the **company** you want to add and remove the quotation marks:  * &data[name2]=  * &data[bankNumber]=, &data[bankAccount]=, &data[vatNumber]=  * &data[defaultCashbackTime]=, &data[defaultCashbackPercent]=, &data[defaultTimeToPay]=  * &data[description]=
 
 try {
@@ -428,7 +428,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelContact**](../Model/ModelContact.md)
+[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelContact**](../Model/ModelContact.md)
 
 ### Authorization
 
@@ -442,7 +442,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **contactGetAddresses**
-> \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelContactAddress contactGetAddresses($id, $category_id, $category_object_name)
+> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelContactAddress contactGetAddresses($id, $category_id, $category_object_name)
 
 Get the addresses of a specified contact
 
@@ -454,11 +454,11 @@ Calls getAddresses() in Contact.php to get the addresses of a specified contact
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\ContactApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\ContactApi();
 $id = 56; // int | Id of the contact you want to get the addresses from
 $category_id = 43; // int | Category of addresses you want to get
 $category_object_name = "Category"; // string | 
@@ -482,7 +482,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelContactAddress**](../Model/ModelContactAddress.md)
+[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelContactAddress**](../Model/ModelContactAddress.md)
 
 ### Authorization
 
@@ -508,11 +508,11 @@ Calls the delete() function in Contact.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\ContactApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\ContactApi();
 $id = 56; // int | id of contact you want to delete
 
 try {
@@ -545,7 +545,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getContactBillingAddress**
-> \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelContactAddress getContactBillingAddress($id)
+> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelContactAddress getContactBillingAddress($id)
 
 Get the billing address of a specified contact
 
@@ -557,11 +557,11 @@ Calls getBillingAddress() in Contact.php to get the billing address of a specifi
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\ContactApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\ContactApi();
 $id = 56; // int | Id of the contact you want to get the billing address from
 
 try {
@@ -581,7 +581,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelContactAddress**](../Model/ModelContactAddress.md)
+[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelContactAddress**](../Model/ModelContactAddress.md)
 
 ### Authorization
 
@@ -595,7 +595,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getContactBillingEmail**
-> \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelCommunicationWay getContactBillingEmail($id)
+> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelCommunicationWay getContactBillingEmail($id)
 
 Get the billing email of a specified contact
 
@@ -607,11 +607,11 @@ Calls getBillingEmail() in Contact.php to get the billing email of a specified c
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\ContactApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\ContactApi();
 $id = 56; // int | Id of the contact you want to get the billing email from
 
 try {
@@ -631,7 +631,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelCommunicationWay**](../Model/ModelCommunicationWay.md)
+[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelCommunicationWay**](../Model/ModelCommunicationWay.md)
 
 ### Authorization
 
@@ -645,7 +645,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getContactCommunicationWays**
-> \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelCommunicationWay getContactCommunicationWays($id, $type)
+> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelCommunicationWay getContactCommunicationWays($id, $type)
 
 Get the communication ways of a specified contact
 
@@ -657,11 +657,11 @@ Calls getCommunicationWays() in Contact.php to get the communication ways of a s
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\ContactApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\ContactApi();
 $id = 56; // int | Id of the contact you want to get the communication ways from
 $type = "WEB"; // string | Type of communication ways you want to get
 
@@ -683,7 +683,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelCommunicationWay**](../Model/ModelCommunicationWay.md)
+[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelCommunicationWay**](../Model/ModelCommunicationWay.md)
 
 ### Authorization
 
@@ -697,7 +697,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getContactMainAddress**
-> \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelContactAddress getContactMainAddress($id)
+> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelContactAddress getContactMainAddress($id)
 
 Get the main address of a specified contact
 
@@ -709,11 +709,11 @@ Calls getMainAddress() in Contact.php to get the main address of a specified con
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\ContactApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\ContactApi();
 $id = 56; // int | Id of the contact you want to get the main address from
 
 try {
@@ -733,7 +733,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelContactAddress**](../Model/ModelContactAddress.md)
+[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelContactAddress**](../Model/ModelContactAddress.md)
 
 ### Authorization
 
@@ -747,7 +747,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getContactMainEmail**
-> \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelCommunicationWay getContactMainEmail($id)
+> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelCommunicationWay getContactMainEmail($id)
 
 Get the main email of a specified contact
 
@@ -759,11 +759,11 @@ Calls getMainEmail() in Contact.php to get the main email of a specified contact
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\ContactApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\ContactApi();
 $id = 56; // int | Id of the contact you want to get the main email from
 
 try {
@@ -783,7 +783,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelCommunicationWay**](../Model/ModelCommunicationWay.md)
+[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelCommunicationWay**](../Model/ModelCommunicationWay.md)
 
 ### Authorization
 
@@ -797,7 +797,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getContactMainMobile**
-> \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelCommunicationWay getContactMainMobile($id)
+> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelCommunicationWay getContactMainMobile($id)
 
 Get the main mobile of a specified contact
 
@@ -809,11 +809,11 @@ Calls getMainMobile() in Contact.php to get the main mobile of a specified conta
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\ContactApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\ContactApi();
 $id = 56; // int | Id of the contact you want to get the main mobile from
 
 try {
@@ -833,7 +833,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelCommunicationWay**](../Model/ModelCommunicationWay.md)
+[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelCommunicationWay**](../Model/ModelCommunicationWay.md)
 
 ### Authorization
 
@@ -847,7 +847,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getContactMainPhone**
-> \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelCommunicationWay getContactMainPhone($id)
+> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelCommunicationWay getContactMainPhone($id)
 
 Get the main phone of a specified contact
 
@@ -859,11 +859,11 @@ Calls getMainPhone() in Contact.php to get the main phone of a specified contact
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\ContactApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\ContactApi();
 $id = 56; // int | Id of the contact you want to get the main phone from
 
 try {
@@ -883,7 +883,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelCommunicationWay**](../Model/ModelCommunicationWay.md)
+[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelCommunicationWay**](../Model/ModelCommunicationWay.md)
 
 ### Authorization
 
@@ -897,7 +897,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getContactMainWebsite**
-> \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelCommunicationWay getContactMainWebsite($id)
+> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelCommunicationWay getContactMainWebsite($id)
 
 Get the main website of a specified contact
 
@@ -909,11 +909,11 @@ Calls getMainWebsite() in Contact.php to get the main website of a specified con
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\ContactApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\ContactApi();
 $id = 56; // int | Id of the contact you want to get the main website from
 
 try {
@@ -933,7 +933,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelCommunicationWay**](../Model/ModelCommunicationWay.md)
+[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelCommunicationWay**](../Model/ModelCommunicationWay.md)
 
 ### Authorization
 
@@ -947,7 +947,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getContactRelatedCommunicationWays**
-> \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelCommunicationWay getContactRelatedCommunicationWays($id, $type)
+> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelCommunicationWay getContactRelatedCommunicationWays($id, $type)
 
 Get the related communication ways of a specified contact
 
@@ -959,11 +959,11 @@ Calls getRelatedCommunicationWays() in Contact.php to get the related communicat
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\ContactApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\ContactApi();
 $id = 56; // int | Id of the contact you want to get the related communication ways from
 $type = "WEB"; // string | Type of related communication ways you want to get
 
@@ -985,7 +985,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelCommunicationWay**](../Model/ModelCommunicationWay.md)
+[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelCommunicationWay**](../Model/ModelCommunicationWay.md)
 
 ### Authorization
 
@@ -1011,11 +1011,11 @@ Calls getTabsItemCount() in Contact.php to get the number of all invoices, order
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\ContactApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\ContactApi();
 $id = 56; // int | Id of the contact you want to get the number of all invoices, orders, etc. from
 
 try {
@@ -1048,7 +1048,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getContacts**
-> \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelContact getContacts($depth, $limit, $offset, $embed)
+> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelContact getContacts($depth, $limit, $offset, $embed)
 
 Get an overview of all contacts
 
@@ -1060,11 +1060,11 @@ Calls Contact.php to get necessary variables
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\ContactApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\ContactApi();
 $depth = 0; // int | If depth is set 1 companies and persons will be shown, otherwise only the companies will be shown. Default: 0
 $limit = 100; // int | Limits the number of entries returned. Default is 100
 $offset = 0; // int | Set the index where the returned contacts start. Default is 0
@@ -1090,7 +1090,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelContact**](../Model/ModelContact.md)
+[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelContact**](../Model/ModelContact.md)
 
 ### Authorization
 
@@ -1116,11 +1116,11 @@ Get the next customer number in the sequence
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\ContactApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\ContactApi();
 
 try {
     $api_instance->getNextCustomerNumber();
@@ -1149,7 +1149,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateContact**
-> \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelContact updateContact($id, $body)
+> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelContact updateContact($id, $body)
 
 Update an existing contact
 
@@ -1161,11 +1161,11 @@ Calls Contact.php to update an existing contact
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\ContactApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\ContactApi();
 $id = 56; // int | Id of contact you want to update
 $body = "body_example"; // string | Parameters which need to be updated. Please be aware not to update any parameters which don't belong to the type of contact you are updating    Enter the parameters according to the syntax: parameter1=&parameter2=
 
@@ -1187,7 +1187,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelContact**](../Model/ModelContact.md)
+[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelContact**](../Model/ModelContact.md)
 
 ### Authorization
 

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  isp-serverfarm\sevdesk\php-client
+ * @package  ispserverfarm\sevdesk\php-client
  * @author   Swaagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace isp-serverfarm\sevdesk\php-client\sevdesk-model;
+namespace ispserverfarm\sevdesk\php-client\sevdesk-model;
 
 use \ArrayAccess;
 
@@ -35,7 +35,7 @@ use \ArrayAccess;
  * ModelTask Class Doc Comment
  *
  * @category    Class
- * @package     isp-serverfarm\sevdesk\php-client
+ * @package     ispserverfarm\sevdesk\php-client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -57,14 +57,14 @@ class ModelTask implements ArrayAccess
         '_create' => '\DateTime',
         '_update' => '\DateTime',
         '_name' => 'string',
-        '_assigned' => '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelSevUser',
+        '_assigned' => '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelSevUser',
         '_object' => 'object',
         '_deadline' => '\DateTime',
         '_status' => 'int',
-        '_category' => '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelCategory',
+        '_category' => '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelCategory',
         '_done' => '\DateTime',
-        '_create_user' => '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelSevUser',
-        '_done_user' => '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelSevUser',
+        '_create_user' => '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelSevUser',
+        '_done_user' => '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelSevUser',
         '_notice_creator' => 'bool',
         '_sev_client' => 'object',
         '_begin' => '\DateTime'
@@ -303,7 +303,7 @@ class ModelTask implements ArrayAccess
 
     /**
      * Gets _assigned
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelSevUser
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelSevUser
      */
     public function getAssigned()
     {
@@ -312,7 +312,7 @@ class ModelTask implements ArrayAccess
 
     /**
      * Sets _assigned
-     * @param \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelSevUser $_assigned the sevDesk user who is assigned to the task
+     * @param \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelSevUser $_assigned the sevDesk user who is assigned to the task
      * @return $this
      */
     public function setAssigned($_assigned)
@@ -387,7 +387,7 @@ class ModelTask implements ArrayAccess
 
     /**
      * Gets _category
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelCategory
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelCategory
      */
     public function getCategory()
     {
@@ -396,7 +396,7 @@ class ModelTask implements ArrayAccess
 
     /**
      * Sets _category
-     * @param \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelCategory $_category category of the created task
+     * @param \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelCategory $_category category of the created task
      * @return $this
      */
     public function setCategory($_category)
@@ -429,7 +429,7 @@ class ModelTask implements ArrayAccess
 
     /**
      * Gets _create_user
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelSevUser
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelSevUser
      */
     public function getCreateUser()
     {
@@ -438,7 +438,7 @@ class ModelTask implements ArrayAccess
 
     /**
      * Sets _create_user
-     * @param \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelSevUser $_create_user the SevUser who created the task
+     * @param \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelSevUser $_create_user the SevUser who created the task
      * @return $this
      */
     public function setCreateUser($_create_user)
@@ -450,7 +450,7 @@ class ModelTask implements ArrayAccess
 
     /**
      * Gets _done_user
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelSevUser
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelSevUser
      */
     public function getDoneUser()
     {
@@ -459,7 +459,7 @@ class ModelTask implements ArrayAccess
 
     /**
      * Sets _done_user
-     * @param \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelSevUser $_done_user the SevUser who completed the task
+     * @param \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelSevUser $_done_user the SevUser who completed the task
      * @return $this
      */
     public function setDoneUser($_done_user)
@@ -583,10 +583,10 @@ class ModelTask implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\isp-serverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\ispserverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\isp-serverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\ispserverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

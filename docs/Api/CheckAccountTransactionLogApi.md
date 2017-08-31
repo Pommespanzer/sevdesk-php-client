@@ -1,4 +1,4 @@
-# isp-serverfarm\sevdesk\php-client\CheckAccountTransactionLogApi
+# ispserverfarm\sevdesk\php-client\CheckAccountTransactionLogApi
 
 All URIs are relative to *https://my.sevdesk.de/api/v1*
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **addCheckAccountTransactionLog**
-> \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelCheckAccountTransactionLog addCheckAccountTransactionLog($body)
+> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelCheckAccountTransactionLog addCheckAccountTransactionLog($body)
 
 Create a new logged check account transaction
 
@@ -23,11 +23,11 @@ Calls CheckAccountTransactionLog.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\CheckAccountTransactionLogApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\CheckAccountTransactionLogApi();
 $body = "checkAccountTransaction[id]=&checkAccountTransaction[objectName]=CheckAccountTransaction&fromStatus=&toStatus=&bookingDate="; // string | To create a logged check account transaction , simply enter desired values after parameter= and remove the quotation marks.
 
 try {
@@ -47,7 +47,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelCheckAccountTransactionLog**](../Model/ModelCheckAccountTransactionLog.md)
+[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelCheckAccountTransactionLog**](../Model/ModelCheckAccountTransactionLog.md)
 
 ### Authorization
 
@@ -73,11 +73,11 @@ Calls the delete() function in CheckAccountTransactionLog.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\CheckAccountTransactionLogApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\CheckAccountTransactionLogApi();
 $id = 56; // int | id of logged check account transaction you want to delete
 
 try {
@@ -110,7 +110,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCheckAccountTransactionLog**
-> \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelCheckAccountTransactionLog getCheckAccountTransactionLog($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelCheckAccountTransactionLog getCheckAccountTransactionLog($limit, $offset, $embed)
 
 Get an overview of all check account transactions which were logged
 
@@ -122,11 +122,11 @@ Calls CheckAccountTransactionLog.php to get necessary variables.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\CheckAccountTransactionLogApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\CheckAccountTransactionLogApi();
 $limit = 100; // int | Limits the number of entries returned. Default is 100
 $offset = 0; // int | Set the index where the returned logged check account transactions start. Default is 0
 $embed = array("embed_example"); // string[] | Get some additional information. Embed can handle multiple values, they must be separated by comma. Default ``.
@@ -150,7 +150,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelCheckAccountTransactionLog**](../Model/ModelCheckAccountTransactionLog.md)
+[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelCheckAccountTransactionLog**](../Model/ModelCheckAccountTransactionLog.md)
 
 ### Authorization
 
@@ -164,7 +164,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateCheckAccountTransactionLog**
-> \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelCheckAccountTransactionLog updateCheckAccountTransactionLog($id, $body)
+> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelCheckAccountTransactionLog updateCheckAccountTransactionLog($id, $body)
 
 Update a existing logged check account transaction
 
@@ -176,11 +176,11 @@ Calls CheckAccountTransactionLog.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\CheckAccountTransactionLogApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\CheckAccountTransactionLogApi();
 $id = 56; // int | id of logged check account transaction you want to update
 $body = "body_example"; // string | Parameters which need to be updated. Please refer to the description from create check account transaction log.    Enter the parameters according to the syntax: parameter1=&parameter2=
 
@@ -202,7 +202,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelCheckAccountTransactionLog**](../Model/ModelCheckAccountTransactionLog.md)
+[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelCheckAccountTransactionLog**](../Model/ModelCheckAccountTransactionLog.md)
 
 ### Authorization
 

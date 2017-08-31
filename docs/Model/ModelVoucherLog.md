@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **_create** | [**\DateTime**](\DateTime.md) | date the voucher log was created | [optional] 
-**_voucher** | [**\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelVoucher**](ModelVoucher.md) | voucher to which the log belongs | [optional] 
+**_voucher** | [**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelVoucher**](ModelVoucher.md) | voucher to which the log belongs | [optional] 
 **_from_status** | **int** | status of the voucher before the logged change | [optional] 
 **_to_status** | **int** | status of the voucher after the logged change | [optional] 
 **_amount_payed** | **float** | amount which was payed | [optional] 

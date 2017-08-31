@@ -1,4 +1,4 @@
-# isp-serverfarm\sevdesk\php-client\DocumentIndexApi
+# ispserverfarm\sevdesk\php-client\DocumentIndexApi
 
 All URIs are relative to *https://my.sevdesk.de/api/v1*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **getDocumentIndexes**
-> \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelDocumentIndex getDocumentIndexes($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelDocumentIndex getDocumentIndexes($limit, $offset, $embed)
 
 Get an overview of all document indexes
 
@@ -20,11 +20,11 @@ Calls DocumentIndex.php to get necessary variables.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\DocumentIndexApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\DocumentIndexApi();
 $limit = 100; // int | Limits the number of entries returned. Default is 100
 $offset = 0; // int | Set the index where the returned document indexes start. Default is 0
 $embed = array("embed_example"); // string[] | Get some additional information. Embed can handle multiple values, they must be separated by comma. Default ``.
@@ -48,7 +48,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelDocumentIndex**](../Model/ModelDocumentIndex.md)
+[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelDocumentIndex**](../Model/ModelDocumentIndex.md)
 
 ### Authorization
 

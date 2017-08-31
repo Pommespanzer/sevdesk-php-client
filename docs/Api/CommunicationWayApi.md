@@ -1,4 +1,4 @@
-# isp-serverfarm\sevdesk\php-client\CommunicationWayApi
+# ispserverfarm\sevdesk\php-client\CommunicationWayApi
 
 All URIs are relative to *https://my.sevdesk.de/api/v1*
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **addCommunicationWay**
-> \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelCommunicationWay addCommunicationWay($body)
+> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelCommunicationWay addCommunicationWay($body)
 
 Create a new communication way
 
@@ -23,11 +23,11 @@ Calls CommunicationWay.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\CommunicationWayApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\CommunicationWayApi();
 $body = "type=&value=&key[id]=&key[objectName]=CommunicationWayKey"; // string | To create a communication way , simply enter desired values after parameter= and remove the quotation marks.
 
 try {
@@ -47,7 +47,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelCommunicationWay**](../Model/ModelCommunicationWay.md)
+[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelCommunicationWay**](../Model/ModelCommunicationWay.md)
 
 ### Authorization
 
@@ -73,11 +73,11 @@ Calls CommunicationWay.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\CommunicationWayApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\CommunicationWayApi();
 $id = 56; // int | id of communication way you want to delete
 
 try {
@@ -110,7 +110,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCommunicationWays**
-> \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelCommunicationWay getCommunicationWays($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelCommunicationWay getCommunicationWays($limit, $offset, $embed)
 
 Get an overview of all communication ways
 
@@ -122,11 +122,11 @@ Calls CommunicationWay.php to get necessary variables.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\CommunicationWayApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\CommunicationWayApi();
 $limit = 100; // int | Limits the number of entries returned. Default is 100
 $offset = 0; // int | Set the index where the returned communication ways start. Default is 0
 $embed = array("embed_example"); // string[] | Get some additional information. Embed can handle multiple values, they must be separated by comma. Default ``.
@@ -150,7 +150,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelCommunicationWay**](../Model/ModelCommunicationWay.md)
+[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelCommunicationWay**](../Model/ModelCommunicationWay.md)
 
 ### Authorization
 
@@ -164,7 +164,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateCommunicationWay**
-> \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelCommunicationWay updateCommunicationWay($id, $body)
+> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelCommunicationWay updateCommunicationWay($id, $body)
 
 Update a existing communication way
 
@@ -176,11 +176,11 @@ Calls CommunicationWay.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\CommunicationWayApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\CommunicationWayApi();
 $id = 56; // int | id of communication way you want to update
 $body = "body_example"; // string | Parameters which need to be updated. Please refer to the description from create communication way.    Enter the parameters according to the syntax: parameter1=&parameter2=
 
@@ -202,7 +202,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelCommunicationWay**](../Model/ModelCommunicationWay.md)
+[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelCommunicationWay**](../Model/ModelCommunicationWay.md)
 
 ### Authorization
 

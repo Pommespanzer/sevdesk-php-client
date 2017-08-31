@@ -1,4 +1,4 @@
-# isp-serverfarm\sevdesk\php-client\OrderPosApi
+# ispserverfarm\sevdesk\php-client\OrderPosApi
 
 All URIs are relative to *https://my.sevdesk.de/api/v1*
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **addOrderPos**
-> \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelOrderPos addOrderPos($body)
+> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelOrderPos addOrderPos($body)
 
 Create a new order position
 
@@ -23,11 +23,11 @@ Calls OrderPos.php.     As described in the Model_Order earlier, some of its par
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\OrderPosApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\OrderPosApi();
 $body = "order[id]=194409&order[objectName]=Order&quantity=1&price=5.42&taxRate=19&unity[id]=1&unity[objectName]=Unity"; // string | To create an order position, simply enter desired values after parameter= and remove the quotation marks.      Adds a product/part to an order with a price, quantity etc, therefore the order model gets sumNet and other parameters from it too
 
 try {
@@ -47,7 +47,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelOrderPos**](../Model/ModelOrderPos.md)
+[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelOrderPos**](../Model/ModelOrderPos.md)
 
 ### Authorization
 
@@ -73,11 +73,11 @@ Calls the delete() function in OrderPos.php. This does NOT delete an order, just
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\OrderPosApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\OrderPosApi();
 $id = 56; // int | id of order position you want to delete
 
 try {
@@ -110,7 +110,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getOrderPositions**
-> \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelOrderPos getOrderPositions($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelOrderPos getOrderPositions($limit, $offset, $embed)
 
 Get an overview of all order positions
 
@@ -122,11 +122,11 @@ Calls OrderPos.php to get necessary variables.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\OrderPosApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\OrderPosApi();
 $limit = 100; // int | Limits the number of entries returned. Default is 100
 $offset = 0; // int | Set the index where the returned order positions start. Default is 0
 $embed = array("embed_example"); // string[] | Get some additional information. Embed can handle multiple values, they must be separated by comma. Default ``.
@@ -150,7 +150,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelOrderPos**](../Model/ModelOrderPos.md)
+[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelOrderPos**](../Model/ModelOrderPos.md)
 
 ### Authorization
 
@@ -164,7 +164,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateOrderPos**
-> \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelOrderPos updateOrderPos($id, $body)
+> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelOrderPos updateOrderPos($id, $body)
 
 Update an existing order position
 
@@ -176,11 +176,11 @@ TODO: Enter short backend documentation here
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\OrderPosApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\OrderPosApi();
 $id = 56; // int | id of order position you want to update
 $body = "body_example"; // string | Parameters which need to be updated. Please refer to the description from create order position.        Enter the parameters according to the syntax: parameter1=&parameter2= and remove the quotation marks
 
@@ -202,7 +202,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelOrderPos**](../Model/ModelOrderPos.md)
+[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelOrderPos**](../Model/ModelOrderPos.md)
 
 ### Authorization
 

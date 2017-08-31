@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  isp-serverfarm\sevdesk\php-client
+ * @package  ispserverfarm\sevdesk\php-client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,18 +26,18 @@
  * Do not edit the class manually.
  */
 
-namespace isp-serverfarm\sevdesk\php-client\sevdesk-api;
+namespace ispserverfarm\sevdesk\php-client\sevdesk-api;
 
-use \isp-serverfarm\sevdesk\php-client\ApiClient;
-use \isp-serverfarm\sevdesk\php-client\ApiException;
-use \isp-serverfarm\sevdesk\php-client\Configuration;
-use \isp-serverfarm\sevdesk\php-client\ObjectSerializer;
+use \ispserverfarm\sevdesk\php-client\ApiClient;
+use \ispserverfarm\sevdesk\php-client\ApiException;
+use \ispserverfarm\sevdesk\php-client\Configuration;
+use \ispserverfarm\sevdesk\php-client\ObjectSerializer;
 
 /**
  * HelpApi Class Doc Comment
  *
  * @category Class
- * @package  isp-serverfarm\sevdesk\php-client
+ * @package  ispserverfarm\sevdesk\php-client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -46,16 +46,16 @@ class HelpApi
     /**
      * API Client
      *
-     * @var \isp-serverfarm\sevdesk\php-client\ApiClient instance of the ApiClient
+     * @var \ispserverfarm\sevdesk\php-client\ApiClient instance of the ApiClient
      */
     protected $apiClient;
 
     /**
      * Constructor
      *
-     * @param \isp-serverfarm\sevdesk\php-client\ApiClient|null $apiClient The api client to use
+     * @param \ispserverfarm\sevdesk\php-client\ApiClient|null $apiClient The api client to use
      */
-    public function __construct(\isp-serverfarm\sevdesk\php-client\ApiClient $apiClient = null)
+    public function __construct(\ispserverfarm\sevdesk\php-client\ApiClient $apiClient = null)
     {
         if ($apiClient === null) {
             $apiClient = new ApiClient();
@@ -67,7 +67,7 @@ class HelpApi
     /**
      * Get API client
      *
-     * @return \isp-serverfarm\sevdesk\php-client\ApiClient get the API client
+     * @return \ispserverfarm\sevdesk\php-client\ApiClient get the API client
      */
     public function getApiClient()
     {
@@ -77,11 +77,11 @@ class HelpApi
     /**
      * Set the API client
      *
-     * @param \isp-serverfarm\sevdesk\php-client\ApiClient $apiClient set the API client
+     * @param \ispserverfarm\sevdesk\php-client\ApiClient $apiClient set the API client
      *
      * @return HelpApi
      */
-    public function setApiClient(\isp-serverfarm\sevdesk\php-client\ApiClient $apiClient)
+    public function setApiClient(\ispserverfarm\sevdesk\php-client\ApiClient $apiClient)
     {
         $this->apiClient = $apiClient;
         return $this;
@@ -93,8 +93,8 @@ class HelpApi
      * Get a specified article
      *
      * @param int $article_id Id of the article you want to get (required)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelHelp
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelHelp
      */
     public function helpGetArticle($article_id)
     {
@@ -108,8 +108,8 @@ class HelpApi
      * Get a specified article
      *
      * @param int $article_id Id of the article you want to get (required)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
-     * @return array of \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelHelp, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelHelp, HTTP status code, HTTP response headers (array of strings)
      */
     public function helpGetArticleWithHttpInfo($article_id)
     {
@@ -153,15 +153,15 @@ class HelpApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelHelp',
+                '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelHelp',
                 '/Help/getArticle'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelHelp', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelHelp', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelHelp', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelHelp', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -178,8 +178,8 @@ class HelpApi
      * @param int $section_id Section id you want to get help articles about (required)
      * @param int $limit Limits the number of entries returned. Default is 100 (optional, default to 100)
      * @param int $offset Set the index where the returned help articles start. Default is 0 (optional, default to 0)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelHelp
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelHelp
      */
     public function helpGetArticles($section_id, $limit = '100', $offset = '0')
     {
@@ -195,8 +195,8 @@ class HelpApi
      * @param int $section_id Section id you want to get help articles about (required)
      * @param int $limit Limits the number of entries returned. Default is 100 (optional, default to 100)
      * @param int $offset Set the index where the returned help articles start. Default is 0 (optional, default to 0)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
-     * @return array of \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelHelp, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelHelp, HTTP status code, HTTP response headers (array of strings)
      */
     public function helpGetArticlesWithHttpInfo($section_id, $limit = '100', $offset = '0')
     {
@@ -248,15 +248,15 @@ class HelpApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelHelp',
+                '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelHelp',
                 '/Help/getArticles'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelHelp', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelHelp', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelHelp', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelHelp', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -272,8 +272,8 @@ class HelpApi
      *
      * @param int $limit Limits the number of entries returned. Default is 100 (optional, default to 100)
      * @param int $offset Set the index where the returned sections start. Default is 0 (optional, default to 0)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelHelp
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelHelp
      */
     public function helpGetCategories($limit = '100', $offset = '0')
     {
@@ -288,8 +288,8 @@ class HelpApi
      *
      * @param int $limit Limits the number of entries returned. Default is 100 (optional, default to 100)
      * @param int $offset Set the index where the returned sections start. Default is 0 (optional, default to 0)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
-     * @return array of \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelHelp, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelHelp, HTTP status code, HTTP response headers (array of strings)
      */
     public function helpGetCategoriesWithHttpInfo($limit = '100', $offset = '0')
     {
@@ -333,15 +333,15 @@ class HelpApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelHelp',
+                '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelHelp',
                 '/Help/getCategories'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelHelp', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelHelp', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelHelp', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelHelp', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -357,8 +357,8 @@ class HelpApi
      *
      * @param int $limit Limits the number of entries returned. Default is 100 (optional, default to 100)
      * @param int $offset Set the index where the returned sections start. Default is 0 (optional, default to 0)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelHelp
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelHelp
      */
     public function helpGetSections($limit = '100', $offset = '0')
     {
@@ -373,8 +373,8 @@ class HelpApi
      *
      * @param int $limit Limits the number of entries returned. Default is 100 (optional, default to 100)
      * @param int $offset Set the index where the returned sections start. Default is 0 (optional, default to 0)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
-     * @return array of \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelHelp, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelHelp, HTTP status code, HTTP response headers (array of strings)
      */
     public function helpGetSectionsWithHttpInfo($limit = '100', $offset = '0')
     {
@@ -418,15 +418,15 @@ class HelpApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelHelp',
+                '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelHelp',
                 '/Help/getSections'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelHelp', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelHelp', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelHelp', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelHelp', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -441,8 +441,8 @@ class HelpApi
      * Search for articles
      *
      * @param string $name String to search for (optional, default to )
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelHelp
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelHelp
      */
     public function helpSearchArticles($name = '')
     {
@@ -456,8 +456,8 @@ class HelpApi
      * Search for articles
      *
      * @param string $name String to search for (optional, default to )
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
-     * @return array of \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelHelp, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelHelp, HTTP status code, HTTP response headers (array of strings)
      */
     public function helpSearchArticlesWithHttpInfo($name = '')
     {
@@ -497,15 +497,15 @@ class HelpApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelHelp',
+                '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelHelp',
                 '/Help/search'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelHelp', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelHelp', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelHelp', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelHelp', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }

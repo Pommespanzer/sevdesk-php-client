@@ -1,4 +1,4 @@
-# isp-serverfarm\sevdesk\php-client\SubscriptionTypeApi
+# ispserverfarm\sevdesk\php-client\SubscriptionTypeApi
 
 All URIs are relative to *https://my.sevdesk.de/api/v1*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **getSubscriptionTypes**
-> \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelSubscriptionType getSubscriptionTypes()
+> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelSubscriptionType getSubscriptionTypes()
 
 Get an overview of all subscription types
 
@@ -20,11 +20,11 @@ Calls SubscriptionType.php to get necessary variables.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\SubscriptionTypeApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\SubscriptionTypeApi();
 
 try {
     $result = $api_instance->getSubscriptionTypes();
@@ -40,7 +40,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelSubscriptionType**](../Model/ModelSubscriptionType.md)
+[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelSubscriptionType**](../Model/ModelSubscriptionType.md)
 
 ### Authorization
 

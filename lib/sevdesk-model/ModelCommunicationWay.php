@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  isp-serverfarm\sevdesk\php-client
+ * @package  ispserverfarm\sevdesk\php-client
  * @author   Swaagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace isp-serverfarm\sevdesk\php-client\sevdesk-model;
+namespace ispserverfarm\sevdesk\php-client\sevdesk-model;
 
 use \ArrayAccess;
 
@@ -35,7 +35,7 @@ use \ArrayAccess;
  * ModelCommunicationWay Class Doc Comment
  *
  * @category    Class
- * @package     isp-serverfarm\sevdesk\php-client
+ * @package     ispserverfarm\sevdesk\php-client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,10 +56,10 @@ class ModelCommunicationWay implements ArrayAccess
     protected static $swaggerTypes = [
         '_create' => '\DateTime',
         '_update' => '\DateTime',
-        '_contact' => '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelContact',
+        '_contact' => '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelContact',
         '_type' => 'string',
         '_value' => 'string',
-        '_key' => '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelCommunicationWayKey',
+        '_key' => '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelCommunicationWayKey',
         '_main' => 'bool',
         '_sev_client' => 'object'
     ];
@@ -276,7 +276,7 @@ class ModelCommunicationWay implements ArrayAccess
 
     /**
      * Gets _contact
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelContact
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelContact
      */
     public function getContact()
     {
@@ -285,7 +285,7 @@ class ModelCommunicationWay implements ArrayAccess
 
     /**
      * Sets _contact
-     * @param \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelContact $_contact Contact to which the communication way refers
+     * @param \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelContact $_contact Contact to which the communication way refers
      * @return $this
      */
     public function setContact($_contact)
@@ -348,7 +348,7 @@ class ModelCommunicationWay implements ArrayAccess
 
     /**
      * Gets _key
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelCommunicationWayKey
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelCommunicationWayKey
      */
     public function getKey()
     {
@@ -357,7 +357,7 @@ class ModelCommunicationWay implements ArrayAccess
 
     /**
      * Sets _key
-     * @param \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelCommunicationWayKey $_key the communication way key to which the communication way refers
+     * @param \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelCommunicationWayKey $_key the communication way key to which the communication way refers
      * @return $this
      */
     public function setKey($_key)
@@ -460,10 +460,10 @@ class ModelCommunicationWay implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\isp-serverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\ispserverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\isp-serverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\ispserverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

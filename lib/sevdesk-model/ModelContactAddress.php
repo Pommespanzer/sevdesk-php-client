@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  isp-serverfarm\sevdesk\php-client
+ * @package  ispserverfarm\sevdesk\php-client
  * @author   Swaagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace isp-serverfarm\sevdesk\php-client\sevdesk-model;
+namespace ispserverfarm\sevdesk\php-client\sevdesk-model;
 
 use \ArrayAccess;
 
@@ -35,7 +35,7 @@ use \ArrayAccess;
  * ModelContactAddress Class Doc Comment
  *
  * @category    Class
- * @package     isp-serverfarm\sevdesk\php-client
+ * @package     ispserverfarm\sevdesk\php-client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,12 +56,12 @@ class ModelContactAddress implements ArrayAccess
     protected static $swaggerTypes = [
         '_create' => '\DateTime',
         '_update' => '\DateTime',
-        '_contact' => '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelContact',
+        '_contact' => '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelContact',
         '_street' => 'string',
         '_zip' => 'string',
         '_city' => 'string',
-        '_country' => '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelStaticCountry',
-        '_category' => '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelCategory',
+        '_country' => '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelStaticCountry',
+        '_category' => '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelCategory',
         '_name' => 'string',
         '_sev_client' => 'object',
         '_name2' => 'string',
@@ -276,7 +276,7 @@ class ModelContactAddress implements ArrayAccess
 
     /**
      * Gets _contact
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelContact
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelContact
      */
     public function getContact()
     {
@@ -285,7 +285,7 @@ class ModelContactAddress implements ArrayAccess
 
     /**
      * Sets _contact
-     * @param \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelContact $_contact the contact the address belongs to
+     * @param \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelContact $_contact the contact the address belongs to
      * @return $this
      */
     public function setContact($_contact)
@@ -360,7 +360,7 @@ class ModelContactAddress implements ArrayAccess
 
     /**
      * Gets _country
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelStaticCountry
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelStaticCountry
      */
     public function getCountry()
     {
@@ -369,7 +369,7 @@ class ModelContactAddress implements ArrayAccess
 
     /**
      * Sets _country
-     * @param \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelStaticCountry $_country 
+     * @param \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelStaticCountry $_country 
      * @return $this
      */
     public function setCountry($_country)
@@ -381,7 +381,7 @@ class ModelContactAddress implements ArrayAccess
 
     /**
      * Gets _category
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelCategory
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelCategory
      */
     public function getCategory()
     {
@@ -390,7 +390,7 @@ class ModelContactAddress implements ArrayAccess
 
     /**
      * Sets _category
-     * @param \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelCategory $_category category of the address
+     * @param \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelCategory $_category category of the address
      * @return $this
      */
     public function setCategory($_category)
@@ -556,10 +556,10 @@ class ModelContactAddress implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\isp-serverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\ispserverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\isp-serverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\ispserverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

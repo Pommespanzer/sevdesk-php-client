@@ -1,4 +1,4 @@
-# isp-serverfarm\sevdesk\php-client\SwissEsrApi
+# ispserverfarm\sevdesk\php-client\SwissEsrApi
 
 All URIs are relative to *https://my.sevdesk.de/api/v1*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **getSwissEsr**
-> \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelSwissEsr getSwissEsr()
+> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelSwissEsr getSwissEsr()
 
 Get an overview of swiss esr
 
@@ -20,11 +20,11 @@ Calls SwissEsr.php to get necessary variables.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\SwissEsrApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\SwissEsrApi();
 
 try {
     $result = $api_instance->getSwissEsr();
@@ -40,7 +40,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelSwissEsr**](../Model/ModelSwissEsr.md)
+[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelSwissEsr**](../Model/ModelSwissEsr.md)
 
 ### Authorization
 

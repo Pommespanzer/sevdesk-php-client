@@ -1,4 +1,4 @@
-# isp-serverfarm\sevdesk\php-client\CommunicationWayKeyApi
+# ispserverfarm\sevdesk\php-client\CommunicationWayKeyApi
 
 All URIs are relative to *https://my.sevdesk.de/api/v1*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **getCommunicationWayKeys**
-> \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelCommunicationWayKey getCommunicationWayKeys($limit, $offset)
+> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelCommunicationWayKey getCommunicationWayKeys($limit, $offset)
 
 Get an overview of all communication way keys
 
@@ -20,11 +20,11 @@ Calls CommunicationWayKey.php to get necessary variables.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\CommunicationWayKeyApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\CommunicationWayKeyApi();
 $limit = 100; // int | Limits the number of entries returned. Default is 100
 $offset = 0; // int | Set the index where the returned communication way keys start. Default is 0
 
@@ -46,7 +46,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelCommunicationWayKey**](../Model/ModelCommunicationWayKey.md)
+[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelCommunicationWayKey**](../Model/ModelCommunicationWayKey.md)
 
 ### Authorization
 

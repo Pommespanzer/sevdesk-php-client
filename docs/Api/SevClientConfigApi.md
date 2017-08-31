@@ -1,4 +1,4 @@
-# isp-serverfarm\sevdesk\php-client\SevClientConfigApi
+# ispserverfarm\sevdesk\php-client\SevClientConfigApi
 
 All URIs are relative to *https://my.sevdesk.de/api/v1*
 
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **getSevClientConfig**
-> \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelSevClientConfig getSevClientConfig($embed)
+> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelSevClientConfig getSevClientConfig($embed)
 
 Get an overview of your sevClient config
 
@@ -21,11 +21,11 @@ Calls SevClientConfig.php to get necessary variables.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\SevClientConfigApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\SevClientConfigApi();
 $embed = array("embed_example"); // string[] | Get some additional information. Embed can handle multiple values, they must be separated by comma. Default ``.
 
 try {
@@ -45,7 +45,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelSevClientConfig**](../Model/ModelSevClientConfig.md)
+[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelSevClientConfig**](../Model/ModelSevClientConfig.md)
 
 ### Authorization
 
@@ -59,7 +59,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateSevClientConfig**
-> \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelSevClientConfig updateSevClientConfig($id, $body)
+> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelSevClientConfig updateSevClientConfig($id, $body)
 
 Update an existing sevClient config
 
@@ -71,11 +71,11 @@ Calls SevClientConfig.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\SevClientConfigApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\SevClientConfigApi();
 $id = 56; // int | Id of sevClient config you want to update
 $body = "body_example"; // string | Parameters which need to be updated. Please refer to the description from create sevClient config.    Enter the parameters according to the syntax: parameter1=&parameter2=
 
@@ -97,7 +97,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelSevClientConfig**](../Model/ModelSevClientConfig.md)
+[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelSevClientConfig**](../Model/ModelSevClientConfig.md)
 
 ### Authorization
 

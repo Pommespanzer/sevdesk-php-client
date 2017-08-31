@@ -1,4 +1,4 @@
-# isp-serverfarm\sevdesk\php-client\AccountingTypeApi
+# ispserverfarm\sevdesk\php-client\AccountingTypeApi
 
 All URIs are relative to *https://my.sevdesk.de/api/v1*
 
@@ -27,11 +27,11 @@ Calls getAccountingNumber() in AccountingType.php to get the accounting system n
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\AccountingTypeApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\AccountingTypeApi();
 $id = 56; // int | Id of the accounting type for which you want to get the accounting system number
 
 try {
@@ -76,11 +76,11 @@ Calls getAccountingNumberDepreciation() in AccountingType.php to get the account
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\AccountingTypeApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\AccountingTypeApi();
 $id = 56; // int | Id of the accounting type for which you want to get the accounting system number depreciation
 
 try {
@@ -113,7 +113,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **accountingTypeGetAccountingSystemNumber**
-> \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelAccountingSystemNumber accountingTypeGetAccountingSystemNumber($id, $embed)
+> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelAccountingSystemNumber accountingTypeGetAccountingSystemNumber($id, $embed)
 
 Get accounting system number of the specified accounting type
 
@@ -125,11 +125,11 @@ Calls getAccountingSystemNumber() in AccountingType.php to get the accounting sy
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\AccountingTypeApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\AccountingTypeApi();
 $id = 56; // int | Id of the accounting type for which you want to get the accounting system number
 $embed = array("embed_example"); // string[] | Get some additional information. Embed can handle multiple values, they must be separated by comma. Default ``.
 
@@ -151,7 +151,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelAccountingSystemNumber**](../Model/ModelAccountingSystemNumber.md)
+[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelAccountingSystemNumber**](../Model/ModelAccountingSystemNumber.md)
 
 ### Authorization
 
@@ -165,7 +165,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **addAccountingType**
-> \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelAccountingType addAccountingType($body)
+> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelAccountingType addAccountingType($body)
 
 Create a new accounting type
 
@@ -177,11 +177,11 @@ Calls AccountingType.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\AccountingTypeApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\AccountingTypeApi();
 $body = "parent[id]=&parent[objectName]=AccountingType&name=&type=&assetType=N&status=100"; // string | To create an accounting type, simply enter desired values after parameter= and remove the quotation marks.
 
 try {
@@ -201,7 +201,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelAccountingType**](../Model/ModelAccountingType.md)
+[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelAccountingType**](../Model/ModelAccountingType.md)
 
 ### Authorization
 
@@ -215,7 +215,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **addAccountingTypeFactory**
-> \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelAccountingType addAccountingTypeFactory($body)
+> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelAccountingType addAccountingTypeFactory($body)
 
 Create a new accounting type
 
@@ -227,11 +227,11 @@ With the new version of sevdesk some models are not created by calling the Model
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\AccountingTypeApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\AccountingTypeApi();
 $body = "name=&type=&number=&assetType=N&numberDepreciation=&automatic="; // string | To create an accounting type, simply enter desired values after parameter= and remove the quotation marks.
 
 try {
@@ -251,7 +251,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelAccountingType**](../Model/ModelAccountingType.md)
+[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelAccountingType**](../Model/ModelAccountingType.md)
 
 ### Authorization
 
@@ -277,11 +277,11 @@ Calls the delete() function in AccountingType.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\AccountingTypeApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\AccountingTypeApi();
 $id = 56; // int | id of accounting type you want to delete
 
 try {
@@ -314,7 +314,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAccountingTypes**
-> \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelAccountingType getAccountingTypes($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelAccountingType getAccountingTypes($limit, $offset, $embed)
 
 Get an overview of all accounting types
 
@@ -326,11 +326,11 @@ Calls AccountingType.php to get necessary variables.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\AccountingTypeApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\AccountingTypeApi();
 $limit = 1000; // int | Limits the number of entries returned. Default is 1000
 $offset = 0; // int | Set the index where the returned accounting types start. Default is 0
 $embed = array("embed_example"); // string[] | Get some additional information. Embed can handle multiple values, they must be separated by comma. Default ``.
@@ -354,7 +354,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelAccountingType**](../Model/ModelAccountingType.md)
+[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelAccountingType**](../Model/ModelAccountingType.md)
 
 ### Authorization
 
@@ -368,7 +368,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateAccountingType**
-> \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelAccountingType updateAccountingType($id, $body)
+> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelAccountingType updateAccountingType($id, $body)
 
 Update an existing accounting type
 
@@ -380,11 +380,11 @@ Calls AccountingType.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\AccountingTypeApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\AccountingTypeApi();
 $id = 56; // int | id of accounting type you want to update
 $body = "body_example"; // string | Parameters which need to be updated. Please refer to the description from create accounting type.    Append the parameters according to the syntax: parameter1=&parameter2= and remove the quotation marks!
 
@@ -406,7 +406,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelAccountingType**](../Model/ModelAccountingType.md)
+[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelAccountingType**](../Model/ModelAccountingType.md)
 
 ### Authorization
 

@@ -1,4 +1,4 @@
-# isp-serverfarm\sevdesk\php-client\InvoiceLogApi
+# ispserverfarm\sevdesk\php-client\InvoiceLogApi
 
 All URIs are relative to *https://my.sevdesk.de/api/v1*
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **addInvoiceLog**
-> \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelInvoiceLog addInvoiceLog($body)
+> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelInvoiceLog addInvoiceLog($body)
 
 Create a new invoice log
 
@@ -23,11 +23,11 @@ Calls InvoiceLog.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\InvoiceLogApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\InvoiceLogApi();
 $body = "invoice[objectName]=Invoice&invoice[id]=&fromStatus=&toStatus=&ammountPayed=&bookingDate="; // string | To create an invoice log, simply enter desired values after parameter= and remove the quotation marks.
 
 try {
@@ -47,7 +47,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelInvoiceLog**](../Model/ModelInvoiceLog.md)
+[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelInvoiceLog**](../Model/ModelInvoiceLog.md)
 
 ### Authorization
 
@@ -73,11 +73,11 @@ Calls the delete() function in InvoiceLog.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\InvoiceLogApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\InvoiceLogApi();
 $id = 56; // int | Id of invoice log you want to delete
 
 try {
@@ -110,7 +110,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getInvoiceLogs**
-> \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelInvoiceLog getInvoiceLogs($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelInvoiceLog getInvoiceLogs($limit, $offset, $embed)
 
 Get an overview of invoice logs
 
@@ -122,11 +122,11 @@ Calls InvoiceLog.php to get necessary variables
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\InvoiceLogApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\InvoiceLogApi();
 $limit = 100; // int | Limits the number of entries returned. Default is 100
 $offset = 0; // int | Set the index where the returned invoice logs start. Default is 0
 $embed = array("embed_example"); // string[] | Get some additional information. Embed can handle multiple values, they must be separated by comma. Default ``.
@@ -150,7 +150,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelInvoiceLog**](../Model/ModelInvoiceLog.md)
+[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelInvoiceLog**](../Model/ModelInvoiceLog.md)
 
 ### Authorization
 
@@ -164,7 +164,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateInvoiceLog**
-> \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelInvoiceLog updateInvoiceLog($id, $body)
+> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelInvoiceLog updateInvoiceLog($id, $body)
 
 Update an existing invoice log
 
@@ -176,11 +176,11 @@ Calls InvoiceLog.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\InvoiceLogApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\InvoiceLogApi();
 $id = 56; // int | Id of invoice log you want to update
 $body = "body_example"; // string | Parameters which need to be updated. Please refer to the description from create invoice log.    Enter the parameters according to the syntax: parameter1=&parameter2= and remove the quotation marks!
 
@@ -202,7 +202,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelInvoiceLog**](../Model/ModelInvoiceLog.md)
+[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelInvoiceLog**](../Model/ModelInvoiceLog.md)
 
 ### Authorization
 

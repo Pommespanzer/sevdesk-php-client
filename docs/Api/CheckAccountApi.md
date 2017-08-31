@@ -1,4 +1,4 @@
-# isp-serverfarm\sevdesk\php-client\CheckAccountApi
+# ispserverfarm\sevdesk\php-client\CheckAccountApi
 
 All URIs are relative to *https://my.sevdesk.de/api/v1*
 
@@ -20,7 +20,7 @@ Method | HTTP request | Description
 
 
 # **addCheckAccount**
-> \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelCheckAccount addCheckAccount($body)
+> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelCheckAccount addCheckAccount($body)
 
 Create a new check account
 
@@ -32,11 +32,11 @@ Calls CheckAccount.php to create a check account
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\CheckAccountApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\CheckAccountApi();
 $body = "name=&type=&currency=&status="; // string | To create a check account, simply enter desired values after parameter= and remove the quotation marks.
 
 try {
@@ -56,7 +56,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelCheckAccount**](../Model/ModelCheckAccount.md)
+[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelCheckAccount**](../Model/ModelCheckAccount.md)
 
 ### Authorization
 
@@ -82,11 +82,11 @@ Calls getCheckAccountDetails() in CheckAccount.php to get the details of the fig
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\CheckAccountApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\CheckAccountApi();
 $id = 56; // int | Id of the check account you want to use. Must be a figo check account!
 
 try {
@@ -131,11 +131,11 @@ Calls getCurrentBalance() in CheckAccount.php to get the balance of the specifie
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\CheckAccountApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\CheckAccountApi();
 $id = 56; // int | Id of the check account of which you want the current balance
 
 try {
@@ -180,11 +180,11 @@ Calls getIbanBic() in CheckAccount.php to get the iban and bic of the figo check
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\CheckAccountApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\CheckAccountApi();
 $id = 56; // int | Id of the check account you want to use. Must be a figo check account!
 
 try {
@@ -229,11 +229,11 @@ Calls getNewTransactions() in CheckAccount.php to check if there are any transac
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\CheckAccountApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\CheckAccountApi();
 $id = 56; // int | Id of the check account you want to use
 $from_date = ""; // string | Start date of period you want to check on
 $to_date = ""; // string | End date of period you want to check on
@@ -282,11 +282,11 @@ Calls getPaymentIsSupported() in CheckAccount.php to get if a payment method is 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\CheckAccountApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\CheckAccountApi();
 
 try {
     $api_instance->checkAccountGetPaymentIsSupported();
@@ -327,11 +327,11 @@ Calls getSupportedBankServices() in CheckAccount.php to get the bank services fi
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\CheckAccountApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\CheckAccountApi();
 
 try {
     $api_instance->checkAccountGetSupportedBankServices();
@@ -372,11 +372,11 @@ Calls getSupportedTanSchemes() in CheckAccount.php to get the supported tan sche
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\CheckAccountApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\CheckAccountApi();
 $id = 56; // int | Id of the check account you want to use. Must be a figo check account!
 
 try {
@@ -421,11 +421,11 @@ Calls setDefault() in CheckAccount.php to set a specified check account as the d
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\CheckAccountApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\CheckAccountApi();
 $id = 56; // int | Id of check account you want to set as the default check account
 
 try {
@@ -470,11 +470,11 @@ Calls transfer() in CheckAccount.php to transfer an amount from one check accoun
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\CheckAccountApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\CheckAccountApi();
 $id = 56; // int | Id of check account you want to use as source account
 $amount = ""; // string | Amount you want to transfer
 $target_id = 56; // int | Target check account id
@@ -527,11 +527,11 @@ Calls the delete() function in CheckAccount.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\CheckAccountApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\CheckAccountApi();
 $id = 56; // int | Id of check account you want to delete
 
 try {
@@ -564,7 +564,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCheckAccounts**
-> \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelDiscounts getCheckAccounts($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelDiscounts getCheckAccounts($limit, $offset, $embed)
 
 Get an overview of all check accounts
 
@@ -576,11 +576,11 @@ Calls CheckAccount.php to get necessary variables.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\CheckAccountApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\CheckAccountApi();
 $limit = 100; // int | Limits the number of entries returned. Default is 100
 $offset = 0; // int | Set the index where the returned check accounts start. Default is 0
 $embed = array("embed_example"); // string[] | Get some additional information. Embed can handle multiple values, they must be separated by comma. Default ``.
@@ -604,7 +604,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelDiscounts**](../Model/ModelDiscounts.md)
+[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelDiscounts**](../Model/ModelDiscounts.md)
 
 ### Authorization
 
@@ -618,7 +618,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateCheckAccount**
-> \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelCheckAccount updateCheckAccount($id, $body)
+> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelCheckAccount updateCheckAccount($id, $body)
 
 Update an existing check account
 
@@ -630,11 +630,11 @@ Calls CheckAccount.php to update a check account
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\CheckAccountApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\CheckAccountApi();
 $id = 56; // int | Id of check account you want to update
 $body = "body_example"; // string | Parameters which need to be updated. Please refer to the description from create discount.    Enter the parameters according to the syntax: parameter1=&parameter2=
 
@@ -656,7 +656,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelCheckAccount**](../Model/ModelCheckAccount.md)
+[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelCheckAccount**](../Model/ModelCheckAccount.md)
 
 ### Authorization
 

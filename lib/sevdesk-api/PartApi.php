@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  isp-serverfarm\sevdesk\php-client
+ * @package  ispserverfarm\sevdesk\php-client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,18 +26,18 @@
  * Do not edit the class manually.
  */
 
-namespace isp-serverfarm\sevdesk\php-client\sevdesk-api;
+namespace ispserverfarm\sevdesk\php-client\sevdesk-api;
 
-use \isp-serverfarm\sevdesk\php-client\ApiClient;
-use \isp-serverfarm\sevdesk\php-client\ApiException;
-use \isp-serverfarm\sevdesk\php-client\Configuration;
-use \isp-serverfarm\sevdesk\php-client\ObjectSerializer;
+use \ispserverfarm\sevdesk\php-client\ApiClient;
+use \ispserverfarm\sevdesk\php-client\ApiException;
+use \ispserverfarm\sevdesk\php-client\Configuration;
+use \ispserverfarm\sevdesk\php-client\ObjectSerializer;
 
 /**
  * PartApi Class Doc Comment
  *
  * @category Class
- * @package  isp-serverfarm\sevdesk\php-client
+ * @package  ispserverfarm\sevdesk\php-client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -46,16 +46,16 @@ class PartApi
     /**
      * API Client
      *
-     * @var \isp-serverfarm\sevdesk\php-client\ApiClient instance of the ApiClient
+     * @var \ispserverfarm\sevdesk\php-client\ApiClient instance of the ApiClient
      */
     protected $apiClient;
 
     /**
      * Constructor
      *
-     * @param \isp-serverfarm\sevdesk\php-client\ApiClient|null $apiClient The api client to use
+     * @param \ispserverfarm\sevdesk\php-client\ApiClient|null $apiClient The api client to use
      */
-    public function __construct(\isp-serverfarm\sevdesk\php-client\ApiClient $apiClient = null)
+    public function __construct(\ispserverfarm\sevdesk\php-client\ApiClient $apiClient = null)
     {
         if ($apiClient === null) {
             $apiClient = new ApiClient();
@@ -67,7 +67,7 @@ class PartApi
     /**
      * Get API client
      *
-     * @return \isp-serverfarm\sevdesk\php-client\ApiClient get the API client
+     * @return \ispserverfarm\sevdesk\php-client\ApiClient get the API client
      */
     public function getApiClient()
     {
@@ -77,11 +77,11 @@ class PartApi
     /**
      * Set the API client
      *
-     * @param \isp-serverfarm\sevdesk\php-client\ApiClient $apiClient set the API client
+     * @param \ispserverfarm\sevdesk\php-client\ApiClient $apiClient set the API client
      *
      * @return PartApi
      */
-    public function setApiClient(\isp-serverfarm\sevdesk\php-client\ApiClient $apiClient)
+    public function setApiClient(\ispserverfarm\sevdesk\php-client\ApiClient $apiClient)
     {
         $this->apiClient = $apiClient;
         return $this;
@@ -93,8 +93,8 @@ class PartApi
      * Create a new part
      *
      * @param string $body To create a part, simply enter desired values after parameter&#x3D; and remove the quotation marks. (required)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelPart
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelPart
      */
     public function addPart($body)
     {
@@ -108,8 +108,8 @@ class PartApi
      * Create a new part
      *
      * @param string $body To create a part, simply enter desired values after parameter&#x3D; and remove the quotation marks. (required)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
-     * @return array of \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelPart, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelPart, HTTP status code, HTTP response headers (array of strings)
      */
     public function addPartWithHttpInfo($body)
     {
@@ -154,15 +154,15 @@ class PartApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelPart',
+                '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelPart',
                 '/Part'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelPart', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelPart', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 201:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelPart', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelPart', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -178,8 +178,8 @@ class PartApi
      *
      * @param int $id id of part of which you want to update the stock (required)
      * @param string $body Parameters which need to be updated. Enter the parameters according to the syntax: parameter1&#x3D;&amp;parameter2&#x3D; and remove the quotation marks (optional)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelPart
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelPart
      */
     public function bookPart($id, $body = null)
     {
@@ -194,8 +194,8 @@ class PartApi
      *
      * @param int $id id of part of which you want to update the stock (required)
      * @param string $body Parameters which need to be updated. Enter the parameters according to the syntax: parameter1&#x3D;&amp;parameter2&#x3D; and remove the quotation marks (optional)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
-     * @return array of \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelPart, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelPart, HTTP status code, HTTP response headers (array of strings)
      */
     public function bookPartWithHttpInfo($id, $body = null)
     {
@@ -248,15 +248,15 @@ class PartApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelPart',
+                '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelPart',
                 '/Part/{id}/book'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelPart', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelPart', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelPart', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelPart', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -271,7 +271,7 @@ class PartApi
      * Delete an existing part
      *
      * @param int $id id of the part you want to delete (required)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return void
      */
     public function deletePart($id)
@@ -286,7 +286,7 @@ class PartApi
      * Delete an existing part
      *
      * @param int $id id of the part you want to delete (required)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function deletePartWithHttpInfo($id)
@@ -354,8 +354,8 @@ class PartApi
      * Duplicate an existing part
      *
      * @param int $id Id of the part which you want to duplicate (required)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelPart
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelPart
      */
     public function duplicatePart($id)
     {
@@ -369,8 +369,8 @@ class PartApi
      * Duplicate an existing part
      *
      * @param int $id Id of the part which you want to duplicate (required)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
-     * @return array of \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelPart, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelPart, HTTP status code, HTTP response headers (array of strings)
      */
     public function duplicatePartWithHttpInfo($id)
     {
@@ -418,15 +418,15 @@ class PartApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelPart',
+                '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelPart',
                 '/Part/{id}/duplicate'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelPart', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelPart', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 201:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelPart', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelPart', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -443,8 +443,8 @@ class PartApi
      * @param int $limit Limits the number of entries returned. Default is 100 (optional, default to 100)
      * @param int $offset Set the index where the returned parts start. Default is 0 (optional, default to 0)
      * @param string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. Default &#x60;&#x60;. (optional)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelPart
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelPart
      */
     public function getParts($limit = '100', $offset = '0', $embed = null)
     {
@@ -460,8 +460,8 @@ class PartApi
      * @param int $limit Limits the number of entries returned. Default is 100 (optional, default to 100)
      * @param int $offset Set the index where the returned parts start. Default is 0 (optional, default to 0)
      * @param string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. Default &#x60;&#x60;. (optional)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
-     * @return array of \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelPart, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelPart, HTTP status code, HTTP response headers (array of strings)
      */
     public function getPartsWithHttpInfo($limit = '100', $offset = '0', $embed = null)
     {
@@ -512,15 +512,15 @@ class PartApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelPart',
+                '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelPart',
                 '/Part'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelPart', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelPart', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelPart', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelPart', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -537,8 +537,8 @@ class PartApi
      * @param int $id Id of the part of which you want to get the last log (required)
      * @param string $max_date Sets the maximal date if required (optional, default to )
      * @param string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. Default &#x60;&#x60;. (optional)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelInventoryPartLog
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelInventoryPartLog
      */
     public function partGetLastLog($id, $max_date = '', $embed = null)
     {
@@ -554,8 +554,8 @@ class PartApi
      * @param int $id Id of the part of which you want to get the last log (required)
      * @param string $max_date Sets the maximal date if required (optional, default to )
      * @param string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. Default &#x60;&#x60;. (optional)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
-     * @return array of \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelInventoryPartLog, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelInventoryPartLog, HTTP status code, HTTP response headers (array of strings)
      */
     public function partGetLastLogWithHttpInfo($id, $max_date = '', $embed = null)
     {
@@ -614,15 +614,15 @@ class PartApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelInventoryPartLog',
+                '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelInventoryPartLog',
                 '/Part/{id}/getLastLog'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelInventoryPartLog', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelInventoryPartLog', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelInventoryPartLog', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelInventoryPartLog', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -641,7 +641,7 @@ class PartApi
      * @param string $contact_object_name Enter &#39;Contact&#39; here for getting a part contact price (optional, default to )
      * @param int $part_unity_id Enter a valid part unity id here for getting a part unity price (optional)
      * @param string $part_unity_object_name Enter &#39;PartUnity&#39; here for getting a part unity price (optional, default to )
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return void
      */
     public function partGetPrice($id, $contact_id = null, $contact_object_name = '', $part_unity_id = null, $part_unity_object_name = '')
@@ -660,7 +660,7 @@ class PartApi
      * @param string $contact_object_name Enter &#39;Contact&#39; here for getting a part contact price (optional, default to )
      * @param int $part_unity_id Enter a valid part unity id here for getting a part unity price (optional)
      * @param string $part_unity_object_name Enter &#39;PartUnity&#39; here for getting a part unity price (optional, default to )
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function partGetPriceWithHttpInfo($id, $contact_id = null, $contact_object_name = '', $part_unity_id = null, $part_unity_object_name = '')
@@ -745,7 +745,7 @@ class PartApi
      *
      * @param int $id Id of the part of which you want to get stock (required)
      * @param string $max_date Sets the maximal date if required. The function will return the stock of the part at the specified date! (optional, default to )
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return void
      */
     public function partGetStock($id, $max_date = '')
@@ -761,7 +761,7 @@ class PartApi
      *
      * @param int $id Id of the part of which you want to get stock (required)
      * @param string $max_date Sets the maximal date if required. The function will return the stock of the part at the specified date! (optional, default to )
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function partGetStockWithHttpInfo($id, $max_date = '')
@@ -834,7 +834,7 @@ class PartApi
      *
      * @param int $id Id of the part of which you want to get the stock difference (required)
      * @param string $date You will get the stock difference before this specified date, otherwise the current date will be used (optional, default to )
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return void
      */
     public function partGetStockBefore($id, $date = '')
@@ -850,7 +850,7 @@ class PartApi
      *
      * @param int $id Id of the part of which you want to get the stock difference (required)
      * @param string $date You will get the stock difference before this specified date, otherwise the current date will be used (optional, default to )
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function partGetStockBeforeWithHttpInfo($id, $date = '')
@@ -923,8 +923,8 @@ class PartApi
      *
      * @param int $id id of part you want to update (required)
      * @param string $body Parameters which need to be updated. Enter the parameters according to the syntax: parameter1&#x3D;&amp;parameter2&#x3D; and remove the quotation marks (optional)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelPart
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelPart
      */
     public function updatePart($id, $body = null)
     {
@@ -939,8 +939,8 @@ class PartApi
      *
      * @param int $id id of part you want to update (required)
      * @param string $body Parameters which need to be updated. Enter the parameters according to the syntax: parameter1&#x3D;&amp;parameter2&#x3D; and remove the quotation marks (optional)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
-     * @return array of \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelPart, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelPart, HTTP status code, HTTP response headers (array of strings)
      */
     public function updatePartWithHttpInfo($id, $body = null)
     {
@@ -993,15 +993,15 @@ class PartApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelPart',
+                '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelPart',
                 '/Part/{id}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelPart', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelPart', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelPart', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelPart', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }

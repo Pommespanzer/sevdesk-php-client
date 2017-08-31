@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  isp-serverfarm\sevdesk\php-client
+ * @package  ispserverfarm\sevdesk\php-client
  * @author   Swaagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace isp-serverfarm\sevdesk\php-client\sevdesk-model;
+namespace ispserverfarm\sevdesk\php-client\sevdesk-model;
 
 use \ArrayAccess;
 
@@ -35,7 +35,7 @@ use \ArrayAccess;
  * ModelDocument Class Doc Comment
  *
  * @category    Class
- * @package     isp-serverfarm\sevdesk\php-client
+ * @package     ispserverfarm\sevdesk\php-client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -59,13 +59,13 @@ class ModelDocument implements ArrayAccess
         '_object' => 'object',
         '_document_number' => 'string',
         '_base_object' => '\DateTime',
-        '_create_user' => '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelSevUser',
-        '_update_user' => '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelSevUser',
+        '_create_user' => '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelSevUser',
+        '_update_user' => '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelSevUser',
         '_mime_type' => 'string',
         '_description' => 'string',
         '_object_action' => 'object',
         '_sev_client' => 'object',
-        '_folder' => '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelDocumentFolder',
+        '_folder' => '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelDocumentFolder',
         '_filename' => 'string',
         '_status' => 'int',
         '_extension' => 'string',
@@ -357,7 +357,7 @@ class ModelDocument implements ArrayAccess
 
     /**
      * Gets _create_user
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelSevUser
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelSevUser
      */
     public function getCreateUser()
     {
@@ -366,7 +366,7 @@ class ModelDocument implements ArrayAccess
 
     /**
      * Sets _create_user
-     * @param \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelSevUser $_create_user SevUser who created the document
+     * @param \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelSevUser $_create_user SevUser who created the document
      * @return $this
      */
     public function setCreateUser($_create_user)
@@ -378,7 +378,7 @@ class ModelDocument implements ArrayAccess
 
     /**
      * Gets _update_user
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelSevUser
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelSevUser
      */
     public function getUpdateUser()
     {
@@ -387,7 +387,7 @@ class ModelDocument implements ArrayAccess
 
     /**
      * Sets _update_user
-     * @param \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelSevUser $_update_user SevUser who last updated the document
+     * @param \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelSevUser $_update_user SevUser who last updated the document
      * @return $this
      */
     public function setUpdateUser($_update_user)
@@ -483,7 +483,7 @@ class ModelDocument implements ArrayAccess
 
     /**
      * Gets _folder
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelDocumentFolder
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelDocumentFolder
      */
     public function getFolder()
     {
@@ -492,7 +492,7 @@ class ModelDocument implements ArrayAccess
 
     /**
      * Sets _folder
-     * @param \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelDocumentFolder $_folder 
+     * @param \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelDocumentFolder $_folder 
      * @return $this
      */
     public function setFolder($_folder)
@@ -637,10 +637,10 @@ class ModelDocument implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\isp-serverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\ispserverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\isp-serverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\ispserverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

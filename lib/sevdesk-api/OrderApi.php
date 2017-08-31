@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  isp-serverfarm\sevdesk\php-client
+ * @package  ispserverfarm\sevdesk\php-client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,18 +26,18 @@
  * Do not edit the class manually.
  */
 
-namespace isp-serverfarm\sevdesk\php-client\sevdesk-api;
+namespace ispserverfarm\sevdesk\php-client\sevdesk-api;
 
-use \isp-serverfarm\sevdesk\php-client\ApiClient;
-use \isp-serverfarm\sevdesk\php-client\ApiException;
-use \isp-serverfarm\sevdesk\php-client\Configuration;
-use \isp-serverfarm\sevdesk\php-client\ObjectSerializer;
+use \ispserverfarm\sevdesk\php-client\ApiClient;
+use \ispserverfarm\sevdesk\php-client\ApiException;
+use \ispserverfarm\sevdesk\php-client\Configuration;
+use \ispserverfarm\sevdesk\php-client\ObjectSerializer;
 
 /**
  * OrderApi Class Doc Comment
  *
  * @category Class
- * @package  isp-serverfarm\sevdesk\php-client
+ * @package  ispserverfarm\sevdesk\php-client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -46,16 +46,16 @@ class OrderApi
     /**
      * API Client
      *
-     * @var \isp-serverfarm\sevdesk\php-client\ApiClient instance of the ApiClient
+     * @var \ispserverfarm\sevdesk\php-client\ApiClient instance of the ApiClient
      */
     protected $apiClient;
 
     /**
      * Constructor
      *
-     * @param \isp-serverfarm\sevdesk\php-client\ApiClient|null $apiClient The api client to use
+     * @param \ispserverfarm\sevdesk\php-client\ApiClient|null $apiClient The api client to use
      */
-    public function __construct(\isp-serverfarm\sevdesk\php-client\ApiClient $apiClient = null)
+    public function __construct(\ispserverfarm\sevdesk\php-client\ApiClient $apiClient = null)
     {
         if ($apiClient === null) {
             $apiClient = new ApiClient();
@@ -67,7 +67,7 @@ class OrderApi
     /**
      * Get API client
      *
-     * @return \isp-serverfarm\sevdesk\php-client\ApiClient get the API client
+     * @return \ispserverfarm\sevdesk\php-client\ApiClient get the API client
      */
     public function getApiClient()
     {
@@ -77,11 +77,11 @@ class OrderApi
     /**
      * Set the API client
      *
-     * @param \isp-serverfarm\sevdesk\php-client\ApiClient $apiClient set the API client
+     * @param \ispserverfarm\sevdesk\php-client\ApiClient $apiClient set the API client
      *
      * @return OrderApi
      */
-    public function setApiClient(\isp-serverfarm\sevdesk\php-client\ApiClient $apiClient)
+    public function setApiClient(\ispserverfarm\sevdesk\php-client\ApiClient $apiClient)
     {
         $this->apiClient = $apiClient;
         return $this;
@@ -93,8 +93,8 @@ class OrderApi
      * Create a new order
      *
      * @param string $body To create an order, simply enter desired values after parameter&#x3D;, concatenate additional parameters with &amp; and remove the quotation marks.    Be aware that you can&#39;t use all the parameters included in the Model_Order, as creating an order involves other functions/models.    So for example, adding a sumNet/Gross/etc. does not work as they normally get their value from the product/part which is involved in the order.    The product/part in this case is handled in the Model_OrderPos which makes a call to Model_Part.    In Order.php there is only a function &#39;getPositions&#39; which makes the call to OrderPos.php to get the positions involved in the order. (required)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelOrder
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelOrder
      */
     public function addOrder($body)
     {
@@ -108,8 +108,8 @@ class OrderApi
      * Create a new order
      *
      * @param string $body To create an order, simply enter desired values after parameter&#x3D;, concatenate additional parameters with &amp; and remove the quotation marks.    Be aware that you can&#39;t use all the parameters included in the Model_Order, as creating an order involves other functions/models.    So for example, adding a sumNet/Gross/etc. does not work as they normally get their value from the product/part which is involved in the order.    The product/part in this case is handled in the Model_OrderPos which makes a call to Model_Part.    In Order.php there is only a function &#39;getPositions&#39; which makes the call to OrderPos.php to get the positions involved in the order. (required)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
-     * @return array of \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelOrder, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelOrder, HTTP status code, HTTP response headers (array of strings)
      */
     public function addOrderWithHttpInfo($body)
     {
@@ -154,15 +154,15 @@ class OrderApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelOrder',
+                '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelOrder',
                 '/Order'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelOrder', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelOrder', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 201:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelOrder', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelOrder', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -177,8 +177,8 @@ class OrderApi
      * Copy an existing order
      *
      * @param int $id Id of the order which you want to copy (required)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelOrder
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelOrder
      */
     public function copyOrder($id)
     {
@@ -192,8 +192,8 @@ class OrderApi
      * Copy an existing order
      *
      * @param int $id Id of the order which you want to copy (required)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
-     * @return array of \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelOrder, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelOrder, HTTP status code, HTTP response headers (array of strings)
      */
     public function copyOrderWithHttpInfo($id)
     {
@@ -241,15 +241,15 @@ class OrderApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelOrder',
+                '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelOrder',
                 '/Order/{id}/copy'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelOrder', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelOrder', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 201:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelOrder', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelOrder', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -264,7 +264,7 @@ class OrderApi
      * Delete an existing order
      *
      * @param int $id id of order you want to delete (required)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return void
      */
     public function deleteOrder($id)
@@ -279,7 +279,7 @@ class OrderApi
      * Delete an existing order
      *
      * @param int $id id of order you want to delete (required)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function deleteOrderWithHttpInfo($id)
@@ -347,8 +347,8 @@ class OrderApi
      * Duplicate an existing order
      *
      * @param int $id Id of the order which you want to duplicate (required)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelOrder
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelOrder
      */
     public function duplicateOrder($id)
     {
@@ -362,8 +362,8 @@ class OrderApi
      * Duplicate an existing order
      *
      * @param int $id Id of the order which you want to duplicate (required)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
-     * @return array of \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelOrder, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelOrder, HTTP status code, HTTP response headers (array of strings)
      */
     public function duplicateOrderWithHttpInfo($id)
     {
@@ -411,15 +411,15 @@ class OrderApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelOrder',
+                '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelOrder',
                 '/Order/{id}/duplicate'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelOrder', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelOrder', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 201:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelOrder', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelOrder', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -435,7 +435,7 @@ class OrderApi
      *
      * @param string $order_type defines the type of order you want to get the next number from (required)
      * @param bool $use_next_number By default this is true, so the orderNumber will increase by one otherwise the orderNumber will not change (required)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return void
      */
     public function getNextOrderNumber($order_type, $use_next_number)
@@ -451,7 +451,7 @@ class OrderApi
      *
      * @param string $order_type defines the type of order you want to get the next number from (required)
      * @param bool $use_next_number By default this is true, so the orderNumber will increase by one otherwise the orderNumber will not change (required)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function getNextOrderNumberWithHttpInfo($order_type, $use_next_number)
@@ -526,8 +526,8 @@ class OrderApi
      * @param int $limit Limits the number of entries returned. Default is 100 (optional, default to 100)
      * @param int $offset Set the index where the returned order positions start. Default is 0 (optional, default to 0)
      * @param string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. Default &#x60;&#x60;. (optional)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelDiscounts
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelDiscounts
      */
     public function getOrderDiscounts($id, $limit = '100', $offset = '0', $embed = null)
     {
@@ -544,8 +544,8 @@ class OrderApi
      * @param int $limit Limits the number of entries returned. Default is 100 (optional, default to 100)
      * @param int $offset Set the index where the returned order positions start. Default is 0 (optional, default to 0)
      * @param string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. Default &#x60;&#x60;. (optional)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
-     * @return array of \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelDiscounts, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelDiscounts, HTTP status code, HTTP response headers (array of strings)
      */
     public function getOrderDiscountsWithHttpInfo($id, $limit = '100', $offset = '0', $embed = null)
     {
@@ -608,15 +608,15 @@ class OrderApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelDiscounts',
+                '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelDiscounts',
                 '/Order/{id}/getDiscounts'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelDiscounts', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelDiscounts', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelDiscounts', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelDiscounts', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -633,8 +633,8 @@ class OrderApi
      * @param int $limit Limits the number of entries returned. Default is 100 (optional, default to 100)
      * @param int $offset Set the index where the returned invoice positions start. Default is 0 (optional, default to 0)
      * @param string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. Default &#x60;&#x60; (optional)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelOrder
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelOrder
      */
     public function getOrders($limit = '100', $offset = '0', $embed = null)
     {
@@ -650,8 +650,8 @@ class OrderApi
      * @param int $limit Limits the number of entries returned. Default is 100 (optional, default to 100)
      * @param int $offset Set the index where the returned invoice positions start. Default is 0 (optional, default to 0)
      * @param string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. Default &#x60;&#x60; (optional)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
-     * @return array of \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelOrder, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelOrder, HTTP status code, HTTP response headers (array of strings)
      */
     public function getOrdersWithHttpInfo($limit = '100', $offset = '0', $embed = null)
     {
@@ -702,15 +702,15 @@ class OrderApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelOrder',
+                '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelOrder',
                 '/Order'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelOrder', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelOrder', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelOrder', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelOrder', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -726,8 +726,8 @@ class OrderApi
      *
      * @param int $id Id of order of which you want to change the status (required)
      * @param string $body Enter desired values after parameter&#x3D; and remove the quotation marks!    If updateOther is set to &#39;true&#39;, changeStatus will also change other orders with the same order number.    If updateContactStatus is set to &#39;true&#39;, changeStatus will update the connected contacts category if necessary. (optional)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelOrder
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelOrder
      */
     public function orderChangeStatus($id, $body = null)
     {
@@ -742,8 +742,8 @@ class OrderApi
      *
      * @param int $id Id of order of which you want to change the status (required)
      * @param string $body Enter desired values after parameter&#x3D; and remove the quotation marks!    If updateOther is set to &#39;true&#39;, changeStatus will also change other orders with the same order number.    If updateContactStatus is set to &#39;true&#39;, changeStatus will update the connected contacts category if necessary. (optional)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
-     * @return array of \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelOrder, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelOrder, HTTP status code, HTTP response headers (array of strings)
      */
     public function orderChangeStatusWithHttpInfo($id, $body = null)
     {
@@ -796,15 +796,15 @@ class OrderApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelOrder',
+                '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelOrder',
                 '/Order/{id}/changeStatus'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelOrder', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelOrder', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelOrder', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelOrder', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -819,7 +819,7 @@ class OrderApi
      * Get sum charged already, total net, gross and tax amount and tax rate
      *
      * @param int $id Id of the order of which you want to get the information (required)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return void
      */
     public function orderGetChargeableInformation($id)
@@ -834,7 +834,7 @@ class OrderApi
      * Get sum charged already, total net, gross and tax amount and tax rate
      *
      * @param int $id Id of the order of which you want to get the information (required)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function orderGetChargeableInformationWithHttpInfo($id)
@@ -902,7 +902,7 @@ class OrderApi
      * Get total net, gross and tax amount of order
      *
      * @param int $id Id of the order of which you want to get the total net, gross and tax amount (required)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return void
      */
     public function orderGetChargeableSums($id)
@@ -917,7 +917,7 @@ class OrderApi
      * Get total net, gross and tax amount of order
      *
      * @param int $id Id of the order of which you want to get the total net, gross and tax amount (required)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function orderGetChargeableSumsWithHttpInfo($id)
@@ -985,8 +985,8 @@ class OrderApi
      * Get main order by checking if there are existing order logs of the specified order
      *
      * @param int $id Id of the order of which you want to know if it is the main order (required)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelOrder
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelOrder
      */
     public function orderGetMainOrderByLogs($id)
     {
@@ -1000,8 +1000,8 @@ class OrderApi
      * Get main order by checking if there are existing order logs of the specified order
      *
      * @param int $id Id of the order of which you want to know if it is the main order (required)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
-     * @return array of \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelOrder, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelOrder, HTTP status code, HTTP response headers (array of strings)
      */
     public function orderGetMainOrderByLogsWithHttpInfo($id)
     {
@@ -1049,15 +1049,15 @@ class OrderApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelOrder',
+                '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelOrder',
                 '/Order/{id}/getMainOrderByLogs'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelOrder', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelOrder', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelOrder', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelOrder', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -1073,7 +1073,7 @@ class OrderApi
      *
      * @param int $id Id of the order of which you want to get the pdf (required)
      * @param bool $prevent_send_by Define if you want to prevent to send the order via pdf (optional, default to false)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return void
      */
     public function orderGetPdf($id, $prevent_send_by = 'false')
@@ -1089,7 +1089,7 @@ class OrderApi
      *
      * @param int $id Id of the order of which you want to get the pdf (required)
      * @param bool $prevent_send_by Define if you want to prevent to send the order via pdf (optional, default to false)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function orderGetPdfWithHttpInfo($id, $prevent_send_by = 'false')
@@ -1166,8 +1166,8 @@ class OrderApi
      * @param int $limit Limits the number of entries returned. Default is 100 (optional, default to 100)
      * @param int $offset Set the index where the returned order positions start. Default is 0 (optional, default to 0)
      * @param string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. Default &#x60;&#x60;. (optional)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelOrderPos
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelOrderPos
      */
     public function orderGetPositions($id, $with_optional = 'false', $only_chargeable = 'false', $limit = '100', $offset = '0', $embed = null)
     {
@@ -1186,8 +1186,8 @@ class OrderApi
      * @param int $limit Limits the number of entries returned. Default is 100 (optional, default to 100)
      * @param int $offset Set the index where the returned order positions start. Default is 0 (optional, default to 0)
      * @param string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. Default &#x60;&#x60;. (optional)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
-     * @return array of \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelOrderPos, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelOrderPos, HTTP status code, HTTP response headers (array of strings)
      */
     public function orderGetPositionsWithHttpInfo($id, $with_optional = 'false', $only_chargeable = 'false', $limit = '100', $offset = '0', $embed = null)
     {
@@ -1258,15 +1258,15 @@ class OrderApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelOrderPos',
+                '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelOrderPos',
                 '/Order/{id}/getPositions'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelOrderPos', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelOrderPos', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelOrderPos', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelOrderPos', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -1284,7 +1284,7 @@ class OrderApi
      * @param bool $include_itself Define if the related objects include the order itself (optional, default to false)
      * @param bool $sort_by_type Define if you want the related objects sorted by type (optional, default to false)
      * @param string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. Default &#x60;&#x60;. (optional)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return void
      */
     public function orderGetRelatedObjects($id, $include_itself = 'false', $sort_by_type = 'false', $embed = null)
@@ -1302,7 +1302,7 @@ class OrderApi
      * @param bool $include_itself Define if the related objects include the order itself (optional, default to false)
      * @param bool $sort_by_type Define if you want the related objects sorted by type (optional, default to false)
      * @param string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. Default &#x60;&#x60;. (optional)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function orderGetRelatedObjectsWithHttpInfo($id, $include_itself = 'false', $sort_by_type = 'false', $embed = null)
@@ -1386,7 +1386,7 @@ class OrderApi
      *
      * @param int $id Id of the order of which you want to get the tags (required)
      * @param string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. Default &#x60;&#x60;. (optional)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return void
      */
     public function orderGetTags($id, $embed = null)
@@ -1402,7 +1402,7 @@ class OrderApi
      *
      * @param int $id Id of the order of which you want to get the tags (required)
      * @param string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. Default &#x60;&#x60;. (optional)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function orderGetTagsWithHttpInfo($id, $embed = null)
@@ -1478,7 +1478,7 @@ class OrderApi
      *
      * @param int $id Id of the order of which you want to get the sum tax (required)
      * @param bool $foreign_currency Specify if a foreign currency is used (optional, default to false)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return void
      */
     public function orderGetTax($id, $foreign_currency = 'false')
@@ -1494,7 +1494,7 @@ class OrderApi
      *
      * @param int $id Id of the order of which you want to get the sum tax (required)
      * @param bool $foreign_currency Specify if a foreign currency is used (optional, default to false)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function orderGetTaxWithHttpInfo($id, $foreign_currency = 'false')
@@ -1566,7 +1566,7 @@ class OrderApi
      * Get tax groups of the specified order
      *
      * @param int $id Id of the order of which you want to get the tax groups (required)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return void
      */
     public function orderGetTaxGroupes($id)
@@ -1581,7 +1581,7 @@ class OrderApi
      * Get tax groups of the specified order
      *
      * @param int $id Id of the order of which you want to get the tax groups (required)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function orderGetTaxGroupesWithHttpInfo($id)
@@ -1650,7 +1650,7 @@ class OrderApi
      *
      * @param int $id Id of the order of which you want to get the sum gross (required)
      * @param bool $foreign_currency Specify if a foreign currency is used (optional, default to false)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return void
      */
     public function orderGetTotal($id, $foreign_currency = 'false')
@@ -1666,7 +1666,7 @@ class OrderApi
      *
      * @param int $id Id of the order of which you want to get the sum gross (required)
      * @param bool $foreign_currency Specify if a foreign currency is used (optional, default to false)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function orderGetTotalWithHttpInfo($id, $foreign_currency = 'false')
@@ -1738,7 +1738,7 @@ class OrderApi
      * Get total gross amount of order
      *
      * @param int $id Id of the order of which you want to get the total gross amount (required)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return void
      */
     public function orderGetTotalCalc($id)
@@ -1753,7 +1753,7 @@ class OrderApi
      * Get total gross amount of order
      *
      * @param int $id Id of the order of which you want to get the total gross amount (required)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function orderGetTotalCalcWithHttpInfo($id)
@@ -1821,7 +1821,7 @@ class OrderApi
      * Get total net amount of order
      *
      * @param int $id Id of the order of which you want to get the total net amount (required)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return void
      */
     public function orderGetTotalNet($id)
@@ -1836,7 +1836,7 @@ class OrderApi
      * Get total net amount of order
      *
      * @param int $id Id of the order of which you want to get the total net amount (required)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function orderGetTotalNetWithHttpInfo($id)
@@ -1904,7 +1904,7 @@ class OrderApi
      * Render the order document on doc server and return the metadata
      *
      * @param int $id Id of order you want to render (required)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return void
      */
     public function orderRender($id)
@@ -1919,7 +1919,7 @@ class OrderApi
      * Render the order document on doc server and return the metadata
      *
      * @param int $id Id of order you want to render (required)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function orderRenderWithHttpInfo($id)
@@ -1988,8 +1988,8 @@ class OrderApi
      *
      * @param int $id Id of order which you want to send (required)
      * @param string $send_type Your desired send type. Available are: VM &#x3D; Mail, VP &#x3D; Post, VPDF &#x3D; PDF, PRN &#x3D; Print (optional, default to )
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelOrder
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelOrder
      */
     public function orderSendBy($id, $send_type = '')
     {
@@ -2004,8 +2004,8 @@ class OrderApi
      *
      * @param int $id Id of order which you want to send (required)
      * @param string $send_type Your desired send type. Available are: VM &#x3D; Mail, VP &#x3D; Post, VPDF &#x3D; PDF, PRN &#x3D; Print (optional, default to )
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
-     * @return array of \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelOrder, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelOrder, HTTP status code, HTTP response headers (array of strings)
      */
     public function orderSendByWithHttpInfo($id, $send_type = '')
     {
@@ -2057,15 +2057,15 @@ class OrderApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelOrder',
+                '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelOrder',
                 '/Order/{id}/sendBy'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelOrder', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelOrder', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelOrder', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelOrder', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -2081,8 +2081,8 @@ class OrderApi
      *
      * @param int $id Id of order you want to send via Email (required)
      * @param string $body Change the desired values after the parameters and remove the quotation marks. You can also add &#39;additionalAttachments&#39;, &#39;ccEmail&#x3D;&#39; and &#39;bccEmail&#39;    Please note: additionalAttachments is a String containing document id&#39;s (of existing documents!) (required)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelEmail
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelEmail
      */
     public function sendOrderViaEmail($id, $body)
     {
@@ -2097,8 +2097,8 @@ class OrderApi
      *
      * @param int $id Id of order you want to send via Email (required)
      * @param string $body Change the desired values after the parameters and remove the quotation marks. You can also add &#39;additionalAttachments&#39;, &#39;ccEmail&#x3D;&#39; and &#39;bccEmail&#39;    Please note: additionalAttachments is a String containing document id&#39;s (of existing documents!) (required)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
-     * @return array of \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelEmail, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelEmail, HTTP status code, HTTP response headers (array of strings)
      */
     public function sendOrderViaEmailWithHttpInfo($id, $body)
     {
@@ -2155,15 +2155,15 @@ class OrderApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelEmail',
+                '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelEmail',
                 '/Order/{id}/sendViaEmail'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelEmail', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelEmail', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 201:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelEmail', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelEmail', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -2178,8 +2178,8 @@ class OrderApi
      * Send an order via post
      *
      * @param int $id Id of order you want to send via post (required)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelOrder
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelOrder
      */
     public function sendOrderViaPost($id)
     {
@@ -2193,8 +2193,8 @@ class OrderApi
      * Send an order via post
      *
      * @param int $id Id of order you want to send via post (required)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
-     * @return array of \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelOrder, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelOrder, HTTP status code, HTTP response headers (array of strings)
      */
     public function sendOrderViaPostWithHttpInfo($id)
     {
@@ -2242,15 +2242,15 @@ class OrderApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelOrder',
+                '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelOrder',
                 '/Order/{id}/sendViaPost'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelOrder', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelOrder', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 201:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelOrder', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelOrder', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -2266,8 +2266,8 @@ class OrderApi
      *
      * @param int $id id of order you want to update (required)
      * @param string $body Parameters which need to be updated. Enter the parameters according to the syntax: parameter1&#x3D;&amp;parameter2&#x3D; (optional)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelOrder
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelOrder
      */
     public function updateOrder($id, $body = null)
     {
@@ -2282,8 +2282,8 @@ class OrderApi
      *
      * @param int $id id of order you want to update (required)
      * @param string $body Parameters which need to be updated. Enter the parameters according to the syntax: parameter1&#x3D;&amp;parameter2&#x3D; (optional)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
-     * @return array of \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelOrder, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelOrder, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateOrderWithHttpInfo($id, $body = null)
     {
@@ -2336,15 +2336,15 @@ class OrderApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelOrder',
+                '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelOrder',
                 '/Order/{id}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelOrder', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelOrder', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelOrder', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelOrder', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }

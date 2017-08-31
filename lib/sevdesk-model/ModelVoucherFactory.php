@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  isp-serverfarm\sevdesk\php-client
+ * @package  ispserverfarm\sevdesk\php-client
  * @author   Swaagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace isp-serverfarm\sevdesk\php-client\sevdesk-model;
+namespace ispserverfarm\sevdesk\php-client\sevdesk-model;
 
 use \ArrayAccess;
 
@@ -36,7 +36,7 @@ use \ArrayAccess;
  *
  * @category    Class
  * @description Below are the models which can be used for the saveVoucher function. Beware that you need to use them without the underscore at the beginning!
- * @package     isp-serverfarm\sevdesk\php-client
+ * @package     ispserverfarm\sevdesk\php-client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -55,9 +55,9 @@ class ModelVoucherFactory implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'voucher' => '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelVoucher',
-        'voucher_pos_save' => '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelVoucherPos',
-        'voucher_pos_delete' => '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelVoucherPos'
+        'voucher' => '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelVoucher',
+        'voucher_pos_save' => '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelVoucherPos',
+        'voucher_pos_delete' => '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelVoucherPos'
     ];
 
     /**
@@ -175,7 +175,7 @@ class ModelVoucherFactory implements ArrayAccess
 
     /**
      * Gets voucher
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelVoucher
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelVoucher
      */
     public function getVoucher()
     {
@@ -184,7 +184,7 @@ class ModelVoucherFactory implements ArrayAccess
 
     /**
      * Sets voucher
-     * @param \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelVoucher $voucher the Model_Voucher to create/update
+     * @param \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelVoucher $voucher the Model_Voucher to create/update
      * @return $this
      */
     public function setVoucher($voucher)
@@ -196,7 +196,7 @@ class ModelVoucherFactory implements ArrayAccess
 
     /**
      * Gets voucher_pos_save
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelVoucherPos
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelVoucherPos
      */
     public function getVoucherPosSave()
     {
@@ -205,7 +205,7 @@ class ModelVoucherFactory implements ArrayAccess
 
     /**
      * Sets voucher_pos_save
-     * @param \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelVoucherPos $voucher_pos_save the Model_VoucherPos to create/update
+     * @param \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelVoucherPos $voucher_pos_save the Model_VoucherPos to create/update
      * @return $this
      */
     public function setVoucherPosSave($voucher_pos_save)
@@ -217,7 +217,7 @@ class ModelVoucherFactory implements ArrayAccess
 
     /**
      * Gets voucher_pos_delete
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelVoucherPos
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelVoucherPos
      */
     public function getVoucherPosDelete()
     {
@@ -226,7 +226,7 @@ class ModelVoucherFactory implements ArrayAccess
 
     /**
      * Sets voucher_pos_delete
-     * @param \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelVoucherPos $voucher_pos_delete the Model_VoucherPos to delete
+     * @param \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelVoucherPos $voucher_pos_delete the Model_VoucherPos to delete
      * @return $this
      */
     public function setVoucherPosDelete($voucher_pos_delete)
@@ -287,10 +287,10 @@ class ModelVoucherFactory implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\isp-serverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\ispserverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\isp-serverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\ispserverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  isp-serverfarm\sevdesk\php-client
+ * @package  ispserverfarm\sevdesk\php-client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,18 +26,18 @@
  * Do not edit the class manually.
  */
 
-namespace isp-serverfarm\sevdesk\php-client\sevdesk-api;
+namespace ispserverfarm\sevdesk\php-client\sevdesk-api;
 
-use \isp-serverfarm\sevdesk\php-client\ApiClient;
-use \isp-serverfarm\sevdesk\php-client\ApiException;
-use \isp-serverfarm\sevdesk\php-client\Configuration;
-use \isp-serverfarm\sevdesk\php-client\ObjectSerializer;
+use \ispserverfarm\sevdesk\php-client\ApiClient;
+use \ispserverfarm\sevdesk\php-client\ApiException;
+use \ispserverfarm\sevdesk\php-client\Configuration;
+use \ispserverfarm\sevdesk\php-client\ObjectSerializer;
 
 /**
  * PlaceApi Class Doc Comment
  *
  * @category Class
- * @package  isp-serverfarm\sevdesk\php-client
+ * @package  ispserverfarm\sevdesk\php-client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -46,16 +46,16 @@ class PlaceApi
     /**
      * API Client
      *
-     * @var \isp-serverfarm\sevdesk\php-client\ApiClient instance of the ApiClient
+     * @var \ispserverfarm\sevdesk\php-client\ApiClient instance of the ApiClient
      */
     protected $apiClient;
 
     /**
      * Constructor
      *
-     * @param \isp-serverfarm\sevdesk\php-client\ApiClient|null $apiClient The api client to use
+     * @param \ispserverfarm\sevdesk\php-client\ApiClient|null $apiClient The api client to use
      */
-    public function __construct(\isp-serverfarm\sevdesk\php-client\ApiClient $apiClient = null)
+    public function __construct(\ispserverfarm\sevdesk\php-client\ApiClient $apiClient = null)
     {
         if ($apiClient === null) {
             $apiClient = new ApiClient();
@@ -67,7 +67,7 @@ class PlaceApi
     /**
      * Get API client
      *
-     * @return \isp-serverfarm\sevdesk\php-client\ApiClient get the API client
+     * @return \ispserverfarm\sevdesk\php-client\ApiClient get the API client
      */
     public function getApiClient()
     {
@@ -77,11 +77,11 @@ class PlaceApi
     /**
      * Set the API client
      *
-     * @param \isp-serverfarm\sevdesk\php-client\ApiClient $apiClient set the API client
+     * @param \ispserverfarm\sevdesk\php-client\ApiClient $apiClient set the API client
      *
      * @return PlaceApi
      */
-    public function setApiClient(\isp-serverfarm\sevdesk\php-client\ApiClient $apiClient)
+    public function setApiClient(\ispserverfarm\sevdesk\php-client\ApiClient $apiClient)
     {
         $this->apiClient = $apiClient;
         return $this;
@@ -94,8 +94,8 @@ class PlaceApi
      *
      * @param int $limit Limits the number of entries returned. Default is 1000 (optional, default to 1000)
      * @param int $offset Set the index where the returned places start. Default is 0 (optional, default to 0)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelPlace
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelPlace
      */
     public function getPlaces($limit = '1000', $offset = '0')
     {
@@ -110,8 +110,8 @@ class PlaceApi
      *
      * @param int $limit Limits the number of entries returned. Default is 1000 (optional, default to 1000)
      * @param int $offset Set the index where the returned places start. Default is 0 (optional, default to 0)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
-     * @return array of \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelPlace, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelPlace, HTTP status code, HTTP response headers (array of strings)
      */
     public function getPlacesWithHttpInfo($limit = '1000', $offset = '0')
     {
@@ -155,15 +155,15 @@ class PlaceApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelPlace',
+                '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelPlace',
                 '/Place'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelPlace', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelPlace', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelPlace', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelPlace', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }

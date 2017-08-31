@@ -1,4 +1,4 @@
-# isp-serverfarm\sevdesk\php-client\TaxSetApi
+# ispserverfarm\sevdesk\php-client\TaxSetApi
 
 All URIs are relative to *https://my.sevdesk.de/api/v1*
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **addTaxSet**
-> \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelTaxSet addTaxSet($body)
+> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelTaxSet addTaxSet($body)
 
 Create a new tax set
 
@@ -23,11 +23,11 @@ Calls TaxSet.php to create a new tax set
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\TaxSetApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\TaxSetApi();
 $body = "text=&taxRate=&showInvoice=&showDebitVoucher=&showCreditVoucher="; // string | To create a tax set, simply enter desired values after parameter= and remove the quotation marks.
 
 try {
@@ -47,7 +47,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelTaxSet**](../Model/ModelTaxSet.md)
+[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelTaxSet**](../Model/ModelTaxSet.md)
 
 ### Authorization
 
@@ -73,11 +73,11 @@ Calls the delete() function in TaxSet.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\TaxSetApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\TaxSetApi();
 $id = 56; // int | Id of tax set you want to delete
 
 try {
@@ -110,7 +110,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getTaxSets**
-> \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelTaxSet getTaxSets($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelTaxSet getTaxSets($limit, $offset, $embed)
 
 Get an overview of all tax sets
 
@@ -122,11 +122,11 @@ Calls TaxSet.php to get necessary variables.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\TaxSetApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\TaxSetApi();
 $limit = 100; // int | Limits the number of entries returned. Default is 100
 $offset = 0; // int | Set the index where the returned tax sets start. Default is 0
 $embed = array("embed_example"); // string[] | Get some additional information. Embed can handle multiple values, they must be separated by comma. Default ``.
@@ -150,7 +150,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelTaxSet**](../Model/ModelTaxSet.md)
+[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelTaxSet**](../Model/ModelTaxSet.md)
 
 ### Authorization
 
@@ -164,7 +164,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateTaxSet**
-> \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelTaxSet updateTaxSet($id, $body)
+> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelTaxSet updateTaxSet($id, $body)
 
 Update an existing tax set
 
@@ -176,11 +176,11 @@ Calls TaxSet.php to update an existing tax set
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\TaxSetApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\TaxSetApi();
 $id = 56; // int | Id of tax set you want to update
 $body = "body_example"; // string | Parameters which need to be updated. Please refer to the description from create tax set.    Enter the parameters according to the syntax: parameter1=&parameter2=
 
@@ -202,7 +202,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelTaxSet**](../Model/ModelTaxSet.md)
+[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelTaxSet**](../Model/ModelTaxSet.md)
 
 ### Authorization
 

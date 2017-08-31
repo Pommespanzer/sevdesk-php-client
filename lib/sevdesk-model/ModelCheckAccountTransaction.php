@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  isp-serverfarm\sevdesk\php-client
+ * @package  ispserverfarm\sevdesk\php-client
  * @author   Swaagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace isp-serverfarm\sevdesk\php-client\sevdesk-model;
+namespace ispserverfarm\sevdesk\php-client\sevdesk-model;
 
 use \ArrayAccess;
 
@@ -35,7 +35,7 @@ use \ArrayAccess;
  * ModelCheckAccountTransaction Class Doc Comment
  *
  * @category    Class
- * @package     isp-serverfarm\sevdesk\php-client
+ * @package     ispserverfarm\sevdesk\php-client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -67,7 +67,7 @@ class ModelCheckAccountTransaction implements ArrayAccess
         '_payee_payer_bank_code' => 'string',
         '_payee_payer_acct_no' => 'string',
         '_payee_payer_name' => 'string',
-        '_check_account' => '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelCheckAccount',
+        '_check_account' => '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelCheckAccount',
         '_status' => 'int',
         '_score' => 'string',
         '_compare_hash' => 'string',
@@ -561,7 +561,7 @@ class ModelCheckAccountTransaction implements ArrayAccess
 
     /**
      * Gets _check_account
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelCheckAccount
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelCheckAccount
      */
     public function getCheckAccount()
     {
@@ -570,7 +570,7 @@ class ModelCheckAccountTransaction implements ArrayAccess
 
     /**
      * Sets _check_account
-     * @param \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelCheckAccount $_check_account id of the check account
+     * @param \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelCheckAccount $_check_account id of the check account
      * @return $this
      */
     public function setCheckAccount($_check_account)
@@ -799,10 +799,10 @@ class ModelCheckAccountTransaction implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\isp-serverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\ispserverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\isp-serverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\ispserverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

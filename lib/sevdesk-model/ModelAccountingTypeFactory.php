@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  isp-serverfarm\sevdesk\php-client
+ * @package  ispserverfarm\sevdesk\php-client
  * @author   Swaagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace isp-serverfarm\sevdesk\php-client\sevdesk-model;
+namespace ispserverfarm\sevdesk\php-client\sevdesk-model;
 
 use \ArrayAccess;
 
@@ -35,7 +35,7 @@ use \ArrayAccess;
  * ModelAccountingTypeFactory Class Doc Comment
  *
  * @category    Class
- * @package     isp-serverfarm\sevdesk\php-client
+ * @package     ispserverfarm\sevdesk\php-client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -54,7 +54,7 @@ class ModelAccountingTypeFactory implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'accounting_type' => '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelAccountingType'
+        'accounting_type' => '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelAccountingType'
     ];
 
     /**
@@ -162,7 +162,7 @@ class ModelAccountingTypeFactory implements ArrayAccess
 
     /**
      * Gets accounting_type
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelAccountingType
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelAccountingType
      */
     public function getAccountingType()
     {
@@ -171,7 +171,7 @@ class ModelAccountingTypeFactory implements ArrayAccess
 
     /**
      * Sets accounting_type
-     * @param \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelAccountingType $accounting_type here you can find useful parameters for your accounting type request
+     * @param \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelAccountingType $accounting_type here you can find useful parameters for your accounting type request
      * @return $this
      */
     public function setAccountingType($accounting_type)
@@ -232,10 +232,10 @@ class ModelAccountingTypeFactory implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\isp-serverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\ispserverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\isp-serverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\ispserverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

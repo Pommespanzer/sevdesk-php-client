@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  isp-serverfarm\sevdesk\php-client
+ * @package  ispserverfarm\sevdesk\php-client
  * @author   Swaagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace isp-serverfarm\sevdesk\php-client\sevdesk-model;
+namespace ispserverfarm\sevdesk\php-client\sevdesk-model;
 
 use \ArrayAccess;
 
@@ -35,7 +35,7 @@ use \ArrayAccess;
  * ModelVatReport Class Doc Comment
  *
  * @category    Class
- * @package     isp-serverfarm\sevdesk\php-client
+ * @package     ispserverfarm\sevdesk\php-client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -57,7 +57,7 @@ class ModelVatReport implements ArrayAccess
         '_create' => '\DateTime',
         '_update' => '\DateTime',
         '_sev_client' => 'object',
-        '_country' => '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelStaticCountry',
+        '_country' => '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelStaticCountry',
         '_report_date' => '\DateTime',
         '_reporting_year' => 'string',
         '_reporting_period' => 'string',
@@ -303,7 +303,7 @@ class ModelVatReport implements ArrayAccess
 
     /**
      * Gets _country
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelStaticCountry
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelStaticCountry
      */
     public function getCountry()
     {
@@ -312,7 +312,7 @@ class ModelVatReport implements ArrayAccess
 
     /**
      * Sets _country
-     * @param \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelStaticCountry $_country StaticCountry of the vat report
+     * @param \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelStaticCountry $_country StaticCountry of the vat report
      * @return $this
      */
     public function setCountry($_country)
@@ -583,10 +583,10 @@ class ModelVatReport implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\isp-serverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\ispserverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\isp-serverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\ispserverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

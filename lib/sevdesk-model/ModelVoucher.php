@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  isp-serverfarm\sevdesk\php-client
+ * @package  ispserverfarm\sevdesk\php-client
  * @author   Swaagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace isp-serverfarm\sevdesk\php-client\sevdesk-model;
+namespace ispserverfarm\sevdesk\php-client\sevdesk-model;
 
 use \ArrayAccess;
 
@@ -35,7 +35,7 @@ use \ArrayAccess;
  * ModelVoucher Class Doc Comment
  *
  * @category    Class
- * @package     isp-serverfarm\sevdesk\php-client
+ * @package     ispserverfarm\sevdesk\php-client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -57,14 +57,14 @@ class ModelVoucher implements ArrayAccess
         '_create' => '\DateTime',
         '_update' => '\DateTime',
         '_sev_client' => 'object',
-        '_create_user' => '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelSevUser',
+        '_create_user' => '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelSevUser',
         '_voucher_date' => '\DateTime',
-        '_supplier' => '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelContact',
+        '_supplier' => '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelContact',
         '_supplier_name' => 'string',
         '_description' => 'string',
-        '_document' => '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelDocument',
+        '_document' => '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelDocument',
         '_result_disdar' => 'string',
-        '_document_preview' => '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelDocument',
+        '_document_preview' => '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelDocument',
         '_pay_date' => '\DateTime',
         '_status' => 'int',
         '_object' => 'object',
@@ -77,7 +77,7 @@ class ModelVoucher implements ArrayAccess
         '_tax_type' => 'string',
         '_credit_debit' => 'string',
         '_hidden' => 'bool',
-        '_cost_centre' => '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelCostCentre',
+        '_cost_centre' => '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelCostCentre',
         '_origin' => 'object',
         '_voucher_type' => 'string',
         '_recurring_intervall' => 'int',
@@ -87,7 +87,7 @@ class ModelVoucher implements ArrayAccess
         '_recurring_end_date' => '\DateTime',
         '_enshrined' => 'bool',
         '_in_source' => 'string',
-        '_tax_set' => '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelTaxSet',
+        '_tax_set' => '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelTaxSet',
         '_iban' => 'string',
         '_accounting_special_case' => 'string',
         '_payment_deadline' => '\DateTime',
@@ -447,7 +447,7 @@ class ModelVoucher implements ArrayAccess
 
     /**
      * Gets _create_user
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelSevUser
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelSevUser
      */
     public function getCreateUser()
     {
@@ -456,7 +456,7 @@ class ModelVoucher implements ArrayAccess
 
     /**
      * Sets _create_user
-     * @param \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelSevUser $_create_user sevUser who created the voucher
+     * @param \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelSevUser $_create_user sevUser who created the voucher
      * @return $this
      */
     public function setCreateUser($_create_user)
@@ -489,7 +489,7 @@ class ModelVoucher implements ArrayAccess
 
     /**
      * Gets _supplier
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelContact
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelContact
      */
     public function getSupplier()
     {
@@ -498,7 +498,7 @@ class ModelVoucher implements ArrayAccess
 
     /**
      * Sets _supplier
-     * @param \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelContact $_supplier 
+     * @param \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelContact $_supplier 
      * @return $this
      */
     public function setSupplier($_supplier)
@@ -552,7 +552,7 @@ class ModelVoucher implements ArrayAccess
 
     /**
      * Gets _document
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelDocument
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelDocument
      */
     public function getDocument()
     {
@@ -561,7 +561,7 @@ class ModelVoucher implements ArrayAccess
 
     /**
      * Sets _document
-     * @param \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelDocument $_document 
+     * @param \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelDocument $_document 
      * @return $this
      */
     public function setDocument($_document)
@@ -594,7 +594,7 @@ class ModelVoucher implements ArrayAccess
 
     /**
      * Gets _document_preview
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelDocument
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelDocument
      */
     public function getDocumentPreview()
     {
@@ -603,7 +603,7 @@ class ModelVoucher implements ArrayAccess
 
     /**
      * Sets _document_preview
-     * @param \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelDocument $_document_preview 
+     * @param \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelDocument $_document_preview 
      * @return $this
      */
     public function setDocumentPreview($_document_preview)
@@ -867,7 +867,7 @@ class ModelVoucher implements ArrayAccess
 
     /**
      * Gets _cost_centre
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelCostCentre
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelCostCentre
      */
     public function getCostCentre()
     {
@@ -876,7 +876,7 @@ class ModelVoucher implements ArrayAccess
 
     /**
      * Sets _cost_centre
-     * @param \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelCostCentre $_cost_centre 
+     * @param \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelCostCentre $_cost_centre 
      * @return $this
      */
     public function setCostCentre($_cost_centre)
@@ -1077,7 +1077,7 @@ class ModelVoucher implements ArrayAccess
 
     /**
      * Gets _tax_set
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelTaxSet
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelTaxSet
      */
     public function getTaxSet()
     {
@@ -1086,7 +1086,7 @@ class ModelVoucher implements ArrayAccess
 
     /**
      * Sets _tax_set
-     * @param \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelTaxSet $_tax_set 
+     * @param \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelTaxSet $_tax_set 
      * @return $this
      */
     public function setTaxSet($_tax_set)
@@ -1231,10 +1231,10 @@ class ModelVoucher implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\isp-serverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\ispserverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\isp-serverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\ispserverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

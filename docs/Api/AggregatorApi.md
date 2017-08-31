@@ -1,4 +1,4 @@
-# isp-serverfarm\sevdesk\php-client\AggregatorApi
+# ispserverfarm\sevdesk\php-client\AggregatorApi
 
 All URIs are relative to *https://my.sevdesk.de/api/v1*
 
@@ -27,11 +27,11 @@ Calls calcTotalDepreciation() in Aggregator.php to get total sum of all asset am
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\AggregatorApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\AggregatorApi();
 
 try {
     $api_instance->aggregatorCalcTotalDepreciation();
@@ -72,11 +72,11 @@ Calls getAccountingScore() in Aggregator.php to get your accounting score
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\AggregatorApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\AggregatorApi();
 $startdate = ""; // string | Start date for the accounting score calculation
 $enddate = ""; // string | End date for the accounting score calculation
 
@@ -123,11 +123,11 @@ Calls getAppRevenueChartData() in Aggregator.php to get data displayed in the re
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\AggregatorApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\AggregatorApi();
 
 try {
     $api_instance->aggregatorGetAppRevenueChartData();
@@ -168,11 +168,11 @@ Calls getProfitAndLossCalculation() in Aggregator.php to calculate the profit an
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\AggregatorApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\AggregatorApi();
 $start_date = ""; // string | Start date of the period you want to calculate
 $end_date = ""; // string | End date of the period you want to calculate
 $actual_taxation = false; // bool | Specify if you want to calculate the net income method (true) or the profit and loss (false)
@@ -221,11 +221,11 @@ Calls getTaxInformation() in Aggregator.php to calculate tax of earnings and spe
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\AggregatorApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\AggregatorApi();
 $type = "monthly"; // string | Tax period you want to calculate with
 $year = ""; // string | Year of your tax calculation
 $period = 56; // int | Starting period (month) of your tax calculation
@@ -278,11 +278,11 @@ Calls getVoucherCategoryInformation() in Aggregator.php to get information about
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\AggregatorApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\AggregatorApi();
 
 try {
     $api_instance->aggregatorGetVoucherCategoryInformation();
@@ -323,11 +323,11 @@ Calls getVoucherChartData() in Aggregator.php to get voucher chart data
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\AggregatorApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\AggregatorApi();
 $year = ""; // string | Year for which you want to get the voucher chart data
 
 try {
@@ -372,11 +372,11 @@ Calls getWebRevenueChartData() in Aggregator.php to get data displayed in the re
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\AggregatorApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\AggregatorApi();
 $sum_gross_toggle = false; // bool | Specify if you want to calculate sum gross instead of net
 
 try {

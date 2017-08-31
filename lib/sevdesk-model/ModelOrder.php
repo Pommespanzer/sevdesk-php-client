@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  isp-serverfarm\sevdesk\php-client
+ * @package  ispserverfarm\sevdesk\php-client
  * @author   Swaagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace isp-serverfarm\sevdesk\php-client\sevdesk-model;
+namespace ispserverfarm\sevdesk\php-client\sevdesk-model;
 
 use \ArrayAccess;
 
@@ -35,7 +35,7 @@ use \ArrayAccess;
  * ModelOrder Class Doc Comment
  *
  * @category    Class
- * @package     isp-serverfarm\sevdesk\php-client
+ * @package     ispserverfarm\sevdesk\php-client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -57,7 +57,7 @@ class ModelOrder implements ArrayAccess
         '_create' => '\DateTime',
         '_update' => '\DateTime',
         '_oder_number' => 'string',
-        '_contact' => '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelContact',
+        '_contact' => '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelContact',
         '_order_date' => '\DateTime',
         '_status' => 'int',
         '_header' => 'string',
@@ -67,27 +67,27 @@ class ModelOrder implements ArrayAccess
         '_address_street' => 'string',
         '_address_zip' => 'string',
         '_address_city' => 'string',
-        '_address_country' => '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelStaticCountry',
-        '_create_user' => '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelSevUser',
+        '_address_country' => '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelStaticCountry',
+        '_create_user' => '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelSevUser',
         '_sev_client' => 'object',
         '_delivery_terms' => 'string',
         '_payment_terms' => 'string',
         '_origin' => 'object',
         '_version' => 'int',
         '_small_settlement' => 'bool',
-        '_contact_person' => '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelSevUser',
+        '_contact_person' => '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelSevUser',
         '_tax_rate' => 'float',
-        '_tax_set' => '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelTaxSet',
+        '_tax_set' => '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelTaxSet',
         '_tax_text' => 'string',
         '_address_parent_name' => 'string',
-        '_address_contact_ref' => '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelContactAddress',
+        '_address_contact_ref' => '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelContactAddress',
         '_tax_type' => 'string',
         '_order_type' => 'string',
         '_send_date' => '\DateTime',
         '_address_parent_name2' => 'string',
         '_address_name2' => 'string',
         '_address_gender' => 'string',
-        '_address' => '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelContactAddress',
+        '_address' => '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelContactAddress',
         '_currency' => 'string',
         '_sum_net' => 'float',
         '_sum_tax' => 'float',
@@ -98,7 +98,7 @@ class ModelOrder implements ArrayAccess
         '_sum_gross_foreign_currency' => 'float',
         '_sum_discounts_foreign_currency' => 'float',
         '_weight' => 'float',
-        '_entry_type' => '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelEntryType',
+        '_entry_type' => '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelEntryType',
         '_costumer_internal_note' => 'string',
         '_show_net' => 'bool',
         '_send_type' => 'string'
@@ -507,7 +507,7 @@ class ModelOrder implements ArrayAccess
 
     /**
      * Gets _contact
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelContact
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelContact
      */
     public function getContact()
     {
@@ -516,7 +516,7 @@ class ModelOrder implements ArrayAccess
 
     /**
      * Sets _contact
-     * @param \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelContact $_contact the Model_Contact which is linked to the order
+     * @param \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelContact $_contact the Model_Contact which is linked to the order
      * @return $this
      */
     public function setContact($_contact)
@@ -717,7 +717,7 @@ class ModelOrder implements ArrayAccess
 
     /**
      * Gets _address_country
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelStaticCountry
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelStaticCountry
      */
     public function getAddressCountry()
     {
@@ -726,7 +726,7 @@ class ModelOrder implements ArrayAccess
 
     /**
      * Sets _address_country
-     * @param \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelStaticCountry $_address_country 
+     * @param \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelStaticCountry $_address_country 
      * @return $this
      */
     public function setAddressCountry($_address_country)
@@ -738,7 +738,7 @@ class ModelOrder implements ArrayAccess
 
     /**
      * Gets _create_user
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelSevUser
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelSevUser
      */
     public function getCreateUser()
     {
@@ -747,7 +747,7 @@ class ModelOrder implements ArrayAccess
 
     /**
      * Sets _create_user
-     * @param \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelSevUser $_create_user 
+     * @param \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelSevUser $_create_user 
      * @return $this
      */
     public function setCreateUser($_create_user)
@@ -885,7 +885,7 @@ class ModelOrder implements ArrayAccess
 
     /**
      * Gets _contact_person
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelSevUser
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelSevUser
      */
     public function getContactPerson()
     {
@@ -894,7 +894,7 @@ class ModelOrder implements ArrayAccess
 
     /**
      * Sets _contact_person
-     * @param \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelSevUser $_contact_person contact person for the order which is a SevUser
+     * @param \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelSevUser $_contact_person contact person for the order which is a SevUser
      * @return $this
      */
     public function setContactPerson($_contact_person)
@@ -927,7 +927,7 @@ class ModelOrder implements ArrayAccess
 
     /**
      * Gets _tax_set
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelTaxSet
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelTaxSet
      */
     public function getTaxSet()
     {
@@ -936,7 +936,7 @@ class ModelOrder implements ArrayAccess
 
     /**
      * Sets _tax_set
-     * @param \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelTaxSet $_tax_set 
+     * @param \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelTaxSet $_tax_set 
      * @return $this
      */
     public function setTaxSet($_tax_set)
@@ -990,7 +990,7 @@ class ModelOrder implements ArrayAccess
 
     /**
      * Gets _address_contact_ref
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelContactAddress
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelContactAddress
      */
     public function getAddressContactRef()
     {
@@ -999,7 +999,7 @@ class ModelOrder implements ArrayAccess
 
     /**
      * Sets _address_contact_ref
-     * @param \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelContactAddress $_address_contact_ref 
+     * @param \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelContactAddress $_address_contact_ref 
      * @return $this
      */
     public function setAddressContactRef($_address_contact_ref)
@@ -1137,7 +1137,7 @@ class ModelOrder implements ArrayAccess
 
     /**
      * Gets _address
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelContactAddress
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelContactAddress
      */
     public function getAddress()
     {
@@ -1146,7 +1146,7 @@ class ModelOrder implements ArrayAccess
 
     /**
      * Sets _address
-     * @param \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelContactAddress $_address concatenation of address attributes acquired from Model_Contact->Model_ContactAddress
+     * @param \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelContactAddress $_address concatenation of address attributes acquired from Model_Contact->Model_ContactAddress
      * @return $this
      */
     public function setAddress($_address)
@@ -1368,7 +1368,7 @@ class ModelOrder implements ArrayAccess
 
     /**
      * Gets _entry_type
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelEntryType
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelEntryType
      */
     public function getEntryType()
     {
@@ -1377,7 +1377,7 @@ class ModelOrder implements ArrayAccess
 
     /**
      * Sets _entry_type
-     * @param \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelEntryType $_entry_type 
+     * @param \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelEntryType $_entry_type 
      * @return $this
      */
     public function setEntryType($_entry_type)
@@ -1501,10 +1501,10 @@ class ModelOrder implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\isp-serverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\ispserverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\isp-serverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\ispserverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

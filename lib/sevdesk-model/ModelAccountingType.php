@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  isp-serverfarm\sevdesk\php-client
+ * @package  ispserverfarm\sevdesk\php-client
  * @author   Swaagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace isp-serverfarm\sevdesk\php-client\sevdesk-model;
+namespace ispserverfarm\sevdesk\php-client\sevdesk-model;
 
 use \ArrayAccess;
 
@@ -35,7 +35,7 @@ use \ArrayAccess;
  * ModelAccountingType Class Doc Comment
  *
  * @category    Class
- * @package     isp-serverfarm\sevdesk\php-client
+ * @package     ispserverfarm\sevdesk\php-client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -57,11 +57,11 @@ class ModelAccountingType implements ArrayAccess
         '_create' => '\DateTime',
         '_update' => '\DateTime',
         '_sev_client' => 'object',
-        '_parent' => '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelAccountingType',
+        '_parent' => '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelAccountingType',
         '_name' => 'string',
         '_skr03' => 'int',
         '_skr03_deprecation' => 'int',
-        '_accounting_chart' => '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelAccountingChart',
+        '_accounting_chart' => '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelAccountingChart',
         '_skr04' => 'int',
         '_skr04_deprecation' => 'int',
         '_skr_at' => 'int',
@@ -357,7 +357,7 @@ class ModelAccountingType implements ArrayAccess
 
     /**
      * Gets _parent
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelAccountingType
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelAccountingType
      */
     public function getParent()
     {
@@ -366,7 +366,7 @@ class ModelAccountingType implements ArrayAccess
 
     /**
      * Sets _parent
-     * @param \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelAccountingType $_parent 
+     * @param \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelAccountingType $_parent 
      * @return $this
      */
     public function setParent($_parent)
@@ -441,7 +441,7 @@ class ModelAccountingType implements ArrayAccess
 
     /**
      * Gets _accounting_chart
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelAccountingChart
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelAccountingChart
      */
     public function getAccountingChart()
     {
@@ -450,7 +450,7 @@ class ModelAccountingType implements ArrayAccess
 
     /**
      * Sets _accounting_chart
-     * @param \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelAccountingChart $_accounting_chart 
+     * @param \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelAccountingChart $_accounting_chart 
      * @return $this
      */
     public function setAccountingChart($_accounting_chart)
@@ -826,10 +826,10 @@ class ModelAccountingType implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\isp-serverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\ispserverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\isp-serverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\ispserverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

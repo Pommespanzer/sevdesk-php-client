@@ -1,4 +1,4 @@
-# isp-serverfarm\sevdesk\php-client\InventoryPartLogApi
+# ispserverfarm\sevdesk\php-client\InventoryPartLogApi
 
 All URIs are relative to *https://my.sevdesk.de/api/v1*
 
@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 
 # **addInventoryPartLog**
-> \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelInventoryPartLog addInventoryPartLog($body)
+> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelInventoryPartLog addInventoryPartLog($body)
 
 Create a new inventory part log
 
@@ -24,11 +24,11 @@ Calls InventoryPartLog.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\InventoryPartLogApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\InventoryPartLogApi();
 $body = "part[id]=&part[objectName]=Part&ammount=&name=&supplier[id]=&supplier[objectName]=Contact&postingDate="; // string | To create a inventory part log, simply enter desired values after parameter= and remove the quotation marks!    Be aware that creating an inventory part log this way is not recommended as there is no real acquisition/dispatch of a part!
 
 try {
@@ -48,7 +48,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelInventoryPartLog**](../Model/ModelInventoryPartLog.md)
+[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelInventoryPartLog**](../Model/ModelInventoryPartLog.md)
 
 ### Authorization
 
@@ -74,11 +74,11 @@ Calls the delete() function in InventoryPartLog.php    Be aware that this operat
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\InventoryPartLogApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\InventoryPartLogApi();
 $id = 56; // int | id of inventory part log you want to delete
 
 try {
@@ -111,7 +111,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getInventoryPartLog**
-> \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelInventoryPartLog getInventoryPartLog($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelInventoryPartLog getInventoryPartLog($limit, $offset, $embed)
 
 Get an overview of InventoryPartLog
 
@@ -123,11 +123,11 @@ Calls InventoryPartLog.php to get necessary variables
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\InventoryPartLogApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\InventoryPartLogApi();
 $limit = 100; // int | Limits the number of entries returned. Default is 100
 $offset = 0; // int | Set the index where the returned part logs start. Default is 0
 $embed = array("embed_example"); // string[] | Get some additional information. Embed can handle multiple values, they must be separated by comma. Default ``.
@@ -151,7 +151,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelInventoryPartLog**](../Model/ModelInventoryPartLog.md)
+[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelInventoryPartLog**](../Model/ModelInventoryPartLog.md)
 
 ### Authorization
 
@@ -177,11 +177,11 @@ Calls getStock() in InventoryPartLog.php to get the stock of the part involved i
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\InventoryPartLogApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\InventoryPartLogApi();
 $id = 56; // int | Id of inventory part log you want to get the stock from
 
 try {
@@ -214,7 +214,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateInventoryPartLog**
-> \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelInventoryPartLog updateInventoryPartLog($id, $body)
+> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelInventoryPartLog updateInventoryPartLog($id, $body)
 
 Update an existing inventory part log
 
@@ -226,11 +226,11 @@ Calls InventoryPartLog.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\InventoryPartLogApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\InventoryPartLogApi();
 $id = 56; // int | id of inventory part log you want to update
 $body = "body_example"; // string | Parameters which need to be updated. Please refer to the description from create inventory part log.    Enter the parameters according to the syntax: parameter1=&parameter2= and remove the quotation marks!    Be aware that updating an existing inventory part log is not recommended unless its for correcting wrong data in the database!
 
@@ -252,7 +252,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelInventoryPartLog**](../Model/ModelInventoryPartLog.md)
+[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelInventoryPartLog**](../Model/ModelInventoryPartLog.md)
 
 ### Authorization
 

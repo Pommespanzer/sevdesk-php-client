@@ -1,4 +1,4 @@
-# isp-serverfarm\sevdesk\php-client\VatReportApi
+# ispserverfarm\sevdesk\php-client\VatReportApi
 
 All URIs are relative to *https://my.sevdesk.de/api/v1*
 
@@ -20,11 +20,11 @@ Calls VatReport.php to get necessary variables.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\VatReportApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\VatReportApi();
 $reporting_year = 56; // int | Year for which you want to have a vat report
 $reporting_period_code = "monthly"; // string | Define the period for your vat report
 $no_actual_taxation_on_input_tax = false; // bool | Define if you want actual taxation on input tax

@@ -1,4 +1,4 @@
-# isp-serverfarm\sevdesk\php-client\AccountingCorrectionApi
+# ispserverfarm\sevdesk\php-client\AccountingCorrectionApi
 
 All URIs are relative to *https://my.sevdesk.de/api/v1*
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **addAccountingCorrection**
-> \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelAccountingCorrection addAccountingCorrection($body)
+> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelAccountingCorrection addAccountingCorrection($body)
 
 Create a new accounting correction
 
@@ -23,11 +23,11 @@ Calls AccountingCorrection.php to add an accounting correction
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\AccountingCorrectionApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\AccountingCorrectionApi();
 $body = "object[id]=&object[objectName]=&accountingType[id]=&accountingType[objectName]=AccountingType&ammount="; // string | To create an accounting correction, simply enter desired values after parameter= and remove the quotation marks.
 
 try {
@@ -47,7 +47,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelAccountingCorrection**](../Model/ModelAccountingCorrection.md)
+[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelAccountingCorrection**](../Model/ModelAccountingCorrection.md)
 
 ### Authorization
 
@@ -73,11 +73,11 @@ Calls AccountingCorrection.php to delete an accounting correction
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\AccountingCorrectionApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\AccountingCorrectionApi();
 $id = 56; // int | id of the accounting correction you want to delete
 
 try {
@@ -110,7 +110,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAccountingCorrections**
-> \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelAccountingCorrection getAccountingCorrections($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelAccountingCorrection getAccountingCorrections($limit, $offset, $embed)
 
 Get an overview of all accounting corrections
 
@@ -122,11 +122,11 @@ Calls AccountingCorrection.php to get necessary variables.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\AccountingCorrectionApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\AccountingCorrectionApi();
 $limit = 100; // int | Limits the number of entries returned. Default is 100
 $offset = 0; // int | Set the index where the returned accounting corrections start. Default is 0
 $embed = array("embed_example"); // string[] | Get some additional information. Embed can handle multiple values, they must be separated by comma. Default ``.
@@ -150,7 +150,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelAccountingCorrection**](../Model/ModelAccountingCorrection.md)
+[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelAccountingCorrection**](../Model/ModelAccountingCorrection.md)
 
 ### Authorization
 
@@ -164,7 +164,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateAccountingCorrection**
-> \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelAccountingCorrection updateAccountingCorrection($id, $body)
+> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelAccountingCorrection updateAccountingCorrection($id, $body)
 
 Update an existing accounting correction
 
@@ -176,11 +176,11 @@ Calls AccountingCorrection.php to update an accounting correction
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\AccountingCorrectionApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\AccountingCorrectionApi();
 $id = 56; // int | id of accounting correction you want to update
 $body = "body_example"; // string | Parameters which need to be updated. Enter the parameters according to the syntax: parameter1=&parameter2= and remove the quotation marks
 
@@ -202,7 +202,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelAccountingCorrection**](../Model/ModelAccountingCorrection.md)
+[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelAccountingCorrection**](../Model/ModelAccountingCorrection.md)
 
 ### Authorization
 

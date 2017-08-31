@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  isp-serverfarm\sevdesk\php-client
+ * @package  ispserverfarm\sevdesk\php-client
  * @author   Swaagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace isp-serverfarm\sevdesk\php-client\sevdesk-model;
+namespace ispserverfarm\sevdesk\php-client\sevdesk-model;
 
 use \ArrayAccess;
 
@@ -35,7 +35,7 @@ use \ArrayAccess;
  * ModelAsset Class Doc Comment
  *
  * @category    Class
- * @package     isp-serverfarm\sevdesk\php-client
+ * @package     ispserverfarm\sevdesk\php-client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class ModelAsset implements ArrayAccess
     protected static $swaggerTypes = [
         '_create' => '\DateTime',
         '_update' => '\DateTime',
-        '_voucher_pos' => '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelVoucherPos',
+        '_voucher_pos' => '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelVoucherPos',
         '_name' => 'string',
         '_sev_client' => 'object',
         '_useful_life' => 'int',
@@ -65,7 +65,7 @@ class ModelAsset implements ArrayAccess
         '_purchase_price_accounting' => 'float',
         '_tax_rate' => 'float',
         '_asset_number' => 'string',
-        '_accounting_type' => '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelAccountingType',
+        '_accounting_type' => '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelAccountingType',
         '_status' => 'int',
         '_enshrined' => 'bool'
     ];
@@ -282,7 +282,7 @@ class ModelAsset implements ArrayAccess
 
     /**
      * Gets _voucher_pos
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelVoucherPos
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelVoucherPos
      */
     public function getVoucherPos()
     {
@@ -291,7 +291,7 @@ class ModelAsset implements ArrayAccess
 
     /**
      * Sets _voucher_pos
-     * @param \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelVoucherPos $_voucher_pos voucher position of the asset
+     * @param \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelVoucherPos $_voucher_pos voucher position of the asset
      * @return $this
      */
     public function setVoucherPos($_voucher_pos)
@@ -471,7 +471,7 @@ class ModelAsset implements ArrayAccess
 
     /**
      * Gets _accounting_type
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelAccountingType
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelAccountingType
      */
     public function getAccountingType()
     {
@@ -480,7 +480,7 @@ class ModelAsset implements ArrayAccess
 
     /**
      * Sets _accounting_type
-     * @param \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelAccountingType $_accounting_type accounting type of the asset
+     * @param \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelAccountingType $_accounting_type accounting type of the asset
      * @return $this
      */
     public function setAccountingType($_accounting_type)
@@ -583,10 +583,10 @@ class ModelAsset implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\isp-serverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\ispserverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\isp-serverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\ispserverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

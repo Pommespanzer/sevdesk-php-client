@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  isp-serverfarm\sevdesk\php-client
+ * @package  ispserverfarm\sevdesk\php-client
  * @author   Swaagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace isp-serverfarm\sevdesk\php-client\sevdesk-model;
+namespace ispserverfarm\sevdesk\php-client\sevdesk-model;
 
 use \ArrayAccess;
 
@@ -35,7 +35,7 @@ use \ArrayAccess;
  * ModelAccountingContact Class Doc Comment
  *
  * @category    Class
- * @package     isp-serverfarm\sevdesk\php-client
+ * @package     ispserverfarm\sevdesk\php-client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class ModelAccountingContact implements ArrayAccess
     protected static $swaggerTypes = [
         '_create' => '\DateTime',
         '_update' => '\DateTime',
-        '_contact' => '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelContact',
+        '_contact' => '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelContact',
         '_contact_name' => 'string',
         '_sev_client' => 'object',
         '_debitor_number' => 'int',
@@ -240,7 +240,7 @@ class ModelAccountingContact implements ArrayAccess
 
     /**
      * Gets _contact
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelContact
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelContact
      */
     public function getContact()
     {
@@ -249,7 +249,7 @@ class ModelAccountingContact implements ArrayAccess
 
     /**
      * Sets _contact
-     * @param \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelContact $_contact 
+     * @param \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelContact $_contact 
      * @return $this
      */
     public function setContact($_contact)
@@ -394,10 +394,10 @@ class ModelAccountingContact implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\isp-serverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\ispserverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\isp-serverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\ispserverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

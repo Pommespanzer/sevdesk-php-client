@@ -1,4 +1,4 @@
-# isp-serverfarm\sevdesk\php-client\SubscriptionHistoryApi
+# ispserverfarm\sevdesk\php-client\SubscriptionHistoryApi
 
 All URIs are relative to *https://my.sevdesk.de/api/v1*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **getSubscriptionHistory**
-> \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelSubscriptionHistory getSubscriptionHistory($embed)
+> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelSubscriptionHistory getSubscriptionHistory($embed)
 
 Get an overview of your subscription history
 
@@ -20,11 +20,11 @@ Calls SubscriptionHistory.php to get necessary variables.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\SubscriptionHistoryApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\SubscriptionHistoryApi();
 $embed = array("embed_example"); // string[] | Get some additional information. Embed can handle multiple values, they must be separated by comma. Default ``.
 
 try {
@@ -44,7 +44,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelSubscriptionHistory**](../Model/ModelSubscriptionHistory.md)
+[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelSubscriptionHistory**](../Model/ModelSubscriptionHistory.md)
 
 ### Authorization
 

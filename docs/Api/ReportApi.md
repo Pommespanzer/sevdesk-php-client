@@ -1,4 +1,4 @@
-# isp-serverfarm\sevdesk\php-client\ReportApi
+# ispserverfarm\sevdesk\php-client\ReportApi
 
 All URIs are relative to *https://my.sevdesk.de/api/v1*
 
@@ -27,11 +27,11 @@ Calls contact() in Report.php to export the contact.    With **sevQuery[filter][
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\ReportApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\ReportApi();
 $download = true; // bool | Specifies if the document is downloaded
 $contact_id = 56; // int | Id of contact which should be exported
 $contact_object_name = "Contact"; // string | Model name which is exported
@@ -81,11 +81,11 @@ Calls contactlist() in Report.php to export the contact list.    With **sevQuery
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\ReportApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\ReportApi();
 $sev_query_model_name = "Contact"; // string | Model name which is exported
 $sev_query_object_name = "SevQuery"; // string | SevQuery object name
 $download = true; // bool | Specifies if the document is downloaded
@@ -139,11 +139,11 @@ Calls inventory() in Report.php to export the inventory.    With **sevQuery[filt
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\ReportApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\ReportApi();
 $sev_query_model_name = "Part"; // string | Model name which is exported
 $sev_query_object_name = "SevQuery"; // string | SevQuery object name
 $download = true; // bool | Specifies if the document is downloaded
@@ -197,11 +197,11 @@ Calls invoicelist() in Report.php to export the invoices.    With **sevQuery[fil
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\ReportApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\ReportApi();
 $sev_query_model_name = "Invoice"; // string | Model name which is exported
 $sev_query_object_name = "SevQuery"; // string | SevQuery object name
 $download = true; // bool | Specifies if the document is downloaded
@@ -255,11 +255,11 @@ Calls orderlist() in Report.php to export the orders.    With **sevQuery[filter]
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\ReportApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\ReportApi();
 $sev_query_model_name = "Order"; // string | Model name which is exported
 $sev_query_object_name = "SevQuery"; // string | SevQuery object name
 $download = true; // bool | Specifies if the document is downloaded
@@ -313,11 +313,11 @@ Calls profitAndLoss() in Report.php to export the profit and loss.    With **sev
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\ReportApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\ReportApi();
 $start_date = ""; // string | Start date of the profit and loss calculation
 $end_date = ""; // string | End date of the profit and loss calculation
 $tax_rule = true; // bool | Specify if you want the net income method or the profit and loss
@@ -369,11 +369,11 @@ Calls registerBook() in Report.php to export the register book / cash report.   
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\ReportApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\ReportApi();
 $check_account_id = 56; // int | Check account you want to export
 $check_account_object_name = "CheckAccount"; // string | Check account object name
 $start_date = ""; // string | Start date of the register book / cash report
@@ -427,11 +427,11 @@ Calls voucherlist() in Report.php to export the vouchers.    With **sevQuery[fil
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\ReportApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\ReportApi();
 $sev_query_filter_start_date = ""; // string | Start date to filter vouchers with
 $sev_query_model_name = "Voucher"; // string | Model name which is exported
 $sev_query_object_name = "SevQuery"; // string | SevQuery object name

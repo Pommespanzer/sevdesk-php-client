@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  isp-serverfarm\sevdesk\php-client
+ * @package  ispserverfarm\sevdesk\php-client
  * @author   Swaagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace isp-serverfarm\sevdesk\php-client\sevdesk-model;
+namespace ispserverfarm\sevdesk\php-client\sevdesk-model;
 
 use \ArrayAccess;
 
@@ -35,7 +35,7 @@ use \ArrayAccess;
  * ModelInvoicePos Class Doc Comment
  *
  * @category    Class
- * @package     isp-serverfarm\sevdesk\php-client
+ * @package     ispserverfarm\sevdesk\php-client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,13 +56,13 @@ class ModelInvoicePos implements ArrayAccess
     protected static $swaggerTypes = [
         '_create' => '\DateTime',
         '_update' => '\DateTime',
-        '_invoice' => '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelInvoice',
-        '_part' => '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelPart',
+        '_invoice' => '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelInvoice',
+        '_part' => '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelPart',
         '_quantity' => 'float',
         '_price' => 'float',
         '_name' => 'string',
         '_priority' => 'int',
-        '_unity' => '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelUnity',
+        '_unity' => '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelUnity',
         '_sev_client' => 'object',
         '_position_number' => 'int',
         '_text' => 'string',
@@ -348,7 +348,7 @@ class ModelInvoicePos implements ArrayAccess
 
     /**
      * Gets _invoice
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelInvoice
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelInvoice
      */
     public function getInvoice()
     {
@@ -357,7 +357,7 @@ class ModelInvoicePos implements ArrayAccess
 
     /**
      * Sets _invoice
-     * @param \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelInvoice $_invoice the Model_Invoice the invoice position belongs to
+     * @param \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelInvoice $_invoice the Model_Invoice the invoice position belongs to
      * @return $this
      */
     public function setInvoice($_invoice)
@@ -369,7 +369,7 @@ class ModelInvoicePos implements ArrayAccess
 
     /**
      * Gets _part
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelPart
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelPart
      */
     public function getPart()
     {
@@ -378,7 +378,7 @@ class ModelInvoicePos implements ArrayAccess
 
     /**
      * Sets _part
-     * @param \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelPart $_part the product/part which belongs to the invoice position
+     * @param \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelPart $_part the product/part which belongs to the invoice position
      * @return $this
      */
     public function setPart($_part)
@@ -474,7 +474,7 @@ class ModelInvoicePos implements ArrayAccess
 
     /**
      * Gets _unity
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelUnity
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelUnity
      */
     public function getUnity()
     {
@@ -483,7 +483,7 @@ class ModelInvoicePos implements ArrayAccess
 
     /**
      * Sets _unity
-     * @param \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelUnity $_unity 
+     * @param \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelUnity $_unity 
      * @return $this
      */
     public function setUnity($_unity)
@@ -880,10 +880,10 @@ class ModelInvoicePos implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\isp-serverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\ispserverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\isp-serverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\ispserverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

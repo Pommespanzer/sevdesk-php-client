@@ -1,4 +1,4 @@
-# isp-serverfarm\sevdesk\php-client\LetterApi
+# ispserverfarm\sevdesk\php-client\LetterApi
 
 All URIs are relative to *https://my.sevdesk.de/api/v1*
 
@@ -16,7 +16,7 @@ Method | HTTP request | Description
 
 
 # **addLetter**
-> \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelLetter addLetter($body)
+> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelLetter addLetter($body)
 
 Create a new letter
 
@@ -28,11 +28,11 @@ Calls Letter.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\LetterApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\LetterApi();
 $body = "letterNumber=&contact[objectName]=Contact&contact[id]=&header=&status=&text=&sendType=&sendDate="; // string | To create a letter, simply enter desired values after parameter= and remove the quotation marks.
 
 try {
@@ -52,7 +52,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelLetter**](../Model/ModelLetter.md)
+[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelLetter**](../Model/ModelLetter.md)
 
 ### Authorization
 
@@ -78,11 +78,11 @@ Calls the delete() function in Letter.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\LetterApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\LetterApi();
 $id = 56; // int | id of letter you want to delete
 
 try {
@@ -115,7 +115,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getLetters**
-> \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelLetter getLetters($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelLetter getLetters($limit, $offset, $embed)
 
 Get an overview of all letters
 
@@ -127,11 +127,11 @@ Calls Letter.php to get necessary variables
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\LetterApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\LetterApi();
 $limit = 100; // int | Limits the number of entries returned. Default is 100
 $offset = 0; // int | Set the index where the returned letters start. Default is 0
 $embed = array("embed_example"); // string[] | Get some additional information. Embed can handle multiple values, they must be separated by comma. Default ``.
@@ -155,7 +155,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelLetter**](../Model/ModelLetter.md)
+[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelLetter**](../Model/ModelLetter.md)
 
 ### Authorization
 
@@ -181,11 +181,11 @@ Calls getPdf() in Letter.php to get the pdf of a specified letter from the docse
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\LetterApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\LetterApi();
 $id = 56; // int | Id of the letter of which you want to get the pdf
 
 try {
@@ -230,11 +230,11 @@ Calls render() in Letter.php to render a letter to the docserver and return the 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\LetterApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\LetterApi();
 $id = 56; // int | id of letter you want to render
 
 try {
@@ -267,7 +267,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **letterSendBy**
-> \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelLetter letterSendBy($id, $body)
+> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelLetter letterSendBy($id, $body)
 
 Update parameter sendType
 
@@ -279,11 +279,11 @@ Calls sendBy() in Letter.php to update the sendType parameter of the letter and 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\LetterApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\LetterApi();
 $id = 56; // int | id of letter of which you want to update the sendType parameter
 $body = "body_example"; // string | Enter desired send type after sendType= and remove the quotation marks!
 
@@ -305,7 +305,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelLetter**](../Model/ModelLetter.md)
+[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelLetter**](../Model/ModelLetter.md)
 
 ### Authorization
 
@@ -331,11 +331,11 @@ Calls sendViaMail() in Letter.php to send a letter via mail.    Note that you ca
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\LetterApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\LetterApi();
 $id = 56; // int | id of letter you want to send
 $body = "body_example"; // string | To send a letter, simply enter desired values after parameter= and remove the quotation marks.    Please note: additionalAttachments is a String containing document id's (of existing documents!)
 
@@ -382,11 +382,11 @@ Calls sendViaPost() in Letter.php to send a letter via post if enabled in your s
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\LetterApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\LetterApi();
 $id = 56; // int | id of letter you want to send
 
 try {
@@ -419,7 +419,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateLetter**
-> \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelLetter updateLetter($id, $body)
+> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelLetter updateLetter($id, $body)
 
 Update an existing letter
 
@@ -431,11 +431,11 @@ Calls Letter.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\LetterApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\LetterApi();
 $id = 56; // int | id of letter you want to update
 $body = "body_example"; // string | Parameters which need to be updated. Please refer to the description from create letter.    Enter the parameters according to the syntax: parameter1=&parameter2=
 
@@ -457,7 +457,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelLetter**](../Model/ModelLetter.md)
+[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelLetter**](../Model/ModelLetter.md)
 
 ### Authorization
 

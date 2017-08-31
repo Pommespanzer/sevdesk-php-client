@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  isp-serverfarm\sevdesk\php-client
+ * @package  ispserverfarm\sevdesk\php-client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,18 +26,18 @@
  * Do not edit the class manually.
  */
 
-namespace isp-serverfarm\sevdesk\php-client\sevdesk-api;
+namespace ispserverfarm\sevdesk\php-client\sevdesk-api;
 
-use \isp-serverfarm\sevdesk\php-client\ApiClient;
-use \isp-serverfarm\sevdesk\php-client\ApiException;
-use \isp-serverfarm\sevdesk\php-client\Configuration;
-use \isp-serverfarm\sevdesk\php-client\ObjectSerializer;
+use \ispserverfarm\sevdesk\php-client\ApiClient;
+use \ispserverfarm\sevdesk\php-client\ApiException;
+use \ispserverfarm\sevdesk\php-client\Configuration;
+use \ispserverfarm\sevdesk\php-client\ObjectSerializer;
 
 /**
  * ReportApi Class Doc Comment
  *
  * @category Class
- * @package  isp-serverfarm\sevdesk\php-client
+ * @package  ispserverfarm\sevdesk\php-client
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -46,16 +46,16 @@ class ReportApi
     /**
      * API Client
      *
-     * @var \isp-serverfarm\sevdesk\php-client\ApiClient instance of the ApiClient
+     * @var \ispserverfarm\sevdesk\php-client\ApiClient instance of the ApiClient
      */
     protected $apiClient;
 
     /**
      * Constructor
      *
-     * @param \isp-serverfarm\sevdesk\php-client\ApiClient|null $apiClient The api client to use
+     * @param \ispserverfarm\sevdesk\php-client\ApiClient|null $apiClient The api client to use
      */
-    public function __construct(\isp-serverfarm\sevdesk\php-client\ApiClient $apiClient = null)
+    public function __construct(\ispserverfarm\sevdesk\php-client\ApiClient $apiClient = null)
     {
         if ($apiClient === null) {
             $apiClient = new ApiClient();
@@ -67,7 +67,7 @@ class ReportApi
     /**
      * Get API client
      *
-     * @return \isp-serverfarm\sevdesk\php-client\ApiClient get the API client
+     * @return \ispserverfarm\sevdesk\php-client\ApiClient get the API client
      */
     public function getApiClient()
     {
@@ -77,11 +77,11 @@ class ReportApi
     /**
      * Set the API client
      *
-     * @param \isp-serverfarm\sevdesk\php-client\ApiClient $apiClient set the API client
+     * @param \ispserverfarm\sevdesk\php-client\ApiClient $apiClient set the API client
      *
      * @return ReportApi
      */
-    public function setApiClient(\isp-serverfarm\sevdesk\php-client\ApiClient $apiClient)
+    public function setApiClient(\ispserverfarm\sevdesk\php-client\ApiClient $apiClient)
     {
         $this->apiClient = $apiClient;
         return $this;
@@ -95,7 +95,7 @@ class ReportApi
      * @param bool $download Specifies if the document is downloaded (required)
      * @param int $contact_id Id of contact which should be exported (required)
      * @param string $contact_object_name Model name which is exported (required)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return \SplFileObject
      */
     public function reportContact($download, $contact_id, $contact_object_name)
@@ -112,7 +112,7 @@ class ReportApi
      * @param bool $download Specifies if the document is downloaded (required)
      * @param int $contact_id Id of contact which should be exported (required)
      * @param string $contact_object_name Model name which is exported (required)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return array of \SplFileObject, HTTP status code, HTTP response headers (array of strings)
      */
     public function reportContactWithHttpInfo($download, $contact_id, $contact_object_name)
@@ -200,7 +200,7 @@ class ReportApi
      * @param bool $download Specifies if the document is downloaded (optional, default to true)
      * @param int $sev_query_limit Limit exported contacts (optional, default to 99999)
      * @param int $sev_query_offset Set the index where the exported contacts start (optional, default to 0)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return \SplFileObject
      */
     public function reportContactList($sev_query_model_name, $sev_query_object_name, $download = 'true', $sev_query_limit = '99999', $sev_query_offset = '0')
@@ -219,7 +219,7 @@ class ReportApi
      * @param bool $download Specifies if the document is downloaded (optional, default to true)
      * @param int $sev_query_limit Limit exported contacts (optional, default to 99999)
      * @param int $sev_query_offset Set the index where the exported contacts start (optional, default to 0)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return array of \SplFileObject, HTTP status code, HTTP response headers (array of strings)
      */
     public function reportContactListWithHttpInfo($sev_query_model_name, $sev_query_object_name, $download = 'true', $sev_query_limit = '99999', $sev_query_offset = '0')
@@ -311,7 +311,7 @@ class ReportApi
      * @param bool $download Specifies if the document is downloaded (optional, default to true)
      * @param int $sev_query_limit Limit exported inventory entries (optional, default to 99999)
      * @param int $sev_query_offset Set the index where the exported parts start (optional, default to 99999)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return \SplFileObject
      */
     public function reportInventory($sev_query_model_name, $sev_query_object_name, $download = 'true', $sev_query_limit = '99999', $sev_query_offset = '99999')
@@ -330,7 +330,7 @@ class ReportApi
      * @param bool $download Specifies if the document is downloaded (optional, default to true)
      * @param int $sev_query_limit Limit exported inventory entries (optional, default to 99999)
      * @param int $sev_query_offset Set the index where the exported parts start (optional, default to 99999)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return array of \SplFileObject, HTTP status code, HTTP response headers (array of strings)
      */
     public function reportInventoryWithHttpInfo($sev_query_model_name, $sev_query_object_name, $download = 'true', $sev_query_limit = '99999', $sev_query_offset = '99999')
@@ -422,7 +422,7 @@ class ReportApi
      * @param bool $download Specifies if the document is downloaded (optional, default to true)
      * @param int $sev_query_limit Limit exported invoices (optional, default to 99999)
      * @param int $sev_query_offset Set the index where the exported invoices should start (optional, default to 0)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return \SplFileObject
      */
     public function reportInvoiceList($sev_query_model_name, $sev_query_object_name, $download = 'true', $sev_query_limit = '99999', $sev_query_offset = '0')
@@ -441,7 +441,7 @@ class ReportApi
      * @param bool $download Specifies if the document is downloaded (optional, default to true)
      * @param int $sev_query_limit Limit exported invoices (optional, default to 99999)
      * @param int $sev_query_offset Set the index where the exported invoices should start (optional, default to 0)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return array of \SplFileObject, HTTP status code, HTTP response headers (array of strings)
      */
     public function reportInvoiceListWithHttpInfo($sev_query_model_name, $sev_query_object_name, $download = 'true', $sev_query_limit = '99999', $sev_query_offset = '0')
@@ -533,7 +533,7 @@ class ReportApi
      * @param bool $download Specifies if the document is downloaded (optional, default to true)
      * @param int $sev_query_limit Limit exported orders (optional, default to 99999)
      * @param int $sev_query_offset Set the index where the exported orders should start (optional, default to 0)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return \SplFileObject
      */
     public function reportOrderList($sev_query_model_name, $sev_query_object_name, $download = 'true', $sev_query_limit = '99999', $sev_query_offset = '0')
@@ -552,7 +552,7 @@ class ReportApi
      * @param bool $download Specifies if the document is downloaded (optional, default to true)
      * @param int $sev_query_limit Limit exported orders (optional, default to 99999)
      * @param int $sev_query_offset Set the index where the exported orders should start (optional, default to 0)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return array of \SplFileObject, HTTP status code, HTTP response headers (array of strings)
      */
     public function reportOrderListWithHttpInfo($sev_query_model_name, $sev_query_object_name, $download = 'true', $sev_query_limit = '99999', $sev_query_offset = '0')
@@ -643,7 +643,7 @@ class ReportApi
      * @param string $end_date End date of the profit and loss calculation (required)
      * @param bool $tax_rule Specify if you want the net income method or the profit and loss (required)
      * @param bool $download Specifies if the document is downloaded (optional, default to true)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return \SplFileObject
      */
     public function reportProfitAndLoss($start_date, $end_date, $tax_rule, $download = 'true')
@@ -661,7 +661,7 @@ class ReportApi
      * @param string $end_date End date of the profit and loss calculation (required)
      * @param bool $tax_rule Specify if you want the net income method or the profit and loss (required)
      * @param bool $download Specifies if the document is downloaded (optional, default to true)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return array of \SplFileObject, HTTP status code, HTTP response headers (array of strings)
      */
     public function reportProfitAndLossWithHttpInfo($start_date, $end_date, $tax_rule, $download = 'true')
@@ -753,7 +753,7 @@ class ReportApi
      * @param string $start_date Start date of the register book / cash report (required)
      * @param string $end_date End date of the register book / cash report (required)
      * @param bool $download Specifies if the document is downloaded (optional, default to true)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return \SplFileObject
      */
     public function reportRegisterBook($check_account_id, $check_account_object_name, $start_date, $end_date, $download = 'true')
@@ -772,7 +772,7 @@ class ReportApi
      * @param string $start_date Start date of the register book / cash report (required)
      * @param string $end_date End date of the register book / cash report (required)
      * @param bool $download Specifies if the document is downloaded (optional, default to true)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return array of \SplFileObject, HTTP status code, HTTP response headers (array of strings)
      */
     public function reportRegisterBookWithHttpInfo($check_account_id, $check_account_object_name, $start_date, $end_date, $download = 'true')
@@ -873,7 +873,7 @@ class ReportApi
      * @param bool $download Specifies if the document is downloaded (optional, default to true)
      * @param int $sev_query_limit Limit exported vouchers (optional, default to 99999)
      * @param int $sev_query_offset Set the index where the exported vouchers should start (optional, default to 0)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return \SplFileObject
      */
     public function reportVoucherList($sev_query_filter_start_date, $sev_query_model_name, $sev_query_object_name, $download = 'true', $sev_query_limit = '99999', $sev_query_offset = '0')
@@ -893,7 +893,7 @@ class ReportApi
      * @param bool $download Specifies if the document is downloaded (optional, default to true)
      * @param int $sev_query_limit Limit exported vouchers (optional, default to 99999)
      * @param int $sev_query_offset Set the index where the exported vouchers should start (optional, default to 0)
-     * @throws \isp-serverfarm\sevdesk\php-client\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\php-client\ApiException on non-2xx response
      * @return array of \SplFileObject, HTTP status code, HTTP response headers (array of strings)
      */
     public function reportVoucherListWithHttpInfo($sev_query_filter_start_date, $sev_query_model_name, $sev_query_object_name, $download = 'true', $sev_query_limit = '99999', $sev_query_offset = '0')

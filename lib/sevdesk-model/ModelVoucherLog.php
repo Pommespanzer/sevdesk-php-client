@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  isp-serverfarm\sevdesk\php-client
+ * @package  ispserverfarm\sevdesk\php-client
  * @author   Swaagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace isp-serverfarm\sevdesk\php-client\sevdesk-model;
+namespace ispserverfarm\sevdesk\php-client\sevdesk-model;
 
 use \ArrayAccess;
 
@@ -35,7 +35,7 @@ use \ArrayAccess;
  * ModelVoucherLog Class Doc Comment
  *
  * @category    Class
- * @package     isp-serverfarm\sevdesk\php-client
+ * @package     ispserverfarm\sevdesk\php-client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -55,7 +55,7 @@ class ModelVoucherLog implements ArrayAccess
       */
     protected static $swaggerTypes = [
         '_create' => '\DateTime',
-        '_voucher' => '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelVoucher',
+        '_voucher' => '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelVoucher',
         '_from_status' => 'int',
         '_to_status' => 'int',
         '_amount_payed' => 'float',
@@ -219,7 +219,7 @@ class ModelVoucherLog implements ArrayAccess
 
     /**
      * Gets _voucher
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelVoucher
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelVoucher
      */
     public function getVoucher()
     {
@@ -228,7 +228,7 @@ class ModelVoucherLog implements ArrayAccess
 
     /**
      * Sets _voucher
-     * @param \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelVoucher $_voucher voucher to which the log belongs
+     * @param \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelVoucher $_voucher voucher to which the log belongs
      * @return $this
      */
     public function setVoucher($_voucher)
@@ -394,10 +394,10 @@ class ModelVoucherLog implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\isp-serverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\ispserverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\isp-serverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\ispserverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

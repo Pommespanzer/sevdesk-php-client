@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  isp-serverfarm\sevdesk\php-client
+ * @package  ispserverfarm\sevdesk\php-client
  * @author   Swaagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace isp-serverfarm\sevdesk\php-client\sevdesk-model;
+namespace ispserverfarm\sevdesk\php-client\sevdesk-model;
 
 use \ArrayAccess;
 
@@ -36,7 +36,7 @@ use \ArrayAccess;
  *
  * @category    Class
  * @description Below are the models which can be used for the functions in Contact/Factory.php. Beware that you need to use them without the underscore at the beginning!
- * @package     isp-serverfarm\sevdesk\php-client
+ * @package     ispserverfarm\sevdesk\php-client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -55,7 +55,7 @@ class ModelContactFactory implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'contact' => '\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelContact'
+        'contact' => '\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelContact'
     ];
 
     /**
@@ -163,7 +163,7 @@ class ModelContactFactory implements ArrayAccess
 
     /**
      * Gets contact
-     * @return \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelContact
+     * @return \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelContact
      */
     public function getContact()
     {
@@ -172,7 +172,7 @@ class ModelContactFactory implements ArrayAccess
 
     /**
      * Sets contact
-     * @param \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelContact $contact here you can find useful parameters for your contact requests
+     * @param \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelContact $contact here you can find useful parameters for your contact requests
      * @return $this
      */
     public function setContact($contact)
@@ -233,10 +233,10 @@ class ModelContactFactory implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\isp-serverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\ispserverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\isp-serverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\ispserverfarm\sevdesk\php-client\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

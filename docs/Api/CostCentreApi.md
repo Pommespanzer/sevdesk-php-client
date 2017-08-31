@@ -1,4 +1,4 @@
-# isp-serverfarm\sevdesk\php-client\CostCentreApi
+# ispserverfarm\sevdesk\php-client\CostCentreApi
 
 All URIs are relative to *https://my.sevdesk.de/api/v1*
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **addCostCentre**
-> \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelCostCentre addCostCentre($body)
+> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelCostCentre addCostCentre($body)
 
 Create a new cost centre
 
@@ -23,11 +23,11 @@ Calls CostCentre.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\CostCentreApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\CostCentreApi();
 $body = "name=&color=&number="; // string | To create a cost centre, simply enter desired values after parameter= and remove the quotation marks
 
 try {
@@ -47,7 +47,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelCostCentre**](../Model/ModelCostCentre.md)
+[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelCostCentre**](../Model/ModelCostCentre.md)
 
 ### Authorization
 
@@ -73,11 +73,11 @@ Calls the delete() function in CostCentre.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\CostCentreApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\CostCentreApi();
 $id = 56; // int | id of cost centre you want to delete
 
 try {
@@ -110,7 +110,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCostCentre**
-> \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelCostCentre getCostCentre($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelCostCentre getCostCentre($limit, $offset, $embed)
 
 Get an overview of all cost centre
 
@@ -122,11 +122,11 @@ Calls CostCentre.php to get necessary variables
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\CostCentreApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\CostCentreApi();
 $limit = 100; // int | Limits the number of entries returned. Default is 100
 $offset = 0; // int | Set the index where the returned cost centre start. Default is 0
 $embed = array("embed_example"); // string[] | Get some additional information. Embed can handle multiple values, they must be separated by comma. Default ``.
@@ -150,7 +150,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelCostCentre**](../Model/ModelCostCentre.md)
+[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelCostCentre**](../Model/ModelCostCentre.md)
 
 ### Authorization
 
@@ -164,7 +164,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateCostCentre**
-> \isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelCostCentre updateCostCentre($id, $body)
+> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelCostCentre updateCostCentre($id, $body)
 
 Update an existing cost centre
 
@@ -176,11 +176,11 @@ Calls CostCentre.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// isp-serverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new isp-serverfarm\sevdesk\php-client\Api\CostCentreApi();
+$api_instance = new ispserverfarm\sevdesk\php-client\Api\CostCentreApi();
 $id = 56; // int | id of cost centre you want to update
 $body = "body_example"; // string | Parameters which need to be updated. Please refer to the description from create cost centre.    Enter the parameters according to the syntax: parameter1=&parameter2=
 
@@ -202,7 +202,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\isp-serverfarm\sevdesk\php-client\sevdesk-model\ModelCostCentre**](../Model/ModelCostCentre.md)
+[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelCostCentre**](../Model/ModelCostCentre.md)
 
 ### Authorization
 
