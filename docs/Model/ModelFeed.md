@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **_object** | **object** |  | [optional] 
 **_text** | **string** |  | [optional] 
 **_type** | **object** |  | [optional] 
-**_user** | [**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelSevUser**](ModelSevUser.md) |  | [optional] 
+**_user** | [**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelSevUser**](ModelSevUser.md) |  | [optional] 
 **_object_action** | **object** |  | [optional] 
 **_sev_client** | **object** | sevClient is the unique id every customer has and is used in nearly all operations | [optional] 
 

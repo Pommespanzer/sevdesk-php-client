@@ -1,4 +1,4 @@
-# ispserverfarm\sevdesk\php-client\FeedApi
+# ispserverfarm\sevdesk\phpclient\FeedApi
 
 All URIs are relative to *https://my.sevdesk.de/api/v1*
 
@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 
 # **addFeed**
-> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelFeed addFeed($body)
+> \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelFeed addFeed($body)
 
 Create a new action which will be displayed in the feed
 
@@ -24,11 +24,11 @@ Calls Feed.php to add an action to the feed
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\php-client\Api\FeedApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\FeedApi();
 $body = "text=&type[id]=&type[objectName]=FeedType&user[id]=&user[objectName]=SevUser"; // string | To create a new action for the feed, simply enter desired values after parameter= and remove the quotation marks.
 
 try {
@@ -48,7 +48,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelFeed**](../Model/ModelFeed.md)
+[**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelFeed**](../Model/ModelFeed.md)
 
 ### Authorization
 
@@ -74,11 +74,11 @@ Deletes a feed action
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\php-client\Api\FeedApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\FeedApi();
 $id = 56; // int | id of feed action you want to delete
 
 try {
@@ -111,7 +111,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getFeeds**
-> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelFeed getFeeds($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelFeed getFeeds($limit, $offset, $embed)
 
 Get an overview of all actions from everyone, which will be displayed in the dashboard
 
@@ -123,11 +123,11 @@ Calls Feed.php to get necessary variables.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\php-client\Api\FeedApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\FeedApi();
 $limit = 100; // int | Limits the number of entries returned. Default is 100
 $offset = 0; // int | Set the index where the returned feeds start. Default is 0
 $embed = array("embed_example"); // string[] | Get some additional information. Embed can handle multiple values, they must be separated by comma. Default ``.
@@ -151,7 +151,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelFeed**](../Model/ModelFeed.md)
+[**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelFeed**](../Model/ModelFeed.md)
 
 ### Authorization
 
@@ -177,11 +177,11 @@ Calls getParsedObjectAction() in Feed.php to get more information about the spec
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\php-client\Api\FeedApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\FeedApi();
 $id = 56; // int | Feed id of the object you want to get more information about
 
 try {
@@ -214,7 +214,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateFeed**
-> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelFeed updateFeed($id, $body)
+> \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelFeed updateFeed($id, $body)
 
 Update an existing Feed action
 
@@ -226,11 +226,11 @@ TODO: Enter short backend documentation here
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\php-client\Api\FeedApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\FeedApi();
 $id = 56; // int | id of feed action you want to update
 $body = "text=&type[id]=&type[objectName]=FeedType&user[id]=&user[objectName]=SevUser"; // string | Parameters which need to be updated. Enter the parameters according to the syntax: parameter1=&parameter2= and remove the quotation marks
 
@@ -252,7 +252,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelFeed**](../Model/ModelFeed.md)
+[**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelFeed**](../Model/ModelFeed.md)
 
 ### Authorization
 

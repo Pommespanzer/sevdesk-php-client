@@ -1,4 +1,4 @@
-# ispserverfarm\sevdesk\php-client\AccountingSystemNumberApi
+# ispserverfarm\sevdesk\phpclient\AccountingSystemNumberApi
 
 All URIs are relative to *https://my.sevdesk.de/api/v1*
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **addAccountingSystemNumber**
-> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelAccountingSystemNumber addAccountingSystemNumber($body)
+> \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelAccountingSystemNumber addAccountingSystemNumber($body)
 
 Create a new accounting system number
 
@@ -23,11 +23,11 @@ Calls AccountingSystemNumber.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\php-client\Api\AccountingSystemNumberApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\AccountingSystemNumberApi();
 $body = "number=&accountingType[id]=&accountingType[objectName]=AccountingType&accountingSystem[id]=1&accountingSystem[objectName]=AccountingSystem&objectName=AccountingSystemNumber  &id=&accountingSystemNumber=undefined"; // string | To create an accounting system number, simply enter desired values after parameter= and remove the quotation marks.
 
 try {
@@ -47,7 +47,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelAccountingSystemNumber**](../Model/ModelAccountingSystemNumber.md)
+[**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelAccountingSystemNumber**](../Model/ModelAccountingSystemNumber.md)
 
 ### Authorization
 
@@ -73,11 +73,11 @@ Calls the delete() function in AccountingSystemNumber.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\php-client\Api\AccountingSystemNumberApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\AccountingSystemNumberApi();
 $id = 56; // int | id of accounting system number you want to delete
 
 try {
@@ -110,7 +110,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAccountingSystemNumbers**
-> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelAccountingSystemNumber getAccountingSystemNumbers($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelAccountingSystemNumber getAccountingSystemNumbers($limit, $offset, $embed)
 
 Get an overview of all accounting system numbers
 
@@ -122,11 +122,11 @@ Calls AccountingSystemNumber.php to get necessary variables.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\php-client\Api\AccountingSystemNumberApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\AccountingSystemNumberApi();
 $limit = 1000; // int | Limits the number of entries returned. Default is 1000
 $offset = 0; // int | Set the index where the returned accounting system numbers start. Default is 0
 $embed = array("embed_example"); // string[] | Get some additional information. Embed can handle multiple values, they must be separated by comma. Default ``.
@@ -150,7 +150,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelAccountingSystemNumber**](../Model/ModelAccountingSystemNumber.md)
+[**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelAccountingSystemNumber**](../Model/ModelAccountingSystemNumber.md)
 
 ### Authorization
 
@@ -164,7 +164,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateAccountingSystemNumber**
-> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelAccountingType updateAccountingSystemNumber($id, $body)
+> \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelAccountingType updateAccountingSystemNumber($id, $body)
 
 Update an existing accounting system number
 
@@ -176,11 +176,11 @@ Calls AccountingSystemNumber.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\php-client\Api\AccountingSystemNumberApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\AccountingSystemNumberApi();
 $id = 56; // int | id of accounting system number you want to update
 $body = "body_example"; // string | Parameters which need to be updated. Please refer to the description from create accounting system number.    Append the parameters according to the syntax: parameter1=&parameter2= and remove the quotation marks!
 
@@ -202,7 +202,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelAccountingType**](../Model/ModelAccountingType.md)
+[**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelAccountingType**](../Model/ModelAccountingType.md)
 
 ### Authorization
 

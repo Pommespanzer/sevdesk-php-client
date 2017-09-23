@@ -1,4 +1,4 @@
-# ispserverfarm\sevdesk\php-client\PaymentMethodApi
+# ispserverfarm\sevdesk\phpclient\PaymentMethodApi
 
 All URIs are relative to *https://my.sevdesk.de/api/v1*
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **addPaymentMethod**
-> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelPaymentMethod addPaymentMethod($body)
+> \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelPaymentMethod addPaymentMethod($body)
 
 Create a new payment method
 
@@ -23,11 +23,11 @@ Calls PaymentMethod.php to create a payment method
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\php-client\Api\PaymentMethodApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\PaymentMethodApi();
 $body = "name=&text="; // string | write desired values behind the = and remove the quotation marks to create a payment method
 
 try {
@@ -47,7 +47,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelPaymentMethod**](../Model/ModelPaymentMethod.md)
+[**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelPaymentMethod**](../Model/ModelPaymentMethod.md)
 
 ### Authorization
 
@@ -73,11 +73,11 @@ Calls the delete() function in PaymentMethod.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\php-client\Api\PaymentMethodApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\PaymentMethodApi();
 $id = 56; // int | id of payment method you want to delete
 
 try {
@@ -110,7 +110,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getPaymentMethods**
-> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelPaymentMethod getPaymentMethods($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelPaymentMethod getPaymentMethods($limit, $offset, $embed)
 
 Get an overview of all payment methods
 
@@ -122,11 +122,11 @@ Calls PaymentMethod.php to get necessary variables.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\php-client\Api\PaymentMethodApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\PaymentMethodApi();
 $limit = 100; // int | Limits the number of entries returned. Default is 100
 $offset = 0; // int | Set the index where the returned payment methods start. Default is 0
 $embed = array("embed_example"); // string[] | Get some additional information. Embed can handle multiple values, they must be separated by comma. Default ``.
@@ -150,7 +150,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelPaymentMethod**](../Model/ModelPaymentMethod.md)
+[**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelPaymentMethod**](../Model/ModelPaymentMethod.md)
 
 ### Authorization
 
@@ -164,7 +164,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updatePaymentMethod**
-> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelPaymentMethod updatePaymentMethod($id, $body)
+> \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelPaymentMethod updatePaymentMethod($id, $body)
 
 Update an existing payment method
 
@@ -176,11 +176,11 @@ Calls PaymentMethod.php to update a payment method
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\php-client\Api\PaymentMethodApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\PaymentMethodApi();
 $id = 56; // int | id of payment method you want to update
 $body = "body_example"; // string | Parameters which need to be updated. Please refer to the description from create payment method.        Enter the parameters according to the syntax: parameter1=&parameter2=
 
@@ -202,7 +202,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelPaymentMethod**](../Model/ModelPaymentMethod.md)
+[**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelPaymentMethod**](../Model/ModelPaymentMethod.md)
 
 ### Authorization
 

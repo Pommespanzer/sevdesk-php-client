@@ -1,4 +1,4 @@
-# ispserverfarm\sevdesk\php-client\CurrencyExchangeRateApi
+# ispserverfarm\sevdesk\phpclient\CurrencyExchangeRateApi
 
 All URIs are relative to *https://my.sevdesk.de/api/v1*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **getCurrencyExchangeRates**
-> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelCurrencyExchangeRate getCurrencyExchangeRates($limit, $offset)
+> \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCurrencyExchangeRate getCurrencyExchangeRates($limit, $offset)
 
 Get an overview of all currency exchange rates
 
@@ -20,11 +20,11 @@ Calls CurrencyExchangeRate.php to get necessary variables
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\php-client\Api\CurrencyExchangeRateApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\CurrencyExchangeRateApi();
 $limit = 1000; // int | Limits the number of entries returned. Default is 1000.    Be aware that there are over 100000 entries in the database for currency exchange rate, so using a limit higher than 1000 with offset=0 is not recommended!    However you can set the offset appropriately so you minimize the amount of returned exchange rates and keep loading time to a low.
 $offset = 0; // int | Set the index where the returned currency exchange rates start. Default is 0
 
@@ -46,7 +46,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelCurrencyExchangeRate**](../Model/ModelCurrencyExchangeRate.md)
+[**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCurrencyExchangeRate**](../Model/ModelCurrencyExchangeRate.md)
 
 ### Authorization
 

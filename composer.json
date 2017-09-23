@@ -29,9 +29,9 @@
         "friendsofphp/php-cs-fixer": "~1.12"
     },
     "autoload": {
-        "psr-4": { "ispserverfarm\\sevdesk\\php-client\\" : "lib/" }
+        "psr-4": { "ispserverfarm\\sevdesk\\phpclient\\" : "lib/" }
     },
     "autoload-dev": {
-        "psr-4": { "ispserverfarm\\sevdesk\\php-client\\" : "test/" }
+        "psr-4": { "ispserverfarm\\sevdesk\\phpclient\\" : "test/" }
     }
 }

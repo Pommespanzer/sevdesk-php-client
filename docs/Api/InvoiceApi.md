@@ -1,4 +1,4 @@
-# ispserverfarm\sevdesk\php-client\InvoiceApi
+# ispserverfarm\sevdesk\phpclient\InvoiceApi
 
 All URIs are relative to *https://my.sevdesk.de/api/v1*
 
@@ -56,7 +56,7 @@ Method | HTTP request | Description
 
 
 # **addInvoice**
-> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelInvoice addInvoice($body)
+> \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice addInvoice($body)
 
 Create a new invoice
 
@@ -68,11 +68,11 @@ Calls Invoice.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\php-client\Api\InvoiceApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\InvoiceApi();
 $body = "header=&invoiceNumber=&invoiceType=&invoiceDate=&contactPerson[id]=705&contactPerson[objectName]=SevUser&contact[id]=207&contact[objectName]=Contact&discount=&discountTime=&  taxRate=&taxText=&taxType=&status=100&smallSettlement=&currency="; // string | To create an invoice, simply enter desired values after parameter= and remove the quotation marks.    Be aware that you can't use all the parameters included in the Model_Invoice, as creating an invoice involves other functions.    So for example, adding a sumNet/Gross/etc. does not work as they normally get their value from the product which is involved in the invoice    The product/part in this case is handled in the Model_InvoicePos which makes a call to Model_Part.    In Invoice.php there is only a function 'addPosition' which makes the call to InvoicePos.php
 
 try {
@@ -92,7 +92,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelInvoice**](../Model/ModelInvoice.md)
+[**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice**](../Model/ModelInvoice.md)
 
 ### Authorization
 
@@ -106,7 +106,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **cancelInvoice**
-> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelInvoice cancelInvoice($id)
+> \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice cancelInvoice($id)
 
 Cancel an invoice
 
@@ -118,11 +118,11 @@ Calls cancel() in Invoice.php to cancel an invoice and creates a cancellation in
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\php-client\Api\InvoiceApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\InvoiceApi();
 $id = 56; // int | Id of invoice which you want to cancel
 
 try {
@@ -142,7 +142,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelInvoice**](../Model/ModelInvoice.md)
+[**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice**](../Model/ModelInvoice.md)
 
 ### Authorization
 
@@ -156,7 +156,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createInvoiceFromOrder**
-> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelInvoice createInvoiceFromOrder($body)
+> \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice createInvoiceFromOrder($body)
 
 Create an new invoice from an existing order
 
@@ -168,11 +168,11 @@ With the new version of sevdesk some models are not created by calling the Model
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\php-client\Api\InvoiceApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\InvoiceApi();
 $body = "body_example"; // string | Takes an existing Model_Order and creates an invoice with positions and discounts from it. Enter your values after parameter= and remove the quotation marks
 
 try {
@@ -192,7 +192,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelInvoice**](../Model/ModelInvoice.md)
+[**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice**](../Model/ModelInvoice.md)
 
 ### Authorization
 
@@ -206,7 +206,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createInvoiceReminder**
-> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelInvoice createInvoiceReminder($body)
+> \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice createInvoiceReminder($body)
 
 Create an invoice reminder
 
@@ -218,11 +218,11 @@ With the new version of sevdesk some models are not created by calling the Model
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\php-client\Api\InvoiceApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\InvoiceApi();
 $body = "body_example"; // string | Takes an existing Model_Invoice and creates a reminder for it.    Note that actually creating a reminder would require to save the rendered invoice reminder so this is not possible by calling the api directly.    However for demonstration purposes you can still call the function by appending an invoice id after invoice[id]= and removing the quotation marks.
 
 try {
@@ -242,7 +242,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelInvoice**](../Model/ModelInvoice.md)
+[**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice**](../Model/ModelInvoice.md)
 
 ### Authorization
 
@@ -268,11 +268,11 @@ Calls the delete() function in Invoice.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\php-client\Api\InvoiceApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\InvoiceApi();
 $id = 56; // int | id of invoice you want to delete
 
 try {
@@ -305,7 +305,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **duplicateInvoice**
-> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelInvoice duplicateInvoice($id)
+> \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice duplicateInvoice($id)
 
 Duplicate an existing invoice
 
@@ -317,11 +317,11 @@ Calls duplicate() in Invoice.php to duplicate an existing invoice
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\php-client\Api\InvoiceApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\InvoiceApi();
 $id = 56; // int | id of invoice you want to duplicate
 
 try {
@@ -341,7 +341,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelInvoice**](../Model/ModelInvoice.md)
+[**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice**](../Model/ModelInvoice.md)
 
 ### Authorization
 
@@ -367,11 +367,11 @@ Calls the getTotalInvoiceReminderAndInvoiceAmount function in /Invoice/Factory/ 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\php-client\Api\InvoiceApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\InvoiceApi();
 $invoice_id = 56; // int | id of the invoice you want to get the total amount for
 $invoice_object_name = "Invoice"; // string | 
 
@@ -418,11 +418,11 @@ Calls getPdf in Invoice.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\php-client\Api\InvoiceApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\InvoiceApi();
 $id = 56; // int | Id of invoice of which you want to get the PDF
 $download = 0; // bool | If true PDF will return as filestream otherwise as json object the content base64 encoded
 
@@ -469,11 +469,11 @@ Calls the getTotalInvoiceReminderAmount function in /Invoice/Factory/ to get the
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\php-client\Api\InvoiceApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\InvoiceApi();
 $invoice_id = 56; // int | id of the invoice you want to get the reminder amount for
 $invoice_object_name = "Invoice"; // string | 
 
@@ -508,7 +508,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getInvoices**
-> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelInvoice getInvoices($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice getInvoices($limit, $offset, $embed)
 
 Get an overview of all invoices
 
@@ -520,11 +520,11 @@ Calls Invoice.php to get necessary variables. However, not all variables get the
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\php-client\Api\InvoiceApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\InvoiceApi();
 $limit = 100; // int | Limits the number of entries returned. Default is 100
 $offset = 0; // int | Set the index where the returned invoices start. Default is 0
 $embed = array("embed_example"); // string[] | Get some additional information. Embed can handle multiple values, they must be separated by comma. Default ``.
@@ -548,7 +548,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelInvoice**](../Model/ModelInvoice.md)
+[**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice**](../Model/ModelInvoice.md)
 
 ### Authorization
 
@@ -574,11 +574,11 @@ Get the next invoice number
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\php-client\Api\InvoiceApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\InvoiceApi();
 $invoice_type = "RE"; // string | defines the type of invoice you want to get the next number from
 $use_next_number = true; // bool | By default this is true, so the invoiceNumber will increase by one otherwise the invoiceNumber will not change
 
@@ -613,7 +613,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **invoiceAddPosition**
-> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelInvoice invoiceAddPosition($id, $body)
+> \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice invoiceAddPosition($id, $body)
 
 Add a position to an existing invoice
 
@@ -625,11 +625,11 @@ Calls addPosition() in Invoice.php to add a position to an invoice.    This func
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\php-client\Api\InvoiceApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\InvoiceApi();
 $id = 56; // int | id of invoice you want to add a position to
 $body = "quantity=&name=&text=&price=&taxRate=&part[id]=&part[objectName]=Part&unity[id]=&unity[objectName]=Unity&discount=&temporary="; // string | To add a position, simply enter desired values after parameter= and remove the quotation marks
 
@@ -651,7 +651,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelInvoice**](../Model/ModelInvoice.md)
+[**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice**](../Model/ModelInvoice.md)
 
 ### Authorization
 
@@ -665,7 +665,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **invoiceBookAmount**
-> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelInvoiceLog invoiceBookAmount($id, $ammount, $date, $body)
+> \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoiceLog invoiceBookAmount($id, $ammount, $date, $body)
 
 Book amount for an invoice
 
@@ -677,11 +677,11 @@ Calls bookAmmount() in Invoice.php to book an invoice amount
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\php-client\Api\InvoiceApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\InvoiceApi();
 $id = 56; // int | Id of invoice of which you want to book an amount
 $ammount = 56; // int | amount which should be booked
 $date = ""; // string | booking date
@@ -707,7 +707,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelInvoiceLog**](../Model/ModelInvoiceLog.md)
+[**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoiceLog**](../Model/ModelInvoiceLog.md)
 
 ### Authorization
 
@@ -733,11 +733,11 @@ Calls calcTotalDebit() in Invoice.php to calculate total sum of all invoices of 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\php-client\Api\InvoiceApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\InvoiceApi();
 
 try {
     $api_instance->invoiceCalcTotalDebit();
@@ -778,11 +778,11 @@ Calls calculateDunningLevel() in Invoice.php to get the dunning level of an invo
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\php-client\Api\InvoiceApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\InvoiceApi();
 $id = 56; // int | Id of invoice of which you want to get the dunning level
 
 try {
@@ -815,7 +815,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **invoiceChangeStatus**
-> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelInvoice invoiceChangeStatus($id, $value)
+> \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice invoiceChangeStatus($id, $value)
 
 Change status of an invoice
 
@@ -827,11 +827,11 @@ Calls changeStatus() in Invoice.php to book an invoice amount
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\php-client\Api\InvoiceApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\InvoiceApi();
 $id = 56; // int | Id of invoice of which you want to book an amount
 $value = 56; // int | desired status
 
@@ -853,7 +853,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelInvoice**](../Model/ModelInvoice.md)
+[**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice**](../Model/ModelInvoice.md)
 
 ### Authorization
 
@@ -879,11 +879,11 @@ Calls getCancled() in Invoice.php to know if an invoice is cancled
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\php-client\Api\InvoiceApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\InvoiceApi();
 $id = 56; // int | Id of invoice of which you want to know if it is cancled
 
 try {
@@ -916,7 +916,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **invoiceGetCheckAccountTransactionLogs**
-> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelCheckAccountTransactionLog invoiceGetCheckAccountTransactionLogs($id, $embed)
+> \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCheckAccountTransactionLog invoiceGetCheckAccountTransactionLogs($id, $embed)
 
 Get check account transaction logs about a specified invoice
 
@@ -928,11 +928,11 @@ Calls getCheckAccountTransactionLogs() in Invoice.php to get check account trans
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\php-client\Api\InvoiceApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\InvoiceApi();
 $id = 56; // int | Id of the invoice of which you want to get the check account transaction logs
 $embed = array("embed_example"); // string[] | Get some additional information. Embed can handle multiple values, they must be separated by comma. Default ``.
 
@@ -954,7 +954,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelCheckAccountTransactionLog**](../Model/ModelCheckAccountTransactionLog.md)
+[**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCheckAccountTransactionLog**](../Model/ModelCheckAccountTransactionLog.md)
 
 ### Authorization
 
@@ -968,7 +968,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **invoiceGetCheckAccountTransactions**
-> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelCheckAccountTransaction invoiceGetCheckAccountTransactions($id, $embed)
+> \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCheckAccountTransaction invoiceGetCheckAccountTransactions($id, $embed)
 
 Get check account transactions of a specified invoice
 
@@ -980,11 +980,11 @@ Calls getCheckAccountTransactions() in Invoice.php to get check account transact
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\php-client\Api\InvoiceApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\InvoiceApi();
 $id = 56; // int | Id of the invoice of which you want to get the check account transactions
 $embed = array("embed_example"); // string[] | Get some additional information. Embed can handle multiple values, they must be separated by comma. Default ``.
 
@@ -1006,7 +1006,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelCheckAccountTransaction**](../Model/ModelCheckAccountTransaction.md)
+[**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCheckAccountTransaction**](../Model/ModelCheckAccountTransaction.md)
 
 ### Authorization
 
@@ -1032,11 +1032,11 @@ Calls getDebit() in Invoice.php to get debit of an invoice
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\php-client\Api\InvoiceApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\InvoiceApi();
 $id = 56; // int | Id of invoice of which you want to get the debit
 
 try {
@@ -1081,11 +1081,11 @@ Calls getDelinquent() in Invoice.php to get if an invoice is delinquent
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\php-client\Api\InvoiceApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\InvoiceApi();
 $id = 56; // int | Id of invoice of which you want to know if its delinquent
 
 try {
@@ -1118,7 +1118,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **invoiceGetDiscounts**
-> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelDiscounts invoiceGetDiscounts($id, $embed)
+> \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelDiscounts invoiceGetDiscounts($id, $embed)
 
 Get the discounts of a specified invoice
 
@@ -1130,11 +1130,11 @@ Calls getDiscounts() in Invoice.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\php-client\Api\InvoiceApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\InvoiceApi();
 $id = 56; // int | Id of invoice of which you want to get the discounts
 $embed = array("embed_example"); // string[] | Get some additional information. Embed can handle multiple values, they must be separated by comma. Default ``.
 
@@ -1156,7 +1156,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelDiscounts**](../Model/ModelDiscounts.md)
+[**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelDiscounts**](../Model/ModelDiscounts.md)
 
 ### Authorization
 
@@ -1182,11 +1182,11 @@ Calls getDocument() in Invoice.php to get the document of an invoice
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\php-client\Api\InvoiceApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\InvoiceApi();
 $id = 56; // int | Id of invoice of which you want to get the document
 $embed = array("embed_example"); // string[] | Get some additional information. Embed can handle multiple values, they must be separated by comma. Default ``.
 
@@ -1221,7 +1221,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **invoiceGetDunnings**
-> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelInvoice invoiceGetDunnings($id)
+> \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice invoiceGetDunnings($id)
 
 Get invoice dunnings
 
@@ -1233,11 +1233,11 @@ Calls getDunnings() in Invoice.php to get the dunnings of an invoice
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\php-client\Api\InvoiceApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\InvoiceApi();
 $id = 56; // int | Id of invoice of which you want to get the dunnings
 
 try {
@@ -1257,7 +1257,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelInvoice**](../Model/ModelInvoice.md)
+[**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice**](../Model/ModelInvoice.md)
 
 ### Authorization
 
@@ -1271,7 +1271,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **invoiceGetFeed**
-> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelFeed invoiceGetFeed($id, $embed)
+> \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelFeed invoiceGetFeed($id, $embed)
 
 Get the feed of a specified invoice
 
@@ -1283,11 +1283,11 @@ Calls getFeed() in Invoice.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\php-client\Api\InvoiceApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\InvoiceApi();
 $id = 56; // int | Id of invoice of which you want to get the feed
 $embed = array("embed_example"); // string[] | Get some additional information. Embed can handle multiple values, they must be separated by comma. Default ``.
 
@@ -1309,7 +1309,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelFeed**](../Model/ModelFeed.md)
+[**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelFeed**](../Model/ModelFeed.md)
 
 ### Authorization
 
@@ -1335,11 +1335,11 @@ Calls getFinalInvoiceId() in Invoice.php to get final invoice id of the invoice 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\php-client\Api\InvoiceApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\InvoiceApi();
 $id = 56; // int | Id of the invoice of which you want to get the final invoice id
 
 try {
@@ -1384,11 +1384,11 @@ Calls getIsPartiallyPaid() in Invoice.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\php-client\Api\InvoiceApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\InvoiceApi();
 $id = 56; // int | Id of invoice of which you want to know if it is partially paid
 
 try {
@@ -1433,11 +1433,11 @@ Calls getLastDunningDate() in Invoice.php to get the date of the last dunning of
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\php-client\Api\InvoiceApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\InvoiceApi();
 $id = 56; // int | Id of invoice of which you want to get the date of the last dunning
 
 try {
@@ -1470,7 +1470,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **invoiceGetPartialInvoices**
-> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelInvoice invoiceGetPartialInvoices($id, $embed)
+> \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice invoiceGetPartialInvoices($id, $embed)
 
 Get partial invoices of a specified invoice
 
@@ -1482,11 +1482,11 @@ Calls getPartialInvoices() in Invoice.php to get partial invoices of the invoice
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\php-client\Api\InvoiceApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\InvoiceApi();
 $id = 56; // int | Id of the invoice of which you want to get the partial invoices
 $embed = array("embed_example"); // string[] | Get some additional information. Embed can handle multiple values, they must be separated by comma. Default ``.
 
@@ -1508,7 +1508,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelInvoice**](../Model/ModelInvoice.md)
+[**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice**](../Model/ModelInvoice.md)
 
 ### Authorization
 
@@ -1522,7 +1522,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **invoiceGetPositions**
-> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelInvoicePos invoiceGetPositions($id, $limit, $offset, $embed)
+> \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoicePos invoiceGetPositions($id, $limit, $offset, $embed)
 
 Get the positions of a specified invoice
 
@@ -1534,11 +1534,11 @@ Calls getPositions() in Invoice.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\php-client\Api\InvoiceApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\InvoiceApi();
 $id = 56; // int | Id of invoice of which you want to get the positions
 $limit = 100; // int | limits the number of entries returned
 $offset = 0; // int | set the index where the returned entries start
@@ -1564,7 +1564,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelInvoicePos**](../Model/ModelInvoicePos.md)
+[**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoicePos**](../Model/ModelInvoicePos.md)
 
 ### Authorization
 
@@ -1590,11 +1590,11 @@ Calls getRelatedObjects() in Invoice.php to get related objects of the invoice
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\php-client\Api\InvoiceApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\InvoiceApi();
 $id = 56; // int | Id of the invoice of which you want to get the related objects
 $include_itself = false; // bool | Define if the related objects include the invoice itself
 $sort_by_type = false; // bool | Define if you want the related objects sorted by type
@@ -1645,11 +1645,11 @@ Calls getSwissEsr() in Invoice.php to get the swiss esr
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\php-client\Api\InvoiceApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\InvoiceApi();
 
 try {
     $api_instance->invoiceGetSwissEsr();
@@ -1690,11 +1690,11 @@ Calls getSwissEsrData() in Invoice.php to get the swiss esr data
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\php-client\Api\InvoiceApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\InvoiceApi();
 
 try {
     $api_instance->invoiceGetSwissEsrData();
@@ -1723,7 +1723,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **invoiceGetTags**
-> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelTag invoiceGetTags($id, $embed)
+> \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelTag invoiceGetTags($id, $embed)
 
 Get the tags of a specified invoice
 
@@ -1735,11 +1735,11 @@ Calls getTags() in Invoice.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\php-client\Api\InvoiceApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\InvoiceApi();
 $id = 56; // int | Id of invoice of which you want to get the tags
 $embed = array("embed_example"); // string[] | Get some additional information. Embed can handle multiple values, they must be separated by comma. Default ``.
 
@@ -1761,7 +1761,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelTag**](../Model/ModelTag.md)
+[**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelTag**](../Model/ModelTag.md)
 
 ### Authorization
 
@@ -1787,11 +1787,11 @@ Calls getTax() in Invoice.php to get tax amount of invoice
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\php-client\Api\InvoiceApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\InvoiceApi();
 $id = 56; // int | Id of invoice of which you want to get the invoice tax amount
 $invoice_amount = false; // bool | Determines whether to use sumTax from invoice or sumTaxAccounting
 
@@ -1838,11 +1838,11 @@ Calls getTaxGroupes() in Invoice.php to get tax groups
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\php-client\Api\InvoiceApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\InvoiceApi();
 $id = 56; // int | Id of invoice of which you want to get the tax groups
 
 try {
@@ -1887,11 +1887,11 @@ Calls getTotal() in Invoice.php to get gross amount of invoice
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\php-client\Api\InvoiceApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\InvoiceApi();
 $id = 56; // int | Id of invoice of which you want to get the gross invoice amount
 $invoice_amount = false; // bool | Determines whether to use sumGross from invoice or sumGrossAccounting
 
@@ -1938,11 +1938,11 @@ Calls getTotalCalc() in Invoice.php to get tax groups
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\php-client\Api\InvoiceApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\InvoiceApi();
 $id = 56; // int | Id of invoice of which you want to get the invoice amount in invoice currency
 
 try {
@@ -1987,11 +1987,11 @@ Calls getTotalNet() in Invoice.php to get total net amount of invoice
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\php-client\Api\InvoiceApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\InvoiceApi();
 $id = 56; // int | Id of invoice of which you want to get the total net invoice amount
 $invoice_amount = false; // bool | Determines whether to use sumNet from invoice or sumNetAccounting
 $without_discounts = false; // bool | Determines whether the total net is calculated with or without the discounts
@@ -2040,11 +2040,11 @@ Calls hasDiscounts() in Invoice.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\php-client\Api\InvoiceApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\InvoiceApi();
 $id = 56; // int | Id of invoice of which you want to know if it has discounts
 
 try {
@@ -2089,11 +2089,11 @@ Calls isOrigin() in Invoice.php to find out if the invoice is the origin of an o
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\php-client\Api\InvoiceApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\InvoiceApi();
 $id = 56; // int | Id of invoice of which you want to know if it is the origin of an order
 
 try {
@@ -2126,7 +2126,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **invoiceMarkAsSent**
-> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelInvoice invoiceMarkAsSent($id)
+> \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice invoiceMarkAsSent($id)
 
 Marks an invoice as sent
 
@@ -2138,11 +2138,11 @@ Calls markAsSent() in Invoice.php to mark an invoice as sent
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\php-client\Api\InvoiceApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\InvoiceApi();
 $id = 56; // int | Id of invoice which you want to mark as sent
 
 try {
@@ -2162,7 +2162,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelInvoice**](../Model/ModelInvoice.md)
+[**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice**](../Model/ModelInvoice.md)
 
 ### Authorization
 
@@ -2176,7 +2176,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **invoiceRefundAmount**
-> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelInvoice invoiceRefundAmount($id, $ammount, $date)
+> \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice invoiceRefundAmount($id, $ammount, $date)
 
 Refund an already payed invoice amount
 
@@ -2188,11 +2188,11 @@ Calls refundAmmount() in Invoice.php to refund an invoice amount
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\php-client\Api\InvoiceApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\InvoiceApi();
 $id = 56; // int | Id of invoice of which you want to refund the amount
 $ammount = 56; // int | amount which should be refunded
 $date = ""; // string | booking date
@@ -2216,7 +2216,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelInvoice**](../Model/ModelInvoice.md)
+[**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice**](../Model/ModelInvoice.md)
 
 ### Authorization
 
@@ -2242,11 +2242,11 @@ Calls render() in Invoice.php to render invoice document on docserver and return
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\php-client\Api\InvoiceApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\InvoiceApi();
 $id = 56; // int | Id of invoice of which you want to render the document and get the metadata
 
 try {
@@ -2279,7 +2279,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **invoiceSendBy**
-> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelInvoice invoiceSendBy($id, $send_type)
+> \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice invoiceSendBy($id, $send_type)
 
 Send invoice by desired method
 
@@ -2291,11 +2291,11 @@ Calls sendBy() in Invoice.php to send an invoice by the desired method
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\php-client\Api\InvoiceApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\InvoiceApi();
 $id = 56; // int | Id of invoice which you want to send
 $send_type = ""; // string | desired send type, available are: VM = Mail, VP = Post, VPDF = PDF, PRN = Print
 
@@ -2317,7 +2317,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelInvoice**](../Model/ModelInvoice.md)
+[**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice**](../Model/ModelInvoice.md)
 
 ### Authorization
 
@@ -2331,7 +2331,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **saveInvoice**
-> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelInvoiceFactory saveInvoice($body)
+> \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoiceFactory saveInvoice($body)
 
 Create a new invoice (with / without invoice positions and discounts)
 
@@ -2343,11 +2343,11 @@ With the new version of sevdesk some models are not created by calling the model
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\php-client\Api\InvoiceApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\InvoiceApi();
 $body = "body_example"; // string | The saveInvoice function in Invoice/Factory.php combines both Invoice and InvoicePos with all their HTTP-methods.    It is now possible to **simultaneously** create an invoice with its position and discount.    To simply (only) create an invoice you can use the given parameters and concatenate your values.    For also adding an invoice position or a discount refer to the corresponding **quick reference** below.    The parameters you find there are **needed** for creating an invoice position / discount. Just concatenate them to the existing invoice / invoicePosSave parameters.    You can also find additional (optional) parameters in the **Models** section.    Quick reference InvoicePos:  * &invoicePosSave[0][part][id]=  * &invoicePosSave[0][part][objectName]=Part  * &invoicePosSave[0][quantity]=  * &invoicePosSave[0][unity][id]=  * &invoicePosSave[0][unity][objectName]=Unity  * &invoicePosSave[0][taxRate]=19  * &invoicePosSave[0][objectName]=InvoicePos  * &invoicePosSave[0][mapAll]=true  * &invoicePosSave[0][price]=  * &invoicePosDelete=null    Quick reference Discounts:  * &discountSave[0][discount]=true  * &discountSave[0][text]=  * &discountSave[0][percentage]=  * &discountSave[0][value]=  * &discountSave[0][objectName]=Discounts  * &discountSave[0][mapAll]=true  * &discountDelete=null    You can also use additional parameters for creating an invoice in the same way by adding them in the format: **invoice[yourParameter]**
 
 try {
@@ -2367,7 +2367,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelInvoiceFactory**](../Model/ModelInvoiceFactory.md)
+[**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoiceFactory**](../Model/ModelInvoiceFactory.md)
 
 ### Authorization
 
@@ -2381,7 +2381,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **sendInvoiceViaEmail**
-> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelEmail sendInvoiceViaEmail($id, $body)
+> \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelEmail sendInvoiceViaEmail($id, $body)
 
 Send an invoice via Email
 
@@ -2393,11 +2393,11 @@ Calls sendViaEmail in Invoice.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\php-client\Api\InvoiceApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\InvoiceApi();
 $id = 56; // int | id of invoice you want to send via Email
 $body = "toEmail=test@sevenit.de&subject=This is a test&text=Hello this is a test mail"; // string | Change the desired values after the parameters and remove the quotation marks. You can also add 'additionalAttachments', 'ccEmail=' and 'bccEmail'    Please note: additionalAttachments is a String containing document id's (of existing documents!)
 
@@ -2419,7 +2419,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelEmail**](../Model/ModelEmail.md)
+[**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelEmail**](../Model/ModelEmail.md)
 
 ### Authorization
 
@@ -2433,7 +2433,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **sendInvoiceViaPost**
-> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelInvoice sendInvoiceViaPost($id)
+> \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice sendInvoiceViaPost($id)
 
 Send an invoice via Letter
 
@@ -2445,11 +2445,11 @@ Calls sendViaPost in Invoice.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\php-client\Api\InvoiceApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\InvoiceApi();
 $id = 56; // int | id of invoice you want to send via Letter
 
 try {
@@ -2469,7 +2469,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelInvoice**](../Model/ModelInvoice.md)
+[**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice**](../Model/ModelInvoice.md)
 
 ### Authorization
 
@@ -2483,7 +2483,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateInvoice**
-> \ispserverfarm\sevdesk\php-client\sevdesk-model\ModelInvoice updateInvoice($id, $body)
+> \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice updateInvoice($id, $body)
 
 Update an existing invoice
 
@@ -2495,11 +2495,11 @@ Calls Invoice.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\php-client\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\php-client\Api\InvoiceApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\InvoiceApi();
 $id = 56; // int | id of invoice you want to update
 $body = "body_example"; // string | Parameters which need to be updated. Please refer to the description from create invoice.    Enter the parameters according to the syntax: parameter1=&parameter2=
 
@@ -2521,7 +2521,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelInvoice**](../Model/ModelInvoice.md)
+[**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice**](../Model/ModelInvoice.md)
 
 ### Authorization
 

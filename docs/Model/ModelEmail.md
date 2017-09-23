@@ -5,7 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **_create** | [**\DateTime**](\DateTime.md) | creation date of the Email | [optional] 
 **_update** | [**\DateTime**](\DateTime.md) | date the email was last updated | [optional] 
-**_object** | [**\ispserverfarm\sevdesk\php-client\sevdesk-model\ModelInvoice**](ModelInvoice.md) | invoice object which is send via email | [optional] 
+**_object** | [**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice**](ModelInvoice.md) | invoice object which is send via email | [optional] 
 **_from** | **string** | sender of the email | [optional] 
 **_to** | **string** | recipient of the email | [optional] 
 **_subject** | **string** | subject of the email | [optional] 
