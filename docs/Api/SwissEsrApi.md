@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **getSwissEsr**
-> \ispserverfarm\sevdesk\phpclient\model\ModelSwissEsr getSwissEsr()
+> \ispserverfarm\sevdesk\phpclient\Model\ModelSwissEsr getSwissEsr()
 
 Get an overview of swiss esr
 
@@ -40,7 +40,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelSwissEsr**](../Model/ModelSwissEsr.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelSwissEsr**](../Model/ModelSwissEsr.md)
 
 ### Authorization
 

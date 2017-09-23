@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 
 # **addEntryType**
-> \ispserverfarm\sevdesk\phpclient\model\ModelEntryType addEntryType($body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelEntryType addEntryType($body)
 
 Create a new entry type
 
@@ -48,7 +48,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelEntryType**](../Model/ModelEntryType.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelEntryType**](../Model/ModelEntryType.md)
 
 ### Authorization
 
@@ -160,7 +160,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getEntryTypes**
-> \ispserverfarm\sevdesk\phpclient\model\ModelEntryType getEntryTypes($limit, $offset)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelEntryType getEntryTypes($limit, $offset)
 
 Get an overview of all entry types
 
@@ -198,7 +198,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelEntryType**](../Model/ModelEntryType.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelEntryType**](../Model/ModelEntryType.md)
 
 ### Authorization
 
@@ -212,7 +212,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateEntryType**
-> \ispserverfarm\sevdesk\phpclient\model\ModelEntryType updateEntryType($id, $body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelEntryType updateEntryType($id, $body)
 
 Update an existing entry type
 
@@ -250,7 +250,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelEntryType**](../Model/ModelEntryType.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelEntryType**](../Model/ModelEntryType.md)
 
 ### Authorization
 

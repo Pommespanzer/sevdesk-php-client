@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **getAccountingSystems**
-> \ispserverfarm\sevdesk\phpclient\model\ModelAccountingSystem getAccountingSystems($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelAccountingSystem getAccountingSystems($limit, $offset, $embed)
 
 Get an overview of all accounting systems
 
@@ -48,7 +48,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelAccountingSystem**](../Model/ModelAccountingSystem.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelAccountingSystem**](../Model/ModelAccountingSystem.md)
 
 ### Authorization
 

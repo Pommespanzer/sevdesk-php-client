@@ -20,7 +20,7 @@ Method | HTTP request | Description
 
 
 # **addCheckAccount**
-> \ispserverfarm\sevdesk\phpclient\model\ModelCheckAccount addCheckAccount($body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelCheckAccount addCheckAccount($body)
 
 Create a new check account
 
@@ -56,7 +56,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelCheckAccount**](../Model/ModelCheckAccount.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelCheckAccount**](../Model/ModelCheckAccount.md)
 
 ### Authorization
 
@@ -564,7 +564,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCheckAccounts**
-> \ispserverfarm\sevdesk\phpclient\model\ModelDiscounts getCheckAccounts($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelDiscounts getCheckAccounts($limit, $offset, $embed)
 
 Get an overview of all check accounts
 
@@ -604,7 +604,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelDiscounts**](../Model/ModelDiscounts.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelDiscounts**](../Model/ModelDiscounts.md)
 
 ### Authorization
 
@@ -618,7 +618,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateCheckAccount**
-> \ispserverfarm\sevdesk\phpclient\model\ModelCheckAccount updateCheckAccount($id, $body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelCheckAccount updateCheckAccount($id, $body)
 
 Update an existing check account
 
@@ -656,7 +656,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelCheckAccount**](../Model/ModelCheckAccount.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelCheckAccount**](../Model/ModelCheckAccount.md)
 
 ### Authorization
 

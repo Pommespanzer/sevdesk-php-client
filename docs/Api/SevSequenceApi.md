@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **getSevSequence**
-> \ispserverfarm\sevdesk\phpclient\model\ModelSevSequence getSevSequence($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelSevSequence getSevSequence($limit, $offset, $embed)
 
 Get an overview of all object sequences
 
@@ -48,7 +48,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelSevSequence**](../Model/ModelSevSequence.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelSevSequence**](../Model/ModelSevSequence.md)
 
 ### Authorization
 

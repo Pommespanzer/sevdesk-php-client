@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **getObjectViewed**
-> \ispserverfarm\sevdesk\phpclient\model\ModelObjectViewed getObjectViewed($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelObjectViewed getObjectViewed($limit, $offset, $embed)
 
 Get an overview of objects viewed
 
@@ -48,7 +48,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelObjectViewed**](../Model/ModelObjectViewed.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelObjectViewed**](../Model/ModelObjectViewed.md)
 
 ### Authorization
 

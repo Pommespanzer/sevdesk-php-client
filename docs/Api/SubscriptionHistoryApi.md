@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **getSubscriptionHistory**
-> \ispserverfarm\sevdesk\phpclient\model\ModelSubscriptionHistory getSubscriptionHistory($embed)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelSubscriptionHistory getSubscriptionHistory($embed)
 
 Get an overview of your subscription history
 
@@ -44,7 +44,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelSubscriptionHistory**](../Model/ModelSubscriptionHistory.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelSubscriptionHistory**](../Model/ModelSubscriptionHistory.md)
 
 ### Authorization
 

@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **addAccountingChart**
-> \ispserverfarm\sevdesk\phpclient\model\ModelAccountingChart addAccountingChart($body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelAccountingChart addAccountingChart($body)
 
 Create a new accounting chart
 
@@ -47,7 +47,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelAccountingChart**](../Model/ModelAccountingChart.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelAccountingChart**](../Model/ModelAccountingChart.md)
 
 ### Authorization
 
@@ -110,7 +110,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAccountingChart**
-> \ispserverfarm\sevdesk\phpclient\model\ModelAccountingChart getAccountingChart($limit, $offset)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelAccountingChart getAccountingChart($limit, $offset)
 
 Get an overview of all accounting charts
 
@@ -148,7 +148,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelAccountingChart**](../Model/ModelAccountingChart.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelAccountingChart**](../Model/ModelAccountingChart.md)
 
 ### Authorization
 
@@ -162,7 +162,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateAccountingChart**
-> \ispserverfarm\sevdesk\phpclient\model\ModelAccountingChart updateAccountingChart($id, $body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelAccountingChart updateAccountingChart($id, $body)
 
 Update an existing accounting chart
 
@@ -200,7 +200,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelAccountingChart**](../Model/ModelAccountingChart.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelAccountingChart**](../Model/ModelAccountingChart.md)
 
 ### Authorization
 

@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **getDocumentIndexes**
-> \ispserverfarm\sevdesk\phpclient\model\ModelDocumentIndex getDocumentIndexes($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelDocumentIndex getDocumentIndexes($limit, $offset, $embed)
 
 Get an overview of all document indexes
 
@@ -48,7 +48,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelDocumentIndex**](../Model/ModelDocumentIndex.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelDocumentIndex**](../Model/ModelDocumentIndex.md)
 
 ### Authorization
 

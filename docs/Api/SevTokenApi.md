@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **getSevTokens**
-> \ispserverfarm\sevdesk\phpclient\model\ModelSevToken getSevTokens($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelSevToken getSevTokens($limit, $offset, $embed)
 
 Get an overview of all sevTokens
 
@@ -48,7 +48,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelSevToken**](../Model/ModelSevToken.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelSevToken**](../Model/ModelSevToken.md)
 
 ### Authorization
 

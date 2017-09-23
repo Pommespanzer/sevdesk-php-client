@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **addCommunicationWay**
-> \ispserverfarm\sevdesk\phpclient\model\ModelCommunicationWay addCommunicationWay($body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelCommunicationWay addCommunicationWay($body)
 
 Create a new communication way
 
@@ -47,7 +47,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelCommunicationWay**](../Model/ModelCommunicationWay.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelCommunicationWay**](../Model/ModelCommunicationWay.md)
 
 ### Authorization
 
@@ -110,7 +110,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCommunicationWays**
-> \ispserverfarm\sevdesk\phpclient\model\ModelCommunicationWay getCommunicationWays($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelCommunicationWay getCommunicationWays($limit, $offset, $embed)
 
 Get an overview of all communication ways
 
@@ -150,7 +150,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelCommunicationWay**](../Model/ModelCommunicationWay.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelCommunicationWay**](../Model/ModelCommunicationWay.md)
 
 ### Authorization
 
@@ -164,7 +164,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateCommunicationWay**
-> \ispserverfarm\sevdesk\phpclient\model\ModelCommunicationWay updateCommunicationWay($id, $body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelCommunicationWay updateCommunicationWay($id, $body)
 
 Update a existing communication way
 
@@ -202,7 +202,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelCommunicationWay**](../Model/ModelCommunicationWay.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelCommunicationWay**](../Model/ModelCommunicationWay.md)
 
 ### Authorization
 

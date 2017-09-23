@@ -67,7 +67,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **addAccountingContact**
-> \ispserverfarm\sevdesk\phpclient\model\ModelAccountingContact addAccountingContact($body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelAccountingContact addAccountingContact($body)
 
 Create a new accounting contact
 
@@ -103,7 +103,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelAccountingContact**](../Model/ModelAccountingContact.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelAccountingContact**](../Model/ModelAccountingContact.md)
 
 ### Authorization
 
@@ -166,7 +166,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAccountingContacts**
-> \ispserverfarm\sevdesk\phpclient\model\ModelAccountingContact getAccountingContacts($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelAccountingContact getAccountingContacts($limit, $offset, $embed)
 
 Get an overview of all accounting contacts
 
@@ -206,7 +206,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelAccountingContact**](../Model/ModelAccountingContact.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelAccountingContact**](../Model/ModelAccountingContact.md)
 
 ### Authorization
 
@@ -220,7 +220,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateAccountingContact**
-> \ispserverfarm\sevdesk\phpclient\model\ModelAccountingContact updateAccountingContact($id, $body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelAccountingContact updateAccountingContact($id, $body)
 
 Update an existing accounting contact
 
@@ -258,7 +258,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelAccountingContact**](../Model/ModelAccountingContact.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelAccountingContact**](../Model/ModelAccountingContact.md)
 
 ### Authorization
 

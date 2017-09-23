@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 
 # **addInventoryPartLog**
-> \ispserverfarm\sevdesk\phpclient\model\ModelInventoryPartLog addInventoryPartLog($body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelInventoryPartLog addInventoryPartLog($body)
 
 Create a new inventory part log
 
@@ -48,7 +48,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelInventoryPartLog**](../Model/ModelInventoryPartLog.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelInventoryPartLog**](../Model/ModelInventoryPartLog.md)
 
 ### Authorization
 
@@ -111,7 +111,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getInventoryPartLog**
-> \ispserverfarm\sevdesk\phpclient\model\ModelInventoryPartLog getInventoryPartLog($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelInventoryPartLog getInventoryPartLog($limit, $offset, $embed)
 
 Get an overview of InventoryPartLog
 
@@ -151,7 +151,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelInventoryPartLog**](../Model/ModelInventoryPartLog.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelInventoryPartLog**](../Model/ModelInventoryPartLog.md)
 
 ### Authorization
 
@@ -214,7 +214,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateInventoryPartLog**
-> \ispserverfarm\sevdesk\phpclient\model\ModelInventoryPartLog updateInventoryPartLog($id, $body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelInventoryPartLog updateInventoryPartLog($id, $body)
 
 Update an existing inventory part log
 
@@ -252,7 +252,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelInventoryPartLog**](../Model/ModelInventoryPartLog.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelInventoryPartLog**](../Model/ModelInventoryPartLog.md)
 
 ### Authorization
 

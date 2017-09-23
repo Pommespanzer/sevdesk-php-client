@@ -17,7 +17,7 @@ Method | HTTP request | Description
 
 
 # **addDocumentFolder**
-> \ispserverfarm\sevdesk\phpclient\model\ModelDocumentFolder addDocumentFolder($body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelDocumentFolder addDocumentFolder($body)
 
 Create a new document folder
 
@@ -53,7 +53,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelDocumentFolder**](../Model/ModelDocumentFolder.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelDocumentFolder**](../Model/ModelDocumentFolder.md)
 
 ### Authorization
 
@@ -161,7 +161,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getDocumentFolderChildren**
-> \ispserverfarm\sevdesk\phpclient\model\ModelDocumentFolder getDocumentFolderChildren($id, $limit, $offset, $embed)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelDocumentFolder getDocumentFolderChildren($id, $limit, $offset, $embed)
 
 Returns children (documents and document folders) as 'nodes' and count of all children as 'total'
 
@@ -203,7 +203,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelDocumentFolder**](../Model/ModelDocumentFolder.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelDocumentFolder**](../Model/ModelDocumentFolder.md)
 
 ### Authorization
 
@@ -217,7 +217,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getDocumentFolderDocuments**
-> \ispserverfarm\sevdesk\phpclient\model\ModelDocumentFolder getDocumentFolderDocuments($id, $limit, $offset, $embed)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelDocumentFolder getDocumentFolderDocuments($id, $limit, $offset, $embed)
 
 Get an overview of all documents in a document folder
 
@@ -259,7 +259,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelDocumentFolder**](../Model/ModelDocumentFolder.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelDocumentFolder**](../Model/ModelDocumentFolder.md)
 
 ### Authorization
 
@@ -273,7 +273,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getDocumentFolderFolders**
-> \ispserverfarm\sevdesk\phpclient\model\ModelDocumentFolder getDocumentFolderFolders($id, $limit, $offset, $embed)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelDocumentFolder getDocumentFolderFolders($id, $limit, $offset, $embed)
 
 Get an overview of all folders in a document folder
 
@@ -315,7 +315,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelDocumentFolder**](../Model/ModelDocumentFolder.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelDocumentFolder**](../Model/ModelDocumentFolder.md)
 
 ### Authorization
 
@@ -329,7 +329,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getDocumentFolderPath**
-> \ispserverfarm\sevdesk\phpclient\model\ModelDocumentFolder getDocumentFolderPath($id)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelDocumentFolder getDocumentFolderPath($id)
 
 Get path (all parent folders) of this folder
 
@@ -365,7 +365,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelDocumentFolder**](../Model/ModelDocumentFolder.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelDocumentFolder**](../Model/ModelDocumentFolder.md)
 
 ### Authorization
 
@@ -379,7 +379,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getDocumentFolders**
-> \ispserverfarm\sevdesk\phpclient\model\ModelDocumentFolder getDocumentFolders($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelDocumentFolder getDocumentFolders($limit, $offset, $embed)
 
 Get an overview of all document folders
 
@@ -419,7 +419,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelDocumentFolder**](../Model/ModelDocumentFolder.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelDocumentFolder**](../Model/ModelDocumentFolder.md)
 
 ### Authorization
 
@@ -482,7 +482,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateDocumentFolder**
-> \ispserverfarm\sevdesk\phpclient\model\ModelDocumentFolder updateDocumentFolder($id, $body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelDocumentFolder updateDocumentFolder($id, $body)
 
 Update an existing document folder
 
@@ -520,7 +520,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelDocumentFolder**](../Model/ModelDocumentFolder.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelDocumentFolder**](../Model/ModelDocumentFolder.md)
 
 ### Authorization
 

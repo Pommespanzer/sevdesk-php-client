@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **addPartContactPrice**
-> \ispserverfarm\sevdesk\phpclient\model\ModelPartContactPrice addPartContactPrice($body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelPartContactPrice addPartContactPrice($body)
 
 Create a new part contact price
 
@@ -47,7 +47,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelPartContactPrice**](../Model/ModelPartContactPrice.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelPartContactPrice**](../Model/ModelPartContactPrice.md)
 
 ### Authorization
 
@@ -110,7 +110,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getPartContactPrices**
-> \ispserverfarm\sevdesk\phpclient\model\ModelPartContactPrice getPartContactPrices($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelPartContactPrice getPartContactPrices($limit, $offset, $embed)
 
 Get an overview of all part contact prices
 
@@ -150,7 +150,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelPartContactPrice**](../Model/ModelPartContactPrice.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelPartContactPrice**](../Model/ModelPartContactPrice.md)
 
 ### Authorization
 
@@ -164,7 +164,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updatePartContactPrice**
-> \ispserverfarm\sevdesk\phpclient\model\ModelPartContactPrice updatePartContactPrice($id, $body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelPartContactPrice updatePartContactPrice($id, $body)
 
 Update an existing part contact price
 
@@ -202,7 +202,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelPartContactPrice**](../Model/ModelPartContactPrice.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelPartContactPrice**](../Model/ModelPartContactPrice.md)
 
 ### Authorization
 

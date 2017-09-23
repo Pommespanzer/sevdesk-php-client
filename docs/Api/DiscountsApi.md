@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **addDiscount**
-> \ispserverfarm\sevdesk\phpclient\model\ModelDiscounts addDiscount($body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelDiscounts addDiscount($body)
 
 Create a new discount
 
@@ -47,7 +47,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelDiscounts**](../Model/ModelDiscounts.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelDiscounts**](../Model/ModelDiscounts.md)
 
 ### Authorization
 
@@ -110,7 +110,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getDiscounts**
-> \ispserverfarm\sevdesk\phpclient\model\ModelDiscounts getDiscounts($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelDiscounts getDiscounts($limit, $offset, $embed)
 
 Get an overview of all discounts
 
@@ -150,7 +150,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelDiscounts**](../Model/ModelDiscounts.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelDiscounts**](../Model/ModelDiscounts.md)
 
 ### Authorization
 
@@ -164,7 +164,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateDiscount**
-> \ispserverfarm\sevdesk\phpclient\model\ModelDiscounts updateDiscount($id, $body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelDiscounts updateDiscount($id, $body)
 
 Update an existing discount
 
@@ -202,7 +202,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelDiscounts**](../Model/ModelDiscounts.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelDiscounts**](../Model/ModelDiscounts.md)
 
 ### Authorization
 

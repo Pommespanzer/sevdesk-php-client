@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **getCommunicationWayKeys**
-> \ispserverfarm\sevdesk\phpclient\model\ModelCommunicationWayKey getCommunicationWayKeys($limit, $offset)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelCommunicationWayKey getCommunicationWayKeys($limit, $offset)
 
 Get an overview of all communication way keys
 
@@ -46,7 +46,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelCommunicationWayKey**](../Model/ModelCommunicationWayKey.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelCommunicationWayKey**](../Model/ModelCommunicationWayKey.md)
 
 ### Authorization
 

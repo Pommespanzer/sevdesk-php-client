@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **getPlaces**
-> \ispserverfarm\sevdesk\phpclient\model\ModelPlace getPlaces($limit, $offset)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelPlace getPlaces($limit, $offset)
 
 Get an overview of all places
 
@@ -46,7 +46,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelPlace**](../Model/ModelPlace.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelPlace**](../Model/ModelPlace.md)
 
 ### Authorization
 

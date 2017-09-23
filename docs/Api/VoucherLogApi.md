@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **addVoucherLogEntry**
-> \ispserverfarm\sevdesk\phpclient\model\ModelVoucherLog addVoucherLogEntry($body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelVoucherLog addVoucherLogEntry($body)
 
 Create a new voucher log entry
 
@@ -47,7 +47,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelVoucherLog**](../Model/ModelVoucherLog.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelVoucherLog**](../Model/ModelVoucherLog.md)
 
 ### Authorization
 
@@ -110,7 +110,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getVoucherLog**
-> \ispserverfarm\sevdesk\phpclient\model\ModelVoucherLog getVoucherLog($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelVoucherLog getVoucherLog($limit, $offset, $embed)
 
 Get an overview of all voucher log entries
 
@@ -150,7 +150,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelVoucherLog**](../Model/ModelVoucherLog.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelVoucherLog**](../Model/ModelVoucherLog.md)
 
 ### Authorization
 
@@ -164,7 +164,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateVoucherLogEntry**
-> \ispserverfarm\sevdesk\phpclient\model\ModelVoucherLog updateVoucherLogEntry($id, $body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelVoucherLog updateVoucherLogEntry($id, $body)
 
 Update an existing voucher log entry
 
@@ -202,7 +202,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelVoucherLog**](../Model/ModelVoucherLog.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelVoucherLog**](../Model/ModelVoucherLog.md)
 
 ### Authorization
 

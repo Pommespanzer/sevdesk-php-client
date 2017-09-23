@@ -32,7 +32,7 @@ Method | HTTP request | Description
 
 
 # **addOrder**
-> \ispserverfarm\sevdesk\phpclient\model\ModelOrder addOrder($body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelOrder addOrder($body)
 
 Create a new order
 
@@ -68,7 +68,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelOrder**](../Model/ModelOrder.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelOrder**](../Model/ModelOrder.md)
 
 ### Authorization
 
@@ -82,7 +82,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **copyOrder**
-> \ispserverfarm\sevdesk\phpclient\model\ModelOrder copyOrder($id)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelOrder copyOrder($id)
 
 Copy an existing order
 
@@ -118,7 +118,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelOrder**](../Model/ModelOrder.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelOrder**](../Model/ModelOrder.md)
 
 ### Authorization
 
@@ -181,7 +181,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **duplicateOrder**
-> \ispserverfarm\sevdesk\phpclient\model\ModelOrder duplicateOrder($id)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelOrder duplicateOrder($id)
 
 Duplicate an existing order
 
@@ -217,7 +217,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelOrder**](../Model/ModelOrder.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelOrder**](../Model/ModelOrder.md)
 
 ### Authorization
 
@@ -282,7 +282,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getOrderDiscounts**
-> \ispserverfarm\sevdesk\phpclient\model\ModelDiscounts getOrderDiscounts($id, $limit, $offset, $embed)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelDiscounts getOrderDiscounts($id, $limit, $offset, $embed)
 
 Get all order discounts
 
@@ -324,7 +324,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelDiscounts**](../Model/ModelDiscounts.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelDiscounts**](../Model/ModelDiscounts.md)
 
 ### Authorization
 
@@ -338,7 +338,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getOrders**
-> \ispserverfarm\sevdesk\phpclient\model\ModelOrder getOrders($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelOrder getOrders($limit, $offset, $embed)
 
 Get an overview of all orders
 
@@ -378,7 +378,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelOrder**](../Model/ModelOrder.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelOrder**](../Model/ModelOrder.md)
 
 ### Authorization
 
@@ -392,7 +392,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **orderChangeStatus**
-> \ispserverfarm\sevdesk\phpclient\model\ModelOrder orderChangeStatus($id, $body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelOrder orderChangeStatus($id, $body)
 
 Update status of an existing order
 
@@ -430,7 +430,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelOrder**](../Model/ModelOrder.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelOrder**](../Model/ModelOrder.md)
 
 ### Authorization
 
@@ -542,7 +542,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **orderGetMainOrderByLogs**
-> \ispserverfarm\sevdesk\phpclient\model\ModelOrder orderGetMainOrderByLogs($id)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelOrder orderGetMainOrderByLogs($id)
 
 Get main order by checking if there are existing order logs of the specified order
 
@@ -578,7 +578,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelOrder**](../Model/ModelOrder.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelOrder**](../Model/ModelOrder.md)
 
 ### Authorization
 
@@ -643,7 +643,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **orderGetPositions**
-> \ispserverfarm\sevdesk\phpclient\model\ModelOrderPos orderGetPositions($id, $with_optional, $only_chargeable, $limit, $offset, $embed)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelOrderPos orderGetPositions($id, $with_optional, $only_chargeable, $limit, $offset, $embed)
 
 Get all order positions
 
@@ -689,7 +689,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelOrderPos**](../Model/ModelOrderPos.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelOrderPos**](../Model/ModelOrderPos.md)
 
 ### Authorization
 
@@ -1107,7 +1107,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **orderSendBy**
-> \ispserverfarm\sevdesk\phpclient\model\ModelOrder orderSendBy($id, $send_type)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelOrder orderSendBy($id, $send_type)
 
 Send an order by the desired send type
 
@@ -1145,7 +1145,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelOrder**](../Model/ModelOrder.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelOrder**](../Model/ModelOrder.md)
 
 ### Authorization
 
@@ -1159,7 +1159,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **sendOrderViaEmail**
-> \ispserverfarm\sevdesk\phpclient\model\ModelEmail sendOrderViaEmail($id, $body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelEmail sendOrderViaEmail($id, $body)
 
 Send an order via Email
 
@@ -1197,7 +1197,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelEmail**](../Model/ModelEmail.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelEmail**](../Model/ModelEmail.md)
 
 ### Authorization
 
@@ -1211,7 +1211,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **sendOrderViaPost**
-> \ispserverfarm\sevdesk\phpclient\model\ModelOrder sendOrderViaPost($id)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelOrder sendOrderViaPost($id)
 
 Send an order via post
 
@@ -1247,7 +1247,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelOrder**](../Model/ModelOrder.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelOrder**](../Model/ModelOrder.md)
 
 ### Authorization
 
@@ -1261,7 +1261,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateOrder**
-> \ispserverfarm\sevdesk\phpclient\model\ModelOrder updateOrder($id, $body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelOrder updateOrder($id, $body)
 
 Update an existing order
 
@@ -1299,7 +1299,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelOrder**](../Model/ModelOrder.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelOrder**](../Model/ModelOrder.md)
 
 ### Authorization
 

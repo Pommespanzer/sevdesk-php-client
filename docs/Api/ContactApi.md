@@ -30,7 +30,7 @@ Method | HTTP request | Description
 
 
 # **addAddress**
-> \ispserverfarm\sevdesk\phpclient\model\ModelContactAddress addAddress($id, $body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelContactAddress addAddress($id, $body)
 
 Add an address
 
@@ -68,7 +68,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelContactAddress**](../Model/ModelContactAddress.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelContactAddress**](../Model/ModelContactAddress.md)
 
 ### Authorization
 
@@ -82,7 +82,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **addContact**
-> \ispserverfarm\sevdesk\phpclient\model\ModelContact addContact($body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelContact addContact($body)
 
 Create a new contact of type person or company
 
@@ -118,7 +118,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelContact**](../Model/ModelContact.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelContact**](../Model/ModelContact.md)
 
 ### Authorization
 
@@ -132,7 +132,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **addContactCommunicationWay**
-> \ispserverfarm\sevdesk\phpclient\model\ModelCommunicationWay addContactCommunicationWay($id, $value, $key, $type)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelCommunicationWay addContactCommunicationWay($id, $value, $key, $type)
 
 Create a new communication way for a contact
 
@@ -174,7 +174,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelCommunicationWay**](../Model/ModelCommunicationWay.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelCommunicationWay**](../Model/ModelCommunicationWay.md)
 
 ### Authorization
 
@@ -392,7 +392,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **contactFactoryCreateContact**
-> \ispserverfarm\sevdesk\phpclient\model\ModelContact contactFactoryCreateContact($body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelContact contactFactoryCreateContact($body)
 
 Create a new contact of type person or company
 
@@ -428,7 +428,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelContact**](../Model/ModelContact.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelContact**](../Model/ModelContact.md)
 
 ### Authorization
 
@@ -442,7 +442,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **contactGetAddresses**
-> \ispserverfarm\sevdesk\phpclient\model\ModelContactAddress contactGetAddresses($id, $category_id, $category_object_name)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelContactAddress contactGetAddresses($id, $category_id, $category_object_name)
 
 Get the addresses of a specified contact
 
@@ -482,7 +482,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelContactAddress**](../Model/ModelContactAddress.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelContactAddress**](../Model/ModelContactAddress.md)
 
 ### Authorization
 
@@ -545,7 +545,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getContactBillingAddress**
-> \ispserverfarm\sevdesk\phpclient\model\ModelContactAddress getContactBillingAddress($id)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelContactAddress getContactBillingAddress($id)
 
 Get the billing address of a specified contact
 
@@ -581,7 +581,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelContactAddress**](../Model/ModelContactAddress.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelContactAddress**](../Model/ModelContactAddress.md)
 
 ### Authorization
 
@@ -595,7 +595,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getContactBillingEmail**
-> \ispserverfarm\sevdesk\phpclient\model\ModelCommunicationWay getContactBillingEmail($id)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelCommunicationWay getContactBillingEmail($id)
 
 Get the billing email of a specified contact
 
@@ -631,7 +631,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelCommunicationWay**](../Model/ModelCommunicationWay.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelCommunicationWay**](../Model/ModelCommunicationWay.md)
 
 ### Authorization
 
@@ -645,7 +645,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getContactCommunicationWays**
-> \ispserverfarm\sevdesk\phpclient\model\ModelCommunicationWay getContactCommunicationWays($id, $type)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelCommunicationWay getContactCommunicationWays($id, $type)
 
 Get the communication ways of a specified contact
 
@@ -683,7 +683,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelCommunicationWay**](../Model/ModelCommunicationWay.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelCommunicationWay**](../Model/ModelCommunicationWay.md)
 
 ### Authorization
 
@@ -697,7 +697,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getContactMainAddress**
-> \ispserverfarm\sevdesk\phpclient\model\ModelContactAddress getContactMainAddress($id)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelContactAddress getContactMainAddress($id)
 
 Get the main address of a specified contact
 
@@ -733,7 +733,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelContactAddress**](../Model/ModelContactAddress.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelContactAddress**](../Model/ModelContactAddress.md)
 
 ### Authorization
 
@@ -747,7 +747,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getContactMainEmail**
-> \ispserverfarm\sevdesk\phpclient\model\ModelCommunicationWay getContactMainEmail($id)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelCommunicationWay getContactMainEmail($id)
 
 Get the main email of a specified contact
 
@@ -783,7 +783,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelCommunicationWay**](../Model/ModelCommunicationWay.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelCommunicationWay**](../Model/ModelCommunicationWay.md)
 
 ### Authorization
 
@@ -797,7 +797,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getContactMainMobile**
-> \ispserverfarm\sevdesk\phpclient\model\ModelCommunicationWay getContactMainMobile($id)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelCommunicationWay getContactMainMobile($id)
 
 Get the main mobile of a specified contact
 
@@ -833,7 +833,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelCommunicationWay**](../Model/ModelCommunicationWay.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelCommunicationWay**](../Model/ModelCommunicationWay.md)
 
 ### Authorization
 
@@ -847,7 +847,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getContactMainPhone**
-> \ispserverfarm\sevdesk\phpclient\model\ModelCommunicationWay getContactMainPhone($id)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelCommunicationWay getContactMainPhone($id)
 
 Get the main phone of a specified contact
 
@@ -883,7 +883,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelCommunicationWay**](../Model/ModelCommunicationWay.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelCommunicationWay**](../Model/ModelCommunicationWay.md)
 
 ### Authorization
 
@@ -897,7 +897,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getContactMainWebsite**
-> \ispserverfarm\sevdesk\phpclient\model\ModelCommunicationWay getContactMainWebsite($id)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelCommunicationWay getContactMainWebsite($id)
 
 Get the main website of a specified contact
 
@@ -933,7 +933,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelCommunicationWay**](../Model/ModelCommunicationWay.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelCommunicationWay**](../Model/ModelCommunicationWay.md)
 
 ### Authorization
 
@@ -947,7 +947,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getContactRelatedCommunicationWays**
-> \ispserverfarm\sevdesk\phpclient\model\ModelCommunicationWay getContactRelatedCommunicationWays($id, $type)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelCommunicationWay getContactRelatedCommunicationWays($id, $type)
 
 Get the related communication ways of a specified contact
 
@@ -985,7 +985,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelCommunicationWay**](../Model/ModelCommunicationWay.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelCommunicationWay**](../Model/ModelCommunicationWay.md)
 
 ### Authorization
 
@@ -1048,7 +1048,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getContacts**
-> \ispserverfarm\sevdesk\phpclient\model\ModelContact getContacts($depth, $limit, $offset, $embed)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelContact getContacts($depth, $limit, $offset, $embed)
 
 Get an overview of all contacts
 
@@ -1090,7 +1090,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelContact**](../Model/ModelContact.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelContact**](../Model/ModelContact.md)
 
 ### Authorization
 
@@ -1149,7 +1149,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateContact**
-> \ispserverfarm\sevdesk\phpclient\model\ModelContact updateContact($id, $body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelContact updateContact($id, $body)
 
 Update an existing contact
 
@@ -1187,7 +1187,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelContact**](../Model/ModelContact.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelContact**](../Model/ModelContact.md)
 
 ### Authorization
 

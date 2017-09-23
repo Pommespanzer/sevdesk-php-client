@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **getSubscriptionTypes**
-> \ispserverfarm\sevdesk\phpclient\model\ModelSubscriptionType getSubscriptionTypes()
+> \ispserverfarm\sevdesk\phpclient\Model\ModelSubscriptionType getSubscriptionTypes()
 
 Get an overview of all subscription types
 
@@ -40,7 +40,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelSubscriptionType**](../Model/ModelSubscriptionType.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelSubscriptionType**](../Model/ModelSubscriptionType.md)
 
 ### Authorization
 

@@ -56,7 +56,7 @@ Method | HTTP request | Description
 
 
 # **addInvoice**
-> \ispserverfarm\sevdesk\phpclient\model\ModelInvoice addInvoice($body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelInvoice addInvoice($body)
 
 Create a new invoice
 
@@ -92,7 +92,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelInvoice**](../Model/ModelInvoice.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelInvoice**](../Model/ModelInvoice.md)
 
 ### Authorization
 
@@ -106,7 +106,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **cancelInvoice**
-> \ispserverfarm\sevdesk\phpclient\model\ModelInvoice cancelInvoice($id)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelInvoice cancelInvoice($id)
 
 Cancel an invoice
 
@@ -142,7 +142,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelInvoice**](../Model/ModelInvoice.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelInvoice**](../Model/ModelInvoice.md)
 
 ### Authorization
 
@@ -156,7 +156,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createInvoiceFromOrder**
-> \ispserverfarm\sevdesk\phpclient\model\ModelInvoice createInvoiceFromOrder($body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelInvoice createInvoiceFromOrder($body)
 
 Create an new invoice from an existing order
 
@@ -192,7 +192,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelInvoice**](../Model/ModelInvoice.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelInvoice**](../Model/ModelInvoice.md)
 
 ### Authorization
 
@@ -206,7 +206,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **createInvoiceReminder**
-> \ispserverfarm\sevdesk\phpclient\model\ModelInvoice createInvoiceReminder($body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelInvoice createInvoiceReminder($body)
 
 Create an invoice reminder
 
@@ -242,7 +242,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelInvoice**](../Model/ModelInvoice.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelInvoice**](../Model/ModelInvoice.md)
 
 ### Authorization
 
@@ -305,7 +305,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **duplicateInvoice**
-> \ispserverfarm\sevdesk\phpclient\model\ModelInvoice duplicateInvoice($id)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelInvoice duplicateInvoice($id)
 
 Duplicate an existing invoice
 
@@ -341,7 +341,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelInvoice**](../Model/ModelInvoice.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelInvoice**](../Model/ModelInvoice.md)
 
 ### Authorization
 
@@ -508,7 +508,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getInvoices**
-> \ispserverfarm\sevdesk\phpclient\model\ModelInvoice getInvoices($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelInvoice getInvoices($limit, $offset, $embed)
 
 Get an overview of all invoices
 
@@ -548,7 +548,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelInvoice**](../Model/ModelInvoice.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelInvoice**](../Model/ModelInvoice.md)
 
 ### Authorization
 
@@ -613,7 +613,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **invoiceAddPosition**
-> \ispserverfarm\sevdesk\phpclient\model\ModelInvoice invoiceAddPosition($id, $body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelInvoice invoiceAddPosition($id, $body)
 
 Add a position to an existing invoice
 
@@ -651,7 +651,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelInvoice**](../Model/ModelInvoice.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelInvoice**](../Model/ModelInvoice.md)
 
 ### Authorization
 
@@ -665,7 +665,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **invoiceBookAmount**
-> \ispserverfarm\sevdesk\phpclient\model\ModelInvoiceLog invoiceBookAmount($id, $ammount, $date, $body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelInvoiceLog invoiceBookAmount($id, $ammount, $date, $body)
 
 Book amount for an invoice
 
@@ -707,7 +707,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelInvoiceLog**](../Model/ModelInvoiceLog.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelInvoiceLog**](../Model/ModelInvoiceLog.md)
 
 ### Authorization
 
@@ -815,7 +815,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **invoiceChangeStatus**
-> \ispserverfarm\sevdesk\phpclient\model\ModelInvoice invoiceChangeStatus($id, $value)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelInvoice invoiceChangeStatus($id, $value)
 
 Change status of an invoice
 
@@ -853,7 +853,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelInvoice**](../Model/ModelInvoice.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelInvoice**](../Model/ModelInvoice.md)
 
 ### Authorization
 
@@ -916,7 +916,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **invoiceGetCheckAccountTransactionLogs**
-> \ispserverfarm\sevdesk\phpclient\model\ModelCheckAccountTransactionLog invoiceGetCheckAccountTransactionLogs($id, $embed)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelCheckAccountTransactionLog invoiceGetCheckAccountTransactionLogs($id, $embed)
 
 Get check account transaction logs about a specified invoice
 
@@ -954,7 +954,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelCheckAccountTransactionLog**](../Model/ModelCheckAccountTransactionLog.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelCheckAccountTransactionLog**](../Model/ModelCheckAccountTransactionLog.md)
 
 ### Authorization
 
@@ -968,7 +968,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **invoiceGetCheckAccountTransactions**
-> \ispserverfarm\sevdesk\phpclient\model\ModelCheckAccountTransaction invoiceGetCheckAccountTransactions($id, $embed)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelCheckAccountTransaction invoiceGetCheckAccountTransactions($id, $embed)
 
 Get check account transactions of a specified invoice
 
@@ -1006,7 +1006,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelCheckAccountTransaction**](../Model/ModelCheckAccountTransaction.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelCheckAccountTransaction**](../Model/ModelCheckAccountTransaction.md)
 
 ### Authorization
 
@@ -1118,7 +1118,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **invoiceGetDiscounts**
-> \ispserverfarm\sevdesk\phpclient\model\ModelDiscounts invoiceGetDiscounts($id, $embed)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelDiscounts invoiceGetDiscounts($id, $embed)
 
 Get the discounts of a specified invoice
 
@@ -1156,7 +1156,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelDiscounts**](../Model/ModelDiscounts.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelDiscounts**](../Model/ModelDiscounts.md)
 
 ### Authorization
 
@@ -1221,7 +1221,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **invoiceGetDunnings**
-> \ispserverfarm\sevdesk\phpclient\model\ModelInvoice invoiceGetDunnings($id)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelInvoice invoiceGetDunnings($id)
 
 Get invoice dunnings
 
@@ -1257,7 +1257,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelInvoice**](../Model/ModelInvoice.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelInvoice**](../Model/ModelInvoice.md)
 
 ### Authorization
 
@@ -1271,7 +1271,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **invoiceGetFeed**
-> \ispserverfarm\sevdesk\phpclient\model\ModelFeed invoiceGetFeed($id, $embed)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelFeed invoiceGetFeed($id, $embed)
 
 Get the feed of a specified invoice
 
@@ -1309,7 +1309,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelFeed**](../Model/ModelFeed.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelFeed**](../Model/ModelFeed.md)
 
 ### Authorization
 
@@ -1470,7 +1470,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **invoiceGetPartialInvoices**
-> \ispserverfarm\sevdesk\phpclient\model\ModelInvoice invoiceGetPartialInvoices($id, $embed)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelInvoice invoiceGetPartialInvoices($id, $embed)
 
 Get partial invoices of a specified invoice
 
@@ -1508,7 +1508,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelInvoice**](../Model/ModelInvoice.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelInvoice**](../Model/ModelInvoice.md)
 
 ### Authorization
 
@@ -1522,7 +1522,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **invoiceGetPositions**
-> \ispserverfarm\sevdesk\phpclient\model\ModelInvoicePos invoiceGetPositions($id, $limit, $offset, $embed)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelInvoicePos invoiceGetPositions($id, $limit, $offset, $embed)
 
 Get the positions of a specified invoice
 
@@ -1564,7 +1564,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelInvoicePos**](../Model/ModelInvoicePos.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelInvoicePos**](../Model/ModelInvoicePos.md)
 
 ### Authorization
 
@@ -1723,7 +1723,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **invoiceGetTags**
-> \ispserverfarm\sevdesk\phpclient\model\ModelTag invoiceGetTags($id, $embed)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelTag invoiceGetTags($id, $embed)
 
 Get the tags of a specified invoice
 
@@ -1761,7 +1761,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelTag**](../Model/ModelTag.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelTag**](../Model/ModelTag.md)
 
 ### Authorization
 
@@ -2126,7 +2126,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **invoiceMarkAsSent**
-> \ispserverfarm\sevdesk\phpclient\model\ModelInvoice invoiceMarkAsSent($id)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelInvoice invoiceMarkAsSent($id)
 
 Marks an invoice as sent
 
@@ -2162,7 +2162,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelInvoice**](../Model/ModelInvoice.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelInvoice**](../Model/ModelInvoice.md)
 
 ### Authorization
 
@@ -2176,7 +2176,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **invoiceRefundAmount**
-> \ispserverfarm\sevdesk\phpclient\model\ModelInvoice invoiceRefundAmount($id, $ammount, $date)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelInvoice invoiceRefundAmount($id, $ammount, $date)
 
 Refund an already payed invoice amount
 
@@ -2216,7 +2216,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelInvoice**](../Model/ModelInvoice.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelInvoice**](../Model/ModelInvoice.md)
 
 ### Authorization
 
@@ -2279,7 +2279,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **invoiceSendBy**
-> \ispserverfarm\sevdesk\phpclient\model\ModelInvoice invoiceSendBy($id, $send_type)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelInvoice invoiceSendBy($id, $send_type)
 
 Send invoice by desired method
 
@@ -2317,7 +2317,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelInvoice**](../Model/ModelInvoice.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelInvoice**](../Model/ModelInvoice.md)
 
 ### Authorization
 
@@ -2331,7 +2331,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **saveInvoice**
-> \ispserverfarm\sevdesk\phpclient\model\ModelInvoiceFactory saveInvoice($body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelInvoiceFactory saveInvoice($body)
 
 Create a new invoice (with / without invoice positions and discounts)
 
@@ -2367,7 +2367,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelInvoiceFactory**](../Model/ModelInvoiceFactory.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelInvoiceFactory**](../Model/ModelInvoiceFactory.md)
 
 ### Authorization
 
@@ -2381,7 +2381,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **sendInvoiceViaEmail**
-> \ispserverfarm\sevdesk\phpclient\model\ModelEmail sendInvoiceViaEmail($id, $body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelEmail sendInvoiceViaEmail($id, $body)
 
 Send an invoice via Email
 
@@ -2419,7 +2419,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelEmail**](../Model/ModelEmail.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelEmail**](../Model/ModelEmail.md)
 
 ### Authorization
 
@@ -2433,7 +2433,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **sendInvoiceViaPost**
-> \ispserverfarm\sevdesk\phpclient\model\ModelInvoice sendInvoiceViaPost($id)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelInvoice sendInvoiceViaPost($id)
 
 Send an invoice via Letter
 
@@ -2469,7 +2469,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelInvoice**](../Model/ModelInvoice.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelInvoice**](../Model/ModelInvoice.md)
 
 ### Authorization
 
@@ -2483,7 +2483,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateInvoice**
-> \ispserverfarm\sevdesk\phpclient\model\ModelInvoice updateInvoice($id, $body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelInvoice updateInvoice($id, $body)
 
 Update an existing invoice
 
@@ -2521,7 +2521,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelInvoice**](../Model/ModelInvoice.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelInvoice**](../Model/ModelInvoice.md)
 
 ### Authorization
 

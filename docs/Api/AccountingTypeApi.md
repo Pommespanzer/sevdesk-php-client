@@ -113,7 +113,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **accountingTypeGetAccountingSystemNumber**
-> \ispserverfarm\sevdesk\phpclient\model\ModelAccountingSystemNumber accountingTypeGetAccountingSystemNumber($id, $embed)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelAccountingSystemNumber accountingTypeGetAccountingSystemNumber($id, $embed)
 
 Get accounting system number of the specified accounting type
 
@@ -151,7 +151,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelAccountingSystemNumber**](../Model/ModelAccountingSystemNumber.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelAccountingSystemNumber**](../Model/ModelAccountingSystemNumber.md)
 
 ### Authorization
 
@@ -165,7 +165,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **addAccountingType**
-> \ispserverfarm\sevdesk\phpclient\model\ModelAccountingType addAccountingType($body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelAccountingType addAccountingType($body)
 
 Create a new accounting type
 
@@ -201,7 +201,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelAccountingType**](../Model/ModelAccountingType.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelAccountingType**](../Model/ModelAccountingType.md)
 
 ### Authorization
 
@@ -215,7 +215,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **addAccountingTypeFactory**
-> \ispserverfarm\sevdesk\phpclient\model\ModelAccountingType addAccountingTypeFactory($body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelAccountingType addAccountingTypeFactory($body)
 
 Create a new accounting type
 
@@ -251,7 +251,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelAccountingType**](../Model/ModelAccountingType.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelAccountingType**](../Model/ModelAccountingType.md)
 
 ### Authorization
 
@@ -314,7 +314,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAccountingTypes**
-> \ispserverfarm\sevdesk\phpclient\model\ModelAccountingType getAccountingTypes($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelAccountingType getAccountingTypes($limit, $offset, $embed)
 
 Get an overview of all accounting types
 
@@ -354,7 +354,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelAccountingType**](../Model/ModelAccountingType.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelAccountingType**](../Model/ModelAccountingType.md)
 
 ### Authorization
 
@@ -368,7 +368,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateAccountingType**
-> \ispserverfarm\sevdesk\phpclient\model\ModelAccountingType updateAccountingType($id, $body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelAccountingType updateAccountingType($id, $body)
 
 Update an existing accounting type
 
@@ -406,7 +406,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelAccountingType**](../Model/ModelAccountingType.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelAccountingType**](../Model/ModelAccountingType.md)
 
 ### Authorization
 

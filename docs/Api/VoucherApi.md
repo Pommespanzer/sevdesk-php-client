@@ -29,7 +29,7 @@ Method | HTTP request | Description
 
 
 # **addVoucher**
-> \ispserverfarm\sevdesk\phpclient\model\ModelVoucher addVoucher($body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelVoucher addVoucher($body)
 
 Create a new voucher
 
@@ -65,7 +65,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelVoucher**](../Model/ModelVoucher.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelVoucher**](../Model/ModelVoucher.md)
 
 ### Authorization
 
@@ -128,7 +128,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getVouchers**
-> \ispserverfarm\sevdesk\phpclient\model\ModelVoucher getVouchers($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelVoucher getVouchers($limit, $offset, $embed)
 
 Get an overview of all vouchers
 
@@ -168,7 +168,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelVoucher**](../Model/ModelVoucher.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelVoucher**](../Model/ModelVoucher.md)
 
 ### Authorization
 
@@ -182,7 +182,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **saveVoucher**
-> \ispserverfarm\sevdesk\phpclient\model\ModelVoucherFactory saveVoucher($body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelVoucherFactory saveVoucher($body)
 
 Create a new voucher
 
@@ -218,7 +218,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelVoucherFactory**](../Model/ModelVoucherFactory.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelVoucherFactory**](../Model/ModelVoucherFactory.md)
 
 ### Authorization
 
@@ -232,7 +232,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateVoucher**
-> \ispserverfarm\sevdesk\phpclient\model\ModelVoucher updateVoucher($id, $body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelVoucher updateVoucher($id, $body)
 
 Update an existing voucher
 
@@ -270,7 +270,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelVoucher**](../Model/ModelVoucher.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelVoucher**](../Model/ModelVoucher.md)
 
 ### Authorization
 
@@ -484,7 +484,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **voucherGetAccountingTypes**
-> \ispserverfarm\sevdesk\phpclient\model\ModelAccountingType voucherGetAccountingTypes($id, $embed)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelAccountingType voucherGetAccountingTypes($id, $embed)
 
 Get the accounting types of a specified voucher
 
@@ -522,7 +522,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelAccountingType**](../Model/ModelAccountingType.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelAccountingType**](../Model/ModelAccountingType.md)
 
 ### Authorization
 
@@ -785,7 +785,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **voucherGetDependingRecurringVouchers**
-> \ispserverfarm\sevdesk\phpclient\model\ModelVoucher voucherGetDependingRecurringVouchers($id, $embed)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelVoucher voucherGetDependingRecurringVouchers($id, $embed)
 
 Get the depending recurring vouchers of a specified origin voucher
 
@@ -823,7 +823,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelVoucher**](../Model/ModelVoucher.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelVoucher**](../Model/ModelVoucher.md)
 
 ### Authorization
 
@@ -939,7 +939,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **voucherMarkAsOpen**
-> \ispserverfarm\sevdesk\phpclient\model\ModelVoucher voucherMarkAsOpen($id)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelVoucher voucherMarkAsOpen($id)
 
 Mark a specified voucher as open
 
@@ -975,7 +975,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelVoucher**](../Model/ModelVoucher.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelVoucher**](../Model/ModelVoucher.md)
 
 ### Authorization
 
@@ -989,7 +989,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **voucherMarkAsPaid**
-> \ispserverfarm\sevdesk\phpclient\model\ModelVoucher voucherMarkAsPaid($id, $body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelVoucher voucherMarkAsPaid($id, $body)
 
 Mark a specified voucher as paid
 
@@ -1027,7 +1027,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelVoucher**](../Model/ModelVoucher.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelVoucher**](../Model/ModelVoucher.md)
 
 ### Authorization
 
@@ -1041,7 +1041,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **voucherRefundAmount**
-> \ispserverfarm\sevdesk\phpclient\model\ModelVoucherLog voucherRefundAmount($id, $body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelVoucherLog voucherRefundAmount($id, $body)
 
 Refund an amount for a specified voucher
 
@@ -1079,7 +1079,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelVoucherLog**](../Model/ModelVoucherLog.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelVoucherLog**](../Model/ModelVoucherLog.md)
 
 ### Authorization
 
@@ -1093,7 +1093,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **voucherUploadTempFile**
-> \ispserverfarm\sevdesk\phpclient\model\ModelVoucherFactory voucherUploadTempFile($file)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelVoucherFactory voucherUploadTempFile($file)
 
 Upload a temporary file to be used later
 
@@ -1129,7 +1129,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelVoucherFactory**](../Model/ModelVoucherFactory.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelVoucherFactory**](../Model/ModelVoucherFactory.md)
 
 ### Authorization
 

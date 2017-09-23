@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **addAccountingIndex**
-> \ispserverfarm\sevdesk\phpclient\model\ModelAccountingIndex addAccountingIndex($body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelAccountingIndex addAccountingIndex($body)
 
 Create a new accounting index
 
@@ -47,7 +47,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelAccountingIndex**](../Model/ModelAccountingIndex.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelAccountingIndex**](../Model/ModelAccountingIndex.md)
 
 ### Authorization
 
@@ -110,7 +110,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAccountingIndexes**
-> \ispserverfarm\sevdesk\phpclient\model\ModelAccountingIndex getAccountingIndexes($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelAccountingIndex getAccountingIndexes($limit, $offset, $embed)
 
 Get an overview of all accounting indexes
 
@@ -150,7 +150,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelAccountingIndex**](../Model/ModelAccountingIndex.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelAccountingIndex**](../Model/ModelAccountingIndex.md)
 
 ### Authorization
 
@@ -164,7 +164,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateAccountingIndex**
-> \ispserverfarm\sevdesk\phpclient\model\ModelAccountingIndex updateAccountingIndex($id, $body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelAccountingIndex updateAccountingIndex($id, $body)
 
 Update an existing accounting index
 
@@ -202,7 +202,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelAccountingIndex**](../Model/ModelAccountingIndex.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelAccountingIndex**](../Model/ModelAccountingIndex.md)
 
 ### Authorization
 

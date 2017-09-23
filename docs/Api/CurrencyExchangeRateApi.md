@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **getCurrencyExchangeRates**
-> \ispserverfarm\sevdesk\phpclient\model\ModelCurrencyExchangeRate getCurrencyExchangeRates($limit, $offset)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelCurrencyExchangeRate getCurrencyExchangeRates($limit, $offset)
 
 Get an overview of all currency exchange rates
 
@@ -46,7 +46,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelCurrencyExchangeRate**](../Model/ModelCurrencyExchangeRate.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelCurrencyExchangeRate**](../Model/ModelCurrencyExchangeRate.md)
 
 ### Authorization
 

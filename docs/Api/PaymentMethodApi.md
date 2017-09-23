@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **addPaymentMethod**
-> \ispserverfarm\sevdesk\phpclient\model\ModelPaymentMethod addPaymentMethod($body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelPaymentMethod addPaymentMethod($body)
 
 Create a new payment method
 
@@ -47,7 +47,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelPaymentMethod**](../Model/ModelPaymentMethod.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelPaymentMethod**](../Model/ModelPaymentMethod.md)
 
 ### Authorization
 
@@ -110,7 +110,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getPaymentMethods**
-> \ispserverfarm\sevdesk\phpclient\model\ModelPaymentMethod getPaymentMethods($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelPaymentMethod getPaymentMethods($limit, $offset, $embed)
 
 Get an overview of all payment methods
 
@@ -150,7 +150,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelPaymentMethod**](../Model/ModelPaymentMethod.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelPaymentMethod**](../Model/ModelPaymentMethod.md)
 
 ### Authorization
 
@@ -164,7 +164,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updatePaymentMethod**
-> \ispserverfarm\sevdesk\phpclient\model\ModelPaymentMethod updatePaymentMethod($id, $body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelPaymentMethod updatePaymentMethod($id, $body)
 
 Update an existing payment method
 
@@ -202,7 +202,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelPaymentMethod**](../Model/ModelPaymentMethod.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelPaymentMethod**](../Model/ModelPaymentMethod.md)
 
 ### Authorization
 

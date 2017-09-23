@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **addTaxSet**
-> \ispserverfarm\sevdesk\phpclient\model\ModelTaxSet addTaxSet($body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelTaxSet addTaxSet($body)
 
 Create a new tax set
 
@@ -47,7 +47,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelTaxSet**](../Model/ModelTaxSet.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelTaxSet**](../Model/ModelTaxSet.md)
 
 ### Authorization
 
@@ -110,7 +110,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getTaxSets**
-> \ispserverfarm\sevdesk\phpclient\model\ModelTaxSet getTaxSets($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelTaxSet getTaxSets($limit, $offset, $embed)
 
 Get an overview of all tax sets
 
@@ -150,7 +150,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelTaxSet**](../Model/ModelTaxSet.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelTaxSet**](../Model/ModelTaxSet.md)
 
 ### Authorization
 
@@ -164,7 +164,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateTaxSet**
-> \ispserverfarm\sevdesk\phpclient\model\ModelTaxSet updateTaxSet($id, $body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelTaxSet updateTaxSet($id, $body)
 
 Update an existing tax set
 
@@ -202,7 +202,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelTaxSet**](../Model/ModelTaxSet.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelTaxSet**](../Model/ModelTaxSet.md)
 
 ### Authorization
 

@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **addAssetPos**
-> \ispserverfarm\sevdesk\phpclient\model\ModelAssetPos addAssetPos($body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelAssetPos addAssetPos($body)
 
 Create a new asset position
 
@@ -47,7 +47,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelAssetPos**](../Model/ModelAssetPos.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelAssetPos**](../Model/ModelAssetPos.md)
 
 ### Authorization
 
@@ -110,7 +110,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAssetPositions**
-> \ispserverfarm\sevdesk\phpclient\model\ModelAssetPos getAssetPositions($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelAssetPos getAssetPositions($limit, $offset, $embed)
 
 Get an overview of all asset positions
 
@@ -150,7 +150,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelAssetPos**](../Model/ModelAssetPos.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelAssetPos**](../Model/ModelAssetPos.md)
 
 ### Authorization
 
@@ -164,7 +164,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateAssetPosition**
-> \ispserverfarm\sevdesk\phpclient\model\ModelAssetPos updateAssetPosition($id, $body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelAssetPos updateAssetPosition($id, $body)
 
 Update an existing asset position
 
@@ -202,7 +202,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelAssetPos**](../Model/ModelAssetPos.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelAssetPos**](../Model/ModelAssetPos.md)
 
 ### Authorization
 

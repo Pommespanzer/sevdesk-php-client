@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **getObjectUsed**
-> \ispserverfarm\sevdesk\phpclient\model\ModelObjectUsed getObjectUsed($limit, $offset)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelObjectUsed getObjectUsed($limit, $offset)
 
 Get an overview of all objects used
 
@@ -46,7 +46,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelObjectUsed**](../Model/ModelObjectUsed.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelObjectUsed**](../Model/ModelObjectUsed.md)
 
 ### Authorization
 

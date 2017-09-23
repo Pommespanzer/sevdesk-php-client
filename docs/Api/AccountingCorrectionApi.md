@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **addAccountingCorrection**
-> \ispserverfarm\sevdesk\phpclient\model\ModelAccountingCorrection addAccountingCorrection($body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelAccountingCorrection addAccountingCorrection($body)
 
 Create a new accounting correction
 
@@ -47,7 +47,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelAccountingCorrection**](../Model/ModelAccountingCorrection.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelAccountingCorrection**](../Model/ModelAccountingCorrection.md)
 
 ### Authorization
 
@@ -110,7 +110,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAccountingCorrections**
-> \ispserverfarm\sevdesk\phpclient\model\ModelAccountingCorrection getAccountingCorrections($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelAccountingCorrection getAccountingCorrections($limit, $offset, $embed)
 
 Get an overview of all accounting corrections
 
@@ -150,7 +150,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelAccountingCorrection**](../Model/ModelAccountingCorrection.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelAccountingCorrection**](../Model/ModelAccountingCorrection.md)
 
 ### Authorization
 
@@ -164,7 +164,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateAccountingCorrection**
-> \ispserverfarm\sevdesk\phpclient\model\ModelAccountingCorrection updateAccountingCorrection($id, $body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelAccountingCorrection updateAccountingCorrection($id, $body)
 
 Update an existing accounting correction
 
@@ -202,7 +202,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelAccountingCorrection**](../Model/ModelAccountingCorrection.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelAccountingCorrection**](../Model/ModelAccountingCorrection.md)
 
 ### Authorization
 

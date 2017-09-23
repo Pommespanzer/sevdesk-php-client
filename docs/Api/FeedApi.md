@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 
 # **addFeed**
-> \ispserverfarm\sevdesk\phpclient\model\ModelFeed addFeed($body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelFeed addFeed($body)
 
 Create a new action which will be displayed in the feed
 
@@ -48,7 +48,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelFeed**](../Model/ModelFeed.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelFeed**](../Model/ModelFeed.md)
 
 ### Authorization
 
@@ -111,7 +111,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getFeeds**
-> \ispserverfarm\sevdesk\phpclient\model\ModelFeed getFeeds($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelFeed getFeeds($limit, $offset, $embed)
 
 Get an overview of all actions from everyone, which will be displayed in the dashboard
 
@@ -151,7 +151,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelFeed**](../Model/ModelFeed.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelFeed**](../Model/ModelFeed.md)
 
 ### Authorization
 
@@ -214,7 +214,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateFeed**
-> \ispserverfarm\sevdesk\phpclient\model\ModelFeed updateFeed($id, $body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelFeed updateFeed($id, $body)
 
 Update an existing Feed action
 
@@ -252,7 +252,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelFeed**](../Model/ModelFeed.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelFeed**](../Model/ModelFeed.md)
 
 ### Authorization
 

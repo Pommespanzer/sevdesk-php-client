@@ -16,7 +16,7 @@ Method | HTTP request | Description
 
 
 # **addCheckAccountTransaction**
-> \ispserverfarm\sevdesk\phpclient\model\ModelCheckAccountTransaction addCheckAccountTransaction($body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelCheckAccountTransaction addCheckAccountTransaction($body)
 
 Create a new check account transaction
 
@@ -52,7 +52,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelCheckAccountTransaction**](../Model/ModelCheckAccountTransaction.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelCheckAccountTransaction**](../Model/ModelCheckAccountTransaction.md)
 
 ### Authorization
 
@@ -66,7 +66,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **checkAccountTransactionGetLog**
-> \ispserverfarm\sevdesk\phpclient\model\ModelCheckAccountTransactionLog checkAccountTransactionGetLog($id, $embed)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelCheckAccountTransactionLog checkAccountTransactionGetLog($id, $embed)
 
 Get log of a specified check account transaction
 
@@ -104,7 +104,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelCheckAccountTransactionLog**](../Model/ModelCheckAccountTransactionLog.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelCheckAccountTransactionLog**](../Model/ModelCheckAccountTransactionLog.md)
 
 ### Authorization
 
@@ -216,7 +216,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCheckAccountTransactions**
-> \ispserverfarm\sevdesk\phpclient\model\ModelCheckAccountTransaction getCheckAccountTransactions($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelCheckAccountTransaction getCheckAccountTransactions($limit, $offset, $embed)
 
 Get an overview of all check account transactions
 
@@ -256,7 +256,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelCheckAccountTransaction**](../Model/ModelCheckAccountTransaction.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelCheckAccountTransaction**](../Model/ModelCheckAccountTransaction.md)
 
 ### Authorization
 
@@ -270,7 +270,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **linkInvoiceToCheckAccountTransaction**
-> \ispserverfarm\sevdesk\phpclient\model\ModelCheckAccountTransaction linkInvoiceToCheckAccountTransaction($id, $body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelCheckAccountTransaction linkInvoiceToCheckAccountTransaction($id, $body)
 
 link invoice to check account transaction
 
@@ -308,7 +308,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelCheckAccountTransaction**](../Model/ModelCheckAccountTransaction.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelCheckAccountTransaction**](../Model/ModelCheckAccountTransaction.md)
 
 ### Authorization
 
@@ -322,7 +322,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **linkVoucherToCheckAccountTransaction**
-> \ispserverfarm\sevdesk\phpclient\model\ModelCheckAccountTransaction linkVoucherToCheckAccountTransaction($id, $body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelCheckAccountTransaction linkVoucherToCheckAccountTransaction($id, $body)
 
 link voucher to check account transaction
 
@@ -360,7 +360,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelCheckAccountTransaction**](../Model/ModelCheckAccountTransaction.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelCheckAccountTransaction**](../Model/ModelCheckAccountTransaction.md)
 
 ### Authorization
 
@@ -374,7 +374,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateCheckAccountTransaction**
-> \ispserverfarm\sevdesk\phpclient\model\ModelCheckAccountTransaction updateCheckAccountTransaction($id, $body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelCheckAccountTransaction updateCheckAccountTransaction($id, $body)
 
 Update a existing check account transaction
 
@@ -412,7 +412,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelCheckAccountTransaction**](../Model/ModelCheckAccountTransaction.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelCheckAccountTransaction**](../Model/ModelCheckAccountTransaction.md)
 
 ### Authorization
 
@@ -426,7 +426,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateCheckAccountTransactionStatus**
-> \ispserverfarm\sevdesk\phpclient\model\ModelCheckAccountTransaction updateCheckAccountTransactionStatus($id, $body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelCheckAccountTransaction updateCheckAccountTransactionStatus($id, $body)
 
 Update status of a existing check account transaction
 
@@ -464,7 +464,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelCheckAccountTransaction**](../Model/ModelCheckAccountTransaction.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelCheckAccountTransaction**](../Model/ModelCheckAccountTransaction.md)
 
 ### Authorization
 

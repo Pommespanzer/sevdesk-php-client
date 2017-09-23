@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 
 # **helpGetArticle**
-> \ispserverfarm\sevdesk\phpclient\model\ModelHelp helpGetArticle($article_id)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelHelp helpGetArticle($article_id)
 
 Get a specified article
 
@@ -48,7 +48,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelHelp**](../Model/ModelHelp.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelHelp**](../Model/ModelHelp.md)
 
 ### Authorization
 
@@ -62,7 +62,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **helpGetArticles**
-> \ispserverfarm\sevdesk\phpclient\model\ModelHelp helpGetArticles($section_id, $limit, $offset)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelHelp helpGetArticles($section_id, $limit, $offset)
 
 Get all help articles for a specified section
 
@@ -102,7 +102,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelHelp**](../Model/ModelHelp.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelHelp**](../Model/ModelHelp.md)
 
 ### Authorization
 
@@ -116,7 +116,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **helpGetCategories**
-> \ispserverfarm\sevdesk\phpclient\model\ModelHelp helpGetCategories($limit, $offset)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelHelp helpGetCategories($limit, $offset)
 
 Get all categories of help articles
 
@@ -154,7 +154,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelHelp**](../Model/ModelHelp.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelHelp**](../Model/ModelHelp.md)
 
 ### Authorization
 
@@ -168,7 +168,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **helpGetSections**
-> \ispserverfarm\sevdesk\phpclient\model\ModelHelp helpGetSections($limit, $offset)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelHelp helpGetSections($limit, $offset)
 
 Get all sections of help articles
 
@@ -206,7 +206,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelHelp**](../Model/ModelHelp.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelHelp**](../Model/ModelHelp.md)
 
 ### Authorization
 
@@ -220,7 +220,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **helpSearchArticles**
-> \ispserverfarm\sevdesk\phpclient\model\ModelHelp helpSearchArticles($name)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelHelp helpSearchArticles($name)
 
 Search for articles
 
@@ -256,7 +256,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelHelp**](../Model/ModelHelp.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelHelp**](../Model/ModelHelp.md)
 
 ### Authorization
 

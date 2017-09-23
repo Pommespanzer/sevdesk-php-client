@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **addCostCentre**
-> \ispserverfarm\sevdesk\phpclient\model\ModelCostCentre addCostCentre($body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelCostCentre addCostCentre($body)
 
 Create a new cost centre
 
@@ -47,7 +47,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelCostCentre**](../Model/ModelCostCentre.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelCostCentre**](../Model/ModelCostCentre.md)
 
 ### Authorization
 
@@ -110,7 +110,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCostCentre**
-> \ispserverfarm\sevdesk\phpclient\model\ModelCostCentre getCostCentre($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelCostCentre getCostCentre($limit, $offset, $embed)
 
 Get an overview of all cost centre
 
@@ -150,7 +150,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelCostCentre**](../Model/ModelCostCentre.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelCostCentre**](../Model/ModelCostCentre.md)
 
 ### Authorization
 
@@ -164,7 +164,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateCostCentre**
-> \ispserverfarm\sevdesk\phpclient\model\ModelCostCentre updateCostCentre($id, $body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelCostCentre updateCostCentre($id, $body)
 
 Update an existing cost centre
 
@@ -202,7 +202,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelCostCentre**](../Model/ModelCostCentre.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelCostCentre**](../Model/ModelCostCentre.md)
 
 ### Authorization
 

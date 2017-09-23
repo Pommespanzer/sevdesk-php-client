@@ -16,7 +16,7 @@ Method | HTTP request | Description
 
 
 # **addLetter**
-> \ispserverfarm\sevdesk\phpclient\model\ModelLetter addLetter($body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelLetter addLetter($body)
 
 Create a new letter
 
@@ -52,7 +52,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelLetter**](../Model/ModelLetter.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelLetter**](../Model/ModelLetter.md)
 
 ### Authorization
 
@@ -115,7 +115,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getLetters**
-> \ispserverfarm\sevdesk\phpclient\model\ModelLetter getLetters($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelLetter getLetters($limit, $offset, $embed)
 
 Get an overview of all letters
 
@@ -155,7 +155,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelLetter**](../Model/ModelLetter.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelLetter**](../Model/ModelLetter.md)
 
 ### Authorization
 
@@ -267,7 +267,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **letterSendBy**
-> \ispserverfarm\sevdesk\phpclient\model\ModelLetter letterSendBy($id, $body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelLetter letterSendBy($id, $body)
 
 Update parameter sendType
 
@@ -305,7 +305,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelLetter**](../Model/ModelLetter.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelLetter**](../Model/ModelLetter.md)
 
 ### Authorization
 
@@ -419,7 +419,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateLetter**
-> \ispserverfarm\sevdesk\phpclient\model\ModelLetter updateLetter($id, $body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelLetter updateLetter($id, $body)
 
 Update an existing letter
 
@@ -457,7 +457,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelLetter**](../Model/ModelLetter.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelLetter**](../Model/ModelLetter.md)
 
 ### Authorization
 

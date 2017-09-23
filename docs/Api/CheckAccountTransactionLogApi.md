@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **addCheckAccountTransactionLog**
-> \ispserverfarm\sevdesk\phpclient\model\ModelCheckAccountTransactionLog addCheckAccountTransactionLog($body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelCheckAccountTransactionLog addCheckAccountTransactionLog($body)
 
 Create a new logged check account transaction
 
@@ -47,7 +47,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelCheckAccountTransactionLog**](../Model/ModelCheckAccountTransactionLog.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelCheckAccountTransactionLog**](../Model/ModelCheckAccountTransactionLog.md)
 
 ### Authorization
 
@@ -110,7 +110,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCheckAccountTransactionLog**
-> \ispserverfarm\sevdesk\phpclient\model\ModelCheckAccountTransactionLog getCheckAccountTransactionLog($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelCheckAccountTransactionLog getCheckAccountTransactionLog($limit, $offset, $embed)
 
 Get an overview of all check account transactions which were logged
 
@@ -150,7 +150,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelCheckAccountTransactionLog**](../Model/ModelCheckAccountTransactionLog.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelCheckAccountTransactionLog**](../Model/ModelCheckAccountTransactionLog.md)
 
 ### Authorization
 
@@ -164,7 +164,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateCheckAccountTransactionLog**
-> \ispserverfarm\sevdesk\phpclient\model\ModelCheckAccountTransactionLog updateCheckAccountTransactionLog($id, $body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelCheckAccountTransactionLog updateCheckAccountTransactionLog($id, $body)
 
 Update a existing logged check account transaction
 
@@ -202,7 +202,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelCheckAccountTransactionLog**](../Model/ModelCheckAccountTransactionLog.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelCheckAccountTransactionLog**](../Model/ModelCheckAccountTransactionLog.md)
 
 ### Authorization
 

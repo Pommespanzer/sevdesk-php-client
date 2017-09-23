@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **addTask**
-> \ispserverfarm\sevdesk\phpclient\model\ModelOrderPos addTask($body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelOrderPos addTask($body)
 
 Create a new task
 
@@ -47,7 +47,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelOrderPos**](../Model/ModelOrderPos.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelOrderPos**](../Model/ModelOrderPos.md)
 
 ### Authorization
 
@@ -110,7 +110,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getTasks**
-> \ispserverfarm\sevdesk\phpclient\model\ModelTask getTasks($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelTask getTasks($limit, $offset, $embed)
 
 Get an overview of all tasks
 
@@ -150,7 +150,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelTask**](../Model/ModelTask.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelTask**](../Model/ModelTask.md)
 
 ### Authorization
 
@@ -164,7 +164,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateTask**
-> \ispserverfarm\sevdesk\phpclient\model\ModelTask updateTask($id, $body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelTask updateTask($id, $body)
 
 Update an existing Task
 
@@ -202,7 +202,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelTask**](../Model/ModelTask.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelTask**](../Model/ModelTask.md)
 
 ### Authorization
 

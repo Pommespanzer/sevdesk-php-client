@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **addPartUnity**
-> \ispserverfarm\sevdesk\phpclient\model\ModelPartUnity addPartUnity($body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelPartUnity addPartUnity($body)
 
 Create a new part unity
 
@@ -47,7 +47,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelPartUnity**](../Model/ModelPartUnity.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelPartUnity**](../Model/ModelPartUnity.md)
 
 ### Authorization
 
@@ -110,7 +110,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getPartUnities**
-> \ispserverfarm\sevdesk\phpclient\model\ModelPartUnity getPartUnities($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelPartUnity getPartUnities($limit, $offset, $embed)
 
 Get an overview of all part unities
 
@@ -150,7 +150,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelPartUnity**](../Model/ModelPartUnity.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelPartUnity**](../Model/ModelPartUnity.md)
 
 ### Authorization
 
@@ -164,7 +164,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updatePartUnity**
-> \ispserverfarm\sevdesk\phpclient\model\ModelPartUnity updatePartUnity($id, $body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelPartUnity updatePartUnity($id, $body)
 
 Update an existing part unity
 
@@ -202,7 +202,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelPartUnity**](../Model/ModelPartUnity.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelPartUnity**](../Model/ModelPartUnity.md)
 
 ### Authorization
 

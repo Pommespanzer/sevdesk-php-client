@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **addTag**
-> \ispserverfarm\sevdesk\phpclient\model\ModelTag addTag($body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelTag addTag($body)
 
 Create a new tag
 
@@ -47,7 +47,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelTag**](../Model/ModelTag.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelTag**](../Model/ModelTag.md)
 
 ### Authorization
 
@@ -110,7 +110,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getTags**
-> \ispserverfarm\sevdesk\phpclient\model\ModelTag getTags($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelTag getTags($limit, $offset, $embed)
 
 Get an overview of all tags
 
@@ -150,7 +150,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelTag**](../Model/ModelTag.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelTag**](../Model/ModelTag.md)
 
 ### Authorization
 
@@ -164,7 +164,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateTag**
-> \ispserverfarm\sevdesk\phpclient\model\ModelTag updateTag($id, $body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelTag updateTag($id, $body)
 
 Update an existing tag
 
@@ -202,7 +202,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelTag**](../Model/ModelTag.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelTag**](../Model/ModelTag.md)
 
 ### Authorization
 

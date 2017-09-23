@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **addUnity**
-> \ispserverfarm\sevdesk\phpclient\model\ModelOrderPos addUnity($body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelOrderPos addUnity($body)
 
 Create a new unity
 
@@ -47,7 +47,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelOrderPos**](../Model/ModelOrderPos.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelOrderPos**](../Model/ModelOrderPos.md)
 
 ### Authorization
 
@@ -110,7 +110,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUnities**
-> \ispserverfarm\sevdesk\phpclient\model\ModelUnity getUnities($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelUnity getUnities($limit, $offset, $embed)
 
 Get an overview of all unities
 
@@ -150,7 +150,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelUnity**](../Model/ModelUnity.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelUnity**](../Model/ModelUnity.md)
 
 ### Authorization
 
@@ -164,7 +164,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateUnity**
-> \ispserverfarm\sevdesk\phpclient\model\ModelUnity updateUnity($id, $body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelUnity updateUnity($id, $body)
 
 Update an existing Unity
 
@@ -202,7 +202,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelUnity**](../Model/ModelUnity.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelUnity**](../Model/ModelUnity.md)
 
 ### Authorization
 

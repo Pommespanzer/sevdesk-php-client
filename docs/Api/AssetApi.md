@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 
 # **addAsset**
-> \ispserverfarm\sevdesk\phpclient\model\ModelAsset addAsset($body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelAsset addAsset($body)
 
 Create a new asset
 
@@ -50,7 +50,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelAsset**](../Model/ModelAsset.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelAsset**](../Model/ModelAsset.md)
 
 ### Authorization
 
@@ -170,7 +170,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **assetGetVoucher**
-> \ispserverfarm\sevdesk\phpclient\model\ModelVoucher assetGetVoucher($id, $embed)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelVoucher assetGetVoucher($id, $embed)
 
 Get voucher of the specified asset
 
@@ -208,7 +208,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelVoucher**](../Model/ModelVoucher.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelVoucher**](../Model/ModelVoucher.md)
 
 ### Authorization
 
@@ -271,7 +271,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAssets**
-> \ispserverfarm\sevdesk\phpclient\model\ModelAsset getAssets($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelAsset getAssets($limit, $offset, $embed)
 
 Get an overview of all assets
 
@@ -311,7 +311,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelAsset**](../Model/ModelAsset.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelAsset**](../Model/ModelAsset.md)
 
 ### Authorization
 
@@ -325,7 +325,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateAsset**
-> \ispserverfarm\sevdesk\phpclient\model\ModelAsset updateAsset($id, $body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelAsset updateAsset($id, $body)
 
 Update an existing asset
 
@@ -363,7 +363,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelAsset**](../Model/ModelAsset.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelAsset**](../Model/ModelAsset.md)
 
 ### Authorization
 

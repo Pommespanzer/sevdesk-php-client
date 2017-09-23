@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **getStaticReferralPrograms**
-> \ispserverfarm\sevdesk\phpclient\model\ModelStaticReferralProgram getStaticReferralPrograms()
+> \ispserverfarm\sevdesk\phpclient\Model\ModelStaticReferralProgram getStaticReferralPrograms()
 
 Get staticReferralProgram list
 
@@ -40,7 +40,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelStaticReferralProgram**](../Model/ModelStaticReferralProgram.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelStaticReferralProgram**](../Model/ModelStaticReferralProgram.md)
 
 ### Authorization
 

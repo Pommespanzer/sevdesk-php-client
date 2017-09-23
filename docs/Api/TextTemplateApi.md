@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **addTextTemplate**
-> \ispserverfarm\sevdesk\phpclient\model\ModelTextTemplate addTextTemplate($body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelTextTemplate addTextTemplate($body)
 
 Create a new text template
 
@@ -47,7 +47,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelTextTemplate**](../Model/ModelTextTemplate.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelTextTemplate**](../Model/ModelTextTemplate.md)
 
 ### Authorization
 
@@ -110,7 +110,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getTextTemplate**
-> \ispserverfarm\sevdesk\phpclient\model\ModelTextTemplate getTextTemplate($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelTextTemplate getTextTemplate($limit, $offset, $embed)
 
 Get an overview of all text template
 
@@ -150,7 +150,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelTextTemplate**](../Model/ModelTextTemplate.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelTextTemplate**](../Model/ModelTextTemplate.md)
 
 ### Authorization
 
@@ -164,7 +164,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateTextTemplate**
-> \ispserverfarm\sevdesk\phpclient\model\ModelTextTemplate updateTextTemplate($id, $body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelTextTemplate updateTextTemplate($id, $body)
 
 Update an existing text template
 
@@ -202,7 +202,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelTextTemplate**](../Model/ModelTextTemplate.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelTextTemplate**](../Model/ModelTextTemplate.md)
 
 ### Authorization
 

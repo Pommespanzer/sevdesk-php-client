@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **addInvoiceLog**
-> \ispserverfarm\sevdesk\phpclient\model\ModelInvoiceLog addInvoiceLog($body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelInvoiceLog addInvoiceLog($body)
 
 Create a new invoice log
 
@@ -47,7 +47,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelInvoiceLog**](../Model/ModelInvoiceLog.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelInvoiceLog**](../Model/ModelInvoiceLog.md)
 
 ### Authorization
 
@@ -110,7 +110,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getInvoiceLogs**
-> \ispserverfarm\sevdesk\phpclient\model\ModelInvoiceLog getInvoiceLogs($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelInvoiceLog getInvoiceLogs($limit, $offset, $embed)
 
 Get an overview of invoice logs
 
@@ -150,7 +150,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelInvoiceLog**](../Model/ModelInvoiceLog.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelInvoiceLog**](../Model/ModelInvoiceLog.md)
 
 ### Authorization
 
@@ -164,7 +164,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateInvoiceLog**
-> \ispserverfarm\sevdesk\phpclient\model\ModelInvoiceLog updateInvoiceLog($id, $body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelInvoiceLog updateInvoiceLog($id, $body)
 
 Update an existing invoice log
 
@@ -202,7 +202,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelInvoiceLog**](../Model/ModelInvoiceLog.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelInvoiceLog**](../Model/ModelInvoiceLog.md)
 
 ### Authorization
 

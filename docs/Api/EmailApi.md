@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **addEmail**
-> \ispserverfarm\sevdesk\phpclient\model\ModelEmail addEmail($body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelEmail addEmail($body)
 
 Create a new email
 
@@ -47,7 +47,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelEmail**](../Model/ModelEmail.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelEmail**](../Model/ModelEmail.md)
 
 ### Authorization
 
@@ -110,7 +110,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getEmails**
-> \ispserverfarm\sevdesk\phpclient\model\ModelEmail getEmails($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelEmail getEmails($limit, $offset, $embed)
 
 Get an overview of all emails
 
@@ -150,7 +150,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelEmail**](../Model/ModelEmail.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelEmail**](../Model/ModelEmail.md)
 
 ### Authorization
 
@@ -164,7 +164,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateEmail**
-> \ispserverfarm\sevdesk\phpclient\model\ModelEmail updateEmail($id, $body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelEmail updateEmail($id, $body)
 
 Update an existing email
 
@@ -202,7 +202,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelEmail**](../Model/ModelEmail.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelEmail**](../Model/ModelEmail.md)
 
 ### Authorization
 

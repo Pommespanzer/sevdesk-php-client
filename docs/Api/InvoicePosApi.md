@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **addInvoicePos**
-> \ispserverfarm\sevdesk\phpclient\model\ModelInvoicePos addInvoicePos($body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelInvoicePos addInvoicePos($body)
 
 Create a new invoice position
 
@@ -47,7 +47,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelInvoicePos**](../Model/ModelInvoicePos.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelInvoicePos**](../Model/ModelInvoicePos.md)
 
 ### Authorization
 
@@ -110,7 +110,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getInvoicePositions**
-> \ispserverfarm\sevdesk\phpclient\model\ModelInvoicePos getInvoicePositions($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelInvoicePos getInvoicePositions($limit, $offset, $embed)
 
 Get an overview of all invoice positions
 
@@ -150,7 +150,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelInvoicePos**](../Model/ModelInvoicePos.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelInvoicePos**](../Model/ModelInvoicePos.md)
 
 ### Authorization
 
@@ -164,7 +164,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateInvoicePos**
-> \ispserverfarm\sevdesk\phpclient\model\ModelInvoicePos updateInvoicePos($id, $body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelInvoicePos updateInvoicePos($id, $body)
 
 Update an existing invoice position
 
@@ -202,7 +202,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelInvoicePos**](../Model/ModelInvoicePos.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelInvoicePos**](../Model/ModelInvoicePos.md)
 
 ### Authorization
 

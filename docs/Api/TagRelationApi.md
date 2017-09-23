@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **addTagRelation**
-> \ispserverfarm\sevdesk\phpclient\model\ModelTagRelation addTagRelation($body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelTagRelation addTagRelation($body)
 
 Create a new tag relation
 
@@ -47,7 +47,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelTagRelation**](../Model/ModelTagRelation.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelTagRelation**](../Model/ModelTagRelation.md)
 
 ### Authorization
 
@@ -110,7 +110,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getTagRelations**
-> \ispserverfarm\sevdesk\phpclient\model\ModelTagRelation getTagRelations($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelTagRelation getTagRelations($limit, $offset, $embed)
 
 Get an overview of all tag relations
 
@@ -150,7 +150,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelTagRelation**](../Model/ModelTagRelation.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelTagRelation**](../Model/ModelTagRelation.md)
 
 ### Authorization
 
@@ -164,7 +164,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateTagRelation**
-> \ispserverfarm\sevdesk\phpclient\model\ModelTagRelation updateTagRelation($id, $body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelTagRelation updateTagRelation($id, $body)
 
 Update an existing tag relation
 
@@ -202,7 +202,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelTagRelation**](../Model/ModelTagRelation.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelTagRelation**](../Model/ModelTagRelation.md)
 
 ### Authorization
 

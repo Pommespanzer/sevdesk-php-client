@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **addAccountingSystemNumber**
-> \ispserverfarm\sevdesk\phpclient\model\ModelAccountingSystemNumber addAccountingSystemNumber($body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelAccountingSystemNumber addAccountingSystemNumber($body)
 
 Create a new accounting system number
 
@@ -47,7 +47,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelAccountingSystemNumber**](../Model/ModelAccountingSystemNumber.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelAccountingSystemNumber**](../Model/ModelAccountingSystemNumber.md)
 
 ### Authorization
 
@@ -110,7 +110,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAccountingSystemNumbers**
-> \ispserverfarm\sevdesk\phpclient\model\ModelAccountingSystemNumber getAccountingSystemNumbers($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelAccountingSystemNumber getAccountingSystemNumbers($limit, $offset, $embed)
 
 Get an overview of all accounting system numbers
 
@@ -150,7 +150,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelAccountingSystemNumber**](../Model/ModelAccountingSystemNumber.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelAccountingSystemNumber**](../Model/ModelAccountingSystemNumber.md)
 
 ### Authorization
 
@@ -164,7 +164,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateAccountingSystemNumber**
-> \ispserverfarm\sevdesk\phpclient\model\ModelAccountingType updateAccountingSystemNumber($id, $body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelAccountingType updateAccountingSystemNumber($id, $body)
 
 Update an existing accounting system number
 
@@ -202,7 +202,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelAccountingType**](../Model/ModelAccountingType.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelAccountingType**](../Model/ModelAccountingType.md)
 
 ### Authorization
 

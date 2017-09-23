@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **getSevClientConfig**
-> \ispserverfarm\sevdesk\phpclient\model\ModelSevClientConfig getSevClientConfig($embed)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelSevClientConfig getSevClientConfig($embed)
 
 Get an overview of your sevClient config
 
@@ -45,7 +45,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelSevClientConfig**](../Model/ModelSevClientConfig.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelSevClientConfig**](../Model/ModelSevClientConfig.md)
 
 ### Authorization
 
@@ -59,7 +59,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateSevClientConfig**
-> \ispserverfarm\sevdesk\phpclient\model\ModelSevClientConfig updateSevClientConfig($id, $body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelSevClientConfig updateSevClientConfig($id, $body)
 
 Update an existing sevClient config
 
@@ -97,7 +97,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelSevClientConfig**](../Model/ModelSevClientConfig.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelSevClientConfig**](../Model/ModelSevClientConfig.md)
 
 ### Authorization
 

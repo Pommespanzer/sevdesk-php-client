@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 
 # **addDocument**
-> \ispserverfarm\sevdesk\phpclient\model\ModelDocument addDocument($body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelDocument addDocument($body)
 
 Create a new document. Be aware that there wont be a working document with content!
 
@@ -50,7 +50,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelDocument**](../Model/ModelDocument.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelDocument**](../Model/ModelDocument.md)
 
 ### Authorization
 
@@ -216,7 +216,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getDocuments**
-> \ispserverfarm\sevdesk\phpclient\model\ModelDocument getDocuments($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelDocument getDocuments($limit, $offset, $embed)
 
 Get an overview of all documents
 
@@ -256,7 +256,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelDocument**](../Model/ModelDocument.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelDocument**](../Model/ModelDocument.md)
 
 ### Authorization
 
@@ -270,7 +270,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateDocument**
-> \ispserverfarm\sevdesk\phpclient\model\ModelDocument updateDocument($id, $body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelDocument updateDocument($id, $body)
 
 Update an existing document. Be aware that you can only update its parameter but not the content of the document itself!
 
@@ -308,7 +308,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelDocument**](../Model/ModelDocument.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelDocument**](../Model/ModelDocument.md)
 
 ### Authorization
 

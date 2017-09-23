@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **addCategory**
-> \ispserverfarm\sevdesk\phpclient\model\ModelCategory addCategory($body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelCategory addCategory($body)
 
 Create a new category
 
@@ -47,7 +47,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelCategory**](../Model/ModelCategory.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelCategory**](../Model/ModelCategory.md)
 
 ### Authorization
 
@@ -110,7 +110,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCategories**
-> \ispserverfarm\sevdesk\phpclient\model\ModelCategory getCategories($limit, $offset)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelCategory getCategories($limit, $offset)
 
 Get an overview of all categories
 
@@ -148,7 +148,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelCategory**](../Model/ModelCategory.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelCategory**](../Model/ModelCategory.md)
 
 ### Authorization
 
@@ -162,7 +162,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateCategory**
-> \ispserverfarm\sevdesk\phpclient\model\ModelCategory updateCategory($id, $body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelCategory updateCategory($id, $body)
 
 Update a existing category
 
@@ -200,7 +200,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelCategory**](../Model/ModelCategory.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelCategory**](../Model/ModelCategory.md)
 
 ### Authorization
 

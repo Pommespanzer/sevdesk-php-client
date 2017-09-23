@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **addOrderLog**
-> \ispserverfarm\sevdesk\phpclient\model\ModelOrderLog addOrderLog($body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelOrderLog addOrderLog($body)
 
 Create a new order log
 
@@ -47,7 +47,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelOrderLog**](../Model/ModelOrderLog.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelOrderLog**](../Model/ModelOrderLog.md)
 
 ### Authorization
 
@@ -110,7 +110,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getOrderLogs**
-> \ispserverfarm\sevdesk\phpclient\model\ModelOrderLog getOrderLogs($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelOrderLog getOrderLogs($limit, $offset, $embed)
 
 Get an overview of order logs
 
@@ -150,7 +150,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelOrderLog**](../Model/ModelOrderLog.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelOrderLog**](../Model/ModelOrderLog.md)
 
 ### Authorization
 
@@ -164,7 +164,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateOrderLog**
-> \ispserverfarm\sevdesk\phpclient\model\ModelOrderLog updateOrderLog($id, $body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelOrderLog updateOrderLog($id, $body)
 
 Update an existing order log
 
@@ -202,7 +202,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelOrderLog**](../Model/ModelOrderLog.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelOrderLog**](../Model/ModelOrderLog.md)
 
 ### Authorization
 

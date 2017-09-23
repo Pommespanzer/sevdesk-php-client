@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **addContactAddress**
-> \ispserverfarm\sevdesk\phpclient\model\ModelContactAddress addContactAddress($body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelContactAddress addContactAddress($body)
 
 Create a new contact address
 
@@ -47,7 +47,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelContactAddress**](../Model/ModelContactAddress.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelContactAddress**](../Model/ModelContactAddress.md)
 
 ### Authorization
 
@@ -110,7 +110,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getContactAddresses**
-> \ispserverfarm\sevdesk\phpclient\model\ModelContactAddress getContactAddresses($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelContactAddress getContactAddresses($limit, $offset, $embed)
 
 Get an overview of all contact addresses
 
@@ -150,7 +150,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelContactAddress**](../Model/ModelContactAddress.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelContactAddress**](../Model/ModelContactAddress.md)
 
 ### Authorization
 
@@ -164,7 +164,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateContactAddress**
-> \ispserverfarm\sevdesk\phpclient\model\ModelContactAddress updateContactAddress($id, $body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelContactAddress updateContactAddress($id, $body)
 
 Update an existing contact address
 
@@ -202,7 +202,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelContactAddress**](../Model/ModelContactAddress.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelContactAddress**](../Model/ModelContactAddress.md)
 
 ### Authorization
 

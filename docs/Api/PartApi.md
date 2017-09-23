@@ -17,7 +17,7 @@ Method | HTTP request | Description
 
 
 # **addPart**
-> \ispserverfarm\sevdesk\phpclient\model\ModelPart addPart($body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelPart addPart($body)
 
 Create a new part
 
@@ -53,7 +53,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelPart**](../Model/ModelPart.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelPart**](../Model/ModelPart.md)
 
 ### Authorization
 
@@ -67,7 +67,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **bookPart**
-> \ispserverfarm\sevdesk\phpclient\model\ModelPart bookPart($id, $body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelPart bookPart($id, $body)
 
 add / remove parts from the stock
 
@@ -105,7 +105,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelPart**](../Model/ModelPart.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelPart**](../Model/ModelPart.md)
 
 ### Authorization
 
@@ -168,7 +168,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **duplicatePart**
-> \ispserverfarm\sevdesk\phpclient\model\ModelPart duplicatePart($id)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelPart duplicatePart($id)
 
 Duplicate an existing part
 
@@ -204,7 +204,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelPart**](../Model/ModelPart.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelPart**](../Model/ModelPart.md)
 
 ### Authorization
 
@@ -218,7 +218,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getParts**
-> \ispserverfarm\sevdesk\phpclient\model\ModelPart getParts($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelPart getParts($limit, $offset, $embed)
 
 Get an overview of all parts
 
@@ -258,7 +258,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelPart**](../Model/ModelPart.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelPart**](../Model/ModelPart.md)
 
 ### Authorization
 
@@ -272,7 +272,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **partGetLastLog**
-> \ispserverfarm\sevdesk\phpclient\model\ModelInventoryPartLog partGetLastLog($id, $max_date, $embed)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelInventoryPartLog partGetLastLog($id, $max_date, $embed)
 
 Get last log about the part
 
@@ -312,7 +312,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelInventoryPartLog**](../Model/ModelInventoryPartLog.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelInventoryPartLog**](../Model/ModelInventoryPartLog.md)
 
 ### Authorization
 
@@ -485,7 +485,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updatePart**
-> \ispserverfarm\sevdesk\phpclient\model\ModelPart updatePart($id, $body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelPart updatePart($id, $body)
 
 Update an existing part
 
@@ -523,7 +523,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelPart**](../Model/ModelPart.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelPart**](../Model/ModelPart.md)
 
 ### Authorization
 

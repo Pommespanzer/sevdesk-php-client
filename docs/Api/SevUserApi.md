@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 
 # **getSevUser**
-> \ispserverfarm\sevdesk\phpclient\model\ModelSevUser getSevUser($embed)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelSevUser getSevUser($embed)
 
 Get an overview of your sevUser
 
@@ -49,7 +49,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelSevUser**](../Model/ModelSevUser.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelSevUser**](../Model/ModelSevUser.md)
 
 ### Authorization
 

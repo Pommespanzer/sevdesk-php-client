@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 
 # **addVoucherPos**
-> \ispserverfarm\sevdesk\phpclient\model\ModelVoucherPos addVoucherPos($body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelVoucherPos addVoucherPos($body)
 
 Create a new voucher position
 
@@ -49,7 +49,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelVoucherPos**](../Model/ModelVoucherPos.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelVoucherPos**](../Model/ModelVoucherPos.md)
 
 ### Authorization
 
@@ -112,7 +112,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getVoucherPositions**
-> \ispserverfarm\sevdesk\phpclient\model\ModelVoucherPos getVoucherPositions($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelVoucherPos getVoucherPositions($limit, $offset, $embed)
 
 Get an overview of all voucher positions
 
@@ -152,7 +152,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelVoucherPos**](../Model/ModelVoucherPos.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelVoucherPos**](../Model/ModelVoucherPos.md)
 
 ### Authorization
 
@@ -166,7 +166,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateVoucherPos**
-> \ispserverfarm\sevdesk\phpclient\model\ModelVoucherPos updateVoucherPos($id, $body)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelVoucherPos updateVoucherPos($id, $body)
 
 Update an existing voucher position
 
@@ -204,7 +204,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelVoucherPos**](../Model/ModelVoucherPos.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelVoucherPos**](../Model/ModelVoucherPos.md)
 
 ### Authorization
 
@@ -267,7 +267,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **voucherPosGetAssetInstance**
-> \ispserverfarm\sevdesk\phpclient\model\ModelAsset voucherPosGetAssetInstance($id)
+> \ispserverfarm\sevdesk\phpclient\Model\ModelAsset voucherPosGetAssetInstance($id)
 
 Get the asset which is connected to a specified voucher position
 
@@ -303,7 +303,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\model\ModelAsset**](../Model/ModelAsset.md)
+[**\ispserverfarm\sevdesk\phpclient\Model\ModelAsset**](../Model/ModelAsset.md)
 
 ### Authorization
 
