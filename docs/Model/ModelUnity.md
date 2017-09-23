@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **_name** | **string** |  | [optional] 
 **_sev_client** | **object** | sevClient is the unique id every customer has and is used in nearly all operations | [optional] 
 **_translation_code** | **string** |  | [optional] 
-**_entry_type** | [**\ispserverfarm\sevdesk\sevDeskModel\ModelEntryType**](ModelEntryType.md) |  | [optional] 
+**_entry_type** | [**\ispserverfarm\sevdesk\phpclient\model\ModelEntryType**](ModelEntryType.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

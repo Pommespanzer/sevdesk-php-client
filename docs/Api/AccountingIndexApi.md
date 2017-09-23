@@ -1,4 +1,4 @@
-# ispserverfarm\sevdesk\AccountingIndexApi
+# ispserverfarm\sevdesk\phpclient\AccountingIndexApi
 
 All URIs are relative to *https://my.sevdesk.de/api/v1*
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **addAccountingIndex**
-> \ispserverfarm\sevdesk\sevDeskModel\ModelAccountingIndex addAccountingIndex($body)
+> \ispserverfarm\sevdesk\phpclient\model\ModelAccountingIndex addAccountingIndex($body)
 
 Create a new accounting index
 
@@ -23,11 +23,11 @@ Calls AccountingIndex.php to add an accounting index
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\Api\AccountingIndexApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\AccountingIndexApi();
 $body = "keyword=&accountingType[id]=&accountingType[objectName]=AccountingType&taxType=default"; // string | To create an accounting index, simply enter desired values after parameter= and remove the quotation marks.
 
 try {
@@ -47,7 +47,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\sevDeskModel\ModelAccountingIndex**](../Model/ModelAccountingIndex.md)
+[**\ispserverfarm\sevdesk\phpclient\model\ModelAccountingIndex**](../Model/ModelAccountingIndex.md)
 
 ### Authorization
 
@@ -73,11 +73,11 @@ Calls AccountingIndex.php to delete an accounting index
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\Api\AccountingIndexApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\AccountingIndexApi();
 $id = 56; // int | id of the accounting index you want to delete
 
 try {
@@ -110,7 +110,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAccountingIndexes**
-> \ispserverfarm\sevdesk\sevDeskModel\ModelAccountingIndex getAccountingIndexes($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\phpclient\model\ModelAccountingIndex getAccountingIndexes($limit, $offset, $embed)
 
 Get an overview of all accounting indexes
 
@@ -122,11 +122,11 @@ Calls AccountingIndex.php to get necessary variables.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\Api\AccountingIndexApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\AccountingIndexApi();
 $limit = 100; // int | Limits the number of entries returned. Default is 100
 $offset = 0; // int | Set the index where the returned accounting indexes start. Default is 0
 $embed = array("embed_example"); // string[] | Get some additional information. Embed can handle multiple values, they must be separated by comma. Default ``.
@@ -150,7 +150,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\sevDeskModel\ModelAccountingIndex**](../Model/ModelAccountingIndex.md)
+[**\ispserverfarm\sevdesk\phpclient\model\ModelAccountingIndex**](../Model/ModelAccountingIndex.md)
 
 ### Authorization
 
@@ -164,7 +164,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateAccountingIndex**
-> \ispserverfarm\sevdesk\sevDeskModel\ModelAccountingIndex updateAccountingIndex($id, $body)
+> \ispserverfarm\sevdesk\phpclient\model\ModelAccountingIndex updateAccountingIndex($id, $body)
 
 Update an existing accounting index
 
@@ -176,11 +176,11 @@ Calls AccountingIndex.php to update an accounting index
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\Api\AccountingIndexApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\AccountingIndexApi();
 $id = 56; // int | id of accounting index you want to update
 $body = "body_example"; // string | Parameters which need to be updated. Enter the parameters according to the syntax: parameter1=&parameter2= and remove the quotation marks
 
@@ -202,7 +202,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\sevDeskModel\ModelAccountingIndex**](../Model/ModelAccountingIndex.md)
+[**\ispserverfarm\sevdesk\phpclient\model\ModelAccountingIndex**](../Model/ModelAccountingIndex.md)
 
 ### Authorization
 

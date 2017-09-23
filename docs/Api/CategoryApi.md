@@ -1,4 +1,4 @@
-# ispserverfarm\sevdesk\CategoryApi
+# ispserverfarm\sevdesk\phpclient\CategoryApi
 
 All URIs are relative to *https://my.sevdesk.de/api/v1*
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **addCategory**
-> \ispserverfarm\sevdesk\sevDeskModel\ModelCategory addCategory($body)
+> \ispserverfarm\sevdesk\phpclient\model\ModelCategory addCategory($body)
 
 Create a new category
 
@@ -23,11 +23,11 @@ Calls Category.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\Api\CategoryApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\CategoryApi();
 $body = "name=&objectType=&priority=100"; // string | To create a category, simply enter desired values after parameter= and remove the quotation marks.
 
 try {
@@ -47,7 +47,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\sevDeskModel\ModelCategory**](../Model/ModelCategory.md)
+[**\ispserverfarm\sevdesk\phpclient\model\ModelCategory**](../Model/ModelCategory.md)
 
 ### Authorization
 
@@ -73,11 +73,11 @@ Calls the delete() function in Category.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\Api\CategoryApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\CategoryApi();
 $id = 56; // int | id of category you want to delete
 
 try {
@@ -110,7 +110,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getCategories**
-> \ispserverfarm\sevdesk\sevDeskModel\ModelCategory getCategories($limit, $offset)
+> \ispserverfarm\sevdesk\phpclient\model\ModelCategory getCategories($limit, $offset)
 
 Get an overview of all categories
 
@@ -122,11 +122,11 @@ Calls Category.php to get necessary variables.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\Api\CategoryApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\CategoryApi();
 $limit = 100; // int | Limits the number of entries returned. Default is 100
 $offset = 0; // int | Set the index where the returned categories start. Default is 0
 
@@ -148,7 +148,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\sevDeskModel\ModelCategory**](../Model/ModelCategory.md)
+[**\ispserverfarm\sevdesk\phpclient\model\ModelCategory**](../Model/ModelCategory.md)
 
 ### Authorization
 
@@ -162,7 +162,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateCategory**
-> \ispserverfarm\sevdesk\sevDeskModel\ModelCategory updateCategory($id, $body)
+> \ispserverfarm\sevdesk\phpclient\model\ModelCategory updateCategory($id, $body)
 
 Update a existing category
 
@@ -174,11 +174,11 @@ Calls Category.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\Api\CategoryApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\CategoryApi();
 $id = 56; // int | id of category you want to update
 $body = "body_example"; // string | Parameters which need to be updated. Please refer to the description from create discount.    Enter the parameters according to the syntax: parameter1=&parameter2=
 
@@ -200,7 +200,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\sevDeskModel\ModelCategory**](../Model/ModelCategory.md)
+[**\ispserverfarm\sevdesk\phpclient\model\ModelCategory**](../Model/ModelCategory.md)
 
 ### Authorization
 

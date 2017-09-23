@@ -1,4 +1,4 @@
-# ispserverfarm\sevdesk\VoucherApi
+# ispserverfarm\sevdesk\phpclient\VoucherApi
 
 All URIs are relative to *https://my.sevdesk.de/api/v1*
 
@@ -29,7 +29,7 @@ Method | HTTP request | Description
 
 
 # **addVoucher**
-> \ispserverfarm\sevdesk\sevDeskModel\ModelVoucher addVoucher($body)
+> \ispserverfarm\sevdesk\phpclient\model\ModelVoucher addVoucher($body)
 
 Create a new voucher
 
@@ -41,11 +41,11 @@ Calls Voucher.php to create a voucher
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\Api\VoucherApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\VoucherApi();
 $body = "voucherType=VOU&description=&status=&supplier[id]=&supplier[objectName]=Contact&voucherDate=&paymentDeadline=&taxType=default&creditDebit=C"; // string | To create a voucher, simply enter desired values after parameter= and remove the quotation marks.      Be aware that you can't use all the parameters included in the Model_Voucher, as creating a voucher involves other functions.      So for example, adding a sumNet/Gross/etc. does not work as they normally get their value from the product which is involved in the voucher      The product/part in this case is handled in the Model_VoucherPos which makes a call to Model_Part.
 
 try {
@@ -65,7 +65,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\sevDeskModel\ModelVoucher**](../Model/ModelVoucher.md)
+[**\ispserverfarm\sevdesk\phpclient\model\ModelVoucher**](../Model/ModelVoucher.md)
 
 ### Authorization
 
@@ -91,11 +91,11 @@ Calls the delete() function in Voucher.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\Api\VoucherApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\VoucherApi();
 $id = 56; // int | Id of voucher you want to delete
 
 try {
@@ -128,7 +128,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getVouchers**
-> \ispserverfarm\sevdesk\sevDeskModel\ModelVoucher getVouchers($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\phpclient\model\ModelVoucher getVouchers($limit, $offset, $embed)
 
 Get an overview of all vouchers
 
@@ -140,11 +140,11 @@ Calls Voucher.php to get necessary variables.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\Api\VoucherApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\VoucherApi();
 $limit = 100; // int | Limits the number of entries returned. Default is 100
 $offset = 0; // int | Set the index where the returned vouchers start. Default is 0
 $embed = array("embed_example"); // string[] | Get some additional information. Embed can handle multiple values, they must be separated by comma. Default ``.
@@ -168,7 +168,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\sevDeskModel\ModelVoucher**](../Model/ModelVoucher.md)
+[**\ispserverfarm\sevdesk\phpclient\model\ModelVoucher**](../Model/ModelVoucher.md)
 
 ### Authorization
 
@@ -182,7 +182,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **saveVoucher**
-> \ispserverfarm\sevdesk\sevDeskModel\ModelVoucherFactory saveVoucher($body)
+> \ispserverfarm\sevdesk\phpclient\model\ModelVoucherFactory saveVoucher($body)
 
 Create a new voucher
 
@@ -194,11 +194,11 @@ With the new version of sevdesk some models are not created by calling the Model
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\Api\VoucherApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\VoucherApi();
 $body = "body_example"; // string | The saveVoucher function in Voucher/Factory.php combines both Voucher and VoucherPos with all their HTTP-methods.    It is now possible to **simultaneously** create a voucher with its position.    To simply (only) create a voucher you can use the given parameters and concatenate your values.    For also adding a voucher position refer to the **quick reference** below.    The parameters you find there are **needed** for creating a voucher position. Just concatenate them to the existing voucher parameters.    You can also find additional (optional) parameters in the **Models** section.    Quick reference:  * &voucherPosSave[0][accountingType][id]=  * &voucherPosSave[0][accountingType][objectName]=AccountingType  * &voucherPosSave[0][taxRate]=19  * &voucherPosSave[0][sum]=  * &voucherPosSave[0][objectName]=VoucherPos  * &voucherPosSave[0][mapAll]=true  * &voucherPosDelete=true/false <-- if you provide this parameter, you can delete a voucher position    You can also use additional parameters for creating a voucher in the same way by adding them in the format: **voucher[yourParameter]**
 
 try {
@@ -218,7 +218,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\sevDeskModel\ModelVoucherFactory**](../Model/ModelVoucherFactory.md)
+[**\ispserverfarm\sevdesk\phpclient\model\ModelVoucherFactory**](../Model/ModelVoucherFactory.md)
 
 ### Authorization
 
@@ -232,7 +232,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateVoucher**
-> \ispserverfarm\sevdesk\sevDeskModel\ModelVoucher updateVoucher($id, $body)
+> \ispserverfarm\sevdesk\phpclient\model\ModelVoucher updateVoucher($id, $body)
 
 Update an existing voucher
 
@@ -244,11 +244,11 @@ Calls Voucher.php to update an existing voucher
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\Api\VoucherApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\VoucherApi();
 $id = 56; // int | Id of the voucher you want to update
 $body = "body_example"; // string | Parameters which need to be updated. Please refer to the description from create invoice.      Enter the parameters according to the syntax: parameter1=&parameter2= and remove the quotation marks
 
@@ -270,7 +270,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\sevDeskModel\ModelVoucher**](../Model/ModelVoucher.md)
+[**\ispserverfarm\sevdesk\phpclient\model\ModelVoucher**](../Model/ModelVoucher.md)
 
 ### Authorization
 
@@ -296,11 +296,11 @@ Book an amount for the specified voucher
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\Api\VoucherApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\VoucherApi();
 $id = 56; // int | Id of the voucher for which you want to book an amount
 $body = "body_example"; // string | To book an amount for your voucher, simply enter desired values after parameter= and remove the quotation marks.
 
@@ -347,11 +347,11 @@ Change the status of the specified voucher
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\Api\VoucherApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\VoucherApi();
 $id = 56; // int | Id of the voucher of which you want to change the status
 $body = "body_example"; // string | To change the status of your voucher, simply enter desired values after parameter= and remove the quotation marks.
 
@@ -398,11 +398,11 @@ Calls the deleteDocument() function in Voucher.php to delete the document of an 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\Api\VoucherApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\VoucherApi();
 $id = 56; // int | Id of the voucher of which you want to delete the document
 
 try {
@@ -447,11 +447,11 @@ Calls extractThumb() in Voucher/Factory.php to extract the thumb of the specifie
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\Api\VoucherApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\VoucherApi();
 $file_name = ""; // string | Name of the file of which you want to extract the thumb
 
 try {
@@ -484,7 +484,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **voucherGetAccountingTypes**
-> \ispserverfarm\sevdesk\sevDeskModel\ModelAccountingType voucherGetAccountingTypes($id, $embed)
+> \ispserverfarm\sevdesk\phpclient\model\ModelAccountingType voucherGetAccountingTypes($id, $embed)
 
 Get the accounting types of a specified voucher
 
@@ -496,11 +496,11 @@ Calls getAccountingTypes() in Voucher.php to get the accounting types of the spe
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\Api\VoucherApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\VoucherApi();
 $id = 56; // int | Id of the voucher of which you want to get the accounting types
 $embed = array("embed_example"); // string[] | Get some additional information. Embed can handle multiple values, they must be separated by comma. Default ``.
 
@@ -522,7 +522,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\sevDeskModel\ModelAccountingType**](../Model/ModelAccountingType.md)
+[**\ispserverfarm\sevdesk\phpclient\model\ModelAccountingType**](../Model/ModelAccountingType.md)
 
 ### Authorization
 
@@ -548,11 +548,11 @@ Calls getCheckAccountTransactionLogs() in Voucher.php to get the check account t
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\Api\VoucherApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\VoucherApi();
 $id = 56; // int | Id of the voucher of which you want to get the check account transaction logs
 $embed = array("embed_example"); // string[] | Get some additional information. Embed can handle multiple values, they must be separated by comma. Default ``.
 
@@ -599,11 +599,11 @@ Calls getCheckAccountTransactions() in Voucher.php to get the check account tran
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\Api\VoucherApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\VoucherApi();
 $id = 56; // int | Id of the voucher of which you want to get the check account transactions
 $embed = array("embed_example"); // string[] | Get some additional information. Embed can handle multiple values, they must be separated by comma. Default ``.
 
@@ -650,11 +650,11 @@ Calls getCurrency() in Voucher.php to get the currency of the specified voucher
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\Api\VoucherApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\VoucherApi();
 $id = 56; // int | Id of the voucher of which you want to get the currency
 
 try {
@@ -699,11 +699,11 @@ Calls getDebit() in Voucher.php to get the unpaid amount of a specified voucher
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\Api\VoucherApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\VoucherApi();
 $id = 56; // int | Id of the voucher of which you want to get the unpaid amount
 
 try {
@@ -748,11 +748,11 @@ Calls getDelinquent() in Voucher.php to get if the voucher is delinquent
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\Api\VoucherApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\VoucherApi();
 $id = 56; // int | Id of the voucher of which you want to know if it is delinquent
 
 try {
@@ -785,7 +785,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **voucherGetDependingRecurringVouchers**
-> \ispserverfarm\sevdesk\sevDeskModel\ModelVoucher voucherGetDependingRecurringVouchers($id, $embed)
+> \ispserverfarm\sevdesk\phpclient\model\ModelVoucher voucherGetDependingRecurringVouchers($id, $embed)
 
 Get the depending recurring vouchers of a specified origin voucher
 
@@ -797,11 +797,11 @@ Calls getDependingRecurringVouchers() in Voucher.php to get the depending recurr
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\Api\VoucherApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\VoucherApi();
 $id = 56; // int | Id of the voucher of which you want to get the depending recurring vouchers
 $embed = array("embed_example"); // string[] | Get some additional information. Embed can handle multiple values, they must be separated by comma. Default ``.
 
@@ -823,7 +823,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\sevDeskModel\ModelVoucher**](../Model/ModelVoucher.md)
+[**\ispserverfarm\sevdesk\phpclient\model\ModelVoucher**](../Model/ModelVoucher.md)
 
 ### Authorization
 
@@ -849,11 +849,11 @@ Calls getDocumentImage() in Voucher.php to return the base64 encoded preview con
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\Api\VoucherApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\VoucherApi();
 $id = 56; // int | Id of the voucher of which you want to get the document image
 
 try {
@@ -898,11 +898,11 @@ Calls Voucher.php to get necessary variables.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\Api\VoucherApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\VoucherApi();
 $id = 56; // int | Id of the voucher you want to update
 $show_total_sum = false; // bool | Define if you want to have the total sum of each tax group
 $with_corrections = false; // bool | Define if you want to have the total sum with corrections
@@ -939,7 +939,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **voucherMarkAsOpen**
-> \ispserverfarm\sevdesk\sevDeskModel\ModelVoucher voucherMarkAsOpen($id)
+> \ispserverfarm\sevdesk\phpclient\model\ModelVoucher voucherMarkAsOpen($id)
 
 Mark a specified voucher as open
 
@@ -951,11 +951,11 @@ Mark the specified voucher as open
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\Api\VoucherApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\VoucherApi();
 $id = 56; // int | Id of the voucher you want to mark as open
 
 try {
@@ -975,7 +975,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\sevDeskModel\ModelVoucher**](../Model/ModelVoucher.md)
+[**\ispserverfarm\sevdesk\phpclient\model\ModelVoucher**](../Model/ModelVoucher.md)
 
 ### Authorization
 
@@ -989,7 +989,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **voucherMarkAsPaid**
-> \ispserverfarm\sevdesk\sevDeskModel\ModelVoucher voucherMarkAsPaid($id, $body)
+> \ispserverfarm\sevdesk\phpclient\model\ModelVoucher voucherMarkAsPaid($id, $body)
 
 Mark a specified voucher as paid
 
@@ -1001,11 +1001,11 @@ Mark the specified voucher as paid
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\Api\VoucherApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\VoucherApi();
 $id = 56; // int | Id of the voucher you want to mark as paid
 $body = "body_example"; // string | Enter the date the voucher was paid here, using the format DD.MM.YYYY!
 
@@ -1027,7 +1027,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\sevDeskModel\ModelVoucher**](../Model/ModelVoucher.md)
+[**\ispserverfarm\sevdesk\phpclient\model\ModelVoucher**](../Model/ModelVoucher.md)
 
 ### Authorization
 
@@ -1041,7 +1041,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **voucherRefundAmount**
-> \ispserverfarm\sevdesk\sevDeskModel\ModelVoucherLog voucherRefundAmount($id, $body)
+> \ispserverfarm\sevdesk\phpclient\model\ModelVoucherLog voucherRefundAmount($id, $body)
 
 Refund an amount for a specified voucher
 
@@ -1053,11 +1053,11 @@ Refund an amount for the specified voucher
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\Api\VoucherApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\VoucherApi();
 $id = 56; // int | Id of the voucher for which you want to refund an amount
 $body = "body_example"; // string | Enter the amount which should be refunded, the date of the refund (format DD.MM.YYYY) and if it should appear in the feed an remove the quotation marks!
 
@@ -1079,7 +1079,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\sevDeskModel\ModelVoucherLog**](../Model/ModelVoucherLog.md)
+[**\ispserverfarm\sevdesk\phpclient\model\ModelVoucherLog**](../Model/ModelVoucherLog.md)
 
 ### Authorization
 
@@ -1093,7 +1093,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **voucherUploadTempFile**
-> \ispserverfarm\sevdesk\sevDeskModel\ModelVoucherFactory voucherUploadTempFile($file)
+> \ispserverfarm\sevdesk\phpclient\model\ModelVoucherFactory voucherUploadTempFile($file)
 
 Upload a temporary file to be used later
 
@@ -1105,11 +1105,11 @@ With the new version of sevdesk some models are not created by calling the Model
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\Api\VoucherApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\VoucherApi();
 $file = "/path/to/file.txt"; // \SplFileObject | file to upload
 
 try {
@@ -1129,7 +1129,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\sevDeskModel\ModelVoucherFactory**](../Model/ModelVoucherFactory.md)
+[**\ispserverfarm\sevdesk\phpclient\model\ModelVoucherFactory**](../Model/ModelVoucherFactory.md)
 
 ### Authorization
 

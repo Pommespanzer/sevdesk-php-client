@@ -1,4 +1,4 @@
-# ispserverfarm\sevdesk\HelpApi
+# ispserverfarm\sevdesk\phpclient\HelpApi
 
 All URIs are relative to *https://my.sevdesk.de/api/v1*
 
@@ -12,7 +12,7 @@ Method | HTTP request | Description
 
 
 # **helpGetArticle**
-> \ispserverfarm\sevdesk\sevDeskModel\ModelHelp helpGetArticle($article_id)
+> \ispserverfarm\sevdesk\phpclient\model\ModelHelp helpGetArticle($article_id)
 
 Get a specified article
 
@@ -24,11 +24,11 @@ Calls getArticle() in Help.php to get a specified help article
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\Api\HelpApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\HelpApi();
 $article_id = 56; // int | Id of the article you want to get
 
 try {
@@ -48,7 +48,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\sevDeskModel\ModelHelp**](../Model/ModelHelp.md)
+[**\ispserverfarm\sevdesk\phpclient\model\ModelHelp**](../Model/ModelHelp.md)
 
 ### Authorization
 
@@ -62,7 +62,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **helpGetArticles**
-> \ispserverfarm\sevdesk\sevDeskModel\ModelHelp helpGetArticles($section_id, $limit, $offset)
+> \ispserverfarm\sevdesk\phpclient\model\ModelHelp helpGetArticles($section_id, $limit, $offset)
 
 Get all help articles for a specified section
 
@@ -74,11 +74,11 @@ Calls getArticles() in Help.php to get all help articles for a specified section
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\Api\HelpApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\HelpApi();
 $section_id = 56; // int | Section id you want to get help articles about
 $limit = 100; // int | Limits the number of entries returned. Default is 100
 $offset = 0; // int | Set the index where the returned help articles start. Default is 0
@@ -102,7 +102,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\sevDeskModel\ModelHelp**](../Model/ModelHelp.md)
+[**\ispserverfarm\sevdesk\phpclient\model\ModelHelp**](../Model/ModelHelp.md)
 
 ### Authorization
 
@@ -116,7 +116,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **helpGetCategories**
-> \ispserverfarm\sevdesk\sevDeskModel\ModelHelp helpGetCategories($limit, $offset)
+> \ispserverfarm\sevdesk\phpclient\model\ModelHelp helpGetCategories($limit, $offset)
 
 Get all categories of help articles
 
@@ -128,11 +128,11 @@ Calls getCategories() in Help.php to get all categories available for searching 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\Api\HelpApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\HelpApi();
 $limit = 100; // int | Limits the number of entries returned. Default is 100
 $offset = 0; // int | Set the index where the returned sections start. Default is 0
 
@@ -154,7 +154,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\sevDeskModel\ModelHelp**](../Model/ModelHelp.md)
+[**\ispserverfarm\sevdesk\phpclient\model\ModelHelp**](../Model/ModelHelp.md)
 
 ### Authorization
 
@@ -168,7 +168,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **helpGetSections**
-> \ispserverfarm\sevdesk\sevDeskModel\ModelHelp helpGetSections($limit, $offset)
+> \ispserverfarm\sevdesk\phpclient\model\ModelHelp helpGetSections($limit, $offset)
 
 Get all sections of help articles
 
@@ -180,11 +180,11 @@ Calls getSections() in Help.php to get all sections available for searching help
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\Api\HelpApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\HelpApi();
 $limit = 100; // int | Limits the number of entries returned. Default is 100
 $offset = 0; // int | Set the index where the returned sections start. Default is 0
 
@@ -206,7 +206,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\sevDeskModel\ModelHelp**](../Model/ModelHelp.md)
+[**\ispserverfarm\sevdesk\phpclient\model\ModelHelp**](../Model/ModelHelp.md)
 
 ### Authorization
 
@@ -220,7 +220,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **helpSearchArticles**
-> \ispserverfarm\sevdesk\sevDeskModel\ModelHelp helpSearchArticles($name)
+> \ispserverfarm\sevdesk\phpclient\model\ModelHelp helpSearchArticles($name)
 
 Search for articles
 
@@ -232,11 +232,11 @@ Calls search() in Help.php to search for articles
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\Api\HelpApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\HelpApi();
 $name = ""; // string | String to search for
 
 try {
@@ -256,7 +256,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\sevDeskModel\ModelHelp**](../Model/ModelHelp.md)
+[**\ispserverfarm\sevdesk\phpclient\model\ModelHelp**](../Model/ModelHelp.md)
 
 ### Authorization
 

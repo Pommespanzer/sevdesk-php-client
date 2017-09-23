@@ -1,4 +1,4 @@
-# ispserverfarm\sevdesk\PartApi
+# ispserverfarm\sevdesk\phpclient\PartApi
 
 All URIs are relative to *https://my.sevdesk.de/api/v1*
 
@@ -17,7 +17,7 @@ Method | HTTP request | Description
 
 
 # **addPart**
-> \ispserverfarm\sevdesk\sevDeskModel\ModelPart addPart($body)
+> \ispserverfarm\sevdesk\phpclient\model\ModelPart addPart($body)
 
 Create a new part
 
@@ -29,11 +29,11 @@ Calls Part.php to add a part
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\Api\PartApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\PartApi();
 $body = "partNumber=1111&name=test part&stock=10&taxRate=19&unity[id]=1&unity[objectName]=Unity&price=42.50&category[id]=1&category[objectName]=Category"; // string | To create a part, simply enter desired values after parameter= and remove the quotation marks.
 
 try {
@@ -53,7 +53,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\sevDeskModel\ModelPart**](../Model/ModelPart.md)
+[**\ispserverfarm\sevdesk\phpclient\model\ModelPart**](../Model/ModelPart.md)
 
 ### Authorization
 
@@ -67,7 +67,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **bookPart**
-> \ispserverfarm\sevdesk\sevDeskModel\ModelPart bookPart($id, $body)
+> \ispserverfarm\sevdesk\phpclient\model\ModelPart bookPart($id, $body)
 
 add / remove parts from the stock
 
@@ -79,11 +79,11 @@ Calls book() in Part.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\Api\PartApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\PartApi();
 $id = 56; // int | id of part of which you want to update the stock
 $body = "name=&amount=&date=&object[id]&object[objectName]=&supplier[id]=&supplier[objectName]=Contact"; // string | Parameters which need to be updated. Enter the parameters according to the syntax: parameter1=&parameter2= and remove the quotation marks
 
@@ -105,7 +105,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\sevDeskModel\ModelPart**](../Model/ModelPart.md)
+[**\ispserverfarm\sevdesk\phpclient\model\ModelPart**](../Model/ModelPart.md)
 
 ### Authorization
 
@@ -131,11 +131,11 @@ Calls the delete() function in Part.php. Be aware that you can't delete parts wh
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\Api\PartApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\PartApi();
 $id = 56; // int | id of the part you want to delete
 
 try {
@@ -168,7 +168,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **duplicatePart**
-> \ispserverfarm\sevdesk\sevDeskModel\ModelPart duplicatePart($id)
+> \ispserverfarm\sevdesk\phpclient\model\ModelPart duplicatePart($id)
 
 Duplicate an existing part
 
@@ -180,11 +180,11 @@ Calls duplicate() in Part.php to duplicate the specified part. Mind that the sto
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\Api\PartApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\PartApi();
 $id = 56; // int | Id of the part which you want to duplicate
 
 try {
@@ -204,7 +204,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\sevDeskModel\ModelPart**](../Model/ModelPart.md)
+[**\ispserverfarm\sevdesk\phpclient\model\ModelPart**](../Model/ModelPart.md)
 
 ### Authorization
 
@@ -218,7 +218,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getParts**
-> \ispserverfarm\sevdesk\sevDeskModel\ModelPart getParts($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\phpclient\model\ModelPart getParts($limit, $offset, $embed)
 
 Get an overview of all parts
 
@@ -230,11 +230,11 @@ Calls Part.php to get necessary variables.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\Api\PartApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\PartApi();
 $limit = 100; // int | Limits the number of entries returned. Default is 100
 $offset = 0; // int | Set the index where the returned parts start. Default is 0
 $embed = array("embed_example"); // string[] | Get some additional information. Embed can handle multiple values, they must be separated by comma. Default ``.
@@ -258,7 +258,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\sevDeskModel\ModelPart**](../Model/ModelPart.md)
+[**\ispserverfarm\sevdesk\phpclient\model\ModelPart**](../Model/ModelPart.md)
 
 ### Authorization
 
@@ -272,7 +272,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **partGetLastLog**
-> \ispserverfarm\sevdesk\sevDeskModel\ModelInventoryPartLog partGetLastLog($id, $max_date, $embed)
+> \ispserverfarm\sevdesk\phpclient\model\ModelInventoryPartLog partGetLastLog($id, $max_date, $embed)
 
 Get last log about the part
 
@@ -284,11 +284,11 @@ Calls getLastLog() in Part.php to get the last log about the specified part
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\Api\PartApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\PartApi();
 $id = 56; // int | Id of the part of which you want to get the last log
 $max_date = ""; // string | Sets the maximal date if required
 $embed = array("embed_example"); // string[] | Get some additional information. Embed can handle multiple values, they must be separated by comma. Default ``.
@@ -312,7 +312,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\sevDeskModel\ModelInventoryPartLog**](../Model/ModelInventoryPartLog.md)
+[**\ispserverfarm\sevdesk\phpclient\model\ModelInventoryPartLog**](../Model/ModelInventoryPartLog.md)
 
 ### Authorization
 
@@ -338,11 +338,11 @@ Calls getPrice() in Part.php to get the price of the specified part
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\Api\PartApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\PartApi();
 $id = 56; // int | Id of the part of which you want to get the price
 $contact_id = 56; // int | Enter valid contact id here for getting a part contact price
 $contact_object_name = ""; // string | Enter 'Contact' here for getting a part contact price
@@ -395,11 +395,11 @@ Calls getStock() in Part.php to get the stock of the specified part
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\Api\PartApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\PartApi();
 $id = 56; // int | Id of the part of which you want to get stock
 $max_date = ""; // string | Sets the maximal date if required. The function will return the stock of the part at the specified date!
 
@@ -446,11 +446,11 @@ Calls getStockBefore() in Part.php to get the stock difference of the specified 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\Api\PartApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\PartApi();
 $id = 56; // int | Id of the part of which you want to get the stock difference
 $date = ""; // string | You will get the stock difference before this specified date, otherwise the current date will be used
 
@@ -485,7 +485,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updatePart**
-> \ispserverfarm\sevdesk\sevDeskModel\ModelPart updatePart($id, $body)
+> \ispserverfarm\sevdesk\phpclient\model\ModelPart updatePart($id, $body)
 
 Update an existing part
 
@@ -497,11 +497,11 @@ Calls PartContactPrice to update a part
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\Api\PartApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\PartApi();
 $id = 56; // int | id of part you want to update
 $body = "body_example"; // string | Parameters which need to be updated. Enter the parameters according to the syntax: parameter1=&parameter2= and remove the quotation marks
 
@@ -523,7 +523,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\sevDeskModel\ModelPart**](../Model/ModelPart.md)
+[**\ispserverfarm\sevdesk\phpclient\model\ModelPart**](../Model/ModelPart.md)
 
 ### Authorization
 

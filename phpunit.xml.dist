@@ -14,8 +14,8 @@
 
     <filter>
         <whitelist processUncoveredFilesFromWhitelist="true">
-            <directory suffix=".php">./lib/sevDeskApi</directory>
-            <directory suffix=".php">./lib/sevDeskModel</directory>
+            <directory suffix=".php">./lib/api</directory>
+            <directory suffix=".php">./lib/model</directory>
         </whitelist>
     </filter>
 </phpunit>

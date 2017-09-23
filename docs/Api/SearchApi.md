@@ -1,4 +1,4 @@
-# ispserverfarm\sevdesk\SearchApi
+# ispserverfarm\sevdesk\phpclient\SearchApi
 
 All URIs are relative to *https://my.sevdesk.de/api/v1*
 
@@ -20,11 +20,11 @@ Calls search() in Search.php to search with a specified term in Contacts, Orders
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\Api\SearchApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\SearchApi();
 $embed = "contact,contact.parent,parent"; // string | 
 $term = ""; // string | Term you want to search
 $search_type = array("search_type_example"); // string[] | Specify a type (model) that you want to have searched

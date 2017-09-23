@@ -1,4 +1,4 @@
-# ispserverfarm\sevdesk\StaticCountryApi
+# ispserverfarm\sevdesk\phpclient\StaticCountryApi
 
 All URIs are relative to *https://my.sevdesk.de/api/v1*
 
@@ -21,11 +21,11 @@ Calls StaticCountry.php to return the staticCountry list which is basically the 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\Api\StaticCountryApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\StaticCountryApi();
 
 try {
     $api_instance->getStaticCountry();
@@ -66,11 +66,11 @@ Calls StaticIndustry.php to return the staticIndustry list which is basically th
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\Api\StaticCountryApi();
+$api_instance = new ispserverfarm\sevdesk\phpclient\Api\StaticCountryApi();
 
 try {
     $api_instance->getStaticIndustry();

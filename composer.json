@@ -1,6 +1,6 @@
 {
     "name": "isp-serverfarm/sevdesk-php-client",
-    "version": "1.0.0.0",
+    "version": "1.0.0.4",
     "description": "",
     "keywords": [
         "swagger",
@@ -29,9 +29,9 @@
         "friendsofphp/php-cs-fixer": "~1.12"
     },
     "autoload": {
-        "psr-4": { "ispserverfarm\\sevdesk\\" : "lib/" }
+        "psr-4": { "ispserverfarm\\sevdesk\\phpclient\\" : "lib/" }
     },
     "autoload-dev": {
-        "psr-4": { "ispserverfarm\\sevdesk\\" : "test/" }
+        "psr-4": { "ispserverfarm\\sevdesk\\phpclient\\" : "test/" }
     }
 }

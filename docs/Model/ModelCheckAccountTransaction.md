@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 **_payee_payer_bank_code** | **string** | payer bank code | [optional] 
 **_payee_payer_acct_no** | **string** | payer account number | [optional] 
 **_payee_payer_name** | **string** | payer name | [optional] 
-**_check_account** | [**\ispserverfarm\sevdesk\sevDeskModel\ModelCheckAccount**](ModelCheckAccount.md) | id of the check account | [optional] 
+**_check_account** | [**\ispserverfarm\sevdesk\phpclient\model\ModelCheckAccount**](ModelCheckAccount.md) | id of the check account | [optional] 
 **_status** | **int** |  | [optional] 
 **_score** | **string** |  | [optional] 
 **_compare_hash** | **string** | hash to be compared | [optional] 
