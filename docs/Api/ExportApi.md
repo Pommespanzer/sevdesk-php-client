@@ -1,4 +1,4 @@
-# ispserverfarm\sevdesk\phpclient\ExportApi
+# ispserverfarm\sevdesk\ExportApi
 
 All URIs are relative to *https://my.sevdesk.de/api/v1*
 
@@ -31,11 +31,11 @@ Calls contactCsv() in Export.php to export the specified contact as a csv.    **
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\ExportApi();
+$api_instance = new ispserverfarm\sevdesk\Api\ExportApi();
 $contact_id = 56; // int | Id of the contact you want to export
 $contact_object_name = "Contact"; // string | Model name which is exported
 $download = true; // bool | Specifies if the document is downloaded
@@ -85,11 +85,11 @@ Calls contactListCsv() in Export.php to export the contact list as a csv.    **C
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\ExportApi();
+$api_instance = new ispserverfarm\sevdesk\Api\ExportApi();
 $sev_query_model_name = "Contact"; // string | Model name which is exported
 $sev_query_object_name = "SevQuery"; // string | SevQuery object name
 $download = true; // bool | Specifies if the document is downloaded
@@ -143,11 +143,11 @@ Calls datev() in Export.php to export the datev as a csv.    **Currently there i
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\ExportApi();
+$api_instance = new ispserverfarm\sevdesk\Api\ExportApi();
 $scope = "IVDT"; // string | Define what you want to include in the datev export. This parameter takes a string of 4 letters. Each stands for a model that should be included.    Possible letters are: **'I'** (Invoices), **'V'** (Vouchers), **'D'** (Depreciations), **'T'** (Transactions).    By providing one of those letter you specify that it should be included in the datev export. Some combinations are: 'IVDT', 'IVT' ...
 $start = ""; // string | Specify the start date for the datev export
 $end = ""; // string | Specify the end date for the datev export
@@ -203,11 +203,11 @@ Calls datevZip() in Export.php to export the zip for voucher upload.    **Curren
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\ExportApi();
+$api_instance = new ispserverfarm\sevdesk\Api\ExportApi();
 $scope = "IVDT"; // string | Define what you want to include in the zip export. This parameter takes a string of 4 letters. Each stands for a model that should be included.    Possible letters are: **'I'** (Invoices), **'V'** (Vouchers), **'D'** (Depreciations), **'T'** (Transactions).    By providing one of those letter you specify that it should be included in the datev export. Some combinations are: 'IVDT', 'IVT' ...
 $start = ""; // string | Specify the start date for the zip export
 $end = ""; // string | Specify the end date for the zip export
@@ -261,11 +261,11 @@ Calls inventoryPartLogListCsv() in Export.php to export the inventory part log l
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\ExportApi();
+$api_instance = new ispserverfarm\sevdesk\Api\ExportApi();
 $sev_query_model_name = "InventoryPartLog"; // string | Model name which is exported
 $sev_query_object_name = "SevQuery"; // string | SevQuery object name
 $download = true; // bool | Specifies if the document is downloaded
@@ -321,11 +321,11 @@ Calls invoiceCsv() in Export.php to export the invoice list as a csv.    **Curre
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\ExportApi();
+$api_instance = new ispserverfarm\sevdesk\Api\ExportApi();
 $sev_query_model_name = "Invoice"; // string | Model name which is exported
 $sev_query_object_name = "SevQuery"; // string | SevQuery object name
 $download = true; // bool | Specifies if the document is downloaded
@@ -377,11 +377,11 @@ Calls invoiceZip() in Export.php to export the invoice list as a zip with csv´s
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\ExportApi();
+$api_instance = new ispserverfarm\sevdesk\Api\ExportApi();
 $sev_query_model_name = "Invoice"; // string | Model name which is exported
 $sev_query_object_name = "SevQuery"; // string | SevQuery object name
 $download = true; // bool | Specifies if the document is downloaded
@@ -433,11 +433,11 @@ Calls partCsv() in Export.php to export the parts as csv.    **Currently there i
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\ExportApi();
+$api_instance = new ispserverfarm\sevdesk\Api\ExportApi();
 $sev_query_model_name = "Part"; // string | Model name which is exported
 $sev_query_object_name = "SevQuery"; // string | SevQuery object name
 $download = true; // bool | Specifies if the document is downloaded
@@ -489,11 +489,11 @@ Calls pebe() in Export.php to export the pebe zip with csv´s.    **Currently th
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\ExportApi();
+$api_instance = new ispserverfarm\sevdesk\Api\ExportApi();
 $scope = "IVDT"; // string | Define what you want to include in the datev export. This parameter takes a string of 4 letters. Each stands for a model that should be included.    Possible letters are: **'I'** (Invoices), **'V'** (Vouchers), **'D'** (Depreciations), **'T'** (Transactions).    By providing one of those letter you specify that it should be included in the datev export. Some combinations are: 'IVDT', 'IVT' ...
 $start = ""; // string | Specify the start date for the pebe export
 $end = ""; // string | Specify the end date for the pebe export
@@ -549,11 +549,11 @@ Calls transactionsCsv() in Export.php to export the transactions as csv. Optiona
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\ExportApi();
+$api_instance = new ispserverfarm\sevdesk\Api\ExportApi();
 $sev_query_filter_register = false; // bool | Specifies if the register is included
 $sev_query_model_name = "CheckAccountTransaction"; // string | Model name which is exported
 $sev_query_object_name = "SevQuery"; // string | SevQuery object name
@@ -613,11 +613,11 @@ Calls voucherListCsv() in Export.php to export the voucher list as a csv.    **C
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\ExportApi();
+$api_instance = new ispserverfarm\sevdesk\Api\ExportApi();
 $sev_query_model_name = "Voucher"; // string | Model name which is exported
 $sev_query_object_name = "SevQuery"; // string | SevQuery object name
 $download = true; // bool | Specifies if the document is downloaded
@@ -673,11 +673,11 @@ Calls voucherZip() in Export.php to export the voucher list as a zip with csv´s
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\ExportApi();
+$api_instance = new ispserverfarm\sevdesk\Api\ExportApi();
 $sev_query_model_name = "Voucher"; // string | Model name which is exported
 $sev_query_object_name = "SevQuery"; // string | SevQuery object name
 $download = true; // bool | Specifies if the document is downloaded

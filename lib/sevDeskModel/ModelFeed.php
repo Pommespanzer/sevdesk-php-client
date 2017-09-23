@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ispserverfarm\sevdesk\phpclient
+ * @package  ispserverfarm\sevdesk
  * @author   Swaagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace ispserverfarm\sevdesk\phpclient\sevDeskModel;
+namespace ispserverfarm\sevdesk\sevDeskModel;
 
 use \ArrayAccess;
 
@@ -35,7 +35,7 @@ use \ArrayAccess;
  * ModelFeed Class Doc Comment
  *
  * @category    Class
- * @package     ispserverfarm\sevdesk\phpclient
+ * @package     ispserverfarm\sevdesk
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class ModelFeed implements ArrayAccess
         '_object' => 'object',
         '_text' => 'string',
         '_type' => 'object',
-        '_user' => '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelSevUser',
+        '_user' => '\ispserverfarm\sevdesk\sevDeskModel\ModelSevUser',
         '_object_action' => 'object',
         '_sev_client' => 'object'
     ];
@@ -309,7 +309,7 @@ class ModelFeed implements ArrayAccess
 
     /**
      * Gets _user
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelSevUser
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelSevUser
      */
     public function getUser()
     {
@@ -318,7 +318,7 @@ class ModelFeed implements ArrayAccess
 
     /**
      * Sets _user
-     * @param \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelSevUser $_user 
+     * @param \ispserverfarm\sevdesk\sevDeskModel\ModelSevUser $_user 
      * @return $this
      */
     public function setUser($_user)
@@ -421,10 +421,10 @@ class ModelFeed implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\ispserverfarm\sevdesk\phpclient\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\ispserverfarm\sevdesk\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\ispserverfarm\sevdesk\phpclient\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\ispserverfarm\sevdesk\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

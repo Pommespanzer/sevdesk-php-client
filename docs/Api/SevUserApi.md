@@ -1,4 +1,4 @@
-# ispserverfarm\sevdesk\phpclient\SevUserApi
+# ispserverfarm\sevdesk\SevUserApi
 
 All URIs are relative to *https://my.sevdesk.de/api/v1*
 
@@ -13,7 +13,7 @@ Method | HTTP request | Description
 
 
 # **getSevUser**
-> \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelSevUser getSevUser($embed)
+> \ispserverfarm\sevdesk\sevDeskModel\ModelSevUser getSevUser($embed)
 
 Get an overview of your sevUser
 
@@ -25,11 +25,11 @@ Calls SevUser.php to get necessary variables.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\SevUserApi();
+$api_instance = new ispserverfarm\sevdesk\Api\SevUserApi();
 $embed = array("embed_example"); // string[] | Get some additional information. Embed can handle multiple values, they must be separated by comma. Default ``.
 
 try {
@@ -49,7 +49,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelSevUser**](../Model/ModelSevUser.md)
+[**\ispserverfarm\sevdesk\sevDeskModel\ModelSevUser**](../Model/ModelSevUser.md)
 
 ### Authorization
 
@@ -75,11 +75,11 @@ Calls getApiToken() in SevUser.php to get the api token of your user. Be aware t
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\SevUserApi();
+$api_instance = new ispserverfarm\sevdesk\Api\SevUserApi();
 
 try {
     $api_instance->sevUserGetApiToken();
@@ -120,11 +120,11 @@ Calls getInstance() in SevUser.php to return the instance of the sevUser.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\SevUserApi();
+$api_instance = new ispserverfarm\sevdesk\Api\SevUserApi();
 
 try {
     $api_instance->sevUserGetInstance();
@@ -165,11 +165,11 @@ Calls getJwt() in SevUser.php to return the Json Web Token of the user.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\SevUserApi();
+$api_instance = new ispserverfarm\sevdesk\Api\SevUserApi();
 
 try {
     $api_instance->sevUserGetJwt();
@@ -210,11 +210,11 @@ Calls getQRLoginData() in SevUser.php to return the QR login data of the sevUser
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\SevUserApi();
+$api_instance = new ispserverfarm\sevdesk\Api\SevUserApi();
 
 try {
     $api_instance->sevUserGetQRLoginData();
@@ -255,11 +255,11 @@ Calls isAllowed() in SevUser.php to return if a user is allowed to access a cert
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\SevUserApi();
+$api_instance = new ispserverfarm\sevdesk\Api\SevUserApi();
 
 try {
     $api_instance->sevUserIsAllowed();

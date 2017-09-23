@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ispserverfarm\sevdesk\phpclient
+ * @package  ispserverfarm\sevdesk
  * @author   Swaagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace ispserverfarm\sevdesk\phpclient\sevDeskModel;
+namespace ispserverfarm\sevdesk\sevDeskModel;
 
 use \ArrayAccess;
 
@@ -35,7 +35,7 @@ use \ArrayAccess;
  * ModelEmail Class Doc Comment
  *
  * @category    Class
- * @package     ispserverfarm\sevdesk\phpclient
+ * @package     ispserverfarm\sevdesk
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class ModelEmail implements ArrayAccess
     protected static $swaggerTypes = [
         '_create' => '\DateTime',
         '_update' => '\DateTime',
-        '_object' => '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice',
+        '_object' => '\ispserverfarm\sevdesk\sevDeskModel\ModelInvoice',
         '_from' => 'string',
         '_to' => 'string',
         '_subject' => 'string',
@@ -264,7 +264,7 @@ class ModelEmail implements ArrayAccess
 
     /**
      * Gets _object
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelInvoice
      */
     public function getObject()
     {
@@ -273,7 +273,7 @@ class ModelEmail implements ArrayAccess
 
     /**
      * Sets _object
-     * @param \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice $_object invoice object which is send via email
+     * @param \ispserverfarm\sevdesk\sevDeskModel\ModelInvoice $_object invoice object which is send via email
      * @return $this
      */
     public function setObject($_object)
@@ -502,10 +502,10 @@ class ModelEmail implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\ispserverfarm\sevdesk\phpclient\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\ispserverfarm\sevdesk\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\ispserverfarm\sevdesk\phpclient\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\ispserverfarm\sevdesk\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

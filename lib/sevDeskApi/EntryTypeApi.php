@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ispserverfarm\sevdesk\phpclient
+ * @package  ispserverfarm\sevdesk
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,18 +26,18 @@
  * Do not edit the class manually.
  */
 
-namespace ispserverfarm\sevdesk\phpclient\sevDeskApi;
+namespace ispserverfarm\sevdesk\sevDeskApi;
 
-use \ispserverfarm\sevdesk\phpclient\ApiClient;
-use \ispserverfarm\sevdesk\phpclient\ApiException;
-use \ispserverfarm\sevdesk\phpclient\Configuration;
-use \ispserverfarm\sevdesk\phpclient\ObjectSerializer;
+use \ispserverfarm\sevdesk\ApiClient;
+use \ispserverfarm\sevdesk\ApiException;
+use \ispserverfarm\sevdesk\Configuration;
+use \ispserverfarm\sevdesk\ObjectSerializer;
 
 /**
  * EntryTypeApi Class Doc Comment
  *
  * @category Class
- * @package  ispserverfarm\sevdesk\phpclient
+ * @package  ispserverfarm\sevdesk
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -46,16 +46,16 @@ class EntryTypeApi
     /**
      * API Client
      *
-     * @var \ispserverfarm\sevdesk\phpclient\ApiClient instance of the ApiClient
+     * @var \ispserverfarm\sevdesk\ApiClient instance of the ApiClient
      */
     protected $apiClient;
 
     /**
      * Constructor
      *
-     * @param \ispserverfarm\sevdesk\phpclient\ApiClient|null $apiClient The api client to use
+     * @param \ispserverfarm\sevdesk\ApiClient|null $apiClient The api client to use
      */
-    public function __construct(\ispserverfarm\sevdesk\phpclient\ApiClient $apiClient = null)
+    public function __construct(\ispserverfarm\sevdesk\ApiClient $apiClient = null)
     {
         if ($apiClient === null) {
             $apiClient = new ApiClient();
@@ -67,7 +67,7 @@ class EntryTypeApi
     /**
      * Get API client
      *
-     * @return \ispserverfarm\sevdesk\phpclient\ApiClient get the API client
+     * @return \ispserverfarm\sevdesk\ApiClient get the API client
      */
     public function getApiClient()
     {
@@ -77,11 +77,11 @@ class EntryTypeApi
     /**
      * Set the API client
      *
-     * @param \ispserverfarm\sevdesk\phpclient\ApiClient $apiClient set the API client
+     * @param \ispserverfarm\sevdesk\ApiClient $apiClient set the API client
      *
      * @return EntryTypeApi
      */
-    public function setApiClient(\ispserverfarm\sevdesk\phpclient\ApiClient $apiClient)
+    public function setApiClient(\ispserverfarm\sevdesk\ApiClient $apiClient)
     {
         $this->apiClient = $apiClient;
         return $this;
@@ -93,8 +93,8 @@ class EntryTypeApi
      * Create a new entry type
      *
      * @param string $body To create an entry type, simply enter desired values after parameter&#x3D; and remove the quotation marks. (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelEntryType
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelEntryType
      */
     public function addEntryType($body)
     {
@@ -108,8 +108,8 @@ class EntryTypeApi
      * Create a new entry type
      *
      * @param string $body To create an entry type, simply enter desired values after parameter&#x3D; and remove the quotation marks. (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelEntryType, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelEntryType, HTTP status code, HTTP response headers (array of strings)
      */
     public function addEntryTypeWithHttpInfo($body)
     {
@@ -154,15 +154,15 @@ class EntryTypeApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelEntryType',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelEntryType',
                 '/EntryType'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelEntryType', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelEntryType', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 201:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelEntryType', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelEntryType', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -177,7 +177,7 @@ class EntryTypeApi
      * Delete an existing entry type
      *
      * @param int $id id of entry type you want to delete (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function deleteEntryType($id)
@@ -192,7 +192,7 @@ class EntryTypeApi
      * Delete an existing entry type
      *
      * @param int $id id of entry type you want to delete (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function deleteEntryTypeWithHttpInfo($id)
@@ -260,7 +260,7 @@ class EntryTypeApi
      * Delete all objects bound to the specified entry type
      *
      * @param int $id Id of entry type you want to use (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function entryTypeDeleteReferencedObjects($id)
@@ -275,7 +275,7 @@ class EntryTypeApi
      * Delete all objects bound to the specified entry type
      *
      * @param int $id Id of entry type you want to use (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function entryTypeDeleteReferencedObjectsWithHttpInfo($id)
@@ -344,8 +344,8 @@ class EntryTypeApi
      *
      * @param int $limit Limits the number of entries returned. Default is 100 (optional, default to 100)
      * @param int $offset Set the index where the returned entry types start. Default is 0 (optional, default to 0)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelEntryType
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelEntryType
      */
     public function getEntryTypes($limit = '100', $offset = '0')
     {
@@ -360,8 +360,8 @@ class EntryTypeApi
      *
      * @param int $limit Limits the number of entries returned. Default is 100 (optional, default to 100)
      * @param int $offset Set the index where the returned entry types start. Default is 0 (optional, default to 0)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelEntryType, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelEntryType, HTTP status code, HTTP response headers (array of strings)
      */
     public function getEntryTypesWithHttpInfo($limit = '100', $offset = '0')
     {
@@ -405,15 +405,15 @@ class EntryTypeApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelEntryType',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelEntryType',
                 '/EntryType'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelEntryType', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelEntryType', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelEntryType', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelEntryType', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -429,8 +429,8 @@ class EntryTypeApi
      *
      * @param int $id id of entry type you want to update (required)
      * @param string $body Parameters which need to be updated. Please refer to the description from create entry type.    Enter the parameters according to the syntax: parameter1&#x3D;&amp;parameter2&#x3D; (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelEntryType
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelEntryType
      */
     public function updateEntryType($id, $body = null)
     {
@@ -445,8 +445,8 @@ class EntryTypeApi
      *
      * @param int $id id of entry type you want to update (required)
      * @param string $body Parameters which need to be updated. Please refer to the description from create entry type.    Enter the parameters according to the syntax: parameter1&#x3D;&amp;parameter2&#x3D; (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelEntryType, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelEntryType, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateEntryTypeWithHttpInfo($id, $body = null)
     {
@@ -499,15 +499,15 @@ class EntryTypeApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelEntryType',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelEntryType',
                 '/EntryType/{id}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelEntryType', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelEntryType', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelEntryType', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelEntryType', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }

@@ -1,4 +1,4 @@
-# ispserverfarm\sevdesk\phpclient\DocServerApi
+# ispserverfarm\sevdesk\DocServerApi
 
 All URIs are relative to *https://my.sevdesk.de/api/v1*
 
@@ -31,11 +31,11 @@ Calls deleteLetterpaper() in DocServer.php to delete a specified letter paper
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\DocServerApi();
+$api_instance = new ispserverfarm\sevdesk\Api\DocServerApi();
 $body = "id="; // string | Enter the id of the letter paper you want to delete after id= and remove the quotation marks!
 
 try {
@@ -80,11 +80,11 @@ Calls setDefaultTemplate() in DocServer.php to set the specified template as the
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\DocServerApi();
+$api_instance = new ispserverfarm\sevdesk\Api\DocServerApi();
 $body = "id="; // string | Enter the id of the template you want to set as the default template after id= and remove the quotation marks!
 
 try {
@@ -129,11 +129,11 @@ Calls getLetterpapers() in DocServer.php to get the stored letter papers
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\DocServerApi();
+$api_instance = new ispserverfarm\sevdesk\Api\DocServerApi();
 
 try {
     $api_instance->docServerGetLetterPapers();
@@ -174,11 +174,11 @@ Calls getLetterpapersWithThumb() in DocServer.php to get the stored letter paper
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\DocServerApi();
+$api_instance = new ispserverfarm\sevdesk\Api\DocServerApi();
 
 try {
     $api_instance->docServerGetLetterPapersWithThumb();
@@ -219,11 +219,11 @@ Calls getTemplates() in DocServer.php to get the stored templates.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\DocServerApi();
+$api_instance = new ispserverfarm\sevdesk\Api\DocServerApi();
 
 try {
     $api_instance->docServerGetTemplates();
@@ -264,11 +264,11 @@ Calls getTemplatesWithThumb() in DocServer.php to get the stored templates with 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\DocServerApi();
+$api_instance = new ispserverfarm\sevdesk\Api\DocServerApi();
 
 try {
     $api_instance->docServerGetTemplatesWithThumb();
@@ -309,11 +309,11 @@ Calls setDefaultLetterpaper() in DocServer.php to set the specified letter paper
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\DocServerApi();
+$api_instance = new ispserverfarm\sevdesk\Api\DocServerApi();
 $body = "id="; // string | Enter the id of the letter paper you want to set as the default letter paper after id= and remove the quotation marks!
 
 try {
@@ -358,11 +358,11 @@ Calls setDefaultTemplate() in DocServer.php to set the specified template as the
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\DocServerApi();
+$api_instance = new ispserverfarm\sevdesk\Api\DocServerApi();
 $body = "id="; // string | Enter the id of the template you want to set as the default template after id= and remove the quotation marks!
 
 try {
@@ -407,11 +407,11 @@ Calls storeLetterpaper() in DocServer.php to store a letter paper on the doc ser
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\DocServerApi();
+$api_instance = new ispserverfarm\sevdesk\Api\DocServerApi();
 $body = "name=&pdf=&type=null&id=null&isDefault=null"; // string | Enter the desired values after parameter= and remove the quotation marks!    Be aware that you need to enter the base64 of the pdf you want as a letter paper after pdf=!
 
 try {
@@ -456,11 +456,11 @@ Calls storeTemplate() in DocServer.php to store a template on the doc server
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\DocServerApi();
+$api_instance = new ispserverfarm\sevdesk\Api\DocServerApi();
 $body = "name=&html=&type=&id=null&isDefault=null&json=undefined"; // string | Enter the desired values after parameter= and remove the quotation marks!    Be aware that you need to enter the html code of your template after html=! Type can be Invoice, Invoicereminder, Order, Contractnote, Packingllist, Letter.
 
 try {
@@ -505,11 +505,11 @@ Calls testLetterpaper() in DocServer.php to test your letter paper by providing 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\DocServerApi();
+$api_instance = new ispserverfarm\sevdesk\Api\DocServerApi();
 $file = "/path/to/file.txt"; // \SplFileObject | Pdf file to test
 
 try {
@@ -554,11 +554,11 @@ Calls testTemplate() in DocServer.php to test your template by providing the htm
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\DocServerApi();
+$api_instance = new ispserverfarm\sevdesk\Api\DocServerApi();
 $body = "html="; // string | Enter the html of your template after html= and remove the quotation marks!
 
 try {

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ispserverfarm\sevdesk\phpclient
+ * @package  ispserverfarm\sevdesk
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,18 +26,18 @@
  * Do not edit the class manually.
  */
 
-namespace ispserverfarm\sevdesk\phpclient\sevDeskApi;
+namespace ispserverfarm\sevdesk\sevDeskApi;
 
-use \ispserverfarm\sevdesk\phpclient\ApiClient;
-use \ispserverfarm\sevdesk\phpclient\ApiException;
-use \ispserverfarm\sevdesk\phpclient\Configuration;
-use \ispserverfarm\sevdesk\phpclient\ObjectSerializer;
+use \ispserverfarm\sevdesk\ApiClient;
+use \ispserverfarm\sevdesk\ApiException;
+use \ispserverfarm\sevdesk\Configuration;
+use \ispserverfarm\sevdesk\ObjectSerializer;
 
 /**
  * AccountingContactApi Class Doc Comment
  *
  * @category Class
- * @package  ispserverfarm\sevdesk\phpclient
+ * @package  ispserverfarm\sevdesk
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -46,16 +46,16 @@ class AccountingContactApi
     /**
      * API Client
      *
-     * @var \ispserverfarm\sevdesk\phpclient\ApiClient instance of the ApiClient
+     * @var \ispserverfarm\sevdesk\ApiClient instance of the ApiClient
      */
     protected $apiClient;
 
     /**
      * Constructor
      *
-     * @param \ispserverfarm\sevdesk\phpclient\ApiClient|null $apiClient The api client to use
+     * @param \ispserverfarm\sevdesk\ApiClient|null $apiClient The api client to use
      */
-    public function __construct(\ispserverfarm\sevdesk\phpclient\ApiClient $apiClient = null)
+    public function __construct(\ispserverfarm\sevdesk\ApiClient $apiClient = null)
     {
         if ($apiClient === null) {
             $apiClient = new ApiClient();
@@ -67,7 +67,7 @@ class AccountingContactApi
     /**
      * Get API client
      *
-     * @return \ispserverfarm\sevdesk\phpclient\ApiClient get the API client
+     * @return \ispserverfarm\sevdesk\ApiClient get the API client
      */
     public function getApiClient()
     {
@@ -77,11 +77,11 @@ class AccountingContactApi
     /**
      * Set the API client
      *
-     * @param \ispserverfarm\sevdesk\phpclient\ApiClient $apiClient set the API client
+     * @param \ispserverfarm\sevdesk\ApiClient $apiClient set the API client
      *
      * @return AccountingContactApi
      */
-    public function setApiClient(\ispserverfarm\sevdesk\phpclient\ApiClient $apiClient)
+    public function setApiClient(\ispserverfarm\sevdesk\ApiClient $apiClient)
     {
         $this->apiClient = $apiClient;
         return $this;
@@ -96,7 +96,7 @@ class AccountingContactApi
      * @param string $contact_object_name Contact object name (optional, default to Contact)
      * @param string $debitor_number debitor number of which you want to know if it is available (optional, default to )
      * @param string $creditor_number creditor number of which you want to know if it is available (optional, default to )
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function accountingContactIsAvailableDebitorCreditorNumber($contact_id = null, $contact_object_name = 'Contact', $debitor_number = '', $creditor_number = '')
@@ -114,7 +114,7 @@ class AccountingContactApi
      * @param string $contact_object_name Contact object name (optional, default to Contact)
      * @param string $debitor_number debitor number of which you want to know if it is available (optional, default to )
      * @param string $creditor_number creditor number of which you want to know if it is available (optional, default to )
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function accountingContactIsAvailableDebitorCreditorNumberWithHttpInfo($contact_id = null, $contact_object_name = 'Contact', $debitor_number = '', $creditor_number = '')
@@ -186,8 +186,8 @@ class AccountingContactApi
      * Create a new accounting contact
      *
      * @param string $body To create an accounting contact, simply enter desired values after parameter&#x3D; and remove the quotation marks. (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelAccountingContact
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelAccountingContact
      */
     public function addAccountingContact($body)
     {
@@ -201,8 +201,8 @@ class AccountingContactApi
      * Create a new accounting contact
      *
      * @param string $body To create an accounting contact, simply enter desired values after parameter&#x3D; and remove the quotation marks. (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelAccountingContact, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelAccountingContact, HTTP status code, HTTP response headers (array of strings)
      */
     public function addAccountingContactWithHttpInfo($body)
     {
@@ -247,15 +247,15 @@ class AccountingContactApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelAccountingContact',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelAccountingContact',
                 '/AccountingContact'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelAccountingContact', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelAccountingContact', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 201:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelAccountingContact', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelAccountingContact', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -270,7 +270,7 @@ class AccountingContactApi
      * Delete an existing accounting contact
      *
      * @param int $id id of accounting contact you want to delete (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function deleteAccountingContact($id)
@@ -285,7 +285,7 @@ class AccountingContactApi
      * Delete an existing accounting contact
      *
      * @param int $id id of accounting contact you want to delete (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function deleteAccountingContactWithHttpInfo($id)
@@ -355,8 +355,8 @@ class AccountingContactApi
      * @param int $limit Limits the number of entries returned. Default is 100 (optional, default to 100)
      * @param int $offset Set the index where the returned discounts start. Default is 0 (optional, default to 0)
      * @param string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. Default &#x60;&#x60;. (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelAccountingContact
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelAccountingContact
      */
     public function getAccountingContacts($limit = '100', $offset = '0', $embed = null)
     {
@@ -372,8 +372,8 @@ class AccountingContactApi
      * @param int $limit Limits the number of entries returned. Default is 100 (optional, default to 100)
      * @param int $offset Set the index where the returned discounts start. Default is 0 (optional, default to 0)
      * @param string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. Default &#x60;&#x60;. (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelAccountingContact, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelAccountingContact, HTTP status code, HTTP response headers (array of strings)
      */
     public function getAccountingContactsWithHttpInfo($limit = '100', $offset = '0', $embed = null)
     {
@@ -424,15 +424,15 @@ class AccountingContactApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelAccountingContact',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelAccountingContact',
                 '/AccountingContact'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelAccountingContact', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelAccountingContact', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelAccountingContact', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelAccountingContact', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -448,8 +448,8 @@ class AccountingContactApi
      *
      * @param int $id id of accounting contact you want to update (required)
      * @param string $body Parameters which need to be updated. Please refer to the description from create accounting contact.    Enter the parameters according to the syntax: parameter1&#x3D;&amp;parameter2&#x3D; (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelAccountingContact
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelAccountingContact
      */
     public function updateAccountingContact($id, $body = null)
     {
@@ -464,8 +464,8 @@ class AccountingContactApi
      *
      * @param int $id id of accounting contact you want to update (required)
      * @param string $body Parameters which need to be updated. Please refer to the description from create accounting contact.    Enter the parameters according to the syntax: parameter1&#x3D;&amp;parameter2&#x3D; (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelAccountingContact, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelAccountingContact, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateAccountingContactWithHttpInfo($id, $body = null)
     {
@@ -518,15 +518,15 @@ class AccountingContactApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelAccountingContact',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelAccountingContact',
                 '/AccountingContact/{id}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelAccountingContact', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelAccountingContact', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelAccountingContact', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelAccountingContact', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }

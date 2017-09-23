@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ispserverfarm\sevdesk\phpclient
+ * @package  ispserverfarm\sevdesk
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,18 +26,18 @@
  * Do not edit the class manually.
  */
 
-namespace ispserverfarm\sevdesk\phpclient\sevDeskApi;
+namespace ispserverfarm\sevdesk\sevDeskApi;
 
-use \ispserverfarm\sevdesk\phpclient\ApiClient;
-use \ispserverfarm\sevdesk\phpclient\ApiException;
-use \ispserverfarm\sevdesk\phpclient\Configuration;
-use \ispserverfarm\sevdesk\phpclient\ObjectSerializer;
+use \ispserverfarm\sevdesk\ApiClient;
+use \ispserverfarm\sevdesk\ApiException;
+use \ispserverfarm\sevdesk\Configuration;
+use \ispserverfarm\sevdesk\ObjectSerializer;
 
 /**
  * UnityApi Class Doc Comment
  *
  * @category Class
- * @package  ispserverfarm\sevdesk\phpclient
+ * @package  ispserverfarm\sevdesk
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -46,16 +46,16 @@ class UnityApi
     /**
      * API Client
      *
-     * @var \ispserverfarm\sevdesk\phpclient\ApiClient instance of the ApiClient
+     * @var \ispserverfarm\sevdesk\ApiClient instance of the ApiClient
      */
     protected $apiClient;
 
     /**
      * Constructor
      *
-     * @param \ispserverfarm\sevdesk\phpclient\ApiClient|null $apiClient The api client to use
+     * @param \ispserverfarm\sevdesk\ApiClient|null $apiClient The api client to use
      */
-    public function __construct(\ispserverfarm\sevdesk\phpclient\ApiClient $apiClient = null)
+    public function __construct(\ispserverfarm\sevdesk\ApiClient $apiClient = null)
     {
         if ($apiClient === null) {
             $apiClient = new ApiClient();
@@ -67,7 +67,7 @@ class UnityApi
     /**
      * Get API client
      *
-     * @return \ispserverfarm\sevdesk\phpclient\ApiClient get the API client
+     * @return \ispserverfarm\sevdesk\ApiClient get the API client
      */
     public function getApiClient()
     {
@@ -77,11 +77,11 @@ class UnityApi
     /**
      * Set the API client
      *
-     * @param \ispserverfarm\sevdesk\phpclient\ApiClient $apiClient set the API client
+     * @param \ispserverfarm\sevdesk\ApiClient $apiClient set the API client
      *
      * @return UnityApi
      */
-    public function setApiClient(\ispserverfarm\sevdesk\phpclient\ApiClient $apiClient)
+    public function setApiClient(\ispserverfarm\sevdesk\ApiClient $apiClient)
     {
         $this->apiClient = $apiClient;
         return $this;
@@ -93,8 +93,8 @@ class UnityApi
      * Create a new unity
      *
      * @param string $body To create an unity, simply enter desired values after parameter&#x3D; and remove the quotation marks. (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelOrderPos
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelOrderPos
      */
     public function addUnity($body)
     {
@@ -108,8 +108,8 @@ class UnityApi
      * Create a new unity
      *
      * @param string $body To create an unity, simply enter desired values after parameter&#x3D; and remove the quotation marks. (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelOrderPos, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelOrderPos, HTTP status code, HTTP response headers (array of strings)
      */
     public function addUnityWithHttpInfo($body)
     {
@@ -154,15 +154,15 @@ class UnityApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelOrderPos',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelOrderPos',
                 '/Unity'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelOrderPos', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelOrderPos', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 201:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelOrderPos', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelOrderPos', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -177,7 +177,7 @@ class UnityApi
      * Delete an existing unity
      *
      * @param int $id id of the unity you want to delete (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function deleteUnity($id)
@@ -192,7 +192,7 @@ class UnityApi
      * Delete an existing unity
      *
      * @param int $id id of the unity you want to delete (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function deleteUnityWithHttpInfo($id)
@@ -262,8 +262,8 @@ class UnityApi
      * @param int $limit Limits the number of entries returned. Default is 100 (optional, default to 100)
      * @param int $offset Set the index where the returned unities start. Default is 0 (optional, default to 0)
      * @param string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. Default &#x60;&#x60;. (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelUnity
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelUnity
      */
     public function getUnities($limit = '100', $offset = '0', $embed = null)
     {
@@ -279,8 +279,8 @@ class UnityApi
      * @param int $limit Limits the number of entries returned. Default is 100 (optional, default to 100)
      * @param int $offset Set the index where the returned unities start. Default is 0 (optional, default to 0)
      * @param string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. Default &#x60;&#x60;. (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelUnity, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelUnity, HTTP status code, HTTP response headers (array of strings)
      */
     public function getUnitiesWithHttpInfo($limit = '100', $offset = '0', $embed = null)
     {
@@ -331,15 +331,15 @@ class UnityApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelUnity',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelUnity',
                 '/Unity'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelUnity', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelUnity', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelUnity', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelUnity', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -355,8 +355,8 @@ class UnityApi
      *
      * @param int $id id of unity you want to update (required)
      * @param string $body Parameters which need to be updated. Enter the parameters according to the syntax: parameter1&#x3D;&amp;parameter2&#x3D; and remove the quotation marks (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelUnity
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelUnity
      */
     public function updateUnity($id, $body = null)
     {
@@ -371,8 +371,8 @@ class UnityApi
      *
      * @param int $id id of unity you want to update (required)
      * @param string $body Parameters which need to be updated. Enter the parameters according to the syntax: parameter1&#x3D;&amp;parameter2&#x3D; and remove the quotation marks (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelUnity, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelUnity, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateUnityWithHttpInfo($id, $body = null)
     {
@@ -425,15 +425,15 @@ class UnityApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelUnity',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelUnity',
                 '/Unity/{id}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelUnity', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelUnity', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelUnity', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelUnity', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }

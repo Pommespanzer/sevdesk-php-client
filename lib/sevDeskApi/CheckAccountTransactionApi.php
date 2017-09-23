@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ispserverfarm\sevdesk\phpclient
+ * @package  ispserverfarm\sevdesk
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,18 +26,18 @@
  * Do not edit the class manually.
  */
 
-namespace ispserverfarm\sevdesk\phpclient\sevDeskApi;
+namespace ispserverfarm\sevdesk\sevDeskApi;
 
-use \ispserverfarm\sevdesk\phpclient\ApiClient;
-use \ispserverfarm\sevdesk\phpclient\ApiException;
-use \ispserverfarm\sevdesk\phpclient\Configuration;
-use \ispserverfarm\sevdesk\phpclient\ObjectSerializer;
+use \ispserverfarm\sevdesk\ApiClient;
+use \ispserverfarm\sevdesk\ApiException;
+use \ispserverfarm\sevdesk\Configuration;
+use \ispserverfarm\sevdesk\ObjectSerializer;
 
 /**
  * CheckAccountTransactionApi Class Doc Comment
  *
  * @category Class
- * @package  ispserverfarm\sevdesk\phpclient
+ * @package  ispserverfarm\sevdesk
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -46,16 +46,16 @@ class CheckAccountTransactionApi
     /**
      * API Client
      *
-     * @var \ispserverfarm\sevdesk\phpclient\ApiClient instance of the ApiClient
+     * @var \ispserverfarm\sevdesk\ApiClient instance of the ApiClient
      */
     protected $apiClient;
 
     /**
      * Constructor
      *
-     * @param \ispserverfarm\sevdesk\phpclient\ApiClient|null $apiClient The api client to use
+     * @param \ispserverfarm\sevdesk\ApiClient|null $apiClient The api client to use
      */
-    public function __construct(\ispserverfarm\sevdesk\phpclient\ApiClient $apiClient = null)
+    public function __construct(\ispserverfarm\sevdesk\ApiClient $apiClient = null)
     {
         if ($apiClient === null) {
             $apiClient = new ApiClient();
@@ -67,7 +67,7 @@ class CheckAccountTransactionApi
     /**
      * Get API client
      *
-     * @return \ispserverfarm\sevdesk\phpclient\ApiClient get the API client
+     * @return \ispserverfarm\sevdesk\ApiClient get the API client
      */
     public function getApiClient()
     {
@@ -77,11 +77,11 @@ class CheckAccountTransactionApi
     /**
      * Set the API client
      *
-     * @param \ispserverfarm\sevdesk\phpclient\ApiClient $apiClient set the API client
+     * @param \ispserverfarm\sevdesk\ApiClient $apiClient set the API client
      *
      * @return CheckAccountTransactionApi
      */
-    public function setApiClient(\ispserverfarm\sevdesk\phpclient\ApiClient $apiClient)
+    public function setApiClient(\ispserverfarm\sevdesk\ApiClient $apiClient)
     {
         $this->apiClient = $apiClient;
         return $this;
@@ -93,8 +93,8 @@ class CheckAccountTransactionApi
      * Create a new check account transaction
      *
      * @param string $body To create a check account transaction , simply enter desired values after parameter&#x3D; and remove the quotation marks. (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCheckAccountTransaction
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelCheckAccountTransaction
      */
     public function addCheckAccountTransaction($body)
     {
@@ -108,8 +108,8 @@ class CheckAccountTransactionApi
      * Create a new check account transaction
      *
      * @param string $body To create a check account transaction , simply enter desired values after parameter&#x3D; and remove the quotation marks. (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCheckAccountTransaction, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelCheckAccountTransaction, HTTP status code, HTTP response headers (array of strings)
      */
     public function addCheckAccountTransactionWithHttpInfo($body)
     {
@@ -154,15 +154,15 @@ class CheckAccountTransactionApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCheckAccountTransaction',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelCheckAccountTransaction',
                 '/CheckAccountTransaction'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCheckAccountTransaction', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelCheckAccountTransaction', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 201:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCheckAccountTransaction', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelCheckAccountTransaction', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -178,8 +178,8 @@ class CheckAccountTransactionApi
      *
      * @param int $id Id of the check account transaction of which you want to get the log (required)
      * @param string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. Default &#x60;&#x60;. (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCheckAccountTransactionLog
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelCheckAccountTransactionLog
      */
     public function checkAccountTransactionGetLog($id, $embed = null)
     {
@@ -194,8 +194,8 @@ class CheckAccountTransactionApi
      *
      * @param int $id Id of the check account transaction of which you want to get the log (required)
      * @param string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. Default &#x60;&#x60;. (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCheckAccountTransactionLog, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelCheckAccountTransactionLog, HTTP status code, HTTP response headers (array of strings)
      */
     public function checkAccountTransactionGetLogWithHttpInfo($id, $embed = null)
     {
@@ -250,15 +250,15 @@ class CheckAccountTransactionApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCheckAccountTransactionLog',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelCheckAccountTransactionLog',
                 '/CheckAccountTransaction/{id}/getLog'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCheckAccountTransactionLog', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelCheckAccountTransactionLog', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCheckAccountTransactionLog', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelCheckAccountTransactionLog', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -273,7 +273,7 @@ class CheckAccountTransactionApi
      * Get invoice amount which is not assigned yet
      *
      * @param int $id Id of check account transaction you want to use (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function checkAccountTransactionGetRemainingAmount($id)
@@ -288,7 +288,7 @@ class CheckAccountTransactionApi
      * Get invoice amount which is not assigned yet
      *
      * @param int $id Id of check account transaction you want to use (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function checkAccountTransactionGetRemainingAmountWithHttpInfo($id)
@@ -356,7 +356,7 @@ class CheckAccountTransactionApi
      * Delete an existing check account transaction
      *
      * @param int $id id of check account transaction you want to delete (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function deleteCheckAccountTransaction($id)
@@ -371,7 +371,7 @@ class CheckAccountTransactionApi
      * Delete an existing check account transaction
      *
      * @param int $id id of check account transaction you want to delete (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function deleteCheckAccountTransactionWithHttpInfo($id)
@@ -441,8 +441,8 @@ class CheckAccountTransactionApi
      * @param int $limit Limits the number of entries returned. Default is 100 (optional, default to 100)
      * @param int $offset Set the index where the returned check account transactions start. Default is 0 (optional, default to 0)
      * @param string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. Default &#x60;&#x60;. (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCheckAccountTransaction
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelCheckAccountTransaction
      */
     public function getCheckAccountTransactions($limit = '100', $offset = '0', $embed = null)
     {
@@ -458,8 +458,8 @@ class CheckAccountTransactionApi
      * @param int $limit Limits the number of entries returned. Default is 100 (optional, default to 100)
      * @param int $offset Set the index where the returned check account transactions start. Default is 0 (optional, default to 0)
      * @param string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. Default &#x60;&#x60;. (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCheckAccountTransaction, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelCheckAccountTransaction, HTTP status code, HTTP response headers (array of strings)
      */
     public function getCheckAccountTransactionsWithHttpInfo($limit = '100', $offset = '0', $embed = null)
     {
@@ -510,15 +510,15 @@ class CheckAccountTransactionApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCheckAccountTransaction',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelCheckAccountTransaction',
                 '/CheckAccountTransaction'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCheckAccountTransaction', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelCheckAccountTransaction', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCheckAccountTransaction', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelCheckAccountTransaction', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -534,8 +534,8 @@ class CheckAccountTransactionApi
      *
      * @param int $id id of check account transaction you want to update (required)
      * @param string $body Enter the id of the invoice you want to be linked after invoiceId&#x3D; and remove the quotation marks. (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCheckAccountTransaction
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelCheckAccountTransaction
      */
     public function linkInvoiceToCheckAccountTransaction($id, $body = null)
     {
@@ -550,8 +550,8 @@ class CheckAccountTransactionApi
      *
      * @param int $id id of check account transaction you want to update (required)
      * @param string $body Enter the id of the invoice you want to be linked after invoiceId&#x3D; and remove the quotation marks. (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCheckAccountTransaction, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelCheckAccountTransaction, HTTP status code, HTTP response headers (array of strings)
      */
     public function linkInvoiceToCheckAccountTransactionWithHttpInfo($id, $body = null)
     {
@@ -604,15 +604,15 @@ class CheckAccountTransactionApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCheckAccountTransaction',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelCheckAccountTransaction',
                 '/CheckAccountTransaction/{id}/linkInvoice'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCheckAccountTransaction', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelCheckAccountTransaction', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCheckAccountTransaction', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelCheckAccountTransaction', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -628,8 +628,8 @@ class CheckAccountTransactionApi
      *
      * @param int $id id of check account transaction you want to update (required)
      * @param string $body Enter the id of the voucher you want to be linked after voucherId&#x3D; and remove the quotation marks. (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCheckAccountTransaction
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelCheckAccountTransaction
      */
     public function linkVoucherToCheckAccountTransaction($id, $body = null)
     {
@@ -644,8 +644,8 @@ class CheckAccountTransactionApi
      *
      * @param int $id id of check account transaction you want to update (required)
      * @param string $body Enter the id of the voucher you want to be linked after voucherId&#x3D; and remove the quotation marks. (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCheckAccountTransaction, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelCheckAccountTransaction, HTTP status code, HTTP response headers (array of strings)
      */
     public function linkVoucherToCheckAccountTransactionWithHttpInfo($id, $body = null)
     {
@@ -698,15 +698,15 @@ class CheckAccountTransactionApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCheckAccountTransaction',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelCheckAccountTransaction',
                 '/CheckAccountTransaction/{id}/linkVoucher'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCheckAccountTransaction', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelCheckAccountTransaction', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCheckAccountTransaction', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelCheckAccountTransaction', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -722,8 +722,8 @@ class CheckAccountTransactionApi
      *
      * @param int $id id of check account transaction you want to update (required)
      * @param string $body Parameters which need to be updated. Please refer to the description from create check account transaction.    Enter the parameters according to the syntax: parameter1&#x3D;&amp;parameter2&#x3D; (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCheckAccountTransaction
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelCheckAccountTransaction
      */
     public function updateCheckAccountTransaction($id, $body = null)
     {
@@ -738,8 +738,8 @@ class CheckAccountTransactionApi
      *
      * @param int $id id of check account transaction you want to update (required)
      * @param string $body Parameters which need to be updated. Please refer to the description from create check account transaction.    Enter the parameters according to the syntax: parameter1&#x3D;&amp;parameter2&#x3D; (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCheckAccountTransaction, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelCheckAccountTransaction, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateCheckAccountTransactionWithHttpInfo($id, $body = null)
     {
@@ -792,15 +792,15 @@ class CheckAccountTransactionApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCheckAccountTransaction',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelCheckAccountTransaction',
                 '/CheckAccountTransaction/{id}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCheckAccountTransaction', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelCheckAccountTransaction', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCheckAccountTransaction', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelCheckAccountTransaction', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -816,8 +816,8 @@ class CheckAccountTransactionApi
      *
      * @param int $id id of check account transaction you want to update (required)
      * @param string $body Enter your desired status after value&#x3D; and remove the quotation marks (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCheckAccountTransaction
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelCheckAccountTransaction
      */
     public function updateCheckAccountTransactionStatus($id, $body = null)
     {
@@ -832,8 +832,8 @@ class CheckAccountTransactionApi
      *
      * @param int $id id of check account transaction you want to update (required)
      * @param string $body Enter your desired status after value&#x3D; and remove the quotation marks (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCheckAccountTransaction, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelCheckAccountTransaction, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateCheckAccountTransactionStatusWithHttpInfo($id, $body = null)
     {
@@ -886,15 +886,15 @@ class CheckAccountTransactionApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCheckAccountTransaction',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelCheckAccountTransaction',
                 '/CheckAccountTransaction/{id}/changeStatus'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCheckAccountTransaction', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelCheckAccountTransaction', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCheckAccountTransaction', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelCheckAccountTransaction', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }

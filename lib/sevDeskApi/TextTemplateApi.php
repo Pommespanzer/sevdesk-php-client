@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ispserverfarm\sevdesk\phpclient
+ * @package  ispserverfarm\sevdesk
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,18 +26,18 @@
  * Do not edit the class manually.
  */
 
-namespace ispserverfarm\sevdesk\phpclient\sevDeskApi;
+namespace ispserverfarm\sevdesk\sevDeskApi;
 
-use \ispserverfarm\sevdesk\phpclient\ApiClient;
-use \ispserverfarm\sevdesk\phpclient\ApiException;
-use \ispserverfarm\sevdesk\phpclient\Configuration;
-use \ispserverfarm\sevdesk\phpclient\ObjectSerializer;
+use \ispserverfarm\sevdesk\ApiClient;
+use \ispserverfarm\sevdesk\ApiException;
+use \ispserverfarm\sevdesk\Configuration;
+use \ispserverfarm\sevdesk\ObjectSerializer;
 
 /**
  * TextTemplateApi Class Doc Comment
  *
  * @category Class
- * @package  ispserverfarm\sevdesk\phpclient
+ * @package  ispserverfarm\sevdesk
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -46,16 +46,16 @@ class TextTemplateApi
     /**
      * API Client
      *
-     * @var \ispserverfarm\sevdesk\phpclient\ApiClient instance of the ApiClient
+     * @var \ispserverfarm\sevdesk\ApiClient instance of the ApiClient
      */
     protected $apiClient;
 
     /**
      * Constructor
      *
-     * @param \ispserverfarm\sevdesk\phpclient\ApiClient|null $apiClient The api client to use
+     * @param \ispserverfarm\sevdesk\ApiClient|null $apiClient The api client to use
      */
-    public function __construct(\ispserverfarm\sevdesk\phpclient\ApiClient $apiClient = null)
+    public function __construct(\ispserverfarm\sevdesk\ApiClient $apiClient = null)
     {
         if ($apiClient === null) {
             $apiClient = new ApiClient();
@@ -67,7 +67,7 @@ class TextTemplateApi
     /**
      * Get API client
      *
-     * @return \ispserverfarm\sevdesk\phpclient\ApiClient get the API client
+     * @return \ispserverfarm\sevdesk\ApiClient get the API client
      */
     public function getApiClient()
     {
@@ -77,11 +77,11 @@ class TextTemplateApi
     /**
      * Set the API client
      *
-     * @param \ispserverfarm\sevdesk\phpclient\ApiClient $apiClient set the API client
+     * @param \ispserverfarm\sevdesk\ApiClient $apiClient set the API client
      *
      * @return TextTemplateApi
      */
-    public function setApiClient(\ispserverfarm\sevdesk\phpclient\ApiClient $apiClient)
+    public function setApiClient(\ispserverfarm\sevdesk\ApiClient $apiClient)
     {
         $this->apiClient = $apiClient;
         return $this;
@@ -93,8 +93,8 @@ class TextTemplateApi
      * Create a new text template
      *
      * @param string $body To create a text template, simply enter desired values after parameter&#x3D; and remove the quotation marks. (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelTextTemplate
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelTextTemplate
      */
     public function addTextTemplate($body)
     {
@@ -108,8 +108,8 @@ class TextTemplateApi
      * Create a new text template
      *
      * @param string $body To create a text template, simply enter desired values after parameter&#x3D; and remove the quotation marks. (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelTextTemplate, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelTextTemplate, HTTP status code, HTTP response headers (array of strings)
      */
     public function addTextTemplateWithHttpInfo($body)
     {
@@ -154,15 +154,15 @@ class TextTemplateApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelTextTemplate',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelTextTemplate',
                 '/TextTemplate'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelTextTemplate', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelTextTemplate', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 201:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelTextTemplate', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelTextTemplate', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -177,7 +177,7 @@ class TextTemplateApi
      * Delete an existing text template
      *
      * @param int $id Id of text template you want to delete (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function deleteTextTemplate($id)
@@ -192,7 +192,7 @@ class TextTemplateApi
      * Delete an existing text template
      *
      * @param int $id Id of text template you want to delete (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function deleteTextTemplateWithHttpInfo($id)
@@ -262,8 +262,8 @@ class TextTemplateApi
      * @param int $limit Limits the number of entries returned. Default is 100 (optional, default to 100)
      * @param int $offset Set the index where the returned text templates start. Default is 0 (optional, default to 0)
      * @param string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. Default &#x60;&#x60;. (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelTextTemplate
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelTextTemplate
      */
     public function getTextTemplate($limit = '100', $offset = '0', $embed = null)
     {
@@ -279,8 +279,8 @@ class TextTemplateApi
      * @param int $limit Limits the number of entries returned. Default is 100 (optional, default to 100)
      * @param int $offset Set the index where the returned text templates start. Default is 0 (optional, default to 0)
      * @param string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. Default &#x60;&#x60;. (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelTextTemplate, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelTextTemplate, HTTP status code, HTTP response headers (array of strings)
      */
     public function getTextTemplateWithHttpInfo($limit = '100', $offset = '0', $embed = null)
     {
@@ -331,15 +331,15 @@ class TextTemplateApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelTextTemplate',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelTextTemplate',
                 '/TextTemplate'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelTextTemplate', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelTextTemplate', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelTextTemplate', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelTextTemplate', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -355,8 +355,8 @@ class TextTemplateApi
      *
      * @param int $id Id of text template you want to update (required)
      * @param string $body Parameters which need to be updated. Please refer to the description from create text template.    Enter the parameters according to the syntax: parameter1&#x3D;&amp;parameter2&#x3D; (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelTextTemplate
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelTextTemplate
      */
     public function updateTextTemplate($id, $body = null)
     {
@@ -371,8 +371,8 @@ class TextTemplateApi
      *
      * @param int $id Id of text template you want to update (required)
      * @param string $body Parameters which need to be updated. Please refer to the description from create text template.    Enter the parameters according to the syntax: parameter1&#x3D;&amp;parameter2&#x3D; (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelTextTemplate, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelTextTemplate, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateTextTemplateWithHttpInfo($id, $body = null)
     {
@@ -425,15 +425,15 @@ class TextTemplateApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelTextTemplate',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelTextTemplate',
                 '/TextTemplate/{id}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelTextTemplate', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelTextTemplate', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelTextTemplate', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelTextTemplate', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }

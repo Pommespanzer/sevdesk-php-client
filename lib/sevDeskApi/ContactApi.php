@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ispserverfarm\sevdesk\phpclient
+ * @package  ispserverfarm\sevdesk
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,18 +26,18 @@
  * Do not edit the class manually.
  */
 
-namespace ispserverfarm\sevdesk\phpclient\sevDeskApi;
+namespace ispserverfarm\sevdesk\sevDeskApi;
 
-use \ispserverfarm\sevdesk\phpclient\ApiClient;
-use \ispserverfarm\sevdesk\phpclient\ApiException;
-use \ispserverfarm\sevdesk\phpclient\Configuration;
-use \ispserverfarm\sevdesk\phpclient\ObjectSerializer;
+use \ispserverfarm\sevdesk\ApiClient;
+use \ispserverfarm\sevdesk\ApiException;
+use \ispserverfarm\sevdesk\Configuration;
+use \ispserverfarm\sevdesk\ObjectSerializer;
 
 /**
  * ContactApi Class Doc Comment
  *
  * @category Class
- * @package  ispserverfarm\sevdesk\phpclient
+ * @package  ispserverfarm\sevdesk
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -46,16 +46,16 @@ class ContactApi
     /**
      * API Client
      *
-     * @var \ispserverfarm\sevdesk\phpclient\ApiClient instance of the ApiClient
+     * @var \ispserverfarm\sevdesk\ApiClient instance of the ApiClient
      */
     protected $apiClient;
 
     /**
      * Constructor
      *
-     * @param \ispserverfarm\sevdesk\phpclient\ApiClient|null $apiClient The api client to use
+     * @param \ispserverfarm\sevdesk\ApiClient|null $apiClient The api client to use
      */
-    public function __construct(\ispserverfarm\sevdesk\phpclient\ApiClient $apiClient = null)
+    public function __construct(\ispserverfarm\sevdesk\ApiClient $apiClient = null)
     {
         if ($apiClient === null) {
             $apiClient = new ApiClient();
@@ -67,7 +67,7 @@ class ContactApi
     /**
      * Get API client
      *
-     * @return \ispserverfarm\sevdesk\phpclient\ApiClient get the API client
+     * @return \ispserverfarm\sevdesk\ApiClient get the API client
      */
     public function getApiClient()
     {
@@ -77,11 +77,11 @@ class ContactApi
     /**
      * Set the API client
      *
-     * @param \ispserverfarm\sevdesk\phpclient\ApiClient $apiClient set the API client
+     * @param \ispserverfarm\sevdesk\ApiClient $apiClient set the API client
      *
      * @return ContactApi
      */
-    public function setApiClient(\ispserverfarm\sevdesk\phpclient\ApiClient $apiClient)
+    public function setApiClient(\ispserverfarm\sevdesk\ApiClient $apiClient)
     {
         $this->apiClient = $apiClient;
         return $this;
@@ -94,8 +94,8 @@ class ContactApi
      *
      * @param int $id Id of contact you want to add an address to (required)
      * @param string $body Change the desired values and remove the quotation marks to add an address. (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelContactAddress
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelContactAddress
      */
     public function addAddress($id, $body)
     {
@@ -110,8 +110,8 @@ class ContactApi
      *
      * @param int $id Id of contact you want to add an address to (required)
      * @param string $body Change the desired values and remove the quotation marks to add an address. (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelContactAddress, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelContactAddress, HTTP status code, HTTP response headers (array of strings)
      */
     public function addAddressWithHttpInfo($id, $body)
     {
@@ -168,15 +168,15 @@ class ContactApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelContactAddress',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelContactAddress',
                 '/Contact/{id}/addAddress'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelContactAddress', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelContactAddress', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 201:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelContactAddress', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelContactAddress', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -191,8 +191,8 @@ class ContactApi
      * Create a new contact of type person or company
      *
      * @param string $body Concatenate the following attributes with &#39;&amp;&#39; to the example and put **familyname&#x3D;yourFamilyName&amp;** at the beginning to define the **person** you want to add and remove the quotation marks:  * customerNumber  * gender (m,w, empty)  * academicTitle, titel  * surename, name2  * bankNumber, bankAccount, vatNumber  * defaultCashbackTime, defaultCashbackPercent, defaultTimeToPay  * description    Concatenate the following attributes with &#39;&amp;&#39; to the example and put **name&#x3D;yourCompanyName&amp;** at the beginning  to define the **company** you want to add and remove the quotation marks:  * name2  * bankNumber, bankAccount, vatNumber  * defaultCashbackTime, defaultCashbackPercent, defaultTimeToPay  * description (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelContact
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelContact
      */
     public function addContact($body)
     {
@@ -206,8 +206,8 @@ class ContactApi
      * Create a new contact of type person or company
      *
      * @param string $body Concatenate the following attributes with &#39;&amp;&#39; to the example and put **familyname&#x3D;yourFamilyName&amp;** at the beginning to define the **person** you want to add and remove the quotation marks:  * customerNumber  * gender (m,w, empty)  * academicTitle, titel  * surename, name2  * bankNumber, bankAccount, vatNumber  * defaultCashbackTime, defaultCashbackPercent, defaultTimeToPay  * description    Concatenate the following attributes with &#39;&amp;&#39; to the example and put **name&#x3D;yourCompanyName&amp;** at the beginning  to define the **company** you want to add and remove the quotation marks:  * name2  * bankNumber, bankAccount, vatNumber  * defaultCashbackTime, defaultCashbackPercent, defaultTimeToPay  * description (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelContact, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelContact, HTTP status code, HTTP response headers (array of strings)
      */
     public function addContactWithHttpInfo($body)
     {
@@ -252,15 +252,15 @@ class ContactApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelContact',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelContact',
                 '/Contact'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelContact', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelContact', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelContact', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelContact', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -278,8 +278,8 @@ class ContactApi
      * @param string $value Value of the communication way you want to add (required)
      * @param int $key Key of the communication way you want to add (required)
      * @param string $type Type of communication way you want to add (optional, default to WEB)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCommunicationWay
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelCommunicationWay
      */
     public function addContactCommunicationWay($id, $value, $key, $type = 'WEB')
     {
@@ -296,8 +296,8 @@ class ContactApi
      * @param string $value Value of the communication way you want to add (required)
      * @param int $key Key of the communication way you want to add (required)
      * @param string $type Type of communication way you want to add (optional, default to WEB)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCommunicationWay, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelCommunicationWay, HTTP status code, HTTP response headers (array of strings)
      */
     public function addContactCommunicationWayWithHttpInfo($id, $value, $key, $type = 'WEB')
     {
@@ -365,15 +365,15 @@ class ContactApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCommunicationWay',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelCommunicationWay',
                 '/Contact/{id}/addCommunicationWay'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCommunicationWay', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelCommunicationWay', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 201:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCommunicationWay', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelCommunicationWay', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -389,7 +389,7 @@ class ContactApi
      *
      * @param int $id Id of contact you want to update (required)
      * @param string $body Change the desired values and remove the quotation marks to add a mobile number.    The key represents what type of website it is (1: Private, 2: Work, 3. Fax, 4. Mobil, 5. empty, 6. Autobox, 7. Newsletter, 8. Invoice address) (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function addMobile($id, $body)
@@ -405,7 +405,7 @@ class ContactApi
      *
      * @param int $id Id of contact you want to update (required)
      * @param string $body Change the desired values and remove the quotation marks to add a mobile number.    The key represents what type of website it is (1: Private, 2: Work, 3. Fax, 4. Mobil, 5. empty, 6. Autobox, 7. Newsletter, 8. Invoice address) (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function addMobileWithHttpInfo($id, $body)
@@ -483,7 +483,7 @@ class ContactApi
      *
      * @param int $id Id of contact you want to update (required)
      * @param string $body Change the desired values and remove the quotation marks to add a phone number.    The key represents what type of website it is (1: Private, 2: Work, 3. Fax, 4. Mobil, 5. empty, 6. Autobox, 7. Newsletter, 8. Invoice address) (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function addPhone($id, $body)
@@ -499,7 +499,7 @@ class ContactApi
      *
      * @param int $id Id of contact you want to update (required)
      * @param string $body Change the desired values and remove the quotation marks to add a phone number.    The key represents what type of website it is (1: Private, 2: Work, 3. Fax, 4. Mobil, 5. empty, 6. Autobox, 7. Newsletter, 8. Invoice address) (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function addPhoneWithHttpInfo($id, $body)
@@ -577,7 +577,7 @@ class ContactApi
      *
      * @param int $id Id of contact you want to update (required)
      * @param string $body Change the desired values and remove the quotation marks to add a website.    The key represents what type of website it is (1: Private, 2: Work, 3. Fax, 4. Mobil, 5. empty, 6. Autobox, 7. Newsletter, 8. Invoice address) (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function addWebsite($id, $body)
@@ -593,7 +593,7 @@ class ContactApi
      *
      * @param int $id Id of contact you want to update (required)
      * @param string $body Change the desired values and remove the quotation marks to add a website.    The key represents what type of website it is (1: Private, 2: Work, 3. Fax, 4. Mobil, 5. empty, 6. Autobox, 7. Newsletter, 8. Invoice address) (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function addWebsiteWithHttpInfo($id, $body)
@@ -671,7 +671,7 @@ class ContactApi
      *
      * @param int $id Id of contact you want to update (required)
      * @param string $body Change the desired values and remove the quotation marks to add an email.    The key represents what type of website it is (1: Private, 2: Work, 3. Fax, 4. Mobil, 5. empty, 6. Autobox, 7. Newsletter, 8. Invoice address) (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function contactAddEmail($id, $body)
@@ -687,7 +687,7 @@ class ContactApi
      *
      * @param int $id Id of contact you want to update (required)
      * @param string $body Change the desired values and remove the quotation marks to add an email.    The key represents what type of website it is (1: Private, 2: Work, 3. Fax, 4. Mobil, 5. empty, 6. Autobox, 7. Newsletter, 8. Invoice address) (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function contactAddEmailWithHttpInfo($id, $body)
@@ -764,8 +764,8 @@ class ContactApi
      * Create a new contact of type person or company
      *
      * @param string $body Concatenate the following attributes with &#39;&amp;&#39; to the example and put **data[familyname]&#x3D;yourFamilyName&amp;** at the beginning to define the **person** you want to add and remove the quotation marks:  * &amp;data[customerNumber]&#x3D;  * &amp;data[gender]&#x3D; (m,w, empty)  * &amp;data[academicTitle]&#x3D;, &amp;data[titel]&#x3D;  * &amp;data[surename]&#x3D;, &amp;data[name2]&#x3D;  * &amp;data[bankNumber]&#x3D;, &amp;data[bankAccount]&#x3D;, &amp;data[vatNumber]&#x3D;  * &amp;data[defaultCashbackTime]&#x3D;, &amp;data[defaultCashbackPercent]&#x3D;, &amp;data[defaultTimeToPay]&#x3D;  * &amp;data[description]&#x3D;    Concatenate the following attributes with &#39;&amp;&#39; to the example and put **data[name]&#x3D;yourCompanyName&amp;** at the beginning  to define the **company** you want to add and remove the quotation marks:  * &amp;data[name2]&#x3D;  * &amp;data[bankNumber]&#x3D;, &amp;data[bankAccount]&#x3D;, &amp;data[vatNumber]&#x3D;  * &amp;data[defaultCashbackTime]&#x3D;, &amp;data[defaultCashbackPercent]&#x3D;, &amp;data[defaultTimeToPay]&#x3D;  * &amp;data[description]&#x3D; (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelContact
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelContact
      */
     public function contactFactoryCreateContact($body)
     {
@@ -779,8 +779,8 @@ class ContactApi
      * Create a new contact of type person or company
      *
      * @param string $body Concatenate the following attributes with &#39;&amp;&#39; to the example and put **data[familyname]&#x3D;yourFamilyName&amp;** at the beginning to define the **person** you want to add and remove the quotation marks:  * &amp;data[customerNumber]&#x3D;  * &amp;data[gender]&#x3D; (m,w, empty)  * &amp;data[academicTitle]&#x3D;, &amp;data[titel]&#x3D;  * &amp;data[surename]&#x3D;, &amp;data[name2]&#x3D;  * &amp;data[bankNumber]&#x3D;, &amp;data[bankAccount]&#x3D;, &amp;data[vatNumber]&#x3D;  * &amp;data[defaultCashbackTime]&#x3D;, &amp;data[defaultCashbackPercent]&#x3D;, &amp;data[defaultTimeToPay]&#x3D;  * &amp;data[description]&#x3D;    Concatenate the following attributes with &#39;&amp;&#39; to the example and put **data[name]&#x3D;yourCompanyName&amp;** at the beginning  to define the **company** you want to add and remove the quotation marks:  * &amp;data[name2]&#x3D;  * &amp;data[bankNumber]&#x3D;, &amp;data[bankAccount]&#x3D;, &amp;data[vatNumber]&#x3D;  * &amp;data[defaultCashbackTime]&#x3D;, &amp;data[defaultCashbackPercent]&#x3D;, &amp;data[defaultTimeToPay]&#x3D;  * &amp;data[description]&#x3D; (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelContact, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelContact, HTTP status code, HTTP response headers (array of strings)
      */
     public function contactFactoryCreateContactWithHttpInfo($body)
     {
@@ -825,15 +825,15 @@ class ContactApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelContact',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelContact',
                 '/Contact/Factory/create'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelContact', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelContact', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelContact', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelContact', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -850,8 +850,8 @@ class ContactApi
      * @param int $id Id of the contact you want to get the addresses from (required)
      * @param int $category_id Category of addresses you want to get (required)
      * @param string $category_object_name  (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelContactAddress
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelContactAddress
      */
     public function contactGetAddresses($id, $category_id, $category_object_name)
     {
@@ -867,8 +867,8 @@ class ContactApi
      * @param int $id Id of the contact you want to get the addresses from (required)
      * @param int $category_id Category of addresses you want to get (required)
      * @param string $category_object_name  (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelContactAddress, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelContactAddress, HTTP status code, HTTP response headers (array of strings)
      */
     public function contactGetAddressesWithHttpInfo($id, $category_id, $category_object_name)
     {
@@ -932,15 +932,15 @@ class ContactApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelContactAddress',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelContactAddress',
                 '/Contact/{id}/getAddresses'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelContactAddress', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelContactAddress', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelContactAddress', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelContactAddress', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -955,7 +955,7 @@ class ContactApi
      * Delete an existing contact
      *
      * @param int $id id of contact you want to delete (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function deleteContact($id)
@@ -970,7 +970,7 @@ class ContactApi
      * Delete an existing contact
      *
      * @param int $id id of contact you want to delete (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function deleteContactWithHttpInfo($id)
@@ -1038,8 +1038,8 @@ class ContactApi
      * Get the billing address of a specified contact
      *
      * @param int $id Id of the contact you want to get the billing address from (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelContactAddress
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelContactAddress
      */
     public function getContactBillingAddress($id)
     {
@@ -1053,8 +1053,8 @@ class ContactApi
      * Get the billing address of a specified contact
      *
      * @param int $id Id of the contact you want to get the billing address from (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelContactAddress, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelContactAddress, HTTP status code, HTTP response headers (array of strings)
      */
     public function getContactBillingAddressWithHttpInfo($id)
     {
@@ -1102,15 +1102,15 @@ class ContactApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelContactAddress',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelContactAddress',
                 '/Contact/{id}/getBillingAddress'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelContactAddress', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelContactAddress', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelContactAddress', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelContactAddress', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -1125,8 +1125,8 @@ class ContactApi
      * Get the billing email of a specified contact
      *
      * @param int $id Id of the contact you want to get the billing email from (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCommunicationWay
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelCommunicationWay
      */
     public function getContactBillingEmail($id)
     {
@@ -1140,8 +1140,8 @@ class ContactApi
      * Get the billing email of a specified contact
      *
      * @param int $id Id of the contact you want to get the billing email from (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCommunicationWay, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelCommunicationWay, HTTP status code, HTTP response headers (array of strings)
      */
     public function getContactBillingEmailWithHttpInfo($id)
     {
@@ -1189,15 +1189,15 @@ class ContactApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCommunicationWay',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelCommunicationWay',
                 '/Contact/{id}/getBillingEmail'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCommunicationWay', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelCommunicationWay', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCommunicationWay', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelCommunicationWay', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -1213,8 +1213,8 @@ class ContactApi
      *
      * @param int $id Id of the contact you want to get the communication ways from (required)
      * @param string $type Type of communication ways you want to get (optional, default to WEB)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCommunicationWay
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelCommunicationWay
      */
     public function getContactCommunicationWays($id, $type = 'WEB')
     {
@@ -1229,8 +1229,8 @@ class ContactApi
      *
      * @param int $id Id of the contact you want to get the communication ways from (required)
      * @param string $type Type of communication ways you want to get (optional, default to WEB)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCommunicationWay, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelCommunicationWay, HTTP status code, HTTP response headers (array of strings)
      */
     public function getContactCommunicationWaysWithHttpInfo($id, $type = 'WEB')
     {
@@ -1282,15 +1282,15 @@ class ContactApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCommunicationWay',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelCommunicationWay',
                 '/Contact/{id}/getCommunicationWays'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCommunicationWay', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelCommunicationWay', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCommunicationWay', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelCommunicationWay', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -1305,8 +1305,8 @@ class ContactApi
      * Get the main address of a specified contact
      *
      * @param int $id Id of the contact you want to get the main address from (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelContactAddress
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelContactAddress
      */
     public function getContactMainAddress($id)
     {
@@ -1320,8 +1320,8 @@ class ContactApi
      * Get the main address of a specified contact
      *
      * @param int $id Id of the contact you want to get the main address from (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelContactAddress, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelContactAddress, HTTP status code, HTTP response headers (array of strings)
      */
     public function getContactMainAddressWithHttpInfo($id)
     {
@@ -1369,15 +1369,15 @@ class ContactApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelContactAddress',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelContactAddress',
                 '/Contact/{id}/getMainAddress'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelContactAddress', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelContactAddress', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelContactAddress', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelContactAddress', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -1392,8 +1392,8 @@ class ContactApi
      * Get the main email of a specified contact
      *
      * @param int $id Id of the contact you want to get the main email from (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCommunicationWay
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelCommunicationWay
      */
     public function getContactMainEmail($id)
     {
@@ -1407,8 +1407,8 @@ class ContactApi
      * Get the main email of a specified contact
      *
      * @param int $id Id of the contact you want to get the main email from (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCommunicationWay, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelCommunicationWay, HTTP status code, HTTP response headers (array of strings)
      */
     public function getContactMainEmailWithHttpInfo($id)
     {
@@ -1456,15 +1456,15 @@ class ContactApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCommunicationWay',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelCommunicationWay',
                 '/Contact/{id}/getMainEmail'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCommunicationWay', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelCommunicationWay', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCommunicationWay', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelCommunicationWay', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -1479,8 +1479,8 @@ class ContactApi
      * Get the main mobile of a specified contact
      *
      * @param int $id Id of the contact you want to get the main mobile from (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCommunicationWay
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelCommunicationWay
      */
     public function getContactMainMobile($id)
     {
@@ -1494,8 +1494,8 @@ class ContactApi
      * Get the main mobile of a specified contact
      *
      * @param int $id Id of the contact you want to get the main mobile from (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCommunicationWay, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelCommunicationWay, HTTP status code, HTTP response headers (array of strings)
      */
     public function getContactMainMobileWithHttpInfo($id)
     {
@@ -1543,15 +1543,15 @@ class ContactApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCommunicationWay',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelCommunicationWay',
                 '/Contact/{id}/getMainMobile'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCommunicationWay', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelCommunicationWay', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCommunicationWay', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelCommunicationWay', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -1566,8 +1566,8 @@ class ContactApi
      * Get the main phone of a specified contact
      *
      * @param int $id Id of the contact you want to get the main phone from (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCommunicationWay
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelCommunicationWay
      */
     public function getContactMainPhone($id)
     {
@@ -1581,8 +1581,8 @@ class ContactApi
      * Get the main phone of a specified contact
      *
      * @param int $id Id of the contact you want to get the main phone from (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCommunicationWay, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelCommunicationWay, HTTP status code, HTTP response headers (array of strings)
      */
     public function getContactMainPhoneWithHttpInfo($id)
     {
@@ -1630,15 +1630,15 @@ class ContactApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCommunicationWay',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelCommunicationWay',
                 '/Contact/{id}/getMainPhone'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCommunicationWay', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelCommunicationWay', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCommunicationWay', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelCommunicationWay', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -1653,8 +1653,8 @@ class ContactApi
      * Get the main website of a specified contact
      *
      * @param int $id Id of the contact you want to get the main website from (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCommunicationWay
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelCommunicationWay
      */
     public function getContactMainWebsite($id)
     {
@@ -1668,8 +1668,8 @@ class ContactApi
      * Get the main website of a specified contact
      *
      * @param int $id Id of the contact you want to get the main website from (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCommunicationWay, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelCommunicationWay, HTTP status code, HTTP response headers (array of strings)
      */
     public function getContactMainWebsiteWithHttpInfo($id)
     {
@@ -1717,15 +1717,15 @@ class ContactApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCommunicationWay',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelCommunicationWay',
                 '/Contact/{id}/getMainWebsite'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCommunicationWay', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelCommunicationWay', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCommunicationWay', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelCommunicationWay', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -1741,8 +1741,8 @@ class ContactApi
      *
      * @param int $id Id of the contact you want to get the related communication ways from (required)
      * @param string $type Type of related communication ways you want to get (optional, default to WEB)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCommunicationWay
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelCommunicationWay
      */
     public function getContactRelatedCommunicationWays($id, $type = 'WEB')
     {
@@ -1757,8 +1757,8 @@ class ContactApi
      *
      * @param int $id Id of the contact you want to get the related communication ways from (required)
      * @param string $type Type of related communication ways you want to get (optional, default to WEB)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCommunicationWay, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelCommunicationWay, HTTP status code, HTTP response headers (array of strings)
      */
     public function getContactRelatedCommunicationWaysWithHttpInfo($id, $type = 'WEB')
     {
@@ -1810,15 +1810,15 @@ class ContactApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCommunicationWay',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelCommunicationWay',
                 '/Contact/{id}/getRelatedCommunicationWays'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCommunicationWay', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelCommunicationWay', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCommunicationWay', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelCommunicationWay', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -1833,7 +1833,7 @@ class ContactApi
      * Get number of all invoices, orders, etc. of a specified contact
      *
      * @param int $id Id of the contact you want to get the number of all invoices, orders, etc. from (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function getContactTabsItemCount($id)
@@ -1848,7 +1848,7 @@ class ContactApi
      * Get number of all invoices, orders, etc. of a specified contact
      *
      * @param int $id Id of the contact you want to get the number of all invoices, orders, etc. from (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function getContactTabsItemCountWithHttpInfo($id)
@@ -1919,8 +1919,8 @@ class ContactApi
      * @param int $limit Limits the number of entries returned. Default is 100 (optional, default to 100)
      * @param int $offset Set the index where the returned contacts start. Default is 0 (optional, default to 0)
      * @param string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. Default &#x60;&#x60;. (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelContact
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelContact
      */
     public function getContacts($depth = '0', $limit = '100', $offset = '0', $embed = null)
     {
@@ -1937,8 +1937,8 @@ class ContactApi
      * @param int $limit Limits the number of entries returned. Default is 100 (optional, default to 100)
      * @param int $offset Set the index where the returned contacts start. Default is 0 (optional, default to 0)
      * @param string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. Default &#x60;&#x60;. (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelContact, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelContact, HTTP status code, HTTP response headers (array of strings)
      */
     public function getContactsWithHttpInfo($depth = '0', $limit = '100', $offset = '0', $embed = null)
     {
@@ -1993,15 +1993,15 @@ class ContactApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelContact',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelContact',
                 '/Contact'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelContact', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelContact', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelContact', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelContact', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -2015,7 +2015,7 @@ class ContactApi
      *
      * Get the next customer number
      *
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function getNextCustomerNumber()
@@ -2029,7 +2029,7 @@ class ContactApi
      *
      * Get the next customer number
      *
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function getNextCustomerNumberWithHttpInfo()
@@ -2086,8 +2086,8 @@ class ContactApi
      *
      * @param int $id Id of contact you want to update (required)
      * @param string $body Parameters which need to be updated. Please be aware not to update any parameters which don&#39;t belong to the type of contact you are updating    Enter the parameters according to the syntax: parameter1&#x3D;&amp;parameter2&#x3D; (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelContact
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelContact
      */
     public function updateContact($id, $body = null)
     {
@@ -2102,8 +2102,8 @@ class ContactApi
      *
      * @param int $id Id of contact you want to update (required)
      * @param string $body Parameters which need to be updated. Please be aware not to update any parameters which don&#39;t belong to the type of contact you are updating    Enter the parameters according to the syntax: parameter1&#x3D;&amp;parameter2&#x3D; (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelContact, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelContact, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateContactWithHttpInfo($id, $body = null)
     {
@@ -2156,15 +2156,15 @@ class ContactApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelContact',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelContact',
                 '/Contact/{id}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelContact', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelContact', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelContact', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelContact', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ispserverfarm\sevdesk\phpclient
+ * @package  ispserverfarm\sevdesk
  * @author   Swaagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace ispserverfarm\sevdesk\phpclient\sevDeskModel;
+namespace ispserverfarm\sevdesk\sevDeskModel;
 
 use \ArrayAccess;
 
@@ -35,7 +35,7 @@ use \ArrayAccess;
  * ModelOrderPos Class Doc Comment
  *
  * @category    Class
- * @package     ispserverfarm\sevdesk\phpclient
+ * @package     ispserverfarm\sevdesk
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -56,13 +56,13 @@ class ModelOrderPos implements ArrayAccess
     protected static $swaggerTypes = [
         '_create' => '\DateTime',
         '_update' => '\DateTime',
-        '_order' => '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelOrder',
-        '_part' => '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelPart',
+        '_order' => '\ispserverfarm\sevdesk\sevDeskModel\ModelOrder',
+        '_part' => '\ispserverfarm\sevdesk\sevDeskModel\ModelPart',
         '_quantity' => 'float',
         '_price' => 'float',
         '_name' => 'string',
         '_priority' => 'int',
-        '_unity' => '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelUnity',
+        '_unity' => '\ispserverfarm\sevdesk\sevDeskModel\ModelUnity',
         '_sev_client' => 'object',
         '_position_number' => 'int',
         '_text' => 'string',
@@ -312,7 +312,7 @@ class ModelOrderPos implements ArrayAccess
 
     /**
      * Gets _order
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelOrder
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelOrder
      */
     public function getOrder()
     {
@@ -321,7 +321,7 @@ class ModelOrderPos implements ArrayAccess
 
     /**
      * Sets _order
-     * @param \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelOrder $_order Model_Order the position belongs to
+     * @param \ispserverfarm\sevdesk\sevDeskModel\ModelOrder $_order Model_Order the position belongs to
      * @return $this
      */
     public function setOrder($_order)
@@ -333,7 +333,7 @@ class ModelOrderPos implements ArrayAccess
 
     /**
      * Gets _part
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelPart
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelPart
      */
     public function getPart()
     {
@@ -342,7 +342,7 @@ class ModelOrderPos implements ArrayAccess
 
     /**
      * Sets _part
-     * @param \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelPart $_part The Model_Part which is used in Model_OrderPos
+     * @param \ispserverfarm\sevdesk\sevDeskModel\ModelPart $_part The Model_Part which is used in Model_OrderPos
      * @return $this
      */
     public function setPart($_part)
@@ -438,7 +438,7 @@ class ModelOrderPos implements ArrayAccess
 
     /**
      * Gets _unity
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelUnity
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelUnity
      */
     public function getUnity()
     {
@@ -447,7 +447,7 @@ class ModelOrderPos implements ArrayAccess
 
     /**
      * Sets _unity
-     * @param \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelUnity $_unity 
+     * @param \ispserverfarm\sevdesk\sevDeskModel\ModelUnity $_unity 
      * @return $this
      */
     public function setUnity($_unity)
@@ -718,10 +718,10 @@ class ModelOrderPos implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\ispserverfarm\sevdesk\phpclient\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\ispserverfarm\sevdesk\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\ispserverfarm\sevdesk\phpclient\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\ispserverfarm\sevdesk\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

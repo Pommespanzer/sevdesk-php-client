@@ -1,4 +1,4 @@
-# ispserverfarm\sevdesk\phpclient\AccountingContactApi
+# ispserverfarm\sevdesk\AccountingContactApi
 
 All URIs are relative to *https://my.sevdesk.de/api/v1*
 
@@ -24,11 +24,11 @@ Calls isAvailableDebitorCreditorNumber() in AccountingContact.php to get if the 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\AccountingContactApi();
+$api_instance = new ispserverfarm\sevdesk\Api\AccountingContactApi();
 $contact_id = 56; // int | If you want to exclude a contact from getting checked you can provide its id here
 $contact_object_name = "Contact"; // string | Contact object name
 $debitor_number = ""; // string | debitor number of which you want to know if it is available
@@ -67,7 +67,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **addAccountingContact**
-> \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelAccountingContact addAccountingContact($body)
+> \ispserverfarm\sevdesk\sevDeskModel\ModelAccountingContact addAccountingContact($body)
 
 Create a new accounting contact
 
@@ -79,11 +79,11 @@ Calls AccountingContact.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\AccountingContactApi();
+$api_instance = new ispserverfarm\sevdesk\Api\AccountingContactApi();
 $body = "contact[id]=&contact[objectName]=Contact&debitorNumber=&creditorNumber="; // string | To create an accounting contact, simply enter desired values after parameter= and remove the quotation marks.
 
 try {
@@ -103,7 +103,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelAccountingContact**](../Model/ModelAccountingContact.md)
+[**\ispserverfarm\sevdesk\sevDeskModel\ModelAccountingContact**](../Model/ModelAccountingContact.md)
 
 ### Authorization
 
@@ -129,11 +129,11 @@ Calls the delete() function in AccountingContact.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\AccountingContactApi();
+$api_instance = new ispserverfarm\sevdesk\Api\AccountingContactApi();
 $id = 56; // int | id of accounting contact you want to delete
 
 try {
@@ -166,7 +166,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAccountingContacts**
-> \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelAccountingContact getAccountingContacts($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\sevDeskModel\ModelAccountingContact getAccountingContacts($limit, $offset, $embed)
 
 Get an overview of all accounting contacts
 
@@ -178,11 +178,11 @@ Calls AccountingContact.php to get necessary variables.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\AccountingContactApi();
+$api_instance = new ispserverfarm\sevdesk\Api\AccountingContactApi();
 $limit = 100; // int | Limits the number of entries returned. Default is 100
 $offset = 0; // int | Set the index where the returned discounts start. Default is 0
 $embed = array("embed_example"); // string[] | Get some additional information. Embed can handle multiple values, they must be separated by comma. Default ``.
@@ -206,7 +206,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelAccountingContact**](../Model/ModelAccountingContact.md)
+[**\ispserverfarm\sevdesk\sevDeskModel\ModelAccountingContact**](../Model/ModelAccountingContact.md)
 
 ### Authorization
 
@@ -220,7 +220,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateAccountingContact**
-> \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelAccountingContact updateAccountingContact($id, $body)
+> \ispserverfarm\sevdesk\sevDeskModel\ModelAccountingContact updateAccountingContact($id, $body)
 
 Update an existing accounting contact
 
@@ -232,11 +232,11 @@ Calls AccountingContact.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\AccountingContactApi();
+$api_instance = new ispserverfarm\sevdesk\Api\AccountingContactApi();
 $id = 56; // int | id of accounting contact you want to update
 $body = "body_example"; // string | Parameters which need to be updated. Please refer to the description from create accounting contact.    Enter the parameters according to the syntax: parameter1=&parameter2=
 
@@ -258,7 +258,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelAccountingContact**](../Model/ModelAccountingContact.md)
+[**\ispserverfarm\sevdesk\sevDeskModel\ModelAccountingContact**](../Model/ModelAccountingContact.md)
 
 ### Authorization
 

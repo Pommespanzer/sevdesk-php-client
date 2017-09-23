@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ispserverfarm\sevdesk\phpclient
+ * @package  ispserverfarm\sevdesk
  * @author   Swaagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace ispserverfarm\sevdesk\phpclient\sevDeskModel;
+namespace ispserverfarm\sevdesk\sevDeskModel;
 
 use \ArrayAccess;
 
@@ -35,7 +35,7 @@ use \ArrayAccess;
  * ModelAccountingSystem Class Doc Comment
  *
  * @category    Class
- * @package     ispserverfarm\sevdesk\phpclient
+ * @package     ispserverfarm\sevdesk
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -58,7 +58,7 @@ class ModelAccountingSystem implements ArrayAccess
         '_update' => '\DateTime',
         '_sev_client' => 'string',
         '_name' => 'string',
-        '_accounting_chart' => '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelAccountingChart'
+        '_accounting_chart' => '\ispserverfarm\sevdesk\sevDeskModel\ModelAccountingChart'
     ];
 
     /**
@@ -270,7 +270,7 @@ class ModelAccountingSystem implements ArrayAccess
 
     /**
      * Gets _accounting_chart
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelAccountingChart
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelAccountingChart
      */
     public function getAccountingChart()
     {
@@ -279,7 +279,7 @@ class ModelAccountingSystem implements ArrayAccess
 
     /**
      * Sets _accounting_chart
-     * @param \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelAccountingChart $_accounting_chart 
+     * @param \ispserverfarm\sevdesk\sevDeskModel\ModelAccountingChart $_accounting_chart 
      * @return $this
      */
     public function setAccountingChart($_accounting_chart)
@@ -340,10 +340,10 @@ class ModelAccountingSystem implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\ispserverfarm\sevdesk\phpclient\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\ispserverfarm\sevdesk\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\ispserverfarm\sevdesk\phpclient\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\ispserverfarm\sevdesk\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

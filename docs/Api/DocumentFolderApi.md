@@ -1,4 +1,4 @@
-# ispserverfarm\sevdesk\phpclient\DocumentFolderApi
+# ispserverfarm\sevdesk\DocumentFolderApi
 
 All URIs are relative to *https://my.sevdesk.de/api/v1*
 
@@ -17,7 +17,7 @@ Method | HTTP request | Description
 
 
 # **addDocumentFolder**
-> \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelDocumentFolder addDocumentFolder($body)
+> \ispserverfarm\sevdesk\sevDeskModel\ModelDocumentFolder addDocumentFolder($body)
 
 Create a new document folder
 
@@ -29,11 +29,11 @@ Calls DocumentFolder.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\DocumentFolderApi();
+$api_instance = new ispserverfarm\sevdesk\Api\DocumentFolderApi();
 $body = "name=&status="; // string | To create a document folder, simply enter desired values after parameter= and remove the quotation marks
 
 try {
@@ -53,7 +53,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelDocumentFolder**](../Model/ModelDocumentFolder.md)
+[**\ispserverfarm\sevdesk\sevDeskModel\ModelDocumentFolder**](../Model/ModelDocumentFolder.md)
 
 ### Authorization
 
@@ -79,11 +79,11 @@ Calls the delete() function in DocumentFolder.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\DocumentFolderApi();
+$api_instance = new ispserverfarm\sevdesk\Api\DocumentFolderApi();
 $id = 56; // int | id of document folder you want to delete
 
 try {
@@ -128,11 +128,11 @@ Calls the emptyBin() function in DocumentFolder.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\DocumentFolderApi();
+$api_instance = new ispserverfarm\sevdesk\Api\DocumentFolderApi();
 
 try {
     $api_instance->emptyBin();
@@ -161,7 +161,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getDocumentFolderChildren**
-> \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelDocumentFolder getDocumentFolderChildren($id, $limit, $offset, $embed)
+> \ispserverfarm\sevdesk\sevDeskModel\ModelDocumentFolder getDocumentFolderChildren($id, $limit, $offset, $embed)
 
 Returns children (documents and document folders) as 'nodes' and count of all children as 'total'
 
@@ -173,11 +173,11 @@ Calls getChildren() in DocumentFolder.php to get necessary variables
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\DocumentFolderApi();
+$api_instance = new ispserverfarm\sevdesk\Api\DocumentFolderApi();
 $id = 56; // int | Document folder of which you want to get the children
 $limit = 100; // int | Limits the number of entries returned. Default is 100
 $offset = 0; // int | Set the index where the returned children start. Default is 0
@@ -203,7 +203,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelDocumentFolder**](../Model/ModelDocumentFolder.md)
+[**\ispserverfarm\sevdesk\sevDeskModel\ModelDocumentFolder**](../Model/ModelDocumentFolder.md)
 
 ### Authorization
 
@@ -217,7 +217,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getDocumentFolderDocuments**
-> \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelDocumentFolder getDocumentFolderDocuments($id, $limit, $offset, $embed)
+> \ispserverfarm\sevdesk\sevDeskModel\ModelDocumentFolder getDocumentFolderDocuments($id, $limit, $offset, $embed)
 
 Get an overview of all documents in a document folder
 
@@ -229,11 +229,11 @@ Calls getDocuments() in DocumentFolder.php to get necessary variables
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\DocumentFolderApi();
+$api_instance = new ispserverfarm\sevdesk\Api\DocumentFolderApi();
 $id = 56; // int | Document folder of which you want to get the containing documents
 $limit = 100; // int | Limits the number of entries returned. Default is 100
 $offset = 0; // int | Set the index where the returned documents start. Default is 0
@@ -259,7 +259,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelDocumentFolder**](../Model/ModelDocumentFolder.md)
+[**\ispserverfarm\sevdesk\sevDeskModel\ModelDocumentFolder**](../Model/ModelDocumentFolder.md)
 
 ### Authorization
 
@@ -273,7 +273,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getDocumentFolderFolders**
-> \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelDocumentFolder getDocumentFolderFolders($id, $limit, $offset, $embed)
+> \ispserverfarm\sevdesk\sevDeskModel\ModelDocumentFolder getDocumentFolderFolders($id, $limit, $offset, $embed)
 
 Get an overview of all folders in a document folder
 
@@ -285,11 +285,11 @@ Calls getFolders() in DocumentFolder.php to get necessary variables
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\DocumentFolderApi();
+$api_instance = new ispserverfarm\sevdesk\Api\DocumentFolderApi();
 $id = 56; // int | Document folder of which you want to get the containing folders
 $limit = 100; // int | Limits the number of entries returned. Default is 100
 $offset = 0; // int | Set the index where the returned folders start. Default is 0
@@ -315,7 +315,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelDocumentFolder**](../Model/ModelDocumentFolder.md)
+[**\ispserverfarm\sevdesk\sevDeskModel\ModelDocumentFolder**](../Model/ModelDocumentFolder.md)
 
 ### Authorization
 
@@ -329,7 +329,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getDocumentFolderPath**
-> \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelDocumentFolder getDocumentFolderPath($id)
+> \ispserverfarm\sevdesk\sevDeskModel\ModelDocumentFolder getDocumentFolderPath($id)
 
 Get path (all parent folders) of this folder
 
@@ -341,11 +341,11 @@ Calls getPath() in DocumentFolder.php to get necessary variables
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\DocumentFolderApi();
+$api_instance = new ispserverfarm\sevdesk\Api\DocumentFolderApi();
 $id = 56; // int | Document folder of which you want to get the path
 
 try {
@@ -365,7 +365,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelDocumentFolder**](../Model/ModelDocumentFolder.md)
+[**\ispserverfarm\sevdesk\sevDeskModel\ModelDocumentFolder**](../Model/ModelDocumentFolder.md)
 
 ### Authorization
 
@@ -379,7 +379,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getDocumentFolders**
-> \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelDocumentFolder getDocumentFolders($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\sevDeskModel\ModelDocumentFolder getDocumentFolders($limit, $offset, $embed)
 
 Get an overview of all document folders
 
@@ -391,11 +391,11 @@ Calls DocumentFolder.php to get necessary variables
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\DocumentFolderApi();
+$api_instance = new ispserverfarm\sevdesk\Api\DocumentFolderApi();
 $limit = 100; // int | Limits the number of entries returned. Default is 100
 $offset = 0; // int | Set the index where the returned document folders start. Default is 0
 $embed = array("embed_example"); // string[] | Get some additional information. Embed can handle multiple values, they must be separated by comma. Default ``.
@@ -419,7 +419,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelDocumentFolder**](../Model/ModelDocumentFolder.md)
+[**\ispserverfarm\sevdesk\sevDeskModel\ModelDocumentFolder**](../Model/ModelDocumentFolder.md)
 
 ### Authorization
 
@@ -445,11 +445,11 @@ Calls trash() in DocumentFolder.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\DocumentFolderApi();
+$api_instance = new ispserverfarm\sevdesk\Api\DocumentFolderApi();
 $id = 56; // int | id of document folder you want to trash
 
 try {
@@ -482,7 +482,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateDocumentFolder**
-> \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelDocumentFolder updateDocumentFolder($id, $body)
+> \ispserverfarm\sevdesk\sevDeskModel\ModelDocumentFolder updateDocumentFolder($id, $body)
 
 Update an existing document folder
 
@@ -494,11 +494,11 @@ Calls DocumentFolder.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\DocumentFolderApi();
+$api_instance = new ispserverfarm\sevdesk\Api\DocumentFolderApi();
 $id = 56; // int | id of document folder you want to update
 $body = "body_example"; // string | Parameters which need to be updated. Please refer to the description from create document folder.    Enter the parameters according to the syntax: parameter1=&parameter2= and remove the quotation marks
 
@@ -520,7 +520,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelDocumentFolder**](../Model/ModelDocumentFolder.md)
+[**\ispserverfarm\sevdesk\sevDeskModel\ModelDocumentFolder**](../Model/ModelDocumentFolder.md)
 
 ### Authorization
 

@@ -1,4 +1,4 @@
-# ispserverfarm\sevdesk\phpclient\SevTokenApi
+# ispserverfarm\sevdesk\SevTokenApi
 
 All URIs are relative to *https://my.sevdesk.de/api/v1*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **getSevTokens**
-> \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelSevToken getSevTokens($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\sevDeskModel\ModelSevToken getSevTokens($limit, $offset, $embed)
 
 Get an overview of all sevTokens
 
@@ -20,11 +20,11 @@ Calls SevToken.php to get necessary variables.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\SevTokenApi();
+$api_instance = new ispserverfarm\sevdesk\Api\SevTokenApi();
 $limit = 100; // int | Limits the number of entries returned. Default is 100
 $offset = 0; // int | Set the index where the returned sevTokens start. Default is 0
 $embed = array("embed_example"); // string[] | Get some additional information. Embed can handle multiple values, they must be separated by comma. Default ``.
@@ -48,7 +48,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelSevToken**](../Model/ModelSevToken.md)
+[**\ispserverfarm\sevdesk\sevDeskModel\ModelSevToken**](../Model/ModelSevToken.md)
 
 ### Authorization
 

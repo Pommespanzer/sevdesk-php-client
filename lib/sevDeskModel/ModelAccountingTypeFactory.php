@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ispserverfarm\sevdesk\phpclient
+ * @package  ispserverfarm\sevdesk
  * @author   Swaagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace ispserverfarm\sevdesk\phpclient\sevDeskModel;
+namespace ispserverfarm\sevdesk\sevDeskModel;
 
 use \ArrayAccess;
 
@@ -35,7 +35,7 @@ use \ArrayAccess;
  * ModelAccountingTypeFactory Class Doc Comment
  *
  * @category    Class
- * @package     ispserverfarm\sevdesk\phpclient
+ * @package     ispserverfarm\sevdesk
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -54,7 +54,7 @@ class ModelAccountingTypeFactory implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'accounting_type' => '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelAccountingType'
+        'accounting_type' => '\ispserverfarm\sevdesk\sevDeskModel\ModelAccountingType'
     ];
 
     /**
@@ -162,7 +162,7 @@ class ModelAccountingTypeFactory implements ArrayAccess
 
     /**
      * Gets accounting_type
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelAccountingType
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelAccountingType
      */
     public function getAccountingType()
     {
@@ -171,7 +171,7 @@ class ModelAccountingTypeFactory implements ArrayAccess
 
     /**
      * Sets accounting_type
-     * @param \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelAccountingType $accounting_type here you can find useful parameters for your accounting type request
+     * @param \ispserverfarm\sevdesk\sevDeskModel\ModelAccountingType $accounting_type here you can find useful parameters for your accounting type request
      * @return $this
      */
     public function setAccountingType($accounting_type)
@@ -232,10 +232,10 @@ class ModelAccountingTypeFactory implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\ispserverfarm\sevdesk\phpclient\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\ispserverfarm\sevdesk\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\ispserverfarm\sevdesk\phpclient\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\ispserverfarm\sevdesk\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

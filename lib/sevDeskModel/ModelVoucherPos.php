@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ispserverfarm\sevdesk\phpclient
+ * @package  ispserverfarm\sevdesk
  * @author   Swaagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace ispserverfarm\sevdesk\phpclient\sevDeskModel;
+namespace ispserverfarm\sevdesk\sevDeskModel;
 
 use \ArrayAccess;
 
@@ -35,7 +35,7 @@ use \ArrayAccess;
  * ModelVoucherPos Class Doc Comment
  *
  * @category    Class
- * @package     ispserverfarm\sevdesk\phpclient
+ * @package     ispserverfarm\sevdesk
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -57,9 +57,9 @@ class ModelVoucherPos implements ArrayAccess
         '_create' => '\DateTime',
         '_update' => '\DateTime',
         '_sev_client' => 'object',
-        '_voucher' => '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelVoucher',
-        '_accounting_type' => '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelAccountingType',
-        '_estimated_accounting_type' => '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelAccountingType',
+        '_voucher' => '\ispserverfarm\sevdesk\sevDeskModel\ModelVoucher',
+        '_accounting_type' => '\ispserverfarm\sevdesk\sevDeskModel\ModelAccountingType',
+        '_estimated_accounting_type' => '\ispserverfarm\sevdesk\sevDeskModel\ModelAccountingType',
         '_tax_rate' => 'float',
         '_sum' => 'float',
         '_net' => 'bool',
@@ -339,7 +339,7 @@ class ModelVoucherPos implements ArrayAccess
 
     /**
      * Gets _voucher
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelVoucher
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelVoucher
      */
     public function getVoucher()
     {
@@ -348,7 +348,7 @@ class ModelVoucherPos implements ArrayAccess
 
     /**
      * Sets _voucher
-     * @param \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelVoucher $_voucher voucher to which the position belongs
+     * @param \ispserverfarm\sevdesk\sevDeskModel\ModelVoucher $_voucher voucher to which the position belongs
      * @return $this
      */
     public function setVoucher($_voucher)
@@ -360,7 +360,7 @@ class ModelVoucherPos implements ArrayAccess
 
     /**
      * Gets _accounting_type
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelAccountingType
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelAccountingType
      */
     public function getAccountingType()
     {
@@ -369,7 +369,7 @@ class ModelVoucherPos implements ArrayAccess
 
     /**
      * Sets _accounting_type
-     * @param \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelAccountingType $_accounting_type 
+     * @param \ispserverfarm\sevdesk\sevDeskModel\ModelAccountingType $_accounting_type 
      * @return $this
      */
     public function setAccountingType($_accounting_type)
@@ -381,7 +381,7 @@ class ModelVoucherPos implements ArrayAccess
 
     /**
      * Gets _estimated_accounting_type
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelAccountingType
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelAccountingType
      */
     public function getEstimatedAccountingType()
     {
@@ -390,7 +390,7 @@ class ModelVoucherPos implements ArrayAccess
 
     /**
      * Sets _estimated_accounting_type
-     * @param \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelAccountingType $_estimated_accounting_type 
+     * @param \ispserverfarm\sevdesk\sevDeskModel\ModelAccountingType $_estimated_accounting_type 
      * @return $this
      */
     public function setEstimatedAccountingType($_estimated_accounting_type)
@@ -745,10 +745,10 @@ class ModelVoucherPos implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\ispserverfarm\sevdesk\phpclient\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\ispserverfarm\sevdesk\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\ispserverfarm\sevdesk\phpclient\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\ispserverfarm\sevdesk\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ispserverfarm\sevdesk\phpclient
+ * @package  ispserverfarm\sevdesk
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,18 +26,18 @@
  * Do not edit the class manually.
  */
 
-namespace ispserverfarm\sevdesk\phpclient\sevDeskApi;
+namespace ispserverfarm\sevdesk\sevDeskApi;
 
-use \ispserverfarm\sevdesk\phpclient\ApiClient;
-use \ispserverfarm\sevdesk\phpclient\ApiException;
-use \ispserverfarm\sevdesk\phpclient\Configuration;
-use \ispserverfarm\sevdesk\phpclient\ObjectSerializer;
+use \ispserverfarm\sevdesk\ApiClient;
+use \ispserverfarm\sevdesk\ApiException;
+use \ispserverfarm\sevdesk\Configuration;
+use \ispserverfarm\sevdesk\ObjectSerializer;
 
 /**
  * InvoiceApi Class Doc Comment
  *
  * @category Class
- * @package  ispserverfarm\sevdesk\phpclient
+ * @package  ispserverfarm\sevdesk
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -46,16 +46,16 @@ class InvoiceApi
     /**
      * API Client
      *
-     * @var \ispserverfarm\sevdesk\phpclient\ApiClient instance of the ApiClient
+     * @var \ispserverfarm\sevdesk\ApiClient instance of the ApiClient
      */
     protected $apiClient;
 
     /**
      * Constructor
      *
-     * @param \ispserverfarm\sevdesk\phpclient\ApiClient|null $apiClient The api client to use
+     * @param \ispserverfarm\sevdesk\ApiClient|null $apiClient The api client to use
      */
-    public function __construct(\ispserverfarm\sevdesk\phpclient\ApiClient $apiClient = null)
+    public function __construct(\ispserverfarm\sevdesk\ApiClient $apiClient = null)
     {
         if ($apiClient === null) {
             $apiClient = new ApiClient();
@@ -67,7 +67,7 @@ class InvoiceApi
     /**
      * Get API client
      *
-     * @return \ispserverfarm\sevdesk\phpclient\ApiClient get the API client
+     * @return \ispserverfarm\sevdesk\ApiClient get the API client
      */
     public function getApiClient()
     {
@@ -77,11 +77,11 @@ class InvoiceApi
     /**
      * Set the API client
      *
-     * @param \ispserverfarm\sevdesk\phpclient\ApiClient $apiClient set the API client
+     * @param \ispserverfarm\sevdesk\ApiClient $apiClient set the API client
      *
      * @return InvoiceApi
      */
-    public function setApiClient(\ispserverfarm\sevdesk\phpclient\ApiClient $apiClient)
+    public function setApiClient(\ispserverfarm\sevdesk\ApiClient $apiClient)
     {
         $this->apiClient = $apiClient;
         return $this;
@@ -93,8 +93,8 @@ class InvoiceApi
      * Create a new invoice
      *
      * @param string $body To create an invoice, simply enter desired values after parameter&#x3D; and remove the quotation marks.    Be aware that you can&#39;t use all the parameters included in the Model_Invoice, as creating an invoice involves other functions.    So for example, adding a sumNet/Gross/etc. does not work as they normally get their value from the product which is involved in the invoice    The product/part in this case is handled in the Model_InvoicePos which makes a call to Model_Part.    In Invoice.php there is only a function &#39;addPosition&#39; which makes the call to InvoicePos.php (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelInvoice
      */
     public function addInvoice($body)
     {
@@ -108,8 +108,8 @@ class InvoiceApi
      * Create a new invoice
      *
      * @param string $body To create an invoice, simply enter desired values after parameter&#x3D; and remove the quotation marks.    Be aware that you can&#39;t use all the parameters included in the Model_Invoice, as creating an invoice involves other functions.    So for example, adding a sumNet/Gross/etc. does not work as they normally get their value from the product which is involved in the invoice    The product/part in this case is handled in the Model_InvoicePos which makes a call to Model_Part.    In Invoice.php there is only a function &#39;addPosition&#39; which makes the call to InvoicePos.php (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelInvoice, HTTP status code, HTTP response headers (array of strings)
      */
     public function addInvoiceWithHttpInfo($body)
     {
@@ -154,15 +154,15 @@ class InvoiceApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelInvoice',
                 '/Invoice'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelInvoice', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 201:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelInvoice', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -177,8 +177,8 @@ class InvoiceApi
      * Cancel an invoice
      *
      * @param int $id Id of invoice which you want to cancel (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelInvoice
      */
     public function cancelInvoice($id)
     {
@@ -192,8 +192,8 @@ class InvoiceApi
      * Cancel an invoice
      *
      * @param int $id Id of invoice which you want to cancel (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelInvoice, HTTP status code, HTTP response headers (array of strings)
      */
     public function cancelInvoiceWithHttpInfo($id)
     {
@@ -241,15 +241,15 @@ class InvoiceApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelInvoice',
                 '/Invoice/{id}/cancel'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelInvoice', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelInvoice', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -264,8 +264,8 @@ class InvoiceApi
      * Create an new invoice from an existing order
      *
      * @param string $body Takes an existing Model_Order and creates an invoice with positions and discounts from it. Enter your values after parameter&#x3D; and remove the quotation marks (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelInvoice
      */
     public function createInvoiceFromOrder($body)
     {
@@ -279,8 +279,8 @@ class InvoiceApi
      * Create an new invoice from an existing order
      *
      * @param string $body Takes an existing Model_Order and creates an invoice with positions and discounts from it. Enter your values after parameter&#x3D; and remove the quotation marks (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelInvoice, HTTP status code, HTTP response headers (array of strings)
      */
     public function createInvoiceFromOrderWithHttpInfo($body)
     {
@@ -325,15 +325,15 @@ class InvoiceApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelInvoice',
                 '/Invoice/Factory/createInvoiceFromOrder'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelInvoice', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 201:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelInvoice', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -348,8 +348,8 @@ class InvoiceApi
      * Create an invoice reminder
      *
      * @param string $body Takes an existing Model_Invoice and creates a reminder for it.    Note that actually creating a reminder would require to save the rendered invoice reminder so this is not possible by calling the api directly.    However for demonstration purposes you can still call the function by appending an invoice id after invoice[id]&#x3D; and removing the quotation marks. (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelInvoice
      */
     public function createInvoiceReminder($body)
     {
@@ -363,8 +363,8 @@ class InvoiceApi
      * Create an invoice reminder
      *
      * @param string $body Takes an existing Model_Invoice and creates a reminder for it.    Note that actually creating a reminder would require to save the rendered invoice reminder so this is not possible by calling the api directly.    However for demonstration purposes you can still call the function by appending an invoice id after invoice[id]&#x3D; and removing the quotation marks. (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelInvoice, HTTP status code, HTTP response headers (array of strings)
      */
     public function createInvoiceReminderWithHttpInfo($body)
     {
@@ -409,15 +409,15 @@ class InvoiceApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelInvoice',
                 '/Invoice/Factory/createInvoiceReminder'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelInvoice', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 201:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelInvoice', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -432,7 +432,7 @@ class InvoiceApi
      * Delete an existing invoice
      *
      * @param int $id id of invoice you want to delete (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function deleteInvoice($id)
@@ -447,7 +447,7 @@ class InvoiceApi
      * Delete an existing invoice
      *
      * @param int $id id of invoice you want to delete (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function deleteInvoiceWithHttpInfo($id)
@@ -515,8 +515,8 @@ class InvoiceApi
      * Duplicate an existing invoice
      *
      * @param int $id id of invoice you want to duplicate (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelInvoice
      */
     public function duplicateInvoice($id)
     {
@@ -530,8 +530,8 @@ class InvoiceApi
      * Duplicate an existing invoice
      *
      * @param int $id id of invoice you want to duplicate (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelInvoice, HTTP status code, HTTP response headers (array of strings)
      */
     public function duplicateInvoiceWithHttpInfo($id)
     {
@@ -579,15 +579,15 @@ class InvoiceApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelInvoice',
                 '/Invoice/{id}/duplicate'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelInvoice', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 201:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelInvoice', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -603,7 +603,7 @@ class InvoiceApi
      *
      * @param int $invoice_id id of the invoice you want to get the total amount for (required)
      * @param string $invoice_object_name  (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function getInvoiceAndReminderAmount($invoice_id, $invoice_object_name)
@@ -619,7 +619,7 @@ class InvoiceApi
      *
      * @param int $invoice_id id of the invoice you want to get the total amount for (required)
      * @param string $invoice_object_name  (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function getInvoiceAndReminderAmountWithHttpInfo($invoice_id, $invoice_object_name)
@@ -692,7 +692,7 @@ class InvoiceApi
      *
      * @param int $id Id of invoice of which you want to get the PDF (required)
      * @param bool $download If true PDF will return as filestream otherwise as json object the content base64 encoded (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function getInvoiceAsPdf($id, $download)
@@ -708,7 +708,7 @@ class InvoiceApi
      *
      * @param int $id Id of invoice of which you want to get the PDF (required)
      * @param bool $download If true PDF will return as filestream otherwise as json object the content base64 encoded (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function getInvoiceAsPdfWithHttpInfo($id, $download)
@@ -785,7 +785,7 @@ class InvoiceApi
      *
      * @param int $invoice_id id of the invoice you want to get the reminder amount for (required)
      * @param string $invoice_object_name  (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function getInvoiceReminderAmount($invoice_id, $invoice_object_name)
@@ -801,7 +801,7 @@ class InvoiceApi
      *
      * @param int $invoice_id id of the invoice you want to get the reminder amount for (required)
      * @param string $invoice_object_name  (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function getInvoiceReminderAmountWithHttpInfo($invoice_id, $invoice_object_name)
@@ -875,8 +875,8 @@ class InvoiceApi
      * @param int $limit Limits the number of entries returned. Default is 100 (optional, default to 100)
      * @param int $offset Set the index where the returned invoices start. Default is 0 (optional, default to 0)
      * @param string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. Default &#x60;&#x60;. (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelInvoice
      */
     public function getInvoices($limit = '100', $offset = '0', $embed = null)
     {
@@ -892,8 +892,8 @@ class InvoiceApi
      * @param int $limit Limits the number of entries returned. Default is 100 (optional, default to 100)
      * @param int $offset Set the index where the returned invoices start. Default is 0 (optional, default to 0)
      * @param string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. Default &#x60;&#x60;. (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelInvoice, HTTP status code, HTTP response headers (array of strings)
      */
     public function getInvoicesWithHttpInfo($limit = '100', $offset = '0', $embed = null)
     {
@@ -944,15 +944,15 @@ class InvoiceApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelInvoice',
                 '/Invoice'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelInvoice', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelInvoice', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -968,7 +968,7 @@ class InvoiceApi
      *
      * @param string $invoice_type defines the type of invoice you want to get the next number from (required)
      * @param bool $use_next_number By default this is true, so the invoiceNumber will increase by one otherwise the invoiceNumber will not change (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function getNextInvoiceNumber($invoice_type, $use_next_number)
@@ -984,7 +984,7 @@ class InvoiceApi
      *
      * @param string $invoice_type defines the type of invoice you want to get the next number from (required)
      * @param bool $use_next_number By default this is true, so the invoiceNumber will increase by one otherwise the invoiceNumber will not change (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function getNextInvoiceNumberWithHttpInfo($invoice_type, $use_next_number)
@@ -1057,8 +1057,8 @@ class InvoiceApi
      *
      * @param int $id id of invoice you want to add a position to (required)
      * @param string $body To add a position, simply enter desired values after parameter&#x3D; and remove the quotation marks (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelInvoice
      */
     public function invoiceAddPosition($id, $body = null)
     {
@@ -1073,8 +1073,8 @@ class InvoiceApi
      *
      * @param int $id id of invoice you want to add a position to (required)
      * @param string $body To add a position, simply enter desired values after parameter&#x3D; and remove the quotation marks (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelInvoice, HTTP status code, HTTP response headers (array of strings)
      */
     public function invoiceAddPositionWithHttpInfo($id, $body = null)
     {
@@ -1127,15 +1127,15 @@ class InvoiceApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelInvoice',
                 '/Invoice/{id}/addPosition'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelInvoice', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelInvoice', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -1153,8 +1153,8 @@ class InvoiceApi
      * @param int $ammount amount which should be booked (required)
      * @param string $date booking date (required)
      * @param string $body Optionally, you can enter a checkAccount and checkAccountTransaction here.    Be aware that if you dont define a checkAccount / checkAccountTransaction you need to remove the part from the body or remove everything except the quotation marks if you dont want to define anything at all! (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoiceLog
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelInvoiceLog
      */
     public function invoiceBookAmount($id, $ammount, $date, $body = null)
     {
@@ -1171,8 +1171,8 @@ class InvoiceApi
      * @param int $ammount amount which should be booked (required)
      * @param string $date booking date (required)
      * @param string $body Optionally, you can enter a checkAccount and checkAccountTransaction here.    Be aware that if you dont define a checkAccount / checkAccountTransaction you need to remove the part from the body or remove everything except the quotation marks if you dont want to define anything at all! (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoiceLog, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelInvoiceLog, HTTP status code, HTTP response headers (array of strings)
      */
     public function invoiceBookAmountWithHttpInfo($id, $ammount, $date, $body = null)
     {
@@ -1241,15 +1241,15 @@ class InvoiceApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoiceLog',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelInvoiceLog',
                 '/Invoice/{id}/bookAmmount'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoiceLog', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelInvoiceLog', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoiceLog', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelInvoiceLog', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -1263,7 +1263,7 @@ class InvoiceApi
      *
      * Calculate total sum of all invoices of current query
      *
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function invoiceCalcTotalDebit()
@@ -1277,7 +1277,7 @@ class InvoiceApi
      *
      * Calculate total sum of all invoices of current query
      *
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function invoiceCalcTotalDebitWithHttpInfo()
@@ -1333,7 +1333,7 @@ class InvoiceApi
      * Get dunning level of an invoice
      *
      * @param int $id Id of invoice of which you want to get the dunning level (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function invoiceCalculateDunningLevel($id)
@@ -1348,7 +1348,7 @@ class InvoiceApi
      * Get dunning level of an invoice
      *
      * @param int $id Id of invoice of which you want to get the dunning level (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function invoiceCalculateDunningLevelWithHttpInfo($id)
@@ -1417,8 +1417,8 @@ class InvoiceApi
      *
      * @param int $id Id of invoice of which you want to book an amount (required)
      * @param int $value desired status (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelInvoice
      */
     public function invoiceChangeStatus($id, $value)
     {
@@ -1433,8 +1433,8 @@ class InvoiceApi
      *
      * @param int $id Id of invoice of which you want to book an amount (required)
      * @param int $value desired status (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelInvoice, HTTP status code, HTTP response headers (array of strings)
      */
     public function invoiceChangeStatusWithHttpInfo($id, $value)
     {
@@ -1490,15 +1490,15 @@ class InvoiceApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelInvoice',
                 '/Invoice/{id}/changeStatus'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelInvoice', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelInvoice', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -1513,7 +1513,7 @@ class InvoiceApi
      * Returns if an invoice is cancled
      *
      * @param int $id Id of invoice of which you want to know if it is cancled (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function invoiceGetCancled($id)
@@ -1528,7 +1528,7 @@ class InvoiceApi
      * Returns if an invoice is cancled
      *
      * @param int $id Id of invoice of which you want to know if it is cancled (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function invoiceGetCancledWithHttpInfo($id)
@@ -1597,8 +1597,8 @@ class InvoiceApi
      *
      * @param int $id Id of the invoice of which you want to get the check account transaction logs (required)
      * @param string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. Default &#x60;&#x60;. (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCheckAccountTransactionLog
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelCheckAccountTransactionLog
      */
     public function invoiceGetCheckAccountTransactionLogs($id, $embed = null)
     {
@@ -1613,8 +1613,8 @@ class InvoiceApi
      *
      * @param int $id Id of the invoice of which you want to get the check account transaction logs (required)
      * @param string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. Default &#x60;&#x60;. (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCheckAccountTransactionLog, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelCheckAccountTransactionLog, HTTP status code, HTTP response headers (array of strings)
      */
     public function invoiceGetCheckAccountTransactionLogsWithHttpInfo($id, $embed = null)
     {
@@ -1669,15 +1669,15 @@ class InvoiceApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCheckAccountTransactionLog',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelCheckAccountTransactionLog',
                 '/Invoice/{id}/getCheckAccountTransactionLogs'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCheckAccountTransactionLog', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelCheckAccountTransactionLog', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCheckAccountTransactionLog', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelCheckAccountTransactionLog', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -1693,8 +1693,8 @@ class InvoiceApi
      *
      * @param int $id Id of the invoice of which you want to get the check account transactions (required)
      * @param string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. Default &#x60;&#x60;. (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCheckAccountTransaction
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelCheckAccountTransaction
      */
     public function invoiceGetCheckAccountTransactions($id, $embed = null)
     {
@@ -1709,8 +1709,8 @@ class InvoiceApi
      *
      * @param int $id Id of the invoice of which you want to get the check account transactions (required)
      * @param string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. Default &#x60;&#x60;. (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCheckAccountTransaction, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelCheckAccountTransaction, HTTP status code, HTTP response headers (array of strings)
      */
     public function invoiceGetCheckAccountTransactionsWithHttpInfo($id, $embed = null)
     {
@@ -1765,15 +1765,15 @@ class InvoiceApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCheckAccountTransaction',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelCheckAccountTransaction',
                 '/Invoice/{id}/getCheckAccountTransactions'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCheckAccountTransaction', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelCheckAccountTransaction', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCheckAccountTransaction', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelCheckAccountTransaction', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -1788,7 +1788,7 @@ class InvoiceApi
      * Get debit of an invoice
      *
      * @param int $id Id of invoice of which you want to get the debit (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function invoiceGetDebit($id)
@@ -1803,7 +1803,7 @@ class InvoiceApi
      * Get debit of an invoice
      *
      * @param int $id Id of invoice of which you want to get the debit (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function invoiceGetDebitWithHttpInfo($id)
@@ -1871,7 +1871,7 @@ class InvoiceApi
      * Get if an invoice is delinquent
      *
      * @param int $id Id of invoice of which you want to know if its delinquent (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function invoiceGetDelinquent($id)
@@ -1886,7 +1886,7 @@ class InvoiceApi
      * Get if an invoice is delinquent
      *
      * @param int $id Id of invoice of which you want to know if its delinquent (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function invoiceGetDelinquentWithHttpInfo($id)
@@ -1955,8 +1955,8 @@ class InvoiceApi
      *
      * @param int $id Id of invoice of which you want to get the discounts (required)
      * @param string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. Default &#x60;&#x60;. (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelDiscounts
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelDiscounts
      */
     public function invoiceGetDiscounts($id, $embed = null)
     {
@@ -1971,8 +1971,8 @@ class InvoiceApi
      *
      * @param int $id Id of invoice of which you want to get the discounts (required)
      * @param string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. Default &#x60;&#x60;. (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelDiscounts, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelDiscounts, HTTP status code, HTTP response headers (array of strings)
      */
     public function invoiceGetDiscountsWithHttpInfo($id, $embed = null)
     {
@@ -2027,15 +2027,15 @@ class InvoiceApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelDiscounts',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelDiscounts',
                 '/Invoice/{id}/getDiscounts'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelDiscounts', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelDiscounts', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelDiscounts', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelDiscounts', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -2051,7 +2051,7 @@ class InvoiceApi
      *
      * @param int $id Id of invoice of which you want to get the document (required)
      * @param string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. Default &#x60;&#x60;. (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function invoiceGetDocument($id, $embed = null)
@@ -2067,7 +2067,7 @@ class InvoiceApi
      *
      * @param int $id Id of invoice of which you want to get the document (required)
      * @param string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. Default &#x60;&#x60;. (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function invoiceGetDocumentWithHttpInfo($id, $embed = null)
@@ -2142,8 +2142,8 @@ class InvoiceApi
      * Get invoice dunnings
      *
      * @param int $id Id of invoice of which you want to get the dunnings (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelInvoice
      */
     public function invoiceGetDunnings($id)
     {
@@ -2157,8 +2157,8 @@ class InvoiceApi
      * Get invoice dunnings
      *
      * @param int $id Id of invoice of which you want to get the dunnings (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelInvoice, HTTP status code, HTTP response headers (array of strings)
      */
     public function invoiceGetDunningsWithHttpInfo($id)
     {
@@ -2206,15 +2206,15 @@ class InvoiceApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelInvoice',
                 '/Invoice/{id}/getDunnings'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelInvoice', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelInvoice', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -2230,8 +2230,8 @@ class InvoiceApi
      *
      * @param int $id Id of invoice of which you want to get the feed (required)
      * @param string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. Default &#x60;&#x60;. (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelFeed
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelFeed
      */
     public function invoiceGetFeed($id, $embed = null)
     {
@@ -2246,8 +2246,8 @@ class InvoiceApi
      *
      * @param int $id Id of invoice of which you want to get the feed (required)
      * @param string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. Default &#x60;&#x60;. (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelFeed, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelFeed, HTTP status code, HTTP response headers (array of strings)
      */
     public function invoiceGetFeedWithHttpInfo($id, $embed = null)
     {
@@ -2302,15 +2302,15 @@ class InvoiceApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelFeed',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelFeed',
                 '/Invoice/{id}/getFeed'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelFeed', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelFeed', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelFeed', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelFeed', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -2325,7 +2325,7 @@ class InvoiceApi
      * Get final invoice id
      *
      * @param int $id Id of the invoice of which you want to get the final invoice id (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function invoiceGetFinalInvoiceId($id)
@@ -2340,7 +2340,7 @@ class InvoiceApi
      * Get final invoice id
      *
      * @param int $id Id of the invoice of which you want to get the final invoice id (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function invoiceGetFinalInvoiceIdWithHttpInfo($id)
@@ -2408,7 +2408,7 @@ class InvoiceApi
      * Returns if the invoice is partially payed
      *
      * @param int $id Id of invoice of which you want to know if it is partially paid (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function invoiceGetIsPartiallyPaid($id)
@@ -2423,7 +2423,7 @@ class InvoiceApi
      * Returns if the invoice is partially payed
      *
      * @param int $id Id of invoice of which you want to know if it is partially paid (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function invoiceGetIsPartiallyPaidWithHttpInfo($id)
@@ -2491,7 +2491,7 @@ class InvoiceApi
      * Get last dunning date of invoice as timestamp
      *
      * @param int $id Id of invoice of which you want to get the date of the last dunning (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function invoiceGetLastDunningDate($id)
@@ -2506,7 +2506,7 @@ class InvoiceApi
      * Get last dunning date of invoice as timestamp
      *
      * @param int $id Id of invoice of which you want to get the date of the last dunning (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function invoiceGetLastDunningDateWithHttpInfo($id)
@@ -2575,8 +2575,8 @@ class InvoiceApi
      *
      * @param int $id Id of the invoice of which you want to get the partial invoices (required)
      * @param string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. Default &#x60;&#x60;. (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelInvoice
      */
     public function invoiceGetPartialInvoices($id, $embed = null)
     {
@@ -2591,8 +2591,8 @@ class InvoiceApi
      *
      * @param int $id Id of the invoice of which you want to get the partial invoices (required)
      * @param string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. Default &#x60;&#x60;. (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelInvoice, HTTP status code, HTTP response headers (array of strings)
      */
     public function invoiceGetPartialInvoicesWithHttpInfo($id, $embed = null)
     {
@@ -2647,15 +2647,15 @@ class InvoiceApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelInvoice',
                 '/Invoice/{id}/getPartialInvoices'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelInvoice', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelInvoice', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -2673,8 +2673,8 @@ class InvoiceApi
      * @param int $limit limits the number of entries returned (optional, default to 100)
      * @param int $offset set the index where the returned entries start (optional, default to 0)
      * @param string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. Default &#x60;&#x60;. (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoicePos
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelInvoicePos
      */
     public function invoiceGetPositions($id, $limit = '100', $offset = '0', $embed = null)
     {
@@ -2691,8 +2691,8 @@ class InvoiceApi
      * @param int $limit limits the number of entries returned (optional, default to 100)
      * @param int $offset set the index where the returned entries start (optional, default to 0)
      * @param string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. Default &#x60;&#x60;. (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoicePos, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelInvoicePos, HTTP status code, HTTP response headers (array of strings)
      */
     public function invoiceGetPositionsWithHttpInfo($id, $limit = '100', $offset = '0', $embed = null)
     {
@@ -2755,15 +2755,15 @@ class InvoiceApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoicePos',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelInvoicePos',
                 '/Invoice/{id}/getPositions'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoicePos', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelInvoicePos', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoicePos', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelInvoicePos', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -2781,7 +2781,7 @@ class InvoiceApi
      * @param bool $include_itself Define if the related objects include the invoice itself (optional, default to false)
      * @param bool $sort_by_type Define if you want the related objects sorted by type (optional, default to false)
      * @param string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. Default &#x60;&#x60;. (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function invoiceGetRelatedObjects($id, $include_itself = 'false', $sort_by_type = 'false', $embed = null)
@@ -2799,7 +2799,7 @@ class InvoiceApi
      * @param bool $include_itself Define if the related objects include the invoice itself (optional, default to false)
      * @param bool $sort_by_type Define if you want the related objects sorted by type (optional, default to false)
      * @param string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. Default &#x60;&#x60;. (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function invoiceGetRelatedObjectsWithHttpInfo($id, $include_itself = 'false', $sort_by_type = 'false', $embed = null)
@@ -2881,7 +2881,7 @@ class InvoiceApi
      *
      * Get swiss esr
      *
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function invoiceGetSwissEsr()
@@ -2895,7 +2895,7 @@ class InvoiceApi
      *
      * Get swiss esr
      *
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function invoiceGetSwissEsrWithHttpInfo()
@@ -2950,7 +2950,7 @@ class InvoiceApi
      *
      * Get swiss esr data
      *
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function invoiceGetSwissEsrData()
@@ -2964,7 +2964,7 @@ class InvoiceApi
      *
      * Get swiss esr data
      *
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function invoiceGetSwissEsrDataWithHttpInfo()
@@ -3021,8 +3021,8 @@ class InvoiceApi
      *
      * @param int $id Id of invoice of which you want to get the tags (required)
      * @param string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. Default &#x60;&#x60;. (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelTag
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelTag
      */
     public function invoiceGetTags($id, $embed = null)
     {
@@ -3037,8 +3037,8 @@ class InvoiceApi
      *
      * @param int $id Id of invoice of which you want to get the tags (required)
      * @param string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. Default &#x60;&#x60;. (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelTag, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelTag, HTTP status code, HTTP response headers (array of strings)
      */
     public function invoiceGetTagsWithHttpInfo($id, $embed = null)
     {
@@ -3093,15 +3093,15 @@ class InvoiceApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelTag',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelTag',
                 '/Invoice/{id}/getTags'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelTag', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelTag', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelTag', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelTag', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -3117,7 +3117,7 @@ class InvoiceApi
      *
      * @param int $id Id of invoice of which you want to get the invoice tax amount (required)
      * @param bool $invoice_amount Determines whether to use sumTax from invoice or sumTaxAccounting (optional, default to false)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function invoiceGetTax($id, $invoice_amount = 'false')
@@ -3133,7 +3133,7 @@ class InvoiceApi
      *
      * @param int $id Id of invoice of which you want to get the invoice tax amount (required)
      * @param bool $invoice_amount Determines whether to use sumTax from invoice or sumTaxAccounting (optional, default to false)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function invoiceGetTaxWithHttpInfo($id, $invoice_amount = 'false')
@@ -3205,7 +3205,7 @@ class InvoiceApi
      * Get tax groups of invoice
      *
      * @param int $id Id of invoice of which you want to get the tax groups (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function invoiceGetTaxGroups($id)
@@ -3220,7 +3220,7 @@ class InvoiceApi
      * Get tax groups of invoice
      *
      * @param int $id Id of invoice of which you want to get the tax groups (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function invoiceGetTaxGroupsWithHttpInfo($id)
@@ -3289,7 +3289,7 @@ class InvoiceApi
      *
      * @param int $id Id of invoice of which you want to get the gross invoice amount (required)
      * @param bool $invoice_amount Determines whether to use sumGross from invoice or sumGrossAccounting (optional, default to false)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function invoiceGetTotal($id, $invoice_amount = 'false')
@@ -3305,7 +3305,7 @@ class InvoiceApi
      *
      * @param int $id Id of invoice of which you want to get the gross invoice amount (required)
      * @param bool $invoice_amount Determines whether to use sumGross from invoice or sumGrossAccounting (optional, default to false)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function invoiceGetTotalWithHttpInfo($id, $invoice_amount = 'false')
@@ -3377,7 +3377,7 @@ class InvoiceApi
      * Get total invoice amount in invoice currency
      *
      * @param int $id Id of invoice of which you want to get the invoice amount in invoice currency (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function invoiceGetTotalCalc($id)
@@ -3392,7 +3392,7 @@ class InvoiceApi
      * Get total invoice amount in invoice currency
      *
      * @param int $id Id of invoice of which you want to get the invoice amount in invoice currency (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function invoiceGetTotalCalcWithHttpInfo($id)
@@ -3462,7 +3462,7 @@ class InvoiceApi
      * @param int $id Id of invoice of which you want to get the total net invoice amount (required)
      * @param bool $invoice_amount Determines whether to use sumNet from invoice or sumNetAccounting (optional, default to false)
      * @param bool $without_discounts Determines whether the total net is calculated with or without the discounts (optional, default to false)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function invoiceGetTotalNet($id, $invoice_amount = 'false', $without_discounts = 'false')
@@ -3479,7 +3479,7 @@ class InvoiceApi
      * @param int $id Id of invoice of which you want to get the total net invoice amount (required)
      * @param bool $invoice_amount Determines whether to use sumNet from invoice or sumNetAccounting (optional, default to false)
      * @param bool $without_discounts Determines whether the total net is calculated with or without the discounts (optional, default to false)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function invoiceGetTotalNetWithHttpInfo($id, $invoice_amount = 'false', $without_discounts = 'false')
@@ -3555,7 +3555,7 @@ class InvoiceApi
      * Returns if the specified invoice has discounts
      *
      * @param int $id Id of invoice of which you want to know if it has discounts (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function invoiceHasDiscounts($id)
@@ -3570,7 +3570,7 @@ class InvoiceApi
      * Returns if the specified invoice has discounts
      *
      * @param int $id Id of invoice of which you want to know if it has discounts (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function invoiceHasDiscountsWithHttpInfo($id)
@@ -3638,7 +3638,7 @@ class InvoiceApi
      * Returns if the specified invoice is the origin of an order
      *
      * @param int $id Id of invoice of which you want to know if it is the origin of an order (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function invoiceIsOrigin($id)
@@ -3653,7 +3653,7 @@ class InvoiceApi
      * Returns if the specified invoice is the origin of an order
      *
      * @param int $id Id of invoice of which you want to know if it is the origin of an order (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function invoiceIsOriginWithHttpInfo($id)
@@ -3721,8 +3721,8 @@ class InvoiceApi
      * Marks an invoice as sent
      *
      * @param int $id Id of invoice which you want to mark as sent (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelInvoice
      */
     public function invoiceMarkAsSent($id)
     {
@@ -3736,8 +3736,8 @@ class InvoiceApi
      * Marks an invoice as sent
      *
      * @param int $id Id of invoice which you want to mark as sent (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelInvoice, HTTP status code, HTTP response headers (array of strings)
      */
     public function invoiceMarkAsSentWithHttpInfo($id)
     {
@@ -3785,15 +3785,15 @@ class InvoiceApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelInvoice',
                 '/Invoice/{id}/markAsSent'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelInvoice', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelInvoice', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -3810,8 +3810,8 @@ class InvoiceApi
      * @param int $id Id of invoice of which you want to refund the amount (required)
      * @param int $ammount amount which should be refunded (required)
      * @param string $date booking date (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelInvoice
      */
     public function invoiceRefundAmount($id, $ammount, $date)
     {
@@ -3827,8 +3827,8 @@ class InvoiceApi
      * @param int $id Id of invoice of which you want to refund the amount (required)
      * @param int $ammount amount which should be refunded (required)
      * @param string $date booking date (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelInvoice, HTTP status code, HTTP response headers (array of strings)
      */
     public function invoiceRefundAmountWithHttpInfo($id, $ammount, $date)
     {
@@ -3892,15 +3892,15 @@ class InvoiceApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelInvoice',
                 '/Invoice/{id}/refundAmmount'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelInvoice', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelInvoice', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -3915,7 +3915,7 @@ class InvoiceApi
      * Render invoice document on docserver and return metadata
      *
      * @param int $id Id of invoice of which you want to render the document and get the metadata (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function invoiceRender($id)
@@ -3930,7 +3930,7 @@ class InvoiceApi
      * Render invoice document on docserver and return metadata
      *
      * @param int $id Id of invoice of which you want to render the document and get the metadata (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function invoiceRenderWithHttpInfo($id)
@@ -3999,8 +3999,8 @@ class InvoiceApi
      *
      * @param int $id Id of invoice which you want to send (required)
      * @param string $send_type desired send type, available are: VM &#x3D; Mail, VP &#x3D; Post, VPDF &#x3D; PDF, PRN &#x3D; Print (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelInvoice
      */
     public function invoiceSendBy($id, $send_type)
     {
@@ -4015,8 +4015,8 @@ class InvoiceApi
      *
      * @param int $id Id of invoice which you want to send (required)
      * @param string $send_type desired send type, available are: VM &#x3D; Mail, VP &#x3D; Post, VPDF &#x3D; PDF, PRN &#x3D; Print (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelInvoice, HTTP status code, HTTP response headers (array of strings)
      */
     public function invoiceSendByWithHttpInfo($id, $send_type)
     {
@@ -4072,15 +4072,15 @@ class InvoiceApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelInvoice',
                 '/Invoice/{id}/sendBy'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelInvoice', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelInvoice', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -4095,8 +4095,8 @@ class InvoiceApi
      * Create a new invoice (with / without invoice positions and discounts)
      *
      * @param string $body The saveInvoice function in Invoice/Factory.php combines both Invoice and InvoicePos with all their HTTP-methods.    It is now possible to **simultaneously** create an invoice with its position and discount.    To simply (only) create an invoice you can use the given parameters and concatenate your values.    For also adding an invoice position or a discount refer to the corresponding **quick reference** below.    The parameters you find there are **needed** for creating an invoice position / discount. Just concatenate them to the existing invoice / invoicePosSave parameters.    You can also find additional (optional) parameters in the **Models** section.    Quick reference InvoicePos:  * &amp;invoicePosSave[0][part][id]&#x3D;  * &amp;invoicePosSave[0][part][objectName]&#x3D;Part  * &amp;invoicePosSave[0][quantity]&#x3D;  * &amp;invoicePosSave[0][unity][id]&#x3D;  * &amp;invoicePosSave[0][unity][objectName]&#x3D;Unity  * &amp;invoicePosSave[0][taxRate]&#x3D;19  * &amp;invoicePosSave[0][objectName]&#x3D;InvoicePos  * &amp;invoicePosSave[0][mapAll]&#x3D;true  * &amp;invoicePosSave[0][price]&#x3D;  * &amp;invoicePosDelete&#x3D;null    Quick reference Discounts:  * &amp;discountSave[0][discount]&#x3D;true  * &amp;discountSave[0][text]&#x3D;  * &amp;discountSave[0][percentage]&#x3D;  * &amp;discountSave[0][value]&#x3D;  * &amp;discountSave[0][objectName]&#x3D;Discounts  * &amp;discountSave[0][mapAll]&#x3D;true  * &amp;discountDelete&#x3D;null    You can also use additional parameters for creating an invoice in the same way by adding them in the format: **invoice[yourParameter]** (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoiceFactory
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelInvoiceFactory
      */
     public function saveInvoice($body)
     {
@@ -4110,8 +4110,8 @@ class InvoiceApi
      * Create a new invoice (with / without invoice positions and discounts)
      *
      * @param string $body The saveInvoice function in Invoice/Factory.php combines both Invoice and InvoicePos with all their HTTP-methods.    It is now possible to **simultaneously** create an invoice with its position and discount.    To simply (only) create an invoice you can use the given parameters and concatenate your values.    For also adding an invoice position or a discount refer to the corresponding **quick reference** below.    The parameters you find there are **needed** for creating an invoice position / discount. Just concatenate them to the existing invoice / invoicePosSave parameters.    You can also find additional (optional) parameters in the **Models** section.    Quick reference InvoicePos:  * &amp;invoicePosSave[0][part][id]&#x3D;  * &amp;invoicePosSave[0][part][objectName]&#x3D;Part  * &amp;invoicePosSave[0][quantity]&#x3D;  * &amp;invoicePosSave[0][unity][id]&#x3D;  * &amp;invoicePosSave[0][unity][objectName]&#x3D;Unity  * &amp;invoicePosSave[0][taxRate]&#x3D;19  * &amp;invoicePosSave[0][objectName]&#x3D;InvoicePos  * &amp;invoicePosSave[0][mapAll]&#x3D;true  * &amp;invoicePosSave[0][price]&#x3D;  * &amp;invoicePosDelete&#x3D;null    Quick reference Discounts:  * &amp;discountSave[0][discount]&#x3D;true  * &amp;discountSave[0][text]&#x3D;  * &amp;discountSave[0][percentage]&#x3D;  * &amp;discountSave[0][value]&#x3D;  * &amp;discountSave[0][objectName]&#x3D;Discounts  * &amp;discountSave[0][mapAll]&#x3D;true  * &amp;discountDelete&#x3D;null    You can also use additional parameters for creating an invoice in the same way by adding them in the format: **invoice[yourParameter]** (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoiceFactory, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelInvoiceFactory, HTTP status code, HTTP response headers (array of strings)
      */
     public function saveInvoiceWithHttpInfo($body)
     {
@@ -4156,15 +4156,15 @@ class InvoiceApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoiceFactory',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelInvoiceFactory',
                 '/Invoice/Factory/saveInvoice'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoiceFactory', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelInvoiceFactory', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 201:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoiceFactory', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelInvoiceFactory', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -4180,8 +4180,8 @@ class InvoiceApi
      *
      * @param int $id id of invoice you want to send via Email (required)
      * @param string $body Change the desired values after the parameters and remove the quotation marks. You can also add &#39;additionalAttachments&#39;, &#39;ccEmail&#x3D;&#39; and &#39;bccEmail&#39;    Please note: additionalAttachments is a String containing document id&#39;s (of existing documents!) (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelEmail
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelEmail
      */
     public function sendInvoiceViaEmail($id, $body)
     {
@@ -4196,8 +4196,8 @@ class InvoiceApi
      *
      * @param int $id id of invoice you want to send via Email (required)
      * @param string $body Change the desired values after the parameters and remove the quotation marks. You can also add &#39;additionalAttachments&#39;, &#39;ccEmail&#x3D;&#39; and &#39;bccEmail&#39;    Please note: additionalAttachments is a String containing document id&#39;s (of existing documents!) (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelEmail, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelEmail, HTTP status code, HTTP response headers (array of strings)
      */
     public function sendInvoiceViaEmailWithHttpInfo($id, $body)
     {
@@ -4254,15 +4254,15 @@ class InvoiceApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelEmail',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelEmail',
                 '/Invoice/{id}/sendViaEmail'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelEmail', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelEmail', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 201:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelEmail', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelEmail', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -4277,8 +4277,8 @@ class InvoiceApi
      * Send an invoice via Letter
      *
      * @param int $id id of invoice you want to send via Letter (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelInvoice
      */
     public function sendInvoiceViaPost($id)
     {
@@ -4292,8 +4292,8 @@ class InvoiceApi
      * Send an invoice via Letter
      *
      * @param int $id id of invoice you want to send via Letter (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelInvoice, HTTP status code, HTTP response headers (array of strings)
      */
     public function sendInvoiceViaPostWithHttpInfo($id)
     {
@@ -4341,15 +4341,15 @@ class InvoiceApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelInvoice',
                 '/Invoice/{id}/sendViaPost'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelInvoice', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 201:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelInvoice', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -4365,8 +4365,8 @@ class InvoiceApi
      *
      * @param int $id id of invoice you want to update (required)
      * @param string $body Parameters which need to be updated. Please refer to the description from create invoice.    Enter the parameters according to the syntax: parameter1&#x3D;&amp;parameter2&#x3D; (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelInvoice
      */
     public function updateInvoice($id, $body = null)
     {
@@ -4381,8 +4381,8 @@ class InvoiceApi
      *
      * @param int $id id of invoice you want to update (required)
      * @param string $body Parameters which need to be updated. Please refer to the description from create invoice.    Enter the parameters according to the syntax: parameter1&#x3D;&amp;parameter2&#x3D; (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelInvoice, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateInvoiceWithHttpInfo($id, $body = null)
     {
@@ -4435,15 +4435,15 @@ class InvoiceApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelInvoice',
                 '/Invoice/{id}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelInvoice', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelInvoice', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }

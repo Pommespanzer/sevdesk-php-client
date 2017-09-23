@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ispserverfarm\sevdesk\phpclient
+ * @package  ispserverfarm\sevdesk
  * @author   Swaagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace ispserverfarm\sevdesk\phpclient\sevDeskModel;
+namespace ispserverfarm\sevdesk\sevDeskModel;
 
 use \ArrayAccess;
 
@@ -35,7 +35,7 @@ use \ArrayAccess;
  * ModelTagRelation Class Doc Comment
  *
  * @category    Class
- * @package     ispserverfarm\sevdesk\phpclient
+ * @package     ispserverfarm\sevdesk
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -55,7 +55,7 @@ class ModelTagRelation implements ArrayAccess
       */
     protected static $swaggerTypes = [
         '_create' => '\DateTime',
-        '_tag' => '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelTag',
+        '_tag' => '\ispserverfarm\sevdesk\sevDeskModel\ModelTag',
         '_object' => 'object',
         '_sev_client' => 'object'
     ];
@@ -201,7 +201,7 @@ class ModelTagRelation implements ArrayAccess
 
     /**
      * Gets _tag
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelTag
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelTag
      */
     public function getTag()
     {
@@ -210,7 +210,7 @@ class ModelTagRelation implements ArrayAccess
 
     /**
      * Sets _tag
-     * @param \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelTag $_tag tag which is has a relation to another object
+     * @param \ispserverfarm\sevdesk\sevDeskModel\ModelTag $_tag tag which is has a relation to another object
      * @return $this
      */
     public function setTag($_tag)
@@ -313,10 +313,10 @@ class ModelTagRelation implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\ispserverfarm\sevdesk\phpclient\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\ispserverfarm\sevdesk\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\ispserverfarm\sevdesk\phpclient\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\ispserverfarm\sevdesk\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

@@ -1,4 +1,4 @@
-# ispserverfarm\sevdesk\phpclient\PlaceApi
+# ispserverfarm\sevdesk\PlaceApi
 
 All URIs are relative to *https://my.sevdesk.de/api/v1*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **getPlaces**
-> \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelPlace getPlaces($limit, $offset)
+> \ispserverfarm\sevdesk\sevDeskModel\ModelPlace getPlaces($limit, $offset)
 
 Get an overview of all places
 
@@ -20,11 +20,11 @@ Calls Place.php to get necessary variables.    It is recommended to set limit an
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\PlaceApi();
+$api_instance = new ispserverfarm\sevdesk\Api\PlaceApi();
 $limit = 1000; // int | Limits the number of entries returned. Default is 1000
 $offset = 0; // int | Set the index where the returned places start. Default is 0
 
@@ -46,7 +46,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelPlace**](../Model/ModelPlace.md)
+[**\ispserverfarm\sevdesk\sevDeskModel\ModelPlace**](../Model/ModelPlace.md)
 
 ### Authorization
 

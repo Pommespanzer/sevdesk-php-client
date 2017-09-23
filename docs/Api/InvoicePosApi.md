@@ -1,4 +1,4 @@
-# ispserverfarm\sevdesk\phpclient\InvoicePosApi
+# ispserverfarm\sevdesk\InvoicePosApi
 
 All URIs are relative to *https://my.sevdesk.de/api/v1*
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **addInvoicePos**
-> \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoicePos addInvoicePos($body)
+> \ispserverfarm\sevdesk\sevDeskModel\ModelInvoicePos addInvoicePos($body)
 
 Create a new invoice position
 
@@ -23,11 +23,11 @@ Calls InvoicePos.php.    As described in the Model_Invoice earlier, some of its 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\InvoicePosApi();
+$api_instance = new ispserverfarm\sevdesk\Api\InvoicePosApi();
 $body = "invoice[id]=210&invoice[objectName]=Invoice&name=Pizza&quantity=1&price=4.5&unity[id]=1&unity[objectName]=Unity&taxRate=7"; // string | To create an invoice position, simply enter desired values after parameter= and remove the quotation marks.    Adds a product/part to an invoice with a price, quantity etc, therefore the invoice model gets sumNet and other parameters from it too
 
 try {
@@ -47,7 +47,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoicePos**](../Model/ModelInvoicePos.md)
+[**\ispserverfarm\sevdesk\sevDeskModel\ModelInvoicePos**](../Model/ModelInvoicePos.md)
 
 ### Authorization
 
@@ -73,11 +73,11 @@ Calls the delete() function in InvoicePos.php. This does NOT delete an invoice, 
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\InvoicePosApi();
+$api_instance = new ispserverfarm\sevdesk\Api\InvoicePosApi();
 $id = 56; // int | id of invoice position you want to delete
 
 try {
@@ -110,7 +110,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getInvoicePositions**
-> \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoicePos getInvoicePositions($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\sevDeskModel\ModelInvoicePos getInvoicePositions($limit, $offset, $embed)
 
 Get an overview of all invoice positions
 
@@ -122,11 +122,11 @@ Calls InvoicePos.php to get necessary variables.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\InvoicePosApi();
+$api_instance = new ispserverfarm\sevdesk\Api\InvoicePosApi();
 $limit = 100; // int | Limits the number of entries returned. Default is 100
 $offset = 0; // int | Set the index where the returned invoice positions start. Default is 0
 $embed = array("embed_example"); // string[] | Get some additional information. Embed can handle multiple values, they must be separated by comma. Default ``.
@@ -150,7 +150,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoicePos**](../Model/ModelInvoicePos.md)
+[**\ispserverfarm\sevdesk\sevDeskModel\ModelInvoicePos**](../Model/ModelInvoicePos.md)
 
 ### Authorization
 
@@ -164,7 +164,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateInvoicePos**
-> \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoicePos updateInvoicePos($id, $body)
+> \ispserverfarm\sevdesk\sevDeskModel\ModelInvoicePos updateInvoicePos($id, $body)
 
 Update an existing invoice position
 
@@ -176,11 +176,11 @@ TODO: Enter short backend documentation here
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\InvoicePosApi();
+$api_instance = new ispserverfarm\sevdesk\Api\InvoicePosApi();
 $id = 56; // int | id of invoice position you want to update
 $body = "body_example"; // string | Parameters which need to be updated. Please refer to the description from create invoice position.     Enter the parameters according to the syntax: parameter1=&parameter2= and remove the quotation marks
 
@@ -202,7 +202,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoicePos**](../Model/ModelInvoicePos.md)
+[**\ispserverfarm\sevdesk\sevDeskModel\ModelInvoicePos**](../Model/ModelInvoicePos.md)
 
 ### Authorization
 

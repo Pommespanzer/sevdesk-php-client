@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ispserverfarm\sevdesk\phpclient
+ * @package  ispserverfarm\sevdesk
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,18 +26,18 @@
  * Do not edit the class manually.
  */
 
-namespace ispserverfarm\sevdesk\phpclient\sevDeskApi;
+namespace ispserverfarm\sevdesk\sevDeskApi;
 
-use \ispserverfarm\sevdesk\phpclient\ApiClient;
-use \ispserverfarm\sevdesk\phpclient\ApiException;
-use \ispserverfarm\sevdesk\phpclient\Configuration;
-use \ispserverfarm\sevdesk\phpclient\ObjectSerializer;
+use \ispserverfarm\sevdesk\ApiClient;
+use \ispserverfarm\sevdesk\ApiException;
+use \ispserverfarm\sevdesk\Configuration;
+use \ispserverfarm\sevdesk\ObjectSerializer;
 
 /**
  * DocServerApi Class Doc Comment
  *
  * @category Class
- * @package  ispserverfarm\sevdesk\phpclient
+ * @package  ispserverfarm\sevdesk
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -46,16 +46,16 @@ class DocServerApi
     /**
      * API Client
      *
-     * @var \ispserverfarm\sevdesk\phpclient\ApiClient instance of the ApiClient
+     * @var \ispserverfarm\sevdesk\ApiClient instance of the ApiClient
      */
     protected $apiClient;
 
     /**
      * Constructor
      *
-     * @param \ispserverfarm\sevdesk\phpclient\ApiClient|null $apiClient The api client to use
+     * @param \ispserverfarm\sevdesk\ApiClient|null $apiClient The api client to use
      */
-    public function __construct(\ispserverfarm\sevdesk\phpclient\ApiClient $apiClient = null)
+    public function __construct(\ispserverfarm\sevdesk\ApiClient $apiClient = null)
     {
         if ($apiClient === null) {
             $apiClient = new ApiClient();
@@ -67,7 +67,7 @@ class DocServerApi
     /**
      * Get API client
      *
-     * @return \ispserverfarm\sevdesk\phpclient\ApiClient get the API client
+     * @return \ispserverfarm\sevdesk\ApiClient get the API client
      */
     public function getApiClient()
     {
@@ -77,11 +77,11 @@ class DocServerApi
     /**
      * Set the API client
      *
-     * @param \ispserverfarm\sevdesk\phpclient\ApiClient $apiClient set the API client
+     * @param \ispserverfarm\sevdesk\ApiClient $apiClient set the API client
      *
      * @return DocServerApi
      */
-    public function setApiClient(\ispserverfarm\sevdesk\phpclient\ApiClient $apiClient)
+    public function setApiClient(\ispserverfarm\sevdesk\ApiClient $apiClient)
     {
         $this->apiClient = $apiClient;
         return $this;
@@ -93,7 +93,7 @@ class DocServerApi
      * Delete a specified letter paper
      *
      * @param string $body Enter the id of the letter paper you want to delete after id&#x3D; and remove the quotation marks! (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function docServerDeleteLetterPaper($body)
@@ -108,7 +108,7 @@ class DocServerApi
      * Delete a specified letter paper
      *
      * @param string $body Enter the id of the letter paper you want to delete after id&#x3D; and remove the quotation marks! (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function docServerDeleteLetterPaperWithHttpInfo($body)
@@ -173,7 +173,7 @@ class DocServerApi
      * Delete a specified template
      *
      * @param string $body Enter the id of the template you want to set as the default template after id&#x3D; and remove the quotation marks! (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function docServerDeleteTemplate($body)
@@ -188,7 +188,7 @@ class DocServerApi
      * Delete a specified template
      *
      * @param string $body Enter the id of the template you want to set as the default template after id&#x3D; and remove the quotation marks! (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function docServerDeleteTemplateWithHttpInfo($body)
@@ -252,7 +252,7 @@ class DocServerApi
      *
      * Get an overview of all letter papers
      *
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function docServerGetLetterPapers()
@@ -266,7 +266,7 @@ class DocServerApi
      *
      * Get an overview of all letter papers
      *
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function docServerGetLetterPapersWithHttpInfo()
@@ -321,7 +321,7 @@ class DocServerApi
      *
      * Get an overview of all letter papers with their thumb
      *
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function docServerGetLetterPapersWithThumb()
@@ -335,7 +335,7 @@ class DocServerApi
      *
      * Get an overview of all letter papers with their thumb
      *
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function docServerGetLetterPapersWithThumbWithHttpInfo()
@@ -390,7 +390,7 @@ class DocServerApi
      *
      * Get an overview of all templates
      *
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function docServerGetTemplates()
@@ -404,7 +404,7 @@ class DocServerApi
      *
      * Get an overview of all templates
      *
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function docServerGetTemplatesWithHttpInfo()
@@ -459,7 +459,7 @@ class DocServerApi
      *
      * Get an overview of all templates with their thumb
      *
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function docServerGetTemplatesWithThumb()
@@ -473,7 +473,7 @@ class DocServerApi
      *
      * Get an overview of all templates with their thumb
      *
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function docServerGetTemplatesWithThumbWithHttpInfo()
@@ -529,7 +529,7 @@ class DocServerApi
      * Set a letter papers as the default letter paper
      *
      * @param string $body Enter the id of the letter paper you want to set as the default letter paper after id&#x3D; and remove the quotation marks! (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function docServerSetDefaultLetterPaper($body)
@@ -544,7 +544,7 @@ class DocServerApi
      * Set a letter papers as the default letter paper
      *
      * @param string $body Enter the id of the letter paper you want to set as the default letter paper after id&#x3D; and remove the quotation marks! (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function docServerSetDefaultLetterPaperWithHttpInfo($body)
@@ -609,7 +609,7 @@ class DocServerApi
      * Set a template as the default template
      *
      * @param string $body Enter the id of the template you want to set as the default template after id&#x3D; and remove the quotation marks! (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function docServerSetDefaultTemplate($body)
@@ -624,7 +624,7 @@ class DocServerApi
      * Set a template as the default template
      *
      * @param string $body Enter the id of the template you want to set as the default template after id&#x3D; and remove the quotation marks! (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function docServerSetDefaultTemplateWithHttpInfo($body)
@@ -689,7 +689,7 @@ class DocServerApi
      * Store a letter paper on the doc server
      *
      * @param string $body Enter the desired values after parameter&#x3D; and remove the quotation marks!    Be aware that you need to enter the base64 of the pdf you want as a letter paper after pdf&#x3D;! (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function docServerStoreLetterPaper($body)
@@ -704,7 +704,7 @@ class DocServerApi
      * Store a letter paper on the doc server
      *
      * @param string $body Enter the desired values after parameter&#x3D; and remove the quotation marks!    Be aware that you need to enter the base64 of the pdf you want as a letter paper after pdf&#x3D;! (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function docServerStoreLetterPaperWithHttpInfo($body)
@@ -769,7 +769,7 @@ class DocServerApi
      * Store a template on the doc server
      *
      * @param string $body Enter the desired values after parameter&#x3D; and remove the quotation marks!    Be aware that you need to enter the html code of your template after html&#x3D;! Type can be Invoice, Invoicereminder, Order, Contractnote, Packingllist, Letter. (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function docServerStoreTemplate($body)
@@ -784,7 +784,7 @@ class DocServerApi
      * Store a template on the doc server
      *
      * @param string $body Enter the desired values after parameter&#x3D; and remove the quotation marks!    Be aware that you need to enter the html code of your template after html&#x3D;! Type can be Invoice, Invoicereminder, Order, Contractnote, Packingllist, Letter. (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function docServerStoreTemplateWithHttpInfo($body)
@@ -849,7 +849,7 @@ class DocServerApi
      * Test a letter paper
      *
      * @param \SplFileObject $file Pdf file to test (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function docServerTestLetterPaper($file)
@@ -864,7 +864,7 @@ class DocServerApi
      * Test a letter paper
      *
      * @param \SplFileObject $file Pdf file to test (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function docServerTestLetterPaperWithHttpInfo($file)
@@ -934,7 +934,7 @@ class DocServerApi
      * Test a template
      *
      * @param string $body Enter the html of your template after html&#x3D; and remove the quotation marks! (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function docServerTestTemplate($body)
@@ -949,7 +949,7 @@ class DocServerApi
      * Test a template
      *
      * @param string $body Enter the html of your template after html&#x3D; and remove the quotation marks! (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function docServerTestTemplateWithHttpInfo($body)

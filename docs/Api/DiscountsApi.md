@@ -1,4 +1,4 @@
-# ispserverfarm\sevdesk\phpclient\DiscountsApi
+# ispserverfarm\sevdesk\DiscountsApi
 
 All URIs are relative to *https://my.sevdesk.de/api/v1*
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **addDiscount**
-> \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelDiscounts addDiscount($body)
+> \ispserverfarm\sevdesk\sevDeskModel\ModelDiscounts addDiscount($body)
 
 Create a new discount
 
@@ -23,11 +23,11 @@ Calls Discounts.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\DiscountsApi();
+$api_instance = new ispserverfarm\sevdesk\Api\DiscountsApi();
 $body = "object[id]=&object[objectName]=&discount[text]=&discount[percentage]=&discount[value]="; // string | To create a discount, simply enter desired values after parameter= and remove the quotation marks.
 
 try {
@@ -47,7 +47,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelDiscounts**](../Model/ModelDiscounts.md)
+[**\ispserverfarm\sevdesk\sevDeskModel\ModelDiscounts**](../Model/ModelDiscounts.md)
 
 ### Authorization
 
@@ -73,11 +73,11 @@ Calls the delete() function in Discounts.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\DiscountsApi();
+$api_instance = new ispserverfarm\sevdesk\Api\DiscountsApi();
 $id = 56; // int | Id of discount you want to delete
 
 try {
@@ -110,7 +110,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getDiscounts**
-> \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelDiscounts getDiscounts($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\sevDeskModel\ModelDiscounts getDiscounts($limit, $offset, $embed)
 
 Get an overview of all discounts
 
@@ -122,11 +122,11 @@ Calls Discounts.php to get necessary variables.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\DiscountsApi();
+$api_instance = new ispserverfarm\sevdesk\Api\DiscountsApi();
 $limit = 100; // int | Limits the number of entries returned. Default is 100
 $offset = 0; // int | Set the index where the returned discounts start. Default is 0
 $embed = array("embed_example"); // string[] | Get some additional information. Embed can handle multiple values, they must be separated by comma. Default ``.
@@ -150,7 +150,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelDiscounts**](../Model/ModelDiscounts.md)
+[**\ispserverfarm\sevdesk\sevDeskModel\ModelDiscounts**](../Model/ModelDiscounts.md)
 
 ### Authorization
 
@@ -164,7 +164,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateDiscount**
-> \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelDiscounts updateDiscount($id, $body)
+> \ispserverfarm\sevdesk\sevDeskModel\ModelDiscounts updateDiscount($id, $body)
 
 Update an existing discount
 
@@ -176,11 +176,11 @@ Calls Discounts.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\DiscountsApi();
+$api_instance = new ispserverfarm\sevdesk\Api\DiscountsApi();
 $id = 56; // int | Id of discount you want to update
 $body = "body_example"; // string | Parameters which need to be updated. Please refer to the description from create discount.    Enter the parameters according to the syntax: parameter1=&parameter2=
 
@@ -202,7 +202,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelDiscounts**](../Model/ModelDiscounts.md)
+[**\ispserverfarm\sevdesk\sevDeskModel\ModelDiscounts**](../Model/ModelDiscounts.md)
 
 ### Authorization
 

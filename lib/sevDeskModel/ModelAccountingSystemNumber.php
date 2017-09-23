@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ispserverfarm\sevdesk\phpclient
+ * @package  ispserverfarm\sevdesk
  * @author   Swaagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace ispserverfarm\sevdesk\phpclient\sevDeskModel;
+namespace ispserverfarm\sevdesk\sevDeskModel;
 
 use \ArrayAccess;
 
@@ -35,7 +35,7 @@ use \ArrayAccess;
  * ModelAccountingSystemNumber Class Doc Comment
  *
  * @category    Class
- * @package     ispserverfarm\sevdesk\phpclient
+ * @package     ispserverfarm\sevdesk
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -59,8 +59,8 @@ class ModelAccountingSystemNumber implements ArrayAccess
         '_sev_client' => 'object',
         '_number' => 'int',
         '_number_depreciation' => 'int',
-        '_accounting_type' => '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelAccountingType',
-        '_accounting_system' => '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelAccountingSystem',
+        '_accounting_type' => '\ispserverfarm\sevdesk\sevDeskModel\ModelAccountingType',
+        '_accounting_system' => '\ispserverfarm\sevdesk\sevDeskModel\ModelAccountingSystem',
         '_booking_type' => 'string'
     ];
 
@@ -309,7 +309,7 @@ class ModelAccountingSystemNumber implements ArrayAccess
 
     /**
      * Gets _accounting_type
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelAccountingType
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelAccountingType
      */
     public function getAccountingType()
     {
@@ -318,7 +318,7 @@ class ModelAccountingSystemNumber implements ArrayAccess
 
     /**
      * Sets _accounting_type
-     * @param \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelAccountingType $_accounting_type 
+     * @param \ispserverfarm\sevdesk\sevDeskModel\ModelAccountingType $_accounting_type 
      * @return $this
      */
     public function setAccountingType($_accounting_type)
@@ -330,7 +330,7 @@ class ModelAccountingSystemNumber implements ArrayAccess
 
     /**
      * Gets _accounting_system
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelAccountingSystem
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelAccountingSystem
      */
     public function getAccountingSystem()
     {
@@ -339,7 +339,7 @@ class ModelAccountingSystemNumber implements ArrayAccess
 
     /**
      * Sets _accounting_system
-     * @param \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelAccountingSystem $_accounting_system 
+     * @param \ispserverfarm\sevdesk\sevDeskModel\ModelAccountingSystem $_accounting_system 
      * @return $this
      */
     public function setAccountingSystem($_accounting_system)
@@ -421,10 +421,10 @@ class ModelAccountingSystemNumber implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\ispserverfarm\sevdesk\phpclient\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\ispserverfarm\sevdesk\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\ispserverfarm\sevdesk\phpclient\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\ispserverfarm\sevdesk\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

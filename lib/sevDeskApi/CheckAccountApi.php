@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ispserverfarm\sevdesk\phpclient
+ * @package  ispserverfarm\sevdesk
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,18 +26,18 @@
  * Do not edit the class manually.
  */
 
-namespace ispserverfarm\sevdesk\phpclient\sevDeskApi;
+namespace ispserverfarm\sevdesk\sevDeskApi;
 
-use \ispserverfarm\sevdesk\phpclient\ApiClient;
-use \ispserverfarm\sevdesk\phpclient\ApiException;
-use \ispserverfarm\sevdesk\phpclient\Configuration;
-use \ispserverfarm\sevdesk\phpclient\ObjectSerializer;
+use \ispserverfarm\sevdesk\ApiClient;
+use \ispserverfarm\sevdesk\ApiException;
+use \ispserverfarm\sevdesk\Configuration;
+use \ispserverfarm\sevdesk\ObjectSerializer;
 
 /**
  * CheckAccountApi Class Doc Comment
  *
  * @category Class
- * @package  ispserverfarm\sevdesk\phpclient
+ * @package  ispserverfarm\sevdesk
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -46,16 +46,16 @@ class CheckAccountApi
     /**
      * API Client
      *
-     * @var \ispserverfarm\sevdesk\phpclient\ApiClient instance of the ApiClient
+     * @var \ispserverfarm\sevdesk\ApiClient instance of the ApiClient
      */
     protected $apiClient;
 
     /**
      * Constructor
      *
-     * @param \ispserverfarm\sevdesk\phpclient\ApiClient|null $apiClient The api client to use
+     * @param \ispserverfarm\sevdesk\ApiClient|null $apiClient The api client to use
      */
-    public function __construct(\ispserverfarm\sevdesk\phpclient\ApiClient $apiClient = null)
+    public function __construct(\ispserverfarm\sevdesk\ApiClient $apiClient = null)
     {
         if ($apiClient === null) {
             $apiClient = new ApiClient();
@@ -67,7 +67,7 @@ class CheckAccountApi
     /**
      * Get API client
      *
-     * @return \ispserverfarm\sevdesk\phpclient\ApiClient get the API client
+     * @return \ispserverfarm\sevdesk\ApiClient get the API client
      */
     public function getApiClient()
     {
@@ -77,11 +77,11 @@ class CheckAccountApi
     /**
      * Set the API client
      *
-     * @param \ispserverfarm\sevdesk\phpclient\ApiClient $apiClient set the API client
+     * @param \ispserverfarm\sevdesk\ApiClient $apiClient set the API client
      *
      * @return CheckAccountApi
      */
-    public function setApiClient(\ispserverfarm\sevdesk\phpclient\ApiClient $apiClient)
+    public function setApiClient(\ispserverfarm\sevdesk\ApiClient $apiClient)
     {
         $this->apiClient = $apiClient;
         return $this;
@@ -93,8 +93,8 @@ class CheckAccountApi
      * Create a new check account
      *
      * @param string $body To create a check account, simply enter desired values after parameter&#x3D; and remove the quotation marks. (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCheckAccount
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelCheckAccount
      */
     public function addCheckAccount($body)
     {
@@ -108,8 +108,8 @@ class CheckAccountApi
      * Create a new check account
      *
      * @param string $body To create a check account, simply enter desired values after parameter&#x3D; and remove the quotation marks. (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCheckAccount, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelCheckAccount, HTTP status code, HTTP response headers (array of strings)
      */
     public function addCheckAccountWithHttpInfo($body)
     {
@@ -154,15 +154,15 @@ class CheckAccountApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCheckAccount',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelCheckAccount',
                 '/CheckAccount'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCheckAccount', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelCheckAccount', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 201:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCheckAccount', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelCheckAccount', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -177,7 +177,7 @@ class CheckAccountApi
      * Get check account details of figo check account
      *
      * @param int $id Id of the check account you want to use. Must be a figo check account! (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function checkAccountGetCheckAccountDetails($id)
@@ -192,7 +192,7 @@ class CheckAccountApi
      * Get check account details of figo check account
      *
      * @param int $id Id of the check account you want to use. Must be a figo check account! (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function checkAccountGetCheckAccountDetailsWithHttpInfo($id)
@@ -260,7 +260,7 @@ class CheckAccountApi
      * Get current balance of the specified check account
      *
      * @param int $id Id of the check account of which you want the current balance (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function checkAccountGetCurrentBalance($id)
@@ -275,7 +275,7 @@ class CheckAccountApi
      * Get current balance of the specified check account
      *
      * @param int $id Id of the check account of which you want the current balance (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function checkAccountGetCurrentBalanceWithHttpInfo($id)
@@ -343,7 +343,7 @@ class CheckAccountApi
      * Get iban and bic of figo check account
      *
      * @param int $id Id of the check account you want to use. Must be a figo check account! (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function checkAccountGetIbanBic($id)
@@ -358,7 +358,7 @@ class CheckAccountApi
      * Get iban and bic of figo check account
      *
      * @param int $id Id of the check account you want to use. Must be a figo check account! (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function checkAccountGetIbanBicWithHttpInfo($id)
@@ -428,7 +428,7 @@ class CheckAccountApi
      * @param int $id Id of the check account you want to use (required)
      * @param string $from_date Start date of period you want to check on (required)
      * @param string $to_date End date of period you want to check on (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function checkAccountGetNewTransactions($id, $from_date, $to_date)
@@ -445,7 +445,7 @@ class CheckAccountApi
      * @param int $id Id of the check account you want to use (required)
      * @param string $from_date Start date of period you want to check on (required)
      * @param string $to_date End date of period you want to check on (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function checkAccountGetNewTransactionsWithHttpInfo($id, $from_date, $to_date)
@@ -528,7 +528,7 @@ class CheckAccountApi
      *
      * Return if a payment method is supported
      *
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function checkAccountGetPaymentIsSupported()
@@ -542,7 +542,7 @@ class CheckAccountApi
      *
      * Return if a payment method is supported
      *
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function checkAccountGetPaymentIsSupportedWithHttpInfo()
@@ -597,7 +597,7 @@ class CheckAccountApi
      *
      * Get supported bank services of figo
      *
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function checkAccountGetSupportedBankServices()
@@ -611,7 +611,7 @@ class CheckAccountApi
      *
      * Get supported bank services of figo
      *
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function checkAccountGetSupportedBankServicesWithHttpInfo()
@@ -667,7 +667,7 @@ class CheckAccountApi
      * Get supported tan schemes of figo
      *
      * @param int $id Id of the check account you want to use. Must be a figo check account! (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function checkAccountGetSupportedTanSchemes($id)
@@ -682,7 +682,7 @@ class CheckAccountApi
      * Get supported tan schemes of figo
      *
      * @param int $id Id of the check account you want to use. Must be a figo check account! (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function checkAccountGetSupportedTanSchemesWithHttpInfo($id)
@@ -750,7 +750,7 @@ class CheckAccountApi
      * Set the specified check accounts as the default check account
      *
      * @param int $id Id of check account you want to set as the default check account (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function checkAccountSetDefault($id)
@@ -765,7 +765,7 @@ class CheckAccountApi
      * Set the specified check accounts as the default check account
      *
      * @param int $id Id of check account you want to set as the default check account (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function checkAccountSetDefaultWithHttpInfo($id)
@@ -837,7 +837,7 @@ class CheckAccountApi
      * @param int $target_id Target check account id (required)
      * @param string $target_object_name Target check account object name (required)
      * @param string $date Date of the transfer (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function checkAccountTransfer($id, $amount, $target_id, $target_object_name, $date)
@@ -856,7 +856,7 @@ class CheckAccountApi
      * @param int $target_id Target check account id (required)
      * @param string $target_object_name Target check account object name (required)
      * @param string $date Date of the transfer (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function checkAccountTransferWithHttpInfo($id, $amount, $target_id, $target_object_name, $date)
@@ -956,7 +956,7 @@ class CheckAccountApi
      * Delete an existing check account
      *
      * @param int $id Id of check account you want to delete (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function deleteCheckAccount($id)
@@ -971,7 +971,7 @@ class CheckAccountApi
      * Delete an existing check account
      *
      * @param int $id Id of check account you want to delete (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function deleteCheckAccountWithHttpInfo($id)
@@ -1041,8 +1041,8 @@ class CheckAccountApi
      * @param int $limit Limits the number of entries returned. Default is 100 (optional, default to 100)
      * @param int $offset Set the index where the returned check accounts start. Default is 0 (optional, default to 0)
      * @param string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. Default &#x60;&#x60;. (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelDiscounts
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelDiscounts
      */
     public function getCheckAccounts($limit = '100', $offset = '0', $embed = null)
     {
@@ -1058,8 +1058,8 @@ class CheckAccountApi
      * @param int $limit Limits the number of entries returned. Default is 100 (optional, default to 100)
      * @param int $offset Set the index where the returned check accounts start. Default is 0 (optional, default to 0)
      * @param string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. Default &#x60;&#x60;. (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelDiscounts, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelDiscounts, HTTP status code, HTTP response headers (array of strings)
      */
     public function getCheckAccountsWithHttpInfo($limit = '100', $offset = '0', $embed = null)
     {
@@ -1110,15 +1110,15 @@ class CheckAccountApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelDiscounts',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelDiscounts',
                 '/CheckAccount'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelDiscounts', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelDiscounts', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelDiscounts', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelDiscounts', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -1134,8 +1134,8 @@ class CheckAccountApi
      *
      * @param int $id Id of check account you want to update (required)
      * @param string $body Parameters which need to be updated. Please refer to the description from create discount.    Enter the parameters according to the syntax: parameter1&#x3D;&amp;parameter2&#x3D; (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCheckAccount
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelCheckAccount
      */
     public function updateCheckAccount($id, $body = null)
     {
@@ -1150,8 +1150,8 @@ class CheckAccountApi
      *
      * @param int $id Id of check account you want to update (required)
      * @param string $body Parameters which need to be updated. Please refer to the description from create discount.    Enter the parameters according to the syntax: parameter1&#x3D;&amp;parameter2&#x3D; (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCheckAccount, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelCheckAccount, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateCheckAccountWithHttpInfo($id, $body = null)
     {
@@ -1204,15 +1204,15 @@ class CheckAccountApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCheckAccount',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelCheckAccount',
                 '/CheckAccount/{id}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCheckAccount', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelCheckAccount', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCheckAccount', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelCheckAccount', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }

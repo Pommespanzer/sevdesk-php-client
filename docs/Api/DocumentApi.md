@@ -1,4 +1,4 @@
-# ispserverfarm\sevdesk\phpclient\DocumentApi
+# ispserverfarm\sevdesk\DocumentApi
 
 All URIs are relative to *https://my.sevdesk.de/api/v1*
 
@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 
 # **addDocument**
-> \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelDocument addDocument($body)
+> \ispserverfarm\sevdesk\sevDeskModel\ModelDocument addDocument($body)
 
 Create a new document. Be aware that there wont be a working document with content!
 
@@ -26,11 +26,11 @@ Calls Document.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\DocumentApi();
+$api_instance = new ispserverfarm\sevdesk\Api\DocumentApi();
 $body = "filename=&status=&extension=&filesize="; // string | To create a document, simply enter desired values after parameter= and remove the quotation marks
 
 try {
@@ -50,7 +50,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelDocument**](../Model/ModelDocument.md)
+[**\ispserverfarm\sevdesk\sevDeskModel\ModelDocument**](../Model/ModelDocument.md)
 
 ### Authorization
 
@@ -76,11 +76,11 @@ Calls the delete() function in Document.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\DocumentApi();
+$api_instance = new ispserverfarm\sevdesk\Api\DocumentApi();
 $id = 56; // int | id of document you want to delete
 
 try {
@@ -125,11 +125,11 @@ Calls download() in Document.php to download a document. Will return base64 cont
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\DocumentApi();
+$api_instance = new ispserverfarm\sevdesk\Api\DocumentApi();
 $id = 56; // int | Id of the document you want to download
 
 try {
@@ -175,11 +175,11 @@ With the new version of sevdesk some models are not created by calling the Model
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\DocumentApi();
+$api_instance = new ispserverfarm\sevdesk\Api\DocumentApi();
 $file = "/path/to/file.txt"; // \SplFileObject | file to upload
 $object = ""; // string | object to which you want to upload your file
 $folder = ""; // string | folder to which you want to upload your file
@@ -216,7 +216,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getDocuments**
-> \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelDocument getDocuments($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\sevDeskModel\ModelDocument getDocuments($limit, $offset, $embed)
 
 Get an overview of all documents
 
@@ -228,11 +228,11 @@ Calls Document.php to get necessary variables
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\DocumentApi();
+$api_instance = new ispserverfarm\sevdesk\Api\DocumentApi();
 $limit = 100; // int | Limits the number of entries returned. Default is 100
 $offset = 0; // int | Set the index where the returned documents start. Default is 0
 $embed = array("embed_example"); // string[] | Get some additional information. Embed can handle multiple values, they must be separated by comma. Default ``.
@@ -256,7 +256,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelDocument**](../Model/ModelDocument.md)
+[**\ispserverfarm\sevdesk\sevDeskModel\ModelDocument**](../Model/ModelDocument.md)
 
 ### Authorization
 
@@ -270,7 +270,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateDocument**
-> \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelDocument updateDocument($id, $body)
+> \ispserverfarm\sevdesk\sevDeskModel\ModelDocument updateDocument($id, $body)
 
 Update an existing document. Be aware that you can only update its parameter but not the content of the document itself!
 
@@ -282,11 +282,11 @@ Calls Document.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\DocumentApi();
+$api_instance = new ispserverfarm\sevdesk\Api\DocumentApi();
 $id = 56; // int | id of document you want to update
 $body = "body_example"; // string | Parameters which need to be updated. Please refer to the description from create document.    Enter the parameters according to the syntax: parameter1=&parameter2= and remove the quotation marks
 
@@ -308,7 +308,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelDocument**](../Model/ModelDocument.md)
+[**\ispserverfarm\sevdesk\sevDeskModel\ModelDocument**](../Model/ModelDocument.md)
 
 ### Authorization
 
@@ -334,11 +334,11 @@ Calls trash() in Document.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\DocumentApi();
+$api_instance = new ispserverfarm\sevdesk\Api\DocumentApi();
 $id = 56; // int | id of document of which you want to update the status to 'TRASHED
 
 try {

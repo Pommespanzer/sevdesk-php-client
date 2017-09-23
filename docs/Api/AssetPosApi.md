@@ -1,4 +1,4 @@
-# ispserverfarm\sevdesk\phpclient\AssetPosApi
+# ispserverfarm\sevdesk\AssetPosApi
 
 All URIs are relative to *https://my.sevdesk.de/api/v1*
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **addAssetPos**
-> \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelAssetPos addAssetPos($body)
+> \ispserverfarm\sevdesk\sevDeskModel\ModelAssetPos addAssetPos($body)
 
 Create a new asset position
 
@@ -23,11 +23,11 @@ Calls AssetPos.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\AssetPosApi();
+$api_instance = new ispserverfarm\sevdesk\Api\AssetPosApi();
 $body = "asset[id]=&asset[objectName]=Asset&year=&month=&depreciationAmount=&residualValue="; // string | To create an asset position, simply enter desired values after parameter= and remove the quotation marks.
 
 try {
@@ -47,7 +47,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelAssetPos**](../Model/ModelAssetPos.md)
+[**\ispserverfarm\sevdesk\sevDeskModel\ModelAssetPos**](../Model/ModelAssetPos.md)
 
 ### Authorization
 
@@ -73,11 +73,11 @@ Calls the delete() function in AssetPos.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\AssetPosApi();
+$api_instance = new ispserverfarm\sevdesk\Api\AssetPosApi();
 $id = 56; // int | id of asset position you want to delete
 
 try {
@@ -110,7 +110,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAssetPositions**
-> \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelAssetPos getAssetPositions($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\sevDeskModel\ModelAssetPos getAssetPositions($limit, $offset, $embed)
 
 Get an overview of all asset positions
 
@@ -122,11 +122,11 @@ Calls AssetPos.php to get necessary variables.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\AssetPosApi();
+$api_instance = new ispserverfarm\sevdesk\Api\AssetPosApi();
 $limit = 100; // int | Limits the number of entries returned. Default is 100
 $offset = 0; // int | Set the index where the returned assets start. Default is 0
 $embed = array("embed_example"); // string[] | Get some additional information. Embed can handle multiple values, they must be separated by comma. Default ``.
@@ -150,7 +150,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelAssetPos**](../Model/ModelAssetPos.md)
+[**\ispserverfarm\sevdesk\sevDeskModel\ModelAssetPos**](../Model/ModelAssetPos.md)
 
 ### Authorization
 
@@ -164,7 +164,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateAssetPosition**
-> \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelAssetPos updateAssetPosition($id, $body)
+> \ispserverfarm\sevdesk\sevDeskModel\ModelAssetPos updateAssetPosition($id, $body)
 
 Update an existing asset position
 
@@ -176,11 +176,11 @@ Calls AssetPos.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\AssetPosApi();
+$api_instance = new ispserverfarm\sevdesk\Api\AssetPosApi();
 $id = 56; // int | id of asset position you want to update
 $body = "body_example"; // string | Parameters which need to be updated. Please refer to the description from create asset position.    Append the parameters according to the syntax: parameter1=&parameter2= and remove the quotation marks!
 
@@ -202,7 +202,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelAssetPos**](../Model/ModelAssetPos.md)
+[**\ispserverfarm\sevdesk\sevDeskModel\ModelAssetPos**](../Model/ModelAssetPos.md)
 
 ### Authorization
 

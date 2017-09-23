@@ -1,4 +1,4 @@
-# ispserverfarm\sevdesk\phpclient\AssetApi
+# ispserverfarm\sevdesk\AssetApi
 
 All URIs are relative to *https://my.sevdesk.de/api/v1*
 
@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 
 # **addAsset**
-> \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelAsset addAsset($body)
+> \ispserverfarm\sevdesk\sevDeskModel\ModelAsset addAsset($body)
 
 Create a new asset
 
@@ -26,11 +26,11 @@ Calls Asset.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\AssetApi();
+$api_instance = new ispserverfarm\sevdesk\Api\AssetApi();
 $body = "voucherPos[id]=&voucherPos[objectName]=VoucherPos&name=&usefulLife=&acquisitionDate=&purchasePrice=&taxRate=19&accountingType[id]=&accountingType[objectName]=AccountingType"; // string | To create an asset, simply enter desired values after parameter= and remove the quotation marks.
 
 try {
@@ -50,7 +50,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelAsset**](../Model/ModelAsset.md)
+[**\ispserverfarm\sevdesk\sevDeskModel\ModelAsset**](../Model/ModelAsset.md)
 
 ### Authorization
 
@@ -76,11 +76,11 @@ Calls getDepreciationAmount() in Asset.php to get the depreciation ammount of th
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\AssetApi();
+$api_instance = new ispserverfarm\sevdesk\Api\AssetApi();
 $id = 56; // int | Id of the asset of which you want to get the depreciation amount
 $year = ""; // string | year for which you want to get the depreciation amount
 $month = ""; // string | month for which you want to get the depreciation amount
@@ -129,11 +129,11 @@ Calls getResidualValue() in Asset.php to get the residual value of the specified
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\AssetApi();
+$api_instance = new ispserverfarm\sevdesk\Api\AssetApi();
 $id = 56; // int | Id of the asset of which you want to get the residual value
 $year = ""; // string | year for which you want to get the residual value
 $month = ""; // string | month for which you want to get the residual value
@@ -170,7 +170,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **assetGetVoucher**
-> \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelVoucher assetGetVoucher($id, $embed)
+> \ispserverfarm\sevdesk\sevDeskModel\ModelVoucher assetGetVoucher($id, $embed)
 
 Get voucher of the specified asset
 
@@ -182,11 +182,11 @@ Calls getVoucher() in Asset.php to get the voucher of the specified asset
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\AssetApi();
+$api_instance = new ispserverfarm\sevdesk\Api\AssetApi();
 $id = 56; // int | Id of the asset of which you want to get the voucher
 $embed = array("embed_example"); // string[] | Get some additional information. Embed can handle multiple values, they must be separated by comma. Default ``.
 
@@ -208,7 +208,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelVoucher**](../Model/ModelVoucher.md)
+[**\ispserverfarm\sevdesk\sevDeskModel\ModelVoucher**](../Model/ModelVoucher.md)
 
 ### Authorization
 
@@ -234,11 +234,11 @@ Calls the delete() function in Asset.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\AssetApi();
+$api_instance = new ispserverfarm\sevdesk\Api\AssetApi();
 $id = 56; // int | id of asset you want to delete
 
 try {
@@ -271,7 +271,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getAssets**
-> \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelAsset getAssets($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\sevDeskModel\ModelAsset getAssets($limit, $offset, $embed)
 
 Get an overview of all assets
 
@@ -283,11 +283,11 @@ Calls Asset.php to get necessary variables.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\AssetApi();
+$api_instance = new ispserverfarm\sevdesk\Api\AssetApi();
 $limit = 100; // int | Limits the number of entries returned. Default is 100
 $offset = 0; // int | Set the index where the returned assets start. Default is 0
 $embed = array("embed_example"); // string[] | Get some additional information. Embed can handle multiple values, they must be separated by comma. Default ``.
@@ -311,7 +311,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelAsset**](../Model/ModelAsset.md)
+[**\ispserverfarm\sevdesk\sevDeskModel\ModelAsset**](../Model/ModelAsset.md)
 
 ### Authorization
 
@@ -325,7 +325,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateAsset**
-> \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelAsset updateAsset($id, $body)
+> \ispserverfarm\sevdesk\sevDeskModel\ModelAsset updateAsset($id, $body)
 
 Update an existing asset
 
@@ -337,11 +337,11 @@ Calls Asset.php
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\AssetApi();
+$api_instance = new ispserverfarm\sevdesk\Api\AssetApi();
 $id = 56; // int | id of asset you want to update
 $body = "body_example"; // string | Parameters which need to be updated. Please refer to the description from create asset.    Append the parameters according to the syntax: parameter1=&parameter2= and remove the quotation marks!
 
@@ -363,7 +363,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelAsset**](../Model/ModelAsset.md)
+[**\ispserverfarm\sevdesk\sevDeskModel\ModelAsset**](../Model/ModelAsset.md)
 
 ### Authorization
 

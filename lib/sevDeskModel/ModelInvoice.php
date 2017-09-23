@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ispserverfarm\sevdesk\phpclient
+ * @package  ispserverfarm\sevdesk
  * @author   Swaagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace ispserverfarm\sevdesk\phpclient\sevDeskModel;
+namespace ispserverfarm\sevdesk\sevDeskModel;
 
 use \ArrayAccess;
 
@@ -35,7 +35,7 @@ use \ArrayAccess;
  * ModelInvoice Class Doc Comment
  *
  * @category    Class
- * @package     ispserverfarm\sevdesk\phpclient
+ * @package     ispserverfarm\sevdesk
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -55,7 +55,7 @@ class ModelInvoice implements ArrayAccess
       */
     protected static $swaggerTypes = [
         '_invoice_number' => 'string',
-        '_contact' => '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelContact',
+        '_contact' => '\ispserverfarm\sevdesk\sevDeskModel\ModelContact',
         '_create' => '\DateTime',
         '_update' => '\DateTime',
         '_invoice_date' => '\DateTime',
@@ -69,22 +69,22 @@ class ModelInvoice implements ArrayAccess
         '_address_street' => 'string',
         '_address_zip' => 'string',
         '_address_city' => 'string',
-        '_address_country' => '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelStaticCountry',
+        '_address_country' => '\ispserverfarm\sevdesk\sevDeskModel\ModelStaticCountry',
         '_pay_date' => '\DateTime',
-        '_create_user' => '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelSevUser',
+        '_create_user' => '\ispserverfarm\sevdesk\sevDeskModel\ModelSevUser',
         '_sev_client' => 'object',
         '_delivery_date' => '\DateTime',
         '_status' => 'int',
         '_small_settlement' => 'bool',
-        '_contact_person' => '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelSevUser',
+        '_contact_person' => '\ispserverfarm\sevdesk\sevDeskModel\ModelSevUser',
         '_tax_rate' => 'float',
         '_tax_text' => 'string',
         '_dunning_level' => 'int',
         '_address_parent_name' => 'string',
-        '_address_contact_ref' => '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelContactAddress',
+        '_address_contact_ref' => '\ispserverfarm\sevdesk\sevDeskModel\ModelContactAddress',
         '_tax_type' => 'string',
-        '_payment_method' => '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelPaymentMethod',
-        '_cost_centre' => '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCostCentre',
+        '_payment_method' => '\ispserverfarm\sevdesk\sevDeskModel\ModelPaymentMethod',
+        '_cost_centre' => '\ispserverfarm\sevdesk\sevDeskModel\ModelCostCentre',
         '_send_date' => '\DateTime',
         '_origin' => 'object',
         '_invoice_type' => 'string',
@@ -97,7 +97,7 @@ class ModelInvoice implements ArrayAccess
         '_reminder_charge' => 'float',
         '_address_parent_name2' => 'string',
         '_address_name2' => 'string',
-        '_tax_set' => '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelTaxSet',
+        '_tax_set' => '\ispserverfarm\sevdesk\sevDeskModel\ModelTaxSet',
         '_address_gender' => 'string',
         '_account_end_date' => '\DateTime',
         '_address' => 'string',
@@ -113,7 +113,7 @@ class ModelInvoice implements ArrayAccess
         '_sum_net_accounting' => 'float',
         '_sum_tax_accounting' => 'float',
         '_sum_gross_accounting' => 'float',
-        '_entry_type' => '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelEntryType',
+        '_entry_type' => '\ispserverfarm\sevdesk\sevDeskModel\ModelEntryType',
         '_costumer_internal_note' => 'string',
         '_show_net' => 'bool',
         '_enshrined' => 'bool',
@@ -665,7 +665,7 @@ class ModelInvoice implements ArrayAccess
 
     /**
      * Gets _contact
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelContact
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelContact
      */
     public function getContact()
     {
@@ -674,7 +674,7 @@ class ModelInvoice implements ArrayAccess
 
     /**
      * Sets _contact
-     * @param \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelContact $_contact the contact the invoice belongs to
+     * @param \ispserverfarm\sevdesk\sevDeskModel\ModelContact $_contact the contact the invoice belongs to
      * @return $this
      */
     public function setContact($_contact)
@@ -959,7 +959,7 @@ class ModelInvoice implements ArrayAccess
 
     /**
      * Gets _address_country
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelStaticCountry
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelStaticCountry
      */
     public function getAddressCountry()
     {
@@ -968,7 +968,7 @@ class ModelInvoice implements ArrayAccess
 
     /**
      * Sets _address_country
-     * @param \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelStaticCountry $_address_country the country in the address, equals the contacts country
+     * @param \ispserverfarm\sevdesk\sevDeskModel\ModelStaticCountry $_address_country the country in the address, equals the contacts country
      * @return $this
      */
     public function setAddressCountry($_address_country)
@@ -1001,7 +1001,7 @@ class ModelInvoice implements ArrayAccess
 
     /**
      * Gets _create_user
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelSevUser
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelSevUser
      */
     public function getCreateUser()
     {
@@ -1010,7 +1010,7 @@ class ModelInvoice implements ArrayAccess
 
     /**
      * Sets _create_user
-     * @param \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelSevUser $_create_user SevUser who created the invoice
+     * @param \ispserverfarm\sevdesk\sevDeskModel\ModelSevUser $_create_user SevUser who created the invoice
      * @return $this
      */
     public function setCreateUser($_create_user)
@@ -1106,7 +1106,7 @@ class ModelInvoice implements ArrayAccess
 
     /**
      * Gets _contact_person
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelSevUser
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelSevUser
      */
     public function getContactPerson()
     {
@@ -1115,7 +1115,7 @@ class ModelInvoice implements ArrayAccess
 
     /**
      * Sets _contact_person
-     * @param \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelSevUser $_contact_person SevUser who created the invoice and therefore is the contact person
+     * @param \ispserverfarm\sevdesk\sevDeskModel\ModelSevUser $_contact_person SevUser who created the invoice and therefore is the contact person
      * @return $this
      */
     public function setContactPerson($_contact_person)
@@ -1228,7 +1228,7 @@ class ModelInvoice implements ArrayAccess
 
     /**
      * Gets _address_contact_ref
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelContactAddress
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelContactAddress
      */
     public function getAddressContactRef()
     {
@@ -1237,7 +1237,7 @@ class ModelInvoice implements ArrayAccess
 
     /**
      * Sets _address_contact_ref
-     * @param \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelContactAddress $_address_contact_ref a reference to the contacts address
+     * @param \ispserverfarm\sevdesk\sevDeskModel\ModelContactAddress $_address_contact_ref a reference to the contacts address
      * @return $this
      */
     public function setAddressContactRef($_address_contact_ref)
@@ -1279,7 +1279,7 @@ class ModelInvoice implements ArrayAccess
 
     /**
      * Gets _payment_method
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelPaymentMethod
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelPaymentMethod
      */
     public function getPaymentMethod()
     {
@@ -1288,7 +1288,7 @@ class ModelInvoice implements ArrayAccess
 
     /**
      * Sets _payment_method
-     * @param \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelPaymentMethod $_payment_method 
+     * @param \ispserverfarm\sevdesk\sevDeskModel\ModelPaymentMethod $_payment_method 
      * @return $this
      */
     public function setPaymentMethod($_payment_method)
@@ -1300,7 +1300,7 @@ class ModelInvoice implements ArrayAccess
 
     /**
      * Gets _cost_centre
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCostCentre
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelCostCentre
      */
     public function getCostCentre()
     {
@@ -1309,7 +1309,7 @@ class ModelInvoice implements ArrayAccess
 
     /**
      * Sets _cost_centre
-     * @param \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelCostCentre $_cost_centre 
+     * @param \ispserverfarm\sevdesk\sevDeskModel\ModelCostCentre $_cost_centre 
      * @return $this
      */
     public function setCostCentre($_cost_centre)
@@ -1582,7 +1582,7 @@ class ModelInvoice implements ArrayAccess
 
     /**
      * Gets _tax_set
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelTaxSet
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelTaxSet
      */
     public function getTaxSet()
     {
@@ -1591,7 +1591,7 @@ class ModelInvoice implements ArrayAccess
 
     /**
      * Sets _tax_set
-     * @param \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelTaxSet $_tax_set 
+     * @param \ispserverfarm\sevdesk\sevDeskModel\ModelTaxSet $_tax_set 
      * @return $this
      */
     public function setTaxSet($_tax_set)
@@ -1918,7 +1918,7 @@ class ModelInvoice implements ArrayAccess
 
     /**
      * Gets _entry_type
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelEntryType
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelEntryType
      */
     public function getEntryType()
     {
@@ -1927,7 +1927,7 @@ class ModelInvoice implements ArrayAccess
 
     /**
      * Sets _entry_type
-     * @param \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelEntryType $_entry_type 
+     * @param \ispserverfarm\sevdesk\sevDeskModel\ModelEntryType $_entry_type 
      * @return $this
      */
     public function setEntryType($_entry_type)
@@ -2093,10 +2093,10 @@ class ModelInvoice implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\ispserverfarm\sevdesk\phpclient\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\ispserverfarm\sevdesk\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\ispserverfarm\sevdesk\phpclient\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\ispserverfarm\sevdesk\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

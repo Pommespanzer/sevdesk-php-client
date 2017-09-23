@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ispserverfarm\sevdesk\phpclient
+ * @package  ispserverfarm\sevdesk
  * @author   Swaagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace ispserverfarm\sevdesk\phpclient\sevDeskModel;
+namespace ispserverfarm\sevdesk\sevDeskModel;
 
 use \ArrayAccess;
 
@@ -36,7 +36,7 @@ use \ArrayAccess;
  *
  * @category    Class
  * @description Below are the models which can be used for the functions in Invoice/Factory.php. Beware that you need to use them without the underscore at the beginning!
- * @package     ispserverfarm\sevdesk\phpclient
+ * @package     ispserverfarm\sevdesk
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -55,11 +55,11 @@ class ModelInvoiceFactory implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'invoice' => '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice',
-        'invoice_pos_save' => '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice',
-        'invoice_pos_delete' => '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice',
-        'discount_save' => '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelDiscounts',
-        'discount_delete' => '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelDiscounts'
+        'invoice' => '\ispserverfarm\sevdesk\sevDeskModel\ModelInvoice',
+        'invoice_pos_save' => '\ispserverfarm\sevdesk\sevDeskModel\ModelInvoice',
+        'invoice_pos_delete' => '\ispserverfarm\sevdesk\sevDeskModel\ModelInvoice',
+        'discount_save' => '\ispserverfarm\sevdesk\sevDeskModel\ModelDiscounts',
+        'discount_delete' => '\ispserverfarm\sevdesk\sevDeskModel\ModelDiscounts'
     ];
 
     /**
@@ -187,7 +187,7 @@ class ModelInvoiceFactory implements ArrayAccess
 
     /**
      * Gets invoice
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelInvoice
      */
     public function getInvoice()
     {
@@ -196,7 +196,7 @@ class ModelInvoiceFactory implements ArrayAccess
 
     /**
      * Sets invoice
-     * @param \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice $invoice the Model_Invoice to create/update
+     * @param \ispserverfarm\sevdesk\sevDeskModel\ModelInvoice $invoice the Model_Invoice to create/update
      * @return $this
      */
     public function setInvoice($invoice)
@@ -208,7 +208,7 @@ class ModelInvoiceFactory implements ArrayAccess
 
     /**
      * Gets invoice_pos_save
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelInvoice
      */
     public function getInvoicePosSave()
     {
@@ -217,7 +217,7 @@ class ModelInvoiceFactory implements ArrayAccess
 
     /**
      * Sets invoice_pos_save
-     * @param \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice $invoice_pos_save the Model_InvoicePos to create/update
+     * @param \ispserverfarm\sevdesk\sevDeskModel\ModelInvoice $invoice_pos_save the Model_InvoicePos to create/update
      * @return $this
      */
     public function setInvoicePosSave($invoice_pos_save)
@@ -229,7 +229,7 @@ class ModelInvoiceFactory implements ArrayAccess
 
     /**
      * Gets invoice_pos_delete
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelInvoice
      */
     public function getInvoicePosDelete()
     {
@@ -238,7 +238,7 @@ class ModelInvoiceFactory implements ArrayAccess
 
     /**
      * Sets invoice_pos_delete
-     * @param \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelInvoice $invoice_pos_delete the Model_InvoicePos to delete
+     * @param \ispserverfarm\sevdesk\sevDeskModel\ModelInvoice $invoice_pos_delete the Model_InvoicePos to delete
      * @return $this
      */
     public function setInvoicePosDelete($invoice_pos_delete)
@@ -250,7 +250,7 @@ class ModelInvoiceFactory implements ArrayAccess
 
     /**
      * Gets discount_save
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelDiscounts
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelDiscounts
      */
     public function getDiscountSave()
     {
@@ -259,7 +259,7 @@ class ModelInvoiceFactory implements ArrayAccess
 
     /**
      * Sets discount_save
-     * @param \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelDiscounts $discount_save the Model_Discounts to create/update
+     * @param \ispserverfarm\sevdesk\sevDeskModel\ModelDiscounts $discount_save the Model_Discounts to create/update
      * @return $this
      */
     public function setDiscountSave($discount_save)
@@ -271,7 +271,7 @@ class ModelInvoiceFactory implements ArrayAccess
 
     /**
      * Gets discount_delete
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelDiscounts
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelDiscounts
      */
     public function getDiscountDelete()
     {
@@ -280,7 +280,7 @@ class ModelInvoiceFactory implements ArrayAccess
 
     /**
      * Sets discount_delete
-     * @param \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelDiscounts $discount_delete the Model_Discounts to delete
+     * @param \ispserverfarm\sevdesk\sevDeskModel\ModelDiscounts $discount_delete the Model_Discounts to delete
      * @return $this
      */
     public function setDiscountDelete($discount_delete)
@@ -341,10 +341,10 @@ class ModelInvoiceFactory implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\ispserverfarm\sevdesk\phpclient\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\ispserverfarm\sevdesk\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\ispserverfarm\sevdesk\phpclient\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\ispserverfarm\sevdesk\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

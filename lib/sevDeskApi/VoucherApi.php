@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ispserverfarm\sevdesk\phpclient
+ * @package  ispserverfarm\sevdesk
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,18 +26,18 @@
  * Do not edit the class manually.
  */
 
-namespace ispserverfarm\sevdesk\phpclient\sevDeskApi;
+namespace ispserverfarm\sevdesk\sevDeskApi;
 
-use \ispserverfarm\sevdesk\phpclient\ApiClient;
-use \ispserverfarm\sevdesk\phpclient\ApiException;
-use \ispserverfarm\sevdesk\phpclient\Configuration;
-use \ispserverfarm\sevdesk\phpclient\ObjectSerializer;
+use \ispserverfarm\sevdesk\ApiClient;
+use \ispserverfarm\sevdesk\ApiException;
+use \ispserverfarm\sevdesk\Configuration;
+use \ispserverfarm\sevdesk\ObjectSerializer;
 
 /**
  * VoucherApi Class Doc Comment
  *
  * @category Class
- * @package  ispserverfarm\sevdesk\phpclient
+ * @package  ispserverfarm\sevdesk
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -46,16 +46,16 @@ class VoucherApi
     /**
      * API Client
      *
-     * @var \ispserverfarm\sevdesk\phpclient\ApiClient instance of the ApiClient
+     * @var \ispserverfarm\sevdesk\ApiClient instance of the ApiClient
      */
     protected $apiClient;
 
     /**
      * Constructor
      *
-     * @param \ispserverfarm\sevdesk\phpclient\ApiClient|null $apiClient The api client to use
+     * @param \ispserverfarm\sevdesk\ApiClient|null $apiClient The api client to use
      */
-    public function __construct(\ispserverfarm\sevdesk\phpclient\ApiClient $apiClient = null)
+    public function __construct(\ispserverfarm\sevdesk\ApiClient $apiClient = null)
     {
         if ($apiClient === null) {
             $apiClient = new ApiClient();
@@ -67,7 +67,7 @@ class VoucherApi
     /**
      * Get API client
      *
-     * @return \ispserverfarm\sevdesk\phpclient\ApiClient get the API client
+     * @return \ispserverfarm\sevdesk\ApiClient get the API client
      */
     public function getApiClient()
     {
@@ -77,11 +77,11 @@ class VoucherApi
     /**
      * Set the API client
      *
-     * @param \ispserverfarm\sevdesk\phpclient\ApiClient $apiClient set the API client
+     * @param \ispserverfarm\sevdesk\ApiClient $apiClient set the API client
      *
      * @return VoucherApi
      */
-    public function setApiClient(\ispserverfarm\sevdesk\phpclient\ApiClient $apiClient)
+    public function setApiClient(\ispserverfarm\sevdesk\ApiClient $apiClient)
     {
         $this->apiClient = $apiClient;
         return $this;
@@ -93,8 +93,8 @@ class VoucherApi
      * Create a new voucher
      *
      * @param string $body To create a voucher, simply enter desired values after parameter&#x3D; and remove the quotation marks.      Be aware that you can&#39;t use all the parameters included in the Model_Voucher, as creating a voucher involves other functions.      So for example, adding a sumNet/Gross/etc. does not work as they normally get their value from the product which is involved in the voucher      The product/part in this case is handled in the Model_VoucherPos which makes a call to Model_Part. (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelVoucher
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelVoucher
      */
     public function addVoucher($body)
     {
@@ -108,8 +108,8 @@ class VoucherApi
      * Create a new voucher
      *
      * @param string $body To create a voucher, simply enter desired values after parameter&#x3D; and remove the quotation marks.      Be aware that you can&#39;t use all the parameters included in the Model_Voucher, as creating a voucher involves other functions.      So for example, adding a sumNet/Gross/etc. does not work as they normally get their value from the product which is involved in the voucher      The product/part in this case is handled in the Model_VoucherPos which makes a call to Model_Part. (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelVoucher, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelVoucher, HTTP status code, HTTP response headers (array of strings)
      */
     public function addVoucherWithHttpInfo($body)
     {
@@ -154,15 +154,15 @@ class VoucherApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelVoucher',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelVoucher',
                 '/Voucher'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelVoucher', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelVoucher', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 201:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelVoucher', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelVoucher', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -177,7 +177,7 @@ class VoucherApi
      * Delete an existing voucher
      *
      * @param int $id Id of voucher you want to delete (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function deleteVoucher($id)
@@ -192,7 +192,7 @@ class VoucherApi
      * Delete an existing voucher
      *
      * @param int $id Id of voucher you want to delete (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function deleteVoucherWithHttpInfo($id)
@@ -262,8 +262,8 @@ class VoucherApi
      * @param int $limit Limits the number of entries returned. Default is 100 (optional, default to 100)
      * @param int $offset Set the index where the returned vouchers start. Default is 0 (optional, default to 0)
      * @param string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. Default &#x60;&#x60;. (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelVoucher
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelVoucher
      */
     public function getVouchers($limit = '100', $offset = '0', $embed = null)
     {
@@ -279,8 +279,8 @@ class VoucherApi
      * @param int $limit Limits the number of entries returned. Default is 100 (optional, default to 100)
      * @param int $offset Set the index where the returned vouchers start. Default is 0 (optional, default to 0)
      * @param string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. Default &#x60;&#x60;. (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelVoucher, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelVoucher, HTTP status code, HTTP response headers (array of strings)
      */
     public function getVouchersWithHttpInfo($limit = '100', $offset = '0', $embed = null)
     {
@@ -331,15 +331,15 @@ class VoucherApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelVoucher',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelVoucher',
                 '/Voucher'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelVoucher', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelVoucher', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelVoucher', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelVoucher', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -354,8 +354,8 @@ class VoucherApi
      * Create a new voucher
      *
      * @param string $body The saveVoucher function in Voucher/Factory.php combines both Voucher and VoucherPos with all their HTTP-methods.    It is now possible to **simultaneously** create a voucher with its position.    To simply (only) create a voucher you can use the given parameters and concatenate your values.    For also adding a voucher position refer to the **quick reference** below.    The parameters you find there are **needed** for creating a voucher position. Just concatenate them to the existing voucher parameters.    You can also find additional (optional) parameters in the **Models** section.    Quick reference:  * &amp;voucherPosSave[0][accountingType][id]&#x3D;  * &amp;voucherPosSave[0][accountingType][objectName]&#x3D;AccountingType  * &amp;voucherPosSave[0][taxRate]&#x3D;19  * &amp;voucherPosSave[0][sum]&#x3D;  * &amp;voucherPosSave[0][objectName]&#x3D;VoucherPos  * &amp;voucherPosSave[0][mapAll]&#x3D;true  * &amp;voucherPosDelete&#x3D;true/false &lt;-- if you provide this parameter, you can delete a voucher position    You can also use additional parameters for creating a voucher in the same way by adding them in the format: **voucher[yourParameter]** (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelVoucherFactory
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelVoucherFactory
      */
     public function saveVoucher($body)
     {
@@ -369,8 +369,8 @@ class VoucherApi
      * Create a new voucher
      *
      * @param string $body The saveVoucher function in Voucher/Factory.php combines both Voucher and VoucherPos with all their HTTP-methods.    It is now possible to **simultaneously** create a voucher with its position.    To simply (only) create a voucher you can use the given parameters and concatenate your values.    For also adding a voucher position refer to the **quick reference** below.    The parameters you find there are **needed** for creating a voucher position. Just concatenate them to the existing voucher parameters.    You can also find additional (optional) parameters in the **Models** section.    Quick reference:  * &amp;voucherPosSave[0][accountingType][id]&#x3D;  * &amp;voucherPosSave[0][accountingType][objectName]&#x3D;AccountingType  * &amp;voucherPosSave[0][taxRate]&#x3D;19  * &amp;voucherPosSave[0][sum]&#x3D;  * &amp;voucherPosSave[0][objectName]&#x3D;VoucherPos  * &amp;voucherPosSave[0][mapAll]&#x3D;true  * &amp;voucherPosDelete&#x3D;true/false &lt;-- if you provide this parameter, you can delete a voucher position    You can also use additional parameters for creating a voucher in the same way by adding them in the format: **voucher[yourParameter]** (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelVoucherFactory, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelVoucherFactory, HTTP status code, HTTP response headers (array of strings)
      */
     public function saveVoucherWithHttpInfo($body)
     {
@@ -415,15 +415,15 @@ class VoucherApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelVoucherFactory',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelVoucherFactory',
                 '/Voucher/Factory/saveVoucher'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelVoucherFactory', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelVoucherFactory', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 201:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelVoucherFactory', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelVoucherFactory', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -439,8 +439,8 @@ class VoucherApi
      *
      * @param int $id Id of the voucher you want to update (required)
      * @param string $body Parameters which need to be updated. Please refer to the description from create invoice.      Enter the parameters according to the syntax: parameter1&#x3D;&amp;parameter2&#x3D; and remove the quotation marks (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelVoucher
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelVoucher
      */
     public function updateVoucher($id, $body = null)
     {
@@ -455,8 +455,8 @@ class VoucherApi
      *
      * @param int $id Id of the voucher you want to update (required)
      * @param string $body Parameters which need to be updated. Please refer to the description from create invoice.      Enter the parameters according to the syntax: parameter1&#x3D;&amp;parameter2&#x3D; and remove the quotation marks (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelVoucher, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelVoucher, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateVoucherWithHttpInfo($id, $body = null)
     {
@@ -509,15 +509,15 @@ class VoucherApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelVoucher',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelVoucher',
                 '/Voucher/{id}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelVoucher', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelVoucher', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelVoucher', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelVoucher', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -533,7 +533,7 @@ class VoucherApi
      *
      * @param int $id Id of the voucher for which you want to book an amount (required)
      * @param string $body To book an amount for your voucher, simply enter desired values after parameter&#x3D; and remove the quotation marks. (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function voucherBookAmount($id, $body = null)
@@ -549,7 +549,7 @@ class VoucherApi
      *
      * @param int $id Id of the voucher for which you want to book an amount (required)
      * @param string $body To book an amount for your voucher, simply enter desired values after parameter&#x3D; and remove the quotation marks. (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function voucherBookAmountWithHttpInfo($id, $body = null)
@@ -623,7 +623,7 @@ class VoucherApi
      *
      * @param int $id Id of the voucher of which you want to change the status (required)
      * @param string $body To change the status of your voucher, simply enter desired values after parameter&#x3D; and remove the quotation marks. (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function voucherChangeStatus($id, $body = null)
@@ -639,7 +639,7 @@ class VoucherApi
      *
      * @param int $id Id of the voucher of which you want to change the status (required)
      * @param string $body To change the status of your voucher, simply enter desired values after parameter&#x3D; and remove the quotation marks. (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function voucherChangeStatusWithHttpInfo($id, $body = null)
@@ -712,7 +712,7 @@ class VoucherApi
      * Delete the document of an existing voucher
      *
      * @param int $id Id of the voucher of which you want to delete the document (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function voucherDeleteDocument($id)
@@ -727,7 +727,7 @@ class VoucherApi
      * Delete the document of an existing voucher
      *
      * @param int $id Id of the voucher of which you want to delete the document (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function voucherDeleteDocumentWithHttpInfo($id)
@@ -795,7 +795,7 @@ class VoucherApi
      * Extract file thumb
      *
      * @param string $file_name Name of the file of which you want to extract the thumb (optional, default to )
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function voucherExtractThumb($file_name = '')
@@ -810,7 +810,7 @@ class VoucherApi
      * Extract file thumb
      *
      * @param string $file_name Name of the file of which you want to extract the thumb (optional, default to )
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function voucherExtractThumbWithHttpInfo($file_name = '')
@@ -871,8 +871,8 @@ class VoucherApi
      *
      * @param int $id Id of the voucher of which you want to get the accounting types (required)
      * @param string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. Default &#x60;&#x60;. (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelAccountingType
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelAccountingType
      */
     public function voucherGetAccountingTypes($id, $embed = null)
     {
@@ -887,8 +887,8 @@ class VoucherApi
      *
      * @param int $id Id of the voucher of which you want to get the accounting types (required)
      * @param string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. Default &#x60;&#x60;. (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelAccountingType, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelAccountingType, HTTP status code, HTTP response headers (array of strings)
      */
     public function voucherGetAccountingTypesWithHttpInfo($id, $embed = null)
     {
@@ -943,15 +943,15 @@ class VoucherApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelAccountingType',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelAccountingType',
                 '/Voucher/{id}/getAccountingTypes'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelAccountingType', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelAccountingType', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelAccountingType', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelAccountingType', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -967,7 +967,7 @@ class VoucherApi
      *
      * @param int $id Id of the voucher of which you want to get the check account transaction logs (required)
      * @param string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. Default &#x60;&#x60;. (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function voucherGetCheckAccountTransactionLogs($id, $embed = null)
@@ -983,7 +983,7 @@ class VoucherApi
      *
      * @param int $id Id of the voucher of which you want to get the check account transaction logs (required)
      * @param string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. Default &#x60;&#x60;. (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function voucherGetCheckAccountTransactionLogsWithHttpInfo($id, $embed = null)
@@ -1059,7 +1059,7 @@ class VoucherApi
      *
      * @param int $id Id of the voucher of which you want to get the check account transactions (required)
      * @param string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. Default &#x60;&#x60;. (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function voucherGetCheckAccountTransactions($id, $embed = null)
@@ -1075,7 +1075,7 @@ class VoucherApi
      *
      * @param int $id Id of the voucher of which you want to get the check account transactions (required)
      * @param string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. Default &#x60;&#x60;. (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function voucherGetCheckAccountTransactionsWithHttpInfo($id, $embed = null)
@@ -1150,7 +1150,7 @@ class VoucherApi
      * Get the currency of a specified voucher
      *
      * @param int $id Id of the voucher of which you want to get the currency (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function voucherGetCurrency($id)
@@ -1165,7 +1165,7 @@ class VoucherApi
      * Get the currency of a specified voucher
      *
      * @param int $id Id of the voucher of which you want to get the currency (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function voucherGetCurrencyWithHttpInfo($id)
@@ -1233,7 +1233,7 @@ class VoucherApi
      * Get unpaid amount of a specified voucher
      *
      * @param int $id Id of the voucher of which you want to get the unpaid amount (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function voucherGetDebit($id)
@@ -1248,7 +1248,7 @@ class VoucherApi
      * Get unpaid amount of a specified voucher
      *
      * @param int $id Id of the voucher of which you want to get the unpaid amount (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function voucherGetDebitWithHttpInfo($id)
@@ -1316,7 +1316,7 @@ class VoucherApi
      * Return if the voucher is delinquent
      *
      * @param int $id Id of the voucher of which you want to know if it is delinquent (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function voucherGetDelinquent($id)
@@ -1331,7 +1331,7 @@ class VoucherApi
      * Return if the voucher is delinquent
      *
      * @param int $id Id of the voucher of which you want to know if it is delinquent (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function voucherGetDelinquentWithHttpInfo($id)
@@ -1400,8 +1400,8 @@ class VoucherApi
      *
      * @param int $id Id of the voucher of which you want to get the depending recurring vouchers (required)
      * @param string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. Default &#x60;&#x60;. (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelVoucher
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelVoucher
      */
     public function voucherGetDependingRecurringVouchers($id, $embed = null)
     {
@@ -1416,8 +1416,8 @@ class VoucherApi
      *
      * @param int $id Id of the voucher of which you want to get the depending recurring vouchers (required)
      * @param string[] $embed Get some additional information. Embed can handle multiple values, they must be separated by comma. Default &#x60;&#x60;. (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelVoucher, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelVoucher, HTTP status code, HTTP response headers (array of strings)
      */
     public function voucherGetDependingRecurringVouchersWithHttpInfo($id, $embed = null)
     {
@@ -1472,15 +1472,15 @@ class VoucherApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelVoucher',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelVoucher',
                 '/Voucher/{id}/getDependingRecurringVouchers'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelVoucher', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelVoucher', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelVoucher', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelVoucher', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -1495,7 +1495,7 @@ class VoucherApi
      * Returns the base64 encoded preview content of the vouchers document
      *
      * @param int $id Id of the voucher of which you want to get the document image (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function voucherGetDocumentImage($id)
@@ -1510,7 +1510,7 @@ class VoucherApi
      * Returns the base64 encoded preview content of the vouchers document
      *
      * @param int $id Id of the voucher of which you want to get the document image (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function voucherGetDocumentImageWithHttpInfo($id)
@@ -1580,7 +1580,7 @@ class VoucherApi
      * @param int $id Id of the voucher you want to update (required)
      * @param bool $show_total_sum Define if you want to have the total sum of each tax group (required)
      * @param bool $with_corrections Define if you want to have the total sum with corrections (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function voucherGetTaxGroups($id, $show_total_sum, $with_corrections)
@@ -1597,7 +1597,7 @@ class VoucherApi
      * @param int $id Id of the voucher you want to update (required)
      * @param bool $show_total_sum Define if you want to have the total sum of each tax group (required)
      * @param bool $with_corrections Define if you want to have the total sum with corrections (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function voucherGetTaxGroupsWithHttpInfo($id, $show_total_sum, $with_corrections)
@@ -1681,8 +1681,8 @@ class VoucherApi
      * Mark a specified voucher as open
      *
      * @param int $id Id of the voucher you want to mark as open (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelVoucher
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelVoucher
      */
     public function voucherMarkAsOpen($id)
     {
@@ -1696,8 +1696,8 @@ class VoucherApi
      * Mark a specified voucher as open
      *
      * @param int $id Id of the voucher you want to mark as open (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelVoucher, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelVoucher, HTTP status code, HTTP response headers (array of strings)
      */
     public function voucherMarkAsOpenWithHttpInfo($id)
     {
@@ -1745,15 +1745,15 @@ class VoucherApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelVoucher',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelVoucher',
                 '/Voucher/{id}/markAsOpen'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelVoucher', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelVoucher', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelVoucher', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelVoucher', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -1769,8 +1769,8 @@ class VoucherApi
      *
      * @param int $id Id of the voucher you want to mark as paid (required)
      * @param string $body Enter the date the voucher was paid here, using the format DD.MM.YYYY! (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelVoucher
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelVoucher
      */
     public function voucherMarkAsPaid($id, $body = null)
     {
@@ -1785,8 +1785,8 @@ class VoucherApi
      *
      * @param int $id Id of the voucher you want to mark as paid (required)
      * @param string $body Enter the date the voucher was paid here, using the format DD.MM.YYYY! (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelVoucher, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelVoucher, HTTP status code, HTTP response headers (array of strings)
      */
     public function voucherMarkAsPaidWithHttpInfo($id, $body = null)
     {
@@ -1839,15 +1839,15 @@ class VoucherApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelVoucher',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelVoucher',
                 '/Voucher/{id}/markAsPaid'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelVoucher', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelVoucher', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelVoucher', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelVoucher', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -1863,8 +1863,8 @@ class VoucherApi
      *
      * @param int $id Id of the voucher for which you want to refund an amount (required)
      * @param string $body Enter the amount which should be refunded, the date of the refund (format DD.MM.YYYY) and if it should appear in the feed an remove the quotation marks! (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelVoucherLog
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelVoucherLog
      */
     public function voucherRefundAmount($id, $body = null)
     {
@@ -1879,8 +1879,8 @@ class VoucherApi
      *
      * @param int $id Id of the voucher for which you want to refund an amount (required)
      * @param string $body Enter the amount which should be refunded, the date of the refund (format DD.MM.YYYY) and if it should appear in the feed an remove the quotation marks! (optional)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelVoucherLog, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelVoucherLog, HTTP status code, HTTP response headers (array of strings)
      */
     public function voucherRefundAmountWithHttpInfo($id, $body = null)
     {
@@ -1933,15 +1933,15 @@ class VoucherApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelVoucherLog',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelVoucherLog',
                 '/Voucher/{id}/refundAmmount'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelVoucherLog', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelVoucherLog', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelVoucherLog', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelVoucherLog', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -1956,8 +1956,8 @@ class VoucherApi
      * Upload a temporary file to be used later
      *
      * @param \SplFileObject $file file to upload (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelVoucherFactory
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return \ispserverfarm\sevdesk\sevDeskModel\ModelVoucherFactory
      */
     public function voucherUploadTempFile($file)
     {
@@ -1971,8 +1971,8 @@ class VoucherApi
      * Upload a temporary file to be used later
      *
      * @param \SplFileObject $file file to upload (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
-     * @return array of \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelVoucherFactory, HTTP status code, HTTP response headers (array of strings)
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
+     * @return array of \ispserverfarm\sevdesk\sevDeskModel\ModelVoucherFactory, HTTP status code, HTTP response headers (array of strings)
      */
     public function voucherUploadTempFileWithHttpInfo($file)
     {
@@ -2022,15 +2022,15 @@ class VoucherApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelVoucherFactory',
+                '\ispserverfarm\sevdesk\sevDeskModel\ModelVoucherFactory',
                 '/Voucher/Factory/uploadTempFile'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelVoucherFactory', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\sevDeskModel\ModelVoucherFactory', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 201:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelVoucherFactory', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ispserverfarm\sevdesk\sevDeskModel\ModelVoucherFactory', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }

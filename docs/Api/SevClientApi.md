@@ -1,4 +1,4 @@
-# ispserverfarm\sevdesk\phpclient\SevClientApi
+# ispserverfarm\sevdesk\SevClientApi
 
 All URIs are relative to *https://my.sevdesk.de/api/v1*
 
@@ -20,11 +20,11 @@ Get sevDesk account invoices
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\SevClientApi();
+$api_instance = new ispserverfarm\sevdesk\Api\SevClientApi();
 
 try {
     $api_instance->sevClientGetSevDeskAccountInvoices();

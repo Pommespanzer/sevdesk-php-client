@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ispserverfarm\sevdesk\phpclient
+ * @package  ispserverfarm\sevdesk
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,18 +26,18 @@
  * Do not edit the class manually.
  */
 
-namespace ispserverfarm\sevdesk\phpclient\sevDeskApi;
+namespace ispserverfarm\sevdesk\sevDeskApi;
 
-use \ispserverfarm\sevdesk\phpclient\ApiClient;
-use \ispserverfarm\sevdesk\phpclient\ApiException;
-use \ispserverfarm\sevdesk\phpclient\Configuration;
-use \ispserverfarm\sevdesk\phpclient\ObjectSerializer;
+use \ispserverfarm\sevdesk\ApiClient;
+use \ispserverfarm\sevdesk\ApiException;
+use \ispserverfarm\sevdesk\Configuration;
+use \ispserverfarm\sevdesk\ObjectSerializer;
 
 /**
  * AggregatorApi Class Doc Comment
  *
  * @category Class
- * @package  ispserverfarm\sevdesk\phpclient
+ * @package  ispserverfarm\sevdesk
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -46,16 +46,16 @@ class AggregatorApi
     /**
      * API Client
      *
-     * @var \ispserverfarm\sevdesk\phpclient\ApiClient instance of the ApiClient
+     * @var \ispserverfarm\sevdesk\ApiClient instance of the ApiClient
      */
     protected $apiClient;
 
     /**
      * Constructor
      *
-     * @param \ispserverfarm\sevdesk\phpclient\ApiClient|null $apiClient The api client to use
+     * @param \ispserverfarm\sevdesk\ApiClient|null $apiClient The api client to use
      */
-    public function __construct(\ispserverfarm\sevdesk\phpclient\ApiClient $apiClient = null)
+    public function __construct(\ispserverfarm\sevdesk\ApiClient $apiClient = null)
     {
         if ($apiClient === null) {
             $apiClient = new ApiClient();
@@ -67,7 +67,7 @@ class AggregatorApi
     /**
      * Get API client
      *
-     * @return \ispserverfarm\sevdesk\phpclient\ApiClient get the API client
+     * @return \ispserverfarm\sevdesk\ApiClient get the API client
      */
     public function getApiClient()
     {
@@ -77,11 +77,11 @@ class AggregatorApi
     /**
      * Set the API client
      *
-     * @param \ispserverfarm\sevdesk\phpclient\ApiClient $apiClient set the API client
+     * @param \ispserverfarm\sevdesk\ApiClient $apiClient set the API client
      *
      * @return AggregatorApi
      */
-    public function setApiClient(\ispserverfarm\sevdesk\phpclient\ApiClient $apiClient)
+    public function setApiClient(\ispserverfarm\sevdesk\ApiClient $apiClient)
     {
         $this->apiClient = $apiClient;
         return $this;
@@ -92,7 +92,7 @@ class AggregatorApi
      *
      * Calculates total sum of all asset amounts for the year of the current query
      *
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function aggregatorCalcTotalDepreciation()
@@ -106,7 +106,7 @@ class AggregatorApi
      *
      * Calculates total sum of all asset amounts for the year of the current query
      *
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function aggregatorCalcTotalDepreciationWithHttpInfo()
@@ -163,7 +163,7 @@ class AggregatorApi
      *
      * @param string $startdate Start date for the accounting score calculation (optional, default to )
      * @param string $enddate End date for the accounting score calculation (optional, default to )
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function aggregatorGetAccountingScore($startdate = '', $enddate = '')
@@ -179,7 +179,7 @@ class AggregatorApi
      *
      * @param string $startdate Start date for the accounting score calculation (optional, default to )
      * @param string $enddate End date for the accounting score calculation (optional, default to )
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function aggregatorGetAccountingScoreWithHttpInfo($startdate = '', $enddate = '')
@@ -242,7 +242,7 @@ class AggregatorApi
      *
      * Get the data which is displayed in the chart on the dashboard in the app
      *
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function aggregatorGetAppRevenueChartData()
@@ -256,7 +256,7 @@ class AggregatorApi
      *
      * Get the data which is displayed in the chart on the dashboard in the app
      *
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function aggregatorGetAppRevenueChartDataWithHttpInfo()
@@ -314,7 +314,7 @@ class AggregatorApi
      * @param string $start_date Start date of the period you want to calculate (required)
      * @param string $end_date End date of the period you want to calculate (required)
      * @param bool $actual_taxation Specify if you want to calculate the net income method (true) or the profit and loss (false) (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function aggregatorGetProfitAndLossCalculation($start_date, $end_date, $actual_taxation)
@@ -331,7 +331,7 @@ class AggregatorApi
      * @param string $start_date Start date of the period you want to calculate (required)
      * @param string $end_date End date of the period you want to calculate (required)
      * @param bool $actual_taxation Specify if you want to calculate the net income method (true) or the profit and loss (false) (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function aggregatorGetProfitAndLossCalculationWithHttpInfo($start_date, $end_date, $actual_taxation)
@@ -415,7 +415,7 @@ class AggregatorApi
      * @param int $period Starting period (month) of your tax calculation (required)
      * @param bool $actual_taxation Specify if you want to calculate the net income method (true) or the profit and loss (false) (required)
      * @param bool $no_actual_taxation_on_input_tax Specify if you want no actual taxation on input tax (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function aggregatorGetTaxInformation($type, $year, $period, $actual_taxation, $no_actual_taxation_on_input_tax)
@@ -434,7 +434,7 @@ class AggregatorApi
      * @param int $period Starting period (month) of your tax calculation (required)
      * @param bool $actual_taxation Specify if you want to calculate the net income method (true) or the profit and loss (false) (required)
      * @param bool $no_actual_taxation_on_input_tax Specify if you want no actual taxation on input tax (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function aggregatorGetTaxInformationWithHttpInfo($type, $year, $period, $actual_taxation, $no_actual_taxation_on_input_tax)
@@ -529,7 +529,7 @@ class AggregatorApi
      *
      * Get information about the categories of all vouchers in the year of the current query
      *
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function aggregatorGetVoucherCategoryInformation()
@@ -543,7 +543,7 @@ class AggregatorApi
      *
      * Get information about the categories of all vouchers in the year of the current query
      *
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function aggregatorGetVoucherCategoryInformationWithHttpInfo()
@@ -599,7 +599,7 @@ class AggregatorApi
      * Get voucher chart data
      *
      * @param string $year Year for which you want to get the voucher chart data (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function aggregatorGetVoucherChartData($year)
@@ -614,7 +614,7 @@ class AggregatorApi
      * Get voucher chart data
      *
      * @param string $year Year for which you want to get the voucher chart data (required)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function aggregatorGetVoucherChartDataWithHttpInfo($year)
@@ -678,7 +678,7 @@ class AggregatorApi
      * Get the data which is displayed in the chart on the dashboard
      *
      * @param bool $sum_gross_toggle Specify if you want to calculate sum gross instead of net (optional, default to false)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return void
      */
     public function aggregatorGetWebRevenueChartData($sum_gross_toggle = 'false')
@@ -693,7 +693,7 @@ class AggregatorApi
      * Get the data which is displayed in the chart on the dashboard
      *
      * @param bool $sum_gross_toggle Specify if you want to calculate sum gross instead of net (optional, default to false)
-     * @throws \ispserverfarm\sevdesk\phpclient\ApiException on non-2xx response
+     * @throws \ispserverfarm\sevdesk\ApiException on non-2xx response
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
     public function aggregatorGetWebRevenueChartDataWithHttpInfo($sum_gross_toggle = 'false')

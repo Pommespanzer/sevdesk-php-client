@@ -1,4 +1,4 @@
-# ispserverfarm\sevdesk\phpclient\UnityApi
+# ispserverfarm\sevdesk\UnityApi
 
 All URIs are relative to *https://my.sevdesk.de/api/v1*
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **addUnity**
-> \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelOrderPos addUnity($body)
+> \ispserverfarm\sevdesk\sevDeskModel\ModelOrderPos addUnity($body)
 
 Create a new unity
 
@@ -23,11 +23,11 @@ Calls Unity.php to add an unity
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\UnityApi();
+$api_instance = new ispserverfarm\sevdesk\Api\UnityApi();
 $body = "name="; // string | To create an unity, simply enter desired values after parameter= and remove the quotation marks.
 
 try {
@@ -47,7 +47,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelOrderPos**](../Model/ModelOrderPos.md)
+[**\ispserverfarm\sevdesk\sevDeskModel\ModelOrderPos**](../Model/ModelOrderPos.md)
 
 ### Authorization
 
@@ -73,11 +73,11 @@ Calls the delete() function in Unity.php. Be aware that you can't delete unities
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\UnityApi();
+$api_instance = new ispserverfarm\sevdesk\Api\UnityApi();
 $id = 56; // int | id of the unity you want to delete
 
 try {
@@ -110,7 +110,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getUnities**
-> \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelUnity getUnities($limit, $offset, $embed)
+> \ispserverfarm\sevdesk\sevDeskModel\ModelUnity getUnities($limit, $offset, $embed)
 
 Get an overview of all unities
 
@@ -122,11 +122,11 @@ Calls Unity.php to get necessary variables.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\UnityApi();
+$api_instance = new ispserverfarm\sevdesk\Api\UnityApi();
 $limit = 100; // int | Limits the number of entries returned. Default is 100
 $offset = 0; // int | Set the index where the returned unities start. Default is 0
 $embed = array("embed_example"); // string[] | Get some additional information. Embed can handle multiple values, they must be separated by comma. Default ``.
@@ -150,7 +150,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelUnity**](../Model/ModelUnity.md)
+[**\ispserverfarm\sevdesk\sevDeskModel\ModelUnity**](../Model/ModelUnity.md)
 
 ### Authorization
 
@@ -164,7 +164,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **updateUnity**
-> \ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelUnity updateUnity($id, $body)
+> \ispserverfarm\sevdesk\sevDeskModel\ModelUnity updateUnity($id, $body)
 
 Update an existing Unity
 
@@ -176,11 +176,11 @@ TODO: Enter short backend documentation here
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
+ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKey('token', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ispserverfarm\sevdesk\phpclient\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
+// ispserverfarm\sevdesk\Configuration::getDefaultConfiguration()->setApiKeyPrefix('token', 'Bearer');
 
-$api_instance = new ispserverfarm\sevdesk\phpclient\Api\UnityApi();
+$api_instance = new ispserverfarm\sevdesk\Api\UnityApi();
 $id = 56; // int | id of unity you want to update
 $body = "body_example"; // string | Parameters which need to be updated. Enter the parameters according to the syntax: parameter1=&parameter2= and remove the quotation marks
 
@@ -202,7 +202,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\ispserverfarm\sevdesk\phpclient\sevDeskModel\ModelUnity**](../Model/ModelUnity.md)
+[**\ispserverfarm\sevdesk\sevDeskModel\ModelUnity**](../Model/ModelUnity.md)
 
 ### Authorization
 
