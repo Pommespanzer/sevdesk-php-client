@@ -285,6 +285,10 @@ class ObjectSerializer
             }
             return $data;
         } else {
+            if (is_object($data) && isset($data->objects)) {
+                $data = $data->objects;
+            }
+
             // If a discriminator is defined and points to a valid subclass, use it.
             $discriminator = $class::DISCRIMINATOR;
             if (!empty($discriminator) && isset($data->{$discriminator}) && is_string($data->{$discriminator})) {

@@ -54,6 +54,7 @@ class ModelPart implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
+        '_id' => 'int',
         '_create' => '\DateTime',
         '_update' => '\DateTime',
         '_name' => 'string',
@@ -87,6 +88,7 @@ class ModelPart implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
+        '_id' => null,
         '_create' => 'date-time',
         '_update' => 'date-time',
         '_name' => null,
@@ -130,6 +132,7 @@ class ModelPart implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
+        '_id' => '_id',
         '_create' => '_create',
         '_update' => '_update',
         '_name' => '_name',
@@ -164,6 +167,7 @@ class ModelPart implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
+        '_id' => 'setId',
         '_create' => 'setCreate',
         '_update' => 'setUpdate',
         '_name' => 'setName',
@@ -198,6 +202,7 @@ class ModelPart implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
+        '_id' => 'getId',
         '_create' => 'getCreate',
         '_update' => 'getUpdate',
         '_name' => 'getName',
@@ -257,6 +262,7 @@ class ModelPart implements ArrayAccess
      */
     public function __construct(array $data = null)
     {
+        $this->container['_id'] = isset($data['_id']) ? $data['_id'] : null;
         $this->container['_create'] = isset($data['_create']) ? $data['_create'] : null;
         $this->container['_update'] = isset($data['_update']) ? $data['_update'] : null;
         $this->container['_name'] = isset($data['_name']) ? $data['_name'] : null;
@@ -309,6 +315,28 @@ class ModelPart implements ArrayAccess
         return true;
     }
 
+    /**
+     * Gets _id
+     *
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->container['_id'];
+    }
+
+    /**
+     * Sets _id
+     *
+     * @param int $_id
+     * @return $this
+     */
+    public function setId($_id)
+    {
+        $this->container['_id'] = $_id;
+
+        return $this;
+    }
 
     /**
      * Gets _create
