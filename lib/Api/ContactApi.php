@@ -1997,7 +1997,20 @@ class ContactApi
                 '/Contact'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\Model\ModelContact', $httpHeader), $statusCode, $httpHeader];
+            if (is_object($response) && isset($response->objects) && is_array($response->objects)) {
+                $result = [];
+                foreach ($response->objects as $object) {
+                    $result[] = $this->apiClient->getSerializer()->deserialize(
+                        $object,
+                        '\ispserverfarm\sevdesk\phpclient\Model\ModelContact',
+                        $httpHeader
+                    );
+                }
+            } else {
+                $result = $this->apiClient->getSerializer()->deserialize($response, '\ispserverfarm\sevdesk\phpclient\Model\ModelContact', $httpHeader);
+            }
+
+            return [$result, $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
