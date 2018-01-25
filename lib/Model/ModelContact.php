@@ -54,6 +54,7 @@ class ModelContact implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
+        '_id' => 'int',
         '_address' => '\ispserverfarm\sevdesk\phpclient\Model\ModelContactAddress',
         '_create' => '\DateTime',
         '_update' => '\DateTime',
@@ -88,6 +89,7 @@ class ModelContact implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
+        '_id' => null,
         '_address' => null,
         '_create' => 'date-time',
         '_update' => 'date-time',
@@ -132,6 +134,7 @@ class ModelContact implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
+        '_id' => '_id',
         '_address' => '_address',
         '_create' => '_create',
         '_update' => '_update',
@@ -167,6 +170,7 @@ class ModelContact implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
+        '_id' => 'setId',
         '_address' => 'setAddress',
         '_create' => 'setCreate',
         '_update' => 'setUpdate',
@@ -202,6 +206,7 @@ class ModelContact implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
+        '_id' => 'getId',
         '_address' => 'getAddress',
         '_create' => 'getCreate',
         '_update' => 'getUpdate',
@@ -262,6 +267,7 @@ class ModelContact implements ArrayAccess
      */
     public function __construct(array $data = null)
     {
+        $this->container['_id'] = isset($data['_id']) ? $data['_id'] : null;
         $this->container['_address'] = isset($data['_address']) ? $data['_address'] : null;
         $this->container['_create'] = isset($data['_create']) ? $data['_create'] : null;
         $this->container['_update'] = isset($data['_update']) ? $data['_update'] : null;
@@ -313,6 +319,28 @@ class ModelContact implements ArrayAccess
     {
 
         return true;
+    }
+
+
+    /**
+     * Gets _id
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->container['_id'];
+    }
+
+    /**
+     * Sets _id
+     * @param int
+     * @return $this
+     */
+    public function setId($_id)
+    {
+        $this->container['_id'] = $_id;
+
+        return $this;
     }
 
 
